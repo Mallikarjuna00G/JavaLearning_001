@@ -86,3 +86,23 @@ c is non-negative
 
 ---
 
+### Example
+
+#### Source Code
+[ForDemo.java](./ForDemo.java)
+
+**Description:** Demonstrate the `for` loop.
+
+#### Execution Logs
+
+```
+This is count: 0
+This is count: 1
+This is count: 2
+This is count: 3
+This is count: 4
+Done!
+```
+
+---
+
