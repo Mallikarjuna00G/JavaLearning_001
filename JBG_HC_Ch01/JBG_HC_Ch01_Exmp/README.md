@@ -106,3 +106,19 @@ Done!
 
 ---
 
+### Example
+
+#### Source Code
+[BlockDemo.java](./BlockDemo.java)
+
+**Description:** Demonstrate block of code.
+
+#### Execution Logs
+
+```
+i does not equal zero
+j / i is 2.0
+```
+
+---
+
