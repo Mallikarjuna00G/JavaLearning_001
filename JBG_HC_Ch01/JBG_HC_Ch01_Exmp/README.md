@@ -65,3 +65,24 @@ x after division: 2.5
 
 ---
 
+### Example
+
+#### Source Code
+[IfDemo.java](./IfDemo.java)
+
+**Description:** Demonstrate the `if`.
+
+#### Execution Logs
+
+```
+a is less than b
+
+c contains -1
+c is negative
+
+c contains 1
+c is non-negative
+```
+
+---
+
