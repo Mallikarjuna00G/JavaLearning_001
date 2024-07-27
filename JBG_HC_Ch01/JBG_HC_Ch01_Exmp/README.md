@@ -47,3 +47,21 @@ Original value of x: 10.0
 v after division: 2
 x after division: 2.5
 ```
+
+---
+
+### Example | TryThis 1-1 Converting Gallons to Liters
+
+#### Source Code
+[GalToLit.java](./GalToLit.java)
+
+**Description:** This program converts gallons to liters.
+
+#### Execution Logs
+
+```
+10.0 gallons is 37.854 liters.
+```
+
+---
+
