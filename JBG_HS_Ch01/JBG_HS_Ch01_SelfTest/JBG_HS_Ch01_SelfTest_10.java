@@ -4,9 +4,9 @@
  * This program displays a conversion
  * table of inches to meters.
  * 
- * Call this program "JBG_HC_Ch01_SelfTest_10.java"
+ * Call this program "JBG_HS_Ch01_SelfTest_10.java"
  */
-class JBG_HC_Ch01_SelfTest_10 {
+class JBG_HS_Ch01_SelfTest_10 {
     public static void main(String[] args) {
         double inches, meters;
         int counter;

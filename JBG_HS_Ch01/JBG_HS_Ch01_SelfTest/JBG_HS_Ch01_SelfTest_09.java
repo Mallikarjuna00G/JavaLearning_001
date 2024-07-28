@@ -1,9 +1,9 @@
 /**
  * Compute your effective weight (Kgs) on the moon.
  * 
- * Call this file "JBG_HC_Ch01_SelfTest_09"
+ * Call this file "JBG_HS_Ch01_SelfTest_09"
  */
-class JBG_HC_Ch01_SelfTest_09 {
+class JBG_HS_Ch01_SelfTest_09 {
     public static void main(String[] args) {
         double yourWeightOnEarthKgs;
         double yourWeightOnMoonKgs;

@@ -1,4 +1,4 @@
-# JBG_HC_Ch01_Exmp
+# JBG_HS_Ch01_Exmp
 
 ### Example
 

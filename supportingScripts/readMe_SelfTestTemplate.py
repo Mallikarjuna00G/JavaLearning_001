@@ -11,7 +11,7 @@ chapterNo = f"{currentChapterNo:02d}"
 topDir = os.getcwd()
 currentDir = os.getcwd()
 
-prefix = "JBG_HC_Ch"
+prefix = "JBG_HS_Ch"
 chapterWithPrefix = prefix + chapterNo
 dirSelfTest = chapterWithPrefix + "_" + "SelfTest"
 

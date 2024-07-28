@@ -1,4 +1,4 @@
-# JBG_HC_Ch01
+# JBG_HS_Ch01
 ## SelfTest01
 
 ### SelfTest Problem
@@ -144,7 +144,7 @@ The moon’s gravity is about 17 percent that of earth’s. Write a program that
 
 #### Programs:
 
-[JBG_HC_Ch01_SelfTest_08.java](./JBG_HC_Ch01_SelfTest_08.java)
+[JBG_HS_Ch01_SelfTest_08.java](./JBG_HS_Ch01_SelfTest_08.java)
 
 #### Execution Logs
 
@@ -157,13 +157,13 @@ Your weight on earth which is 63.2Kgs is equal to 10.744000000000002Kgs on the m
 
 ### SelfTest Problem
 
-Adapt [`Try This 1­-2`](../JBG_HC_Ch01_Exmp/GalToLitTable.java) so that it prints a conversion table of inches to meters. Display 12 feet of conversions, inch by inch. Output a blank line every 12 inches. (One meter equals approximately 39.37 inches.)
+Adapt [`Try This 1­-2`](../JBG_HS_Ch01_Exmp/GalToLitTable.java) so that it prints a conversion table of inches to meters. Display 12 feet of conversions, inch by inch. Output a blank line every 12 inches. (One meter equals approximately 39.37 inches.)
 
 ### SelfTest Solution
 
 #### Programs:
 
-[JBG_HC_Ch01_SelfTest_10.java](./JBG_HC_Ch01_SelfTest_10.java)
+[JBG_HS_Ch01_SelfTest_10.java](./JBG_HS_Ch01_SelfTest_10.java)
 
 #### Execution Logs
 

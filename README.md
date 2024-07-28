@@ -19,5 +19,5 @@ Learn/Practice Java from
 3. Version control: git
 
 ## Chapters
-1. [JBG_HC_Ch01: Java Fundamentals](./JBG_HC_Ch01/)
+1. [JBG_HS_Ch01: Java Fundamentals](./JBG_HS_Ch01/)
 2. 
