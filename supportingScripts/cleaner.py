@@ -1,6 +1,8 @@
 import os
 import shutil
 
+# NOTE: Stay in JavaLearning_001 while running this script
+
 # ----------------------------------------------------------------------------------
 def remove_files(directory, file_extensions):
   """Removes files with specified extensions from a directory and its subdirectories.
@@ -26,7 +28,7 @@ def remove_files(directory, file_extensions):
 
 
 # ----------------------------------------------------------------------------------
-root_dir = "./"
+root_dir = os.getcwd()
 file_extensions = [".class"]  # Replace with your desired extensions
 
 remove_files(root_dir, file_extensions)
