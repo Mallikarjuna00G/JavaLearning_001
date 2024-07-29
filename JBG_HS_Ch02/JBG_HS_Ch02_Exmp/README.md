@@ -216,3 +216,22 @@ NestVar.java:17: error: variable count is already defined in method main(String[
 ```
 
 ---
+
+## Example
+
+### Program
+
+[ModDemo.java](./ModDemo.java)
+
+### Description
+
+Demonstrate the % operator
+
+### Execution Logs
+
+```
+Result and remainder of 10 / 3 : 3 1
+Result and remainder of 10.0 / 3.0 : 3.3333333333333335 1.0
+```
+
+---
