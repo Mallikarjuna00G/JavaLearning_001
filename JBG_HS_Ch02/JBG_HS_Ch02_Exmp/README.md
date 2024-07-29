@@ -133,3 +133,21 @@ D       E       F
 ```
 
 ---
+
+## Example
+
+### Program
+
+[DynInit.java](./DynInit.java)
+
+### Description
+
+Demonstrate dynamic initialization.
+
+### Execution Logs
+
+```
+Volume is 251.328
+```
+
+---
