@@ -55,6 +55,7 @@ ch is now Z
 ```
 
 ---
+
 ## Example
 
 ### Program
@@ -72,6 +73,42 @@ b is false
 b is true
 This is executed.
 10 > 9 is true
+```
+
+---
+
+## Example | Try This 2-1 How Far Away Is the Lightning?
+
+### Program
+
+[Sound.java](./Sound.java)
+
+### Description
+
+Compute the distance to a lightning strike whose sound takes 7.2 seconds to reach you.
+
+### Execution Logs
+
+```
+The lightning is 7920.0 feet away.
+```
+
+---
+
+## Example | Try This 2-1-1 Extra Challenge: How Far Away Is the Object?
+
+### Program
+
+[Sound2.java](./Sound2.java)
+
+### Description
+
+Compute the distance to a large object, such as a rock wall, by timing the echo.
+
+### Execution Logs
+
+```
+The object is 2640.0 feet away.
 ```
 
 ---
