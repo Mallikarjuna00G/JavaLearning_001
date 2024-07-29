@@ -259,3 +259,25 @@ b1 ^ b2 is true
 
 ---
 
+## Example
+
+### Program
+
+[SCops.java](./SCops.java)
+
+### Description
+
+Demonstrate the short-circuit operators.
+
+Note: Run time error occurs
+
+### Execution Logs
+
+```
+2 is a factor of 10
+Exception in thread "main" java.lang.ArithmeticException: / by zero
+        at SCops.main(SCops.java:27)
+```
+
+---
+
