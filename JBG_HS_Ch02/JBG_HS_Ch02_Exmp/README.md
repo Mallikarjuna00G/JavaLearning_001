@@ -151,3 +151,22 @@ Volume is 251.328
 ```
 
 ---
+
+## Example
+
+### Program
+
+[ScopeDemo.java](./ScopeDemo.java)
+
+### Description
+
+Demonstrate block scope.
+
+### Execution Logs
+
+```
+x and y: 10 20
+x is 40
+```
+
+---
