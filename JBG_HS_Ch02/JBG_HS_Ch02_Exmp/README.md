@@ -424,3 +424,35 @@ i and b: 100 100
 
 ---
 
+## Example
+
+### Program
+
+[UseCast.java](./UseCast.java)
+
+### Description
+
+Using a cast.
+
+### Execution Logs
+
+```
+0 / 3: 0
+0 / 3 with fractions: 0.0
+
+1 / 3: 0
+1 / 3 with fractions: 0.3333333333333333
+
+2 / 3: 0
+2 / 3 with fractions: 0.6666666666666666
+
+3 / 3: 1
+3 / 3 with fractions: 1.0
+
+4 / 3: 1
+4 / 3 with fractions: 1.3333333333333333
+
+```
+
+---
+
