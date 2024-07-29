@@ -20,4 +20,4 @@ Learn/Practice Java from
 
 ## Chapters
 1. [JBG_HS_Ch01: Java Fundamentals](./JBG_HS_Ch01/)
-2. [JBG_HS_Ch01: Introducing Data Types and Operators](./JBG_HS_Ch02/)
+2. [JBG_HS_Ch02: Introducing Data Types and Operators](./JBG_HS_Ch02/)
