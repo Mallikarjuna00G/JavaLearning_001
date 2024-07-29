@@ -3,7 +3,7 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 1  # Update needed here
+currentChapterNo = 2  # Update needed here
 numberOfSelfTest = 12  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
@@ -16,7 +16,7 @@ chapterWithPrefix = prefix + chapterNo
 dirSelfTest = chapterWithPrefix + "_" + "SelfTest"
 
 dirSelfTestPath = chapterWithPrefix + "/" + dirSelfTest
-shutil.rmtree(dirSelfTestPath)  # Delete this line. Only here for testing
+# shutil.rmtree(dirSelfTestPath)  # Delete this line. Only here for testing
 os.mkdir(dirSelfTestPath)
 
 readMeFile = open(dirSelfTestPath + "/README.md", "w")
