@@ -170,3 +170,26 @@ x is 40
 ```
 
 ---
+
+## Example
+
+### Program
+
+[VarInitDemo.java](./VarInitDemo.java)
+
+### Description
+
+Demonstrate lifetime of a variable.
+
+### Execution Logs
+
+```
+y is -1
+y is now 100
+y is -1
+y is now 100
+y is -1
+y is now 100
+```
+
+---
