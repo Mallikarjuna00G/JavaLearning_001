@@ -341,3 +341,24 @@ DtoL.java:14: error: incompatible types: possible lossy conversion from double t
 
 ---
 
+## Example
+
+### Program
+
+[CastDemo.java](./CastDemo.java)
+
+### Description
+
+Demonstrate casting.
+
+### Execution Logs
+
+```
+integer outcome of x / y: 3
+Value of b: 100
+Value of b: 1
+ch: X
+```
+
+---
+
