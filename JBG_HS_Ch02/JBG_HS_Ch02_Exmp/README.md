@@ -112,3 +112,24 @@ The object is 2640.0 feet away.
 ```
 
 ---
+
+## Example
+
+### Program
+
+[strDemo.java](./strDemo.java)
+
+### Description
+
+Demonstrate escape sequences in strings.
+
+### Execution Logs
+
+```
+First line
+Second line
+A       B       C
+D       E       F
+```
+
+---
