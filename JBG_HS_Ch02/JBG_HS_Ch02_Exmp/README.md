@@ -362,3 +362,47 @@ ch: X
 
 ---
 
+## Example | Try This 2-­2 Display a Truth Table for the Logical Operators
+
+### Program
+
+[LogicalOpTable.java](./LogicalOpTable.java)
+
+### Description
+
+Try This 2-2: a truth table for the logical operators.
+
+### Execution Logs
+
+```
+P       Q       AND     OR      XOR     NOT
+true    true    true    true    false   false
+true    false   false   true    true    false
+false   true    false   true    true    true
+false   false   false   false   false   true
+```
+
+---
+
+## Example | Try This 2-­2-1 Display a Truth Table for the Logical Operators; print 1's and 0's instead of true and false
+
+### Program
+
+[LogicalOpTable2.java](./LogicalOpTable2.java)
+
+### Description
+
+Try This 2-2: a truth table for the logical operators. Print 1's and 0's instead of true and false.
+
+### Execution Logs
+
+```
+P       Q       AND     OR      XOR     NOT
+1       1       1       1       0       0
+1       0       0       1       1       0
+0       1       0       1       1       1
+0       0       0       0       0       1
+```
+
+---
+
