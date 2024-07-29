@@ -55,3 +55,23 @@ ch is now Z
 ```
 
 ---
+## Example
+
+### Program
+
+[BoolDemo.java](./BoolDemo.java)
+
+### Description
+
+Demonstrate boolean values.
+
+### Execution Logs
+
+```
+b is false
+b is true
+This is executed.
+10 > 9 is true
+```
+
+---
