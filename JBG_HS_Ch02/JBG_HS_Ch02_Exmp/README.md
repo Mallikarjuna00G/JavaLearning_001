@@ -193,3 +193,26 @@ y is now 100
 ```
 
 ---
+
+## Example
+
+### Program
+
+[NestVar.java](./NestVar.java)
+
+### Description
+
+This program attempts to declare a variable in an inner scope with the same name as one defined in an outer scope.
+
+\*\*\* This program will not compile. \*\*\*
+
+### Execution Logs
+
+```
+NestVar.java:17: error: variable count is already defined in method main(String[])
+            int count; // illegal!!!
+                ^
+1 error
+```
+
+---
