@@ -235,3 +235,27 @@ Result and remainder of 10.0 / 3.0 : 3.3333333333333335 1.0
 ```
 
 ---
+
+## Example
+
+### Program
+
+[RelLogOps.java](./RelLogOps.java)
+
+### Description
+
+Demonstrate the relational and logical operators.
+
+### Execution Logs
+
+```
+i < j
+i <= j
+i != j
+!(b1 & b2) is true
+b1 | b2 is true
+b1 ^ b2 is true
+```
+
+---
+
