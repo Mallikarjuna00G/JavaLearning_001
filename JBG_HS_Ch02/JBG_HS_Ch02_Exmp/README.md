@@ -300,3 +300,21 @@ if statement executed: 1
 
 ---
 
+## Example
+
+### Program
+
+[LtoD.java](./LtoD.java)
+
+### Description
+
+Demonstrate automatic conversion from long to double.
+
+### Execution Logs
+
+```
+L and D: 100123285 1.00123285E8
+```
+
+---
+
