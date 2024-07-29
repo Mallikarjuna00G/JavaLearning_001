@@ -318,3 +318,26 @@ L and D: 100123285 1.00123285E8
 
 ---
 
+## Example
+
+### Program
+
+[DtoL.java](./DtoL.java)
+
+### Description
+
+Demonstrate automatic conversion from double to long.
+
+\*\*\* This program will not compile. \*\*\*
+
+### Execution Logs
+
+```
+DtoL.java:14: error: incompatible types: possible lossy conversion from double to long
+        L = D;
+            ^
+1 error
+```
+
+---
+
