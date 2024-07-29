@@ -406,3 +406,21 @@ P       Q       AND     OR      XOR     NOT
 
 ---
 
+## Example
+
+### Program
+
+[PromDemo.java](./PromDemo.java)
+
+### Description
+
+A promotion surprise!
+
+### Execution Logs
+
+```
+i and b: 100 100
+```
+
+---
+
