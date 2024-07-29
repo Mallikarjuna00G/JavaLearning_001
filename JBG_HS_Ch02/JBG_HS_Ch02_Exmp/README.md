@@ -281,3 +281,22 @@ Exception in thread "main" java.lang.ArithmeticException: / by zero
 
 ---
 
+## Example
+
+### Program
+
+[SideEffects.java](./SideEffects.java)
+
+### Description
+
+Side effects of logical operators can be important.
+
+### Execution Logs
+
+```
+if statement executed: 1
+if statement executed: 1
+```
+
+---
+
