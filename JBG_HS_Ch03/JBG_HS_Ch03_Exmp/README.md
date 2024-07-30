@@ -1109,3 +1109,33 @@ Loops complete.
 
 ---
 
+## Example
+
+### Program
+
+[Break4.java](./Break4.java)
+
+### Description
+
+Using break with a label.
+
+### Execution Logs
+
+```
+
+i is 1
+After block one.
+
+i is 2
+After block two.
+After block one.
+
+i is 3
+After block one.
+After block two.
+After block one.
+After for loop.
+```
+
+---
+
