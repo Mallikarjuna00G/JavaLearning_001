@@ -720,3 +720,30 @@ Pass #9
 
 ---
 
+## Example
+
+### Program
+
+[Empty2.java](./Empty2.java)
+
+### Description
+
+Parts of the for can be empty (initialization).
+
+### Execution Logs
+
+```
+Pass #0
+Pass #1
+Pass #2
+Pass #3
+Pass #4
+Pass #5
+Pass #6
+Pass #7
+Pass #8
+Pass #9
+```
+
+---
+
