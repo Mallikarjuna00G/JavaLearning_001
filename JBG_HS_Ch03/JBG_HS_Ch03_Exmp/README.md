@@ -1085,3 +1085,27 @@ You pressed q!
 
 ---
 
+## Example
+
+### Program
+
+[Break3.java](./Break3.java)
+
+### Description
+
+Using break with nested loops.
+
+### Execution Logs
+
+```
+Outer loop count: 0
+    Inner loop count: 0 1 2 3 4 5 6 7 8 9 
+Outer loop count: 1
+    Inner loop count: 0 1 2 3 4 5 6 7 8 9 
+Outer loop count: 2
+    Inner loop count: 0 1 2 3 4 5 6 7 8 9 
+Loops complete.
+```
+
+---
+
