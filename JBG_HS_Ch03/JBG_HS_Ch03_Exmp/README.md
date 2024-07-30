@@ -48,3 +48,31 @@ Can you guess it?: K
 
 ---
 
+### Program
+
+[Guess2.java](./Guess2.java)
+
+### Description
+
+Guess the letter game. Version 2.
+
+### Execution Logs
+
+#### Log1
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: k 
+...Sorry, you're wrong.
+```
+
+#### Log2
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: K
+** Right **
+```
+
+---
+
