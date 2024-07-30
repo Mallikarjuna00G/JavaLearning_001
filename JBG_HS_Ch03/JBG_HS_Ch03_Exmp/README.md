@@ -747,3 +747,21 @@ Pass #9
 
 ---
 
+## Example
+
+### Program
+
+[Empty3.java](./Empty3.java)
+
+### Description
+
+Body of a loop can be empty.
+
+### Execution Logs
+
+```
+Sum is 15
+```
+
+---
+
