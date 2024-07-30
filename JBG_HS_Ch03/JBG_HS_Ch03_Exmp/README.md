@@ -1064,3 +1064,24 @@ Using break to exit a loop.
 
 ---
 
+## Example
+
+### Program
+
+[Break2.java](./Break2.java)
+
+### Description
+
+Read input until a q is received.
+
+### Execution Logs
+
+```
+a
+b
+qsaas
+You pressed q!
+```
+
+---
+
