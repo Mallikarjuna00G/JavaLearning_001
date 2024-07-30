@@ -878,3 +878,38 @@ Press a key followed by ENTER: Press a key followed by ENTER: q
 
 ---
 
+## Example
+
+### Program
+
+[Guess4.java](./Guess4.java)
+
+### Description
+
+Guess the letter game. Version 4.
+
+### Execution Logs
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: A
+...Sorry, you're too low
+Try again!
+
+I am thinking of a letter between A and Z.
+Can you guess it?: BCDK
+...Sorry, you're too low
+Try again!
+
+I am thinking of a letter between A and Z.
+Can you guess it?: M
+...Sorry, you're too high
+Try again!
+
+I am thinking of a letter between A and Z.
+Can you guess it?: K
+** Right **
+```
+
+---
+
