@@ -765,3 +765,22 @@ Sum is 15
 
 ---
 
+## Example
+
+### Program
+
+[ForVar.java](./ForVar.java)
+
+### Description
+
+Declare loop control variable inside the for.
+
+### Execution Logs
+
+```
+Sum is 15
+Factorial is 120
+```
+
+---
+
