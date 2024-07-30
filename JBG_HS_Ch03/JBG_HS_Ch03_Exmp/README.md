@@ -139,3 +139,30 @@ x is not between 1 and 4
 
 ---
 
+## Example
+
+### Program
+
+[SwitchDemo.java](./SwitchDemo.java)
+
+### Description
+
+Demonstrate the switch.
+
+### Execution Logs
+
+```
+i is zero
+i is one
+i is two
+i is three
+i is four
+i is five or more
+i is five or more
+i is five or more
+i is five or more
+i is five or more
+```
+
+---
+
