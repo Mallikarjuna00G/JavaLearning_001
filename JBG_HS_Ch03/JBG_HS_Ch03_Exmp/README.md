@@ -650,3 +650,46 @@ i and j: 4 6
 
 ---
 
+## Example
+
+### Program
+
+[ForTest.java](./ForTest.java)
+
+### Description
+
+Loop until an S is typed.
+
+### Execution Logs
+
+#### Log1
+
+```
+Press S to stop.
+sqweS
+Pass #0
+Pass #1
+Pass #2
+Pass #3
+```
+
+#### Log2
+
+```
+Press S to stop.
+sqweSabc
+Pass #0
+Pass #1
+Pass #2
+Pass #3
+```
+
+#### Log3
+
+```
+Press S to stop.
+S
+```
+
+---
+
