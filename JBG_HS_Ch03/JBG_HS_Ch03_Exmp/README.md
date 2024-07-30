@@ -1046,3 +1046,21 @@ for(init; condition; iteration)
 
 ---
 
+## Example
+
+### Program
+
+[BreakDemo.java](./BreakDemo.java)
+
+### Description
+
+Using break to exit a loop.
+
+### Execution Logs
+
+```
+0 1 2 3 4 5 6 7 8 9 Loop complete.
+```
+
+---
+
