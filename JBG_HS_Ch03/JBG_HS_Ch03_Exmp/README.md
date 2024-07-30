@@ -204,3 +204,56 @@ i is less than five.
 
 ---
 
+## Example | Try This 3-­1 Start Building a Java Help System
+
+### Program
+
+[Help.java](./Help.java)
+
+### Description
+
+
+
+### Execution Logs
+
+#### Log1
+
+```
+Help on: 
+  1. if
+  2. switch
+Choose one: 1
+The if:
+
+if(condition) statement;
+else statement;
+```
+
+#### Log2
+
+```
+Help on: 
+  1. if
+  2. switch
+Choose one: 2
+The switch:
+
+switch(expression) {
+    case constant:
+        statement sequence
+        break;
+}
+```
+
+#### Log3
+
+```
+Help on: 
+  1. if
+  2. switch
+Choose one: 3
+Selection not found.
+```
+
+---
+
