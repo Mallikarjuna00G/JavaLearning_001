@@ -854,3 +854,27 @@ Compute integer powers of 2.
 
 ---
 
+## Example
+
+### Program
+
+[DWDemo.java](./DWDemo.java)
+
+### Description
+
+Demonstrate the do-while loop.
+
+### Execution Logs
+
+```
+Press a key followed by ENTER: a
+Press a key followed by ENTER: Press a key followed by ENTER: b
+Press a key followed by ENTER: Press a key followed by ENTER: c
+Press a key followed by ENTER: Press a key followed by ENTER: w
+Press a key followed by ENTER: Press a key followed by ENTER: q
+```
+
+**Inference:** The statement `Press a key followed by ENTER:` getting printed twice after the first input during for each iteration. Because, `ENTER` is available in the buffer which is getting read by `read()` statement.
+
+---
+
