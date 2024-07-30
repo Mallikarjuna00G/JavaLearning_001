@@ -1139,3 +1139,27 @@ After for loop.
 
 ---
 
+## Example
+
+### Program
+
+[Break5.java](./Break5.java)
+
+### Description
+
+Another example of using break with a label.
+
+### Execution Logs
+
+```
+0 
+1 
+2 
+3 
+4 
+5 
+After i loop
+```
+
+---
+
