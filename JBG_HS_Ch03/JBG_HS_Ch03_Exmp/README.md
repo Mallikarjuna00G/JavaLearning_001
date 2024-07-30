@@ -48,6 +48,8 @@ Can you guess it?: K
 
 ---
 
+## Example
+
 ### Program
 
 [Guess2.java](./Guess2.java)
@@ -67,6 +69,44 @@ Can you guess it?: k
 ```
 
 #### Log2
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: K
+** Right **
+```
+
+---
+
+## Example
+
+### Program
+
+[Guess3.java](./Guess3.java)
+
+### Description
+
+Guess the letter game. Version 3.
+
+### Execution Logs
+
+#### Log1
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: B
+...Sorry, you're too low
+```
+
+#### Log2
+
+```
+I am thinking of a letter between A and Z.
+Can you guess it?: M
+...Sorry, you're too high
+```
+
+#### Log3
 
 ```
 I am thinking of a letter between A and Z.
