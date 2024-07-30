@@ -116,3 +116,26 @@ Can you guess it?: K
 
 ---
 
+## Example
+
+### Program
+
+[Ladder.java](./Ladder.java)
+
+### Description
+
+Demonstrate and if-else-if ladder.
+
+### Execution Logs
+
+```
+x is not between 1 and 4
+x is one
+x is two
+x is three
+x is four
+x is not between 1 and 4
+```
+
+---
+
