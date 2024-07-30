@@ -567,7 +567,63 @@ Rounding error is 0.0
 Square root of 99.0 is 9.9498743710662
 Rounding error is 0.0
 
+```
 
+---
+
+## Example
+
+### Program
+
+[DecrFor.java](./DecrFor.java)
+
+### Description
+
+A negatively running for loop.
+
+### Execution Logs
+
+```
+100
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+5
+0
+-5
+-10
+-15
+-20
+-25
+-30
+-35
+-40
+-45
+-50
+-55
+-60
+-65
+-70
+-75
+-80
+-85
+-90
+-95
 ```
 
 ---
