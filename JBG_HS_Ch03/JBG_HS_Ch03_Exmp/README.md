@@ -913,3 +913,136 @@ Can you guess it?: K
 
 ---
 
+## Example | Try This 3-2 Improve the Java help system
+
+### Program
+
+[Help2.java](./Help2.java)
+
+### Description
+
+Try This 3-2 An improved help system that uses a do-while to process a menu selection.
+
+### Execution Logs
+
+#### Log1
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 1
+
+The if:
+
+if(condition) statement;
+else statement;
+```
+
+#### Log2
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 2
+
+The switch:
+
+switch(expression) {
+    case constant:
+        statement sequence
+        break;
+}
+```
+
+#### Log3
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 3
+
+The for:
+
+for(init; condition; iteration)
+    statement;
+```
+
+#### Log4
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 4
+
+The while:
+
+while(condition) statement;
+```
+
+#### Log5
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 5
+
+The do-while:
+
+do {
+    statement;
+} while(condition);
+```
+
+#### Log6
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 7
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 0
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+Choose one: 3sdfs
+
+The for:
+
+for(init; condition; iteration)
+    statement;
+```
+
+---
+
