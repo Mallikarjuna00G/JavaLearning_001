@@ -166,3 +166,41 @@ i is five or more
 
 ---
 
+## Example
+
+### Program
+
+[NoBreak.java](./NoBreak.java)
+
+### Description
+
+Demonstrate the switch without break statements.
+
+### Execution Logs
+
+```
+i is less than one.
+i is less than two.
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than two.
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than four.
+i is less than five.
+
+i is less than five.
+
+
+```
+
+---
+
