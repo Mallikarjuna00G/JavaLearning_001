@@ -1502,3 +1502,121 @@ Factors of 100: 2 4 5 10 20 25 50
 
 ---
 
+## Example
+
+### Program
+
+[FindFac2.java](./FindFac2.java)
+
+### Description
+
+Use nested loops to find factors of numbers between 2 and 100. 
+
+Extra challenge: Reduce number of iterations from the inner loop.
+
+### Execution Logs
+
+```
+Factors of 2: 
+Factors of 3: 
+Factors of 4: 2 
+Factors of 5: 
+Factors of 6: 2 3 
+Factors of 7: 
+Factors of 8: 2 4 
+Factors of 9: 3 
+Factors of 10: 2 5 
+Factors of 11: 
+Factors of 12: 2 3 4 6 
+Factors of 13: 
+Factors of 14: 2 7 
+Factors of 15: 3 5 
+Factors of 16: 2 4 8 
+Factors of 17: 
+Factors of 18: 2 3 6 9 
+Factors of 19: 
+Factors of 20: 2 4 5 10 
+Factors of 21: 3 7 
+Factors of 22: 2 11 
+Factors of 23: 
+Factors of 24: 2 3 4 6 8 12 
+Factors of 25: 5 
+Factors of 26: 2 13 
+Factors of 27: 3 9 
+Factors of 28: 2 4 7 14 
+Factors of 29: 
+Factors of 30: 2 3 5 6 10 15 
+Factors of 31: 
+Factors of 32: 2 4 8 16 
+Factors of 33: 3 11 
+Factors of 34: 2 17 
+Factors of 35: 5 7 
+Factors of 36: 2 3 4 6 9 12 18 
+Factors of 37: 
+Factors of 38: 2 19 
+Factors of 39: 3 13 
+Factors of 40: 2 4 5 8 10 20 
+Factors of 41: 
+Factors of 42: 2 3 6 7 14 21 
+Factors of 43: 
+Factors of 44: 2 4 11 22 
+Factors of 45: 3 5 9 15 
+Factors of 46: 2 23 
+Factors of 47: 
+Factors of 48: 2 3 4 6 8 12 16 24 
+Factors of 49: 7 
+Factors of 50: 2 5 10 25 
+Factors of 51: 3 17 
+Factors of 52: 2 4 13 26 
+Factors of 53: 
+Factors of 54: 2 3 6 9 18 27 
+Factors of 55: 5 11 
+Factors of 56: 2 4 7 8 14 28 
+Factors of 57: 3 19 
+Factors of 58: 2 29 
+Factors of 59: 
+Factors of 60: 2 3 4 5 6 10 12 15 20 30 
+Factors of 61: 
+Factors of 62: 2 31 
+Factors of 63: 3 7 9 21 
+Factors of 64: 2 4 8 16 32 
+Factors of 65: 5 13 
+Factors of 66: 2 3 6 11 22 33 
+Factors of 67: 
+Factors of 68: 2 4 17 34 
+Factors of 69: 3 23 
+Factors of 70: 2 5 7 10 14 35 
+Factors of 71: 
+Factors of 72: 2 3 4 6 8 9 12 18 24 36 
+Factors of 73: 
+Factors of 74: 2 37 
+Factors of 75: 3 5 15 25 
+Factors of 76: 2 4 19 38 
+Factors of 77: 7 11 
+Factors of 78: 2 3 6 13 26 39 
+Factors of 79: 
+Factors of 80: 2 4 5 8 10 16 20 40 
+Factors of 81: 3 9 27 
+Factors of 82: 2 41 
+Factors of 83: 
+Factors of 84: 2 3 4 6 7 12 14 21 28 42 
+Factors of 85: 5 17 
+Factors of 86: 2 43 
+Factors of 87: 3 29 
+Factors of 88: 2 4 8 11 22 44 
+Factors of 89: 
+Factors of 90: 2 3 5 6 9 10 15 18 30 45 
+Factors of 91: 7 13 
+Factors of 92: 2 4 23 46 
+Factors of 93: 3 31 
+Factors of 94: 2 47 
+Factors of 95: 5 19 
+Factors of 96: 2 3 4 6 8 12 16 24 32 48 
+Factors of 97: 
+Factors of 98: 2 7 14 49 
+Factors of 99: 3 9 11 33 
+Factors of 100: 2 4 5 10 20 25 50 
+```
+
+---
+
