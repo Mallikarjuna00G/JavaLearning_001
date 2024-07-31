@@ -1193,3 +1193,24 @@ x and y: 4 1
 
 ---
 
+## Example
+
+### Program
+
+[BreakErr.java](./BreakErr.java)
+
+### Description
+
+This program contains an error.
+
+### Execution Logs
+
+```
+BreakErr.java:13: error: undefined label: one
+            if(j == 10) break one;  // WRONG
+                        ^
+1 error
+```
+
+---
+
