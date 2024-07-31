@@ -9,14 +9,26 @@ Write a program that reads characters from the keyboard until a period is receiv
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch03_SelfTest_01.java](./JBG_HS_Ch03_SelfTest_01.java)
 
 #### Execution Logs
 
+#### Log1
+
+```
+Enter a statement ending with a period 
+to know the number of spaces in the statement: 
+Huttidare kannada naadal huttabeku.
+Number of spaces in your statement: 3
 ```
 
+#### Log2
+
+```
+Enter a statement ending with a period 
+to know the number of spaces in the statement: 
+Ajanta Ellorana baalalli omme nodu. Baadaami Aiholeya chandana savidu node.          
+Number of spaces in your statement: 4
 ```
 
 ---
@@ -29,16 +41,19 @@ Show the general form of the **if-­else-­if** ladder.
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
 ```
-
+if(condition)
+    statement;
+else if(condition)
+    statement;
+else if(condition)
+    statement;
+    .
+    .
+    .
+    .
+else
+    statement;
 ```
 
 ---
@@ -62,17 +77,7 @@ to what `if` does the last `else` associate?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+The last `else` associates with the second `if` statement i.e., `if(y > 100)`. One level of indentation to the `else` statement might add more readability.
 
 ---
 
@@ -84,16 +89,10 @@ Show the `for` statement for a loop that counts from 1000 to 0 by –2.
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+for(int i = 1000; i >= 0; i -= 2) {
+    // ....
+}
 ```
 
 ---
@@ -113,17 +112,7 @@ count = i;
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No. (Assuming `sum` and `count` are already declared and initialized). `i` is not visible at the statement `count = i;`.
 
 ---
 
@@ -135,17 +124,9 @@ Explain what `break` does. Be sure to explain both of its forms.
 
 ### SelfTest Solution
 
-#### Programs:
+A `break` without a label causes termination of its immediately enclosing loop or `switch` statement.
 
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A `break` with a label causes control to transfer to the end of the labeled block.
 
 ---
 
@@ -166,19 +147,7 @@ for(i = 0; i < 10; i++) {
 System.out.println("After for");
 ```
 
-### SelfTest Solution
-
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+`after while` gets printed.
 
 ---
 
@@ -198,16 +167,12 @@ for(int i = 0; i < 10; i++) {
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
 ```
-
+0 1 
+2 3 
+4 5 
+6 7 
+8 9 
 ```
 
 ---
@@ -222,14 +187,14 @@ The iteration expression in a `for` loop need not always alter the loop control 
 
 #### Programs:
 
-[]()
+[JBG_HS_Ch03_SelfTest_02.java](./JBG_HS_Ch03_SelfTest_02.java)
 
-AAA
+Note: Loop iterates only for 100 times.
 
 #### Execution Logs
 
 ```
-
+1 2 4 8 16 32 64
 ```
 
 ---
@@ -244,14 +209,26 @@ The ASCII lowercase letters are separated from the uppercase letters by 32. Thus
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch03_SelfTest_10.java](./JBG_HS_Ch03_SelfTest_10.java)
 
 #### Execution Logs
 
+#### Log1
+
+```
+Enter characters to change the case of the letters (put a period at the end): 
+Tangaaliyalli naanu teli bande, Ninnannu preethiyinda seralende.
+tANGAALIYALLI NAANU TELI BANDE, nINNANNU PREETHIYINDA SERALENDE
+Number of case changes: 56
 ```
 
+#### Log2
+
+```
+Enter characters to change the case of the letters (put a period at the end): 
+Ethake heege aleyuthaliruve, Yaaranu heege hudukuthaliruve? Nannannu seralu ba ba.
+eTHAKE HEEGE ALEYUTHALIRUVE, yAARANU HEEGE HUDUKUTHALIRUVE? nANNANNU SERALU BA BA
+Number of case changes: 70
 ```
 
 ---
@@ -264,17 +241,7 @@ What is an infinite loop?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+An infinite loop is a loop that runs indefinitely.
 
 ---
 
@@ -286,17 +253,7 @@ When using `break` with a label, must the label be on a block that contains the 
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes.
 
 ---
 
