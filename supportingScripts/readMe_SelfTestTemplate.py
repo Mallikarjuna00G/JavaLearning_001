@@ -3,7 +3,7 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 3  # Update needed here
+currentChapterNo = 99  # Update needed here
 numberOfSelfTest = 12  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
@@ -21,7 +21,8 @@ os.mkdir(dirSelfTestPath)
 
 readMeFile = open(dirSelfTestPath + "/README.md", "w")
 
-content1 = f"""# {chapterWithPrefix}
+content1 = f"""# {chapterWithPrefix}_SelfTest
+
 """
 
 readMeFile.writelines(content1)
