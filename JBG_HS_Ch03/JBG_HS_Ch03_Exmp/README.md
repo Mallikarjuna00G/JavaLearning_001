@@ -1282,3 +1282,30 @@ Use continue.
 
 ---
 
+## Example
+
+### Program
+
+[ContToLabel.java](./ContToLabel.java)
+
+### Description
+
+Use continue with a label.
+
+### Execution Logs
+
+```
+
+Outer loop pass 1, inner loop: 1234
+Outer loop pass 2, inner loop: 1234
+Outer loop pass 3, inner loop: 1234
+Outer loop pass 4, inner loop: 1234
+Outer loop pass 5, inner loop: 1234
+Outer loop pass 6, inner loop: 1234
+Outer loop pass 7, inner loop: 1234
+Outer loop pass 8, inner loop: 1234
+Outer loop pass 9, inner loop: 1234
+```
+
+---
+
