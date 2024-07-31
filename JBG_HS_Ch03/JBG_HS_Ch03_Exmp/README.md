@@ -1309,3 +1309,80 @@ Outer loop pass 9, inner loop: 1234
 
 ---
 
+## Example | Try This 3-­3 Finish the Java Help System
+
+### Program
+
+[Help3.java](./Help3.java)
+
+### Description
+
+Try This 3-3 The finished java statement help system that processes multiple requests.
+
+### Execution Logs
+
+```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): 1
+
+The if:
+
+if(condition) statement;
+else statement;
+--------------------------------
+
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): 6
+
+The break:
+
+break; or break label
+--------------------------------
+
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): 7
+
+The continue:
+
+continue; or continue label;
+--------------------------------
+
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): q
+
+```
+
+---
+
