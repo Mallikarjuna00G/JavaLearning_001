@@ -1163,3 +1163,33 @@ After i loop
 
 ---
 
+## Example
+
+### Program
+
+[Break6.java](./Break6.java)
+
+### Description
+
+Where you put a label is important.
+
+### Execution Logs
+
+```
+x and y: 0 0
+x and y: 0 1
+
+x and y: 0 0
+x and y: 0 1
+x and y: 1 0
+x and y: 1 1
+x and y: 2 0
+x and y: 2 1
+x and y: 3 0
+x and y: 3 1
+x and y: 4 0
+x and y: 4 1
+```
+
+---
+
