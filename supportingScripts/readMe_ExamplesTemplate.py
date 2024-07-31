@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 99  # Update needed here
-examples = ["exmp1", "exmp2", "exmp3"]  # Update needed here
+currentChapterNo = 4  # Update needed here
+examples = ["VehicleDemo", "TwoVehicles", "AddMeth", "RetMeth", "ParmDemo", "IsFact", "CompFuel", "HelpClassDemo", "ConsDemo", "ParmConsDemo", "VehConsDemo", "DemoPwr"]  # Update needed here
 numberOfExmp = len(examples)
 
 

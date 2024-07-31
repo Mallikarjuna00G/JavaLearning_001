@@ -3,15 +3,11 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 99  # Update needed here
-numberOfSelfTest = 12  # Update needed here
+currentChapterNo = 4  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
 
-topDir = os.getcwd()
-currentDir = os.getcwd()
-
-chapterTitle = "Dummy Chapter"
+chapterTitle = "Introducing Classes, Objects, and Methods"
 prefix = "JBG_HS_Ch"
 chapterWithPrefix = prefix + chapterNo
 
