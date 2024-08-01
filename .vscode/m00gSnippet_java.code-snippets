@@ -1,0 +1,500 @@
+{
+	// Place your JavaLearning_001 workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "local snippet:: Log output to console"
+	// }
+
+	"lsnip::Top of the file": {
+		"scope": "java",
+		"prefix": "fileTop",
+		"body": [
+			"/**",
+			" * File: ${TM_FILENAME}",
+			" * ",
+			" * Purpose: $1",
+			" * ",
+			" */",
+			"$2"
+		],
+		"description": "local snippet:: Remark of the file. Actually a multi-line comment containing the purpose of the file, file name."
+	},
+
+	"lsnip::Top level class in the file": {
+		"scope": "java",
+		"prefix": "fileClass",
+		"body": [
+			"class ${TM_FILENAME_BASE} {",
+			"    $1",
+			"}  // class ${TM_FILENAME_BASE}"
+		],
+		"description": "local snippet:: "
+	},
+
+	"lsnip::main function with no arguments": {
+		"scope": "java",
+		"prefix": "mainNoArg",
+		"body": [
+			"public static void main() {",
+			"    $1",
+			"}  // main()"
+		],
+		"description": "local snippet:: public static void main with no arguments."
+	},
+
+	"lsnip::main function with arguments": {
+		"scope": "java",
+		"prefix": "main",
+		"body": [
+			"public static void main(String[] arg) {",
+			"    $1",
+			"}  // main(String[])"
+		],
+		"description": "local snippet:: public static void main with arguments."
+	},
+
+	"lsnip::main function IO input": {
+		"scope": "java",
+		"prefix": "mainIOInput",
+		"body": [
+			"public static void main(String[] arg)",
+			"    throws java.io.IOException {",
+			"    $1",
+			"}  // main(String[])"
+		],
+		"description": "local snippet:: public static void main with arguments."
+	},
+
+	"lsnip::throws IO exception": {
+		"scope": "java",
+		"prefix": "mainIOInput",
+		"body": [
+			"throws java.io.IOException",
+		],
+		"description": "local snippet:: throws IO exception."
+	},
+
+	"lsnip::System out print line": {
+		"scope": "java",
+		"prefix": "soprintln",
+		"body": [
+			"System.out.println($1);$2",
+		],
+		"description": "local snippet:: System out print line."
+	},
+
+	"lsnip::System out print": {
+		"scope": "java",
+		"prefix": "soprint",
+		"body": [
+			"System.out.print($1);$2",
+		],
+		"description": "local snippet:: System out print."
+	},
+
+	"lsnip::System in read": {
+		"scope": "java",
+		"prefix": "siread",
+		"body": [
+			"System.in.read();$1",
+		],
+		"description": "local snippet:: System in read."
+	},
+
+	"lsnip::if statement": {
+		"scope": "java",
+		"prefix": "if",
+		"body": [
+			"if($1) {",
+			"    $2",
+			"}  // if statement: $3"
+		],
+		"description": "local snippet:: if statement."
+	},
+
+	"lsnip::if-else statement": {
+		"scope": "java",
+		"prefix": "ifelse",
+		"body": [
+			"if($1) {",
+			"    // if: ",
+			"    $2",
+			"} else {",
+			"    // else: ",
+			"    $3",
+			"}  // if-else statement: $4"
+		],
+		"description": "local snippet:: if-else statement."
+	},
+
+	"lsnip::if-else-if statement": {
+		"scope": "java",
+		"prefix": "ifeif",
+		"body": [
+			"if($1) {",
+			"    // if: ",
+			"    $2",
+			"} else if($3) {",
+			"    // else if: ",
+			"    $4",
+			"}  // if-else-if statement: $5"
+		],
+		"description": "local snippet:: if-else-if statement."
+	},
+
+	"lsnip::if-else-if-else statement": {
+		"scope": "java",
+		"prefix": "ifeifelse",
+		"body": [
+			"if($1) {",
+			"    // if: ",
+			"    $2",
+			"} else if($3) {",
+			"    // else if: ",
+			"    $4",
+			"} else {",
+			"    // else: ",
+			"    $5",
+			"}  // if-else-if statement: $6"
+		],
+		"description": "local snippet:: if-else-if-else statement."
+	},
+
+	"lsnip::if-2else-if-else statement": {
+		"scope": "java",
+		"prefix": "if2eifelse",
+		"body": [
+			"if($1) {",
+			"    // if: ",
+			"    $2",
+			"} else if($3) {",
+			"    // else if: ",
+			"    $4",
+			"} else if($5) {",
+			"    // else if: ",
+			"    $6",
+			"} else {",
+			"    // else: ",
+			"    $7",
+			"}  // if-else-if statement: $8"
+		],
+		"description": "local snippet:: if-2else-if-else statement."
+	},
+
+	"lsnip::if-3else-if-else statement": {
+		"scope": "java",
+		"prefix": "if3eifelse",
+		"body": [
+			"if($1) {",
+			"    // if: ",
+			"    $2",
+			"} else if($3) {",
+			"    // else if: ",
+			"    $4",
+			"} else if($5) {",
+			"    // else if: ",
+			"    $6",
+			"} else if($6) {",
+			"    // else if: ",
+			"    $7",
+			"} else {",
+			"    // else: ",
+			"    $8",
+			"}  // if-else-if statement: $9"
+		],
+		"description": "local snippet:: if-3else-if-else statement."
+	},
+
+	"lsnip::for loop": {
+		"scope": "java",
+		"prefix": "for",
+		"body": [
+			"for($1; $2; $3) {",
+			"    $4",
+			"}  // for loop: "
+		],
+		"description": "local snippet:: for loop."
+	},
+
+	"lsnip::for (infinite) loop": {
+		"scope": "java",
+		"prefix": "forInf",
+		"body": [
+			"for(;;) {",
+			"    $4",
+			"}  // for (infinte) loop: "
+		],
+		"description": "local snippet:: for (infinite) loop."
+	},
+
+	"lsnip::Equal to operation": {
+		"scope": "java",
+		"prefix": "opEq",
+		"body": [
+			"$1 == $2"
+		],
+		"description": "local snippet:: Equal to operation."
+	},
+
+	"lsnip::== oprnd2": {
+		"scope": "java",
+		"prefix": "op2Eq",
+		"body": [
+			"== $1"
+		],
+		"description": "local snippet:: Equal to operation operand 2."
+	},
+
+	"lsnip::Not Equal to operation": {
+		"scope": "java",
+		"prefix": "opNe",
+		"body": [
+			"$1 != $2"
+		],
+		"description": "local snippet:: Not Equal to operation."
+	},
+
+	"lsnip::!= oprnd2": {
+		"scope": "java",
+		"prefix": "op2Ne",
+		"body": [
+			"!= $1"
+		],
+		"description": "local snippet:: Not equal to operation operand 2."
+	},
+
+	"lsnip::Greater than operation": {
+		"scope": "java",
+		"prefix": "opGt",
+		"body": [
+			"$1 > $2"
+		],
+		"description": "local snippet:: Greater than operation."
+	},
+
+	"lsnip::> oprnd2": {
+		"scope": "java",
+		"prefix": "op2Gt",
+		"body": [
+			"> $1"
+		],
+		"description": "local snippet:: Greater than operation operand 2."
+	},
+
+	"lsnip::Less than operation": {
+		"scope": "java",
+		"prefix": "opLt",
+		"body": [
+			"$1 < $2"
+		],
+		"description": "local snippet:: Less than operation."
+	},
+
+	"lsnip::< oprnd2": {
+		"scope": "java",
+		"prefix": "op2Lt",
+		"body": [
+			"< $1"
+		],
+		"description": "local snippet:: Less than operation operand 2."
+	},
+
+	"lsnip::Greater than or equal to operation": {
+		"scope": "java",
+		"prefix": "opGe",
+		"body": [
+			"$1 >= $2"
+		],
+		"description": "local snippet:: Greater than or equal to operation."
+	},
+
+	"lsnip::>= oprnd2": {
+		"scope": "java",
+		"prefix": "op2Ge",
+		"body": [
+			">= $1"
+		],
+		"description": "local snippet:: Greater than or equal to operation operand 2."
+	},
+
+	"lsnip::Less than or equal to operation": {
+		"scope": "java",
+		"prefix": "opLe",
+		"body": [
+			"$1 <= $2"
+		],
+		"description": "local snippet:: Less than or equal to operation."
+	},
+
+	"lsnip::<= oprnd2": {
+		"scope": "java",
+		"prefix": "op2Le",
+		"body": [
+			"<= $1"
+		],
+		"description": "local snippet:: Less than or equal to operation operand 2."
+	},
+
+	"lsnip::& AND operation": {
+		"scope": "java",
+		"prefix": "opAND",
+		"body": [
+			"$1 & $2"
+		],
+		"description": "local snippet:: & AND operation."
+	},
+
+	"lsnip::& oprnd2": {
+		"scope": "java",
+		"prefix": "op2AND",
+		"body": [
+			"& $1"
+		],
+		"description": "local snippet:: & AND operation operand 2."
+	},
+
+	"lsnip::| OR operation": {
+		"scope": "java",
+		"prefix": "opOR",
+		"body": [
+			"$1 | $2"
+		],
+		"description": "local snippet:: | OR operation."
+	},
+
+	"lsnip::| oprnd2": {
+		"scope": "java",
+		"prefix": "op2OR",
+		"body": [
+			"| $1"
+		],
+		"description": "local snippet:: | OR operation operand 2."
+	},
+
+	"lsnip::| XOR operation": {
+		"scope": "java",
+		"prefix": "opXOR",
+		"body": [
+			"$1 ^ $2"
+		],
+		"description": "local snippet:: ^ XOR operation."
+	},
+
+	"lsnip::^ oprnd2": {
+		"scope": "java",
+		"prefix": "op2XOR",
+		"body": [
+			"^ $1"
+		],
+		"description": "local snippet:: ^ XOR operation operand 2."
+	},
+
+	"lsnip::&& SC-AND operation": {
+		"scope": "java",
+		"prefix": "opScAND",
+		"body": [
+			"$1 && $2"
+		],
+		"description": "local snippet:: && SC-AND operation."
+	},
+
+	"lsnip::&& oprnd2": {
+		"scope": "java",
+		"prefix": "op2AND",
+		"body": [
+			"& $1"
+		],
+		"description": "local snippet:: & AND operation operand 2."
+	},
+
+	"lsnip::|| SC-OR operation": {
+		"scope": "java",
+		"prefix": "opScOR",
+		"body": [
+			"$1 || $2"
+		],
+		"description": "local snippet:: || SC-OR operation."
+	},
+
+	"lsnip::|| oprnd2": {
+		"scope": "java",
+		"prefix": "op2ScOR",
+		"body": [
+			"|| $1"
+		],
+		"description": "local snippet:: || SC-OR operation operand 2."
+	},
+
+	"lsnip::! NOT operation": {
+		"scope": "java",
+		"prefix": "opNOT",
+		"body": [
+			"!$1"
+		],
+		"description": "local snippet:: ! NOT operation."
+	},
+
+	"lsnip::switch statement": {
+		"scope": "java",
+		"prefix": "switch",
+		"body": [
+			"switch(${1|exprssion|}) {",
+			"    case ${2|0|}:  // case: ",
+			"        $3",
+			"        break;",
+			"    case ${4|1|}:  // case: ",
+			"        $5",
+			"        break;",
+			"    case ${6|2|}:  // case: ",
+			"        $7",
+			"        break;",
+			"    case ${8|3|}:  // case: ",
+			"        $9",
+			"        break;",
+			"    case ${10|4|}:  // case: ",
+			"        $11",
+			"        break;",
+			"    default:  // caseDefault: ",
+			"        $12",
+			"        break;",
+			"}  // switch statement: $13"
+			
+		],
+		"description": "local snippet:: switch statement."
+	},
+
+	"lsnip::while loop": {
+		"scope": "java",
+		"prefix": "while",
+		"body": [
+			"while(${1|condition|}) {",
+			"    $2",
+			"}  // while loop: $3"
+			
+		],
+		"description": "local snippet:: while loop."
+	},
+
+	"lsnip::do-while loop": {
+		"scope": "java",
+		"prefix": "doWhile",
+		"body": [
+			"do {",
+			"    $2",
+			"} while(${1|condition|});  // while loop: $3"
+			
+		],
+		"description": "local snippet:: do-while loop."
+	},
+}
