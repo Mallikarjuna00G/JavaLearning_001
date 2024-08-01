@@ -5,12 +5,12 @@
 #### Source Code
 [VehicleDemo.java](./VehicleDemo.java)
 
-**Description:** 
+**Description:** A program that uses the Vehicle class.
 
 #### Execution Logs
 
 ```
-
+Minivan can carry 7 with a range of 336
 ```
 
 ---
