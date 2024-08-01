@@ -20,12 +20,13 @@ Minivan can carry 7 with a range of 336
 #### Source Code
 [TwoVehicles.java](./TwoVehicles.java)
 
-**Description:** 
+**Description:** This program creates two Vehicle objects.
 
 #### Execution Logs
 
 ```
-
+Minivan can carry 7 with range of 336
+Sportscar can carry 2 with range of 168
 ```
 
 ---
