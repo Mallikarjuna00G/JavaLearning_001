@@ -68,12 +68,13 @@ Sportscar can carry 2 with range of 168 Miles
 #### Source Code
 [ParmDemo.java](./ParmDemo.java)
 
-**Description:** 
+**Description:** A simple example that uses a parameter.
 
 #### Execution Logs
 
 ```
-
+10 is even.
+8 is even.
 ```
 
 ---
