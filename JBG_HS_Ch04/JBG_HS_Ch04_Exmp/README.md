@@ -192,12 +192,12 @@ Choose one (q to quit): q
 #### Source Code
 [ParmConsDemo.java](./ParmConsDemo.java)
 
-**Description:** 
+**Description:** A parameterized constructor.
 
 #### Execution Logs
 
 ```
-
+10 88
 ```
 
 ---
