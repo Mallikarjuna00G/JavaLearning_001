@@ -52,12 +52,13 @@ Sportscar can carry 2.Range is 336
 #### Source Code
 [RetMeth.java](./RetMeth.java)
 
-**Description:** 
+**Description:** Use a return value.
 
 #### Execution Logs
 
 ```
-
+Minivan can carry 7 with range of 336 Miles
+Sportscar can carry 2 with range of 168 Miles
 ```
 
 ---
