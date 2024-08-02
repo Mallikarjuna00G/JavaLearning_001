@@ -11,7 +11,7 @@ class Vehicle {
 
     // Display the range.
     void range() {
-        System.out.println("Range is " + fuelCap * mpg);
+        System.out.println("Range is " + fuelCap * mpg + ".");
     }
 } // class Vehicle
 
@@ -33,9 +33,9 @@ class AddMeth {
         sportsCar.fuelCap = 14;
         sportsCar.mpg = 12;
         
-        System.out.print("Minivan can carry " + minivan.passengers + ".");
+        System.out.print("Minivan can carry " + minivan.passengers + ". ");
         minivan.range();
-        System.out.print("Sportscar can carry " + sportsCar.passengers + ".");
+        System.out.print("Sportscar can carry " + sportsCar.passengers + ". ");
         minivan.range();
     }  // main(String[])
 }  // class AddMeth

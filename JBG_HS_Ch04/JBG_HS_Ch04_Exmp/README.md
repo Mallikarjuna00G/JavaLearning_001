@@ -41,8 +41,8 @@ Sportscar can carry 2 with range of 168
 #### Execution Logs
 
 ```
-Minivan can carry 7.Range is 336
-Sportscar can carry 2.Range is 336
+Minivan can carry 7. Range is 336.
+Sportscar can carry 2. Range is 336.
 ```
 
 ---
