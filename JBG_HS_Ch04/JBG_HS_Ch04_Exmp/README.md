@@ -177,12 +177,12 @@ Choose one (q to quit): q
 #### Source Code
 [ConsDemo.java](./ConsDemo.java)
 
-**Description:** 
+**Description:** A simple constructor.
 
 #### Execution Logs
 
 ```
-
+10 10
 ```
 
 ---
