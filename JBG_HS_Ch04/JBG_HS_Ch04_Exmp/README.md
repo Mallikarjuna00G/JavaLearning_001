@@ -84,12 +84,12 @@ Sportscar can carry 2 with range of 168 Miles
 #### Source Code
 [IsFact.java](./IsFact.java)
 
-**Description:** 
+**Description:** More than one parameter to a method.
 
 #### Execution Logs
 
 ```
-
+2 is a factor.
 ```
 
 ---
