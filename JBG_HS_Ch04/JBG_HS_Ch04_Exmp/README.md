@@ -99,12 +99,13 @@ Sportscar can carry 2 with range of 168 Miles
 #### Source Code
 [CompFuel.java](./CompFuel.java)
 
-**Description:** 
+**Description:** Add a parameterized method that computes the fuel required for a given distance.
 
 #### Execution Logs
 
 ```
-
+To go 252 miles minivan needs 12.0 gallons of fuel.
+To go 252 miles sportscar needs 21.0 gallons of fuel.
 ```
 
 ---
