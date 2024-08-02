@@ -207,12 +207,13 @@ Choose one (q to quit): q
 #### Source Code
 [VehConsDemo.java](./VehConsDemo.java)
 
-**Description:** 
+**Description:** Add a constructor.
 
 #### Execution Logs
 
 ```
-
+To go 252 miles minivan needs 12.0 gallons of fuel.
+To go 252 miles sportscar needs 21.0 gallons of fuel.
 ```
 
 ---
