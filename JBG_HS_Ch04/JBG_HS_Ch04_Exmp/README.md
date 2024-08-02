@@ -110,17 +110,64 @@ To go 252 miles sportscar needs 21.0 gallons of fuel.
 
 ---
 
-### Example: HelpClassDemo
+### Example: HelpClassDemo | Try This 4­-1 Creating a Help Class
 
 #### Source Code
 [HelpClassDemo.java](./HelpClassDemo.java)
 
-**Description:** 
+**Description:** Try This 4-1 Convert the help system from Try This 3-3 into a Help class.
 
 #### Execution Logs
 
 ```
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
 
+Choose one (q to quit): 2
+
+
+The switch:
+
+switch(expression) {
+    case constant:
+        statement sequence
+        break;
+}
+--------------------------------
+
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): 6
+
+
+The break:
+
+break; or break label
+--------------------------------
+
+Help on: 
+  1. if
+  2. switch
+  3. for
+  4. while
+  5. do-while
+  6. break
+  7. continue
+
+Choose one (q to quit): q
 ```
 
 ---
