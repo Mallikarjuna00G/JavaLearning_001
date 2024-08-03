@@ -4,7 +4,7 @@
 
 ### SelfTest Problem
 
-AAA
+What is the difference between a class and an object?
 
 ### SelfTest Solution
 
@@ -26,7 +26,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+How is a class defined?
 
 ### SelfTest Solution
 
@@ -48,7 +48,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+What does each object have its own copy of?
 
 ### SelfTest Solution
 
@@ -70,7 +70,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+Using two separate statements, show how to declare an object called `counter` of a class called `MyCounter`.
 
 ### SelfTest Solution
 
@@ -92,7 +92,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+Show how a method called `myMeth()` is declared if it has a return type of `double` and has two `int` parameters called `a` and `b`.
 
 ### SelfTest Solution
 
@@ -114,7 +114,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+How must a method return if it returns a value?
 
 ### SelfTest Solution
 
@@ -136,7 +136,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+What name does a constructor have?
 
 ### SelfTest Solution
 
@@ -158,7 +158,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+What does `new` do?
 
 ### SelfTest Solution
 
@@ -180,7 +180,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+What is garbage collection, and how does it work?
 
 ### SelfTest Solution
 
@@ -202,7 +202,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+What is `this`?
 
 ### SelfTest Solution
 
@@ -224,7 +224,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+Can a constructor have one or more parameters?
 
 ### SelfTest Solution
 
@@ -246,7 +246,7 @@ AAA
 
 ### SelfTest Problem
 
-AAA
+If a method returns no value, what must its return type be?
 
 ### SelfTest Solution
 
