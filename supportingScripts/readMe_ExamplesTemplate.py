@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 4  # Update needed here
-examples = ["VehicleDemo", "TwoVehicles", "AddMeth", "RetMeth", "ParmDemo", "IsFact", "CompFuel", "HelpClassDemo", "ConsDemo", "ParmConsDemo", "VehConsDemo", "DemoPwr"]  # Update needed here
+currentChapterNo = 5  # Update needed here
+examples = ["ArrayDemo", "MinMax", "MinMax2", "ArrayErr", "Bubble", "TwoD", "Squares", "AssignARef", "LengthDemo", "ACopy", "QDemo", "ForEach", "NoChange", "ForEach2", "Search", "StringDemo", "StrOps", "StringArrays", "SubStr", "StringSwitch", "CLDemo", "Phone", "VarDemo", "VarDemo2", "VarDemo3", "UpCase", "ShowBits", "LowCase", "NotDemo", "ShiftDemo", "ShowBitsDemo", "NoZeroDiv", "NoZeroDiv2"]  # Update needed here
 numberOfExmp = len(examples)
 
 
