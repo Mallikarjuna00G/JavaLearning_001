@@ -57,7 +57,7 @@
 		"scope": "java",
 		"prefix": "main",
 		"body": [
-			"public static void main(String[] arg) {",
+			"public static void main(String[] args) {",
 			"    $1",
 			"}  // main(String[])"
 		],
@@ -68,7 +68,7 @@
 		"scope": "java",
 		"prefix": "mainIOInput",
 		"body": [
-			"public static void main(String[] arg)",
+			"public static void main(String[] args)",
 			"    throws java.io.IOException {",
 			"    $1",
 			"}  // main(String[])"
@@ -496,5 +496,32 @@
 			
 		],
 		"description": "local snippet:: do-while loop."
+	},
+
+	"lsnip::new class definition": {
+		"scope": "java",
+		"prefix": "classDef",
+		"body": [
+			"class ${1|className|} {",
+			"    $2",
+			"} // class $1"
+			
+		],
+		"description": "local snippet:: new class definition."
+	},
+
+	"lsnip::method": {
+		"scope": "java",
+		"prefix": "methDef",
+		"body": [
+			"// method purpose: $1",
+			"${2|void,boolean,byte,char,int,long,float,double|} ${3|functionName|}($4) {",
+			"    $5",
+			"    ",
+			"    return$6;",
+			"} // method $3"
+			
+		],
+		"description": "local snippet:: method definition."
 	},
 }
