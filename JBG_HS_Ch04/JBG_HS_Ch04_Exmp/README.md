@@ -223,12 +223,14 @@ To go 252 miles sportscar needs 21.0 gallons of fuel.
 #### Source Code
 [DemoPwr.java](./DemoPwr.java)
 
-**Description:** 
+**Description:** Compute the result of a number raised to some integer power.
 
 #### Execution Logs
 
 ```
-
+4.0 raised to the 2 power is 16.0
+2.5 raised to the 1 power is 2.5
+5.7 raised to the 0 power is 1.0
 ```
 
 ---
