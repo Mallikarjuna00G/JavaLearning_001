@@ -8,17 +8,7 @@ What is the difference between a class and an object?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A class is a logical abstraction that describes the form and behavior of an object. An object is a physical instance of the class.
 
 ---
 
@@ -30,17 +20,7 @@ How is a class defined?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A class is defined by using the keyword `class`. Inside the class statement, you specify the code and data that comprise the class.
 
 ---
 
@@ -52,17 +32,7 @@ What does each object have its own copy of?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Each object of a class has its own copy of the class’ instance variables.
 
 ---
 
@@ -74,16 +44,9 @@ Using two separate statements, show how to declare an object called `counter` of
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+MyCounter counter;
+counter = new MyCounter();
 ```
 
 ---
@@ -96,16 +59,10 @@ Show how a method called `myMeth()` is declared if it has a return type of `doub
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+double myMeth(int a, int b) {
+    // do something
+}
 ```
 
 ---
@@ -118,17 +75,7 @@ How must a method return if it returns a value?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A method that returns a value must return via the `return` statement, passing back the return value in the process.
 
 ---
 
@@ -140,17 +87,7 @@ What name does a constructor have?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A constructor has the same name as its class.
 
 ---
 
@@ -162,17 +99,7 @@ What does `new` do?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+The `new` operator allocates memory for an object and initializes it using the object’s constructor.
 
 ---
 
@@ -184,17 +111,7 @@ What is garbage collection, and how does it work?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Garbage collection is the mechanism that recycles unused objects so that their memory can be reused.
 
 ---
 
@@ -206,17 +123,7 @@ What is `this`?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+The `this` keyword is a reference to the object on which a method is invoked. It is automatically passed to a method.
 
 ---
 
@@ -228,17 +135,7 @@ Can a constructor have one or more parameters?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes.
 
 ---
 
@@ -250,17 +147,7 @@ If a method returns no value, what must its return type be?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+`void`.
 
 ---
 
