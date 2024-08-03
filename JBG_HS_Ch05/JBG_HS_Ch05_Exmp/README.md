@@ -5,12 +5,21 @@
 #### Source Code
 [ArrayDemo.java](./ArrayDemo.java)
 
-**Description:** 
+**Description:** Demonstrate a on-dimensional array.
 
 #### Execution Logs
 
 ```
-
+This is sample[0]: 0
+This is sample[1]: 1
+This is sample[2]: 2
+This is sample[3]: 3
+This is sample[4]: 4
+This is sample[5]: 5
+This is sample[6]: 6
+This is sample[7]: 7
+This is sample[8]: 8
+This is sample[9]: 9
 ```
 
 ---
