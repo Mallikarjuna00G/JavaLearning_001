@@ -91,12 +91,12 @@ Sorted array is: -978 -10 -9 18 49 99 287 463 5623 100123
 #### Source Code
 [TwoD.java](./TwoD.java)
 
-**Description:** 
+**Description:** Demonstrate a two-dimensional array.
 
 #### Execution Logs
 
 ```
-
+1 2 3 4 5 6 7 8 9 10 11 12
 ```
 
 ---
