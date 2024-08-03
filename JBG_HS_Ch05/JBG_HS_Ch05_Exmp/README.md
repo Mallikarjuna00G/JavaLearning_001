@@ -70,17 +70,18 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 ou
 
 ---
 
-### Example: Bubble
+### Example: Bubble | Try This 5-­1 Sorting an Array
 
 #### Source Code
 [Bubble.java](./Bubble.java)
 
-**Description:** 
+**Description:** *Try This 5-1* Demonstrate the Bubble sort.
 
 #### Execution Logs
 
 ```
-
+Original array is: 99 -10 100123 18 -978 5623 463 -9 287 49
+Sorted array is: -978 -10 -9 18 49 99 287 463 5623 100123
 ```
 
 ---
