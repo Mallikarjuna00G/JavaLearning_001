@@ -101,6 +101,29 @@ Sorted array is: -978 -10 -9 18 49 99 287 463 5623 100123
 
 ---
 
+### Example: Ragged
+
+#### Source Code
+[Ragged.java](./Ragged.java)
+
+**Description:** Manually allocate differing size second dimensions.
+
+#### Execution Logs
+
+```
+Riders per trip during the week:
+10 11 12 13 14 15 16 17 18 19 
+11 12 13 14 15 16 17 18 19 20 
+12 13 14 15 16 17 18 19 20 21 
+13 14 15 16 17 18 19 20 21 22 
+14 15 16 17 18 19 20 21 22 23 
+Riders per trip on the weekend:
+15 16 
+16 17
+```
+
+---
+
 ### Example: Squares
 
 #### Source Code
