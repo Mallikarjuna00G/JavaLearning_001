@@ -129,12 +129,21 @@ Riders per trip on the weekend:
 #### Source Code
 [Squares.java](./Squares.java)
 
-**Description:** 
+**Description:** Initialize a two-dimensional array.
 
 #### Execution Logs
 
 ```
-
+1 1 
+2 4 
+3 9 
+4 16 
+5 25 
+6 36 
+7 49 
+8 64 
+9 81 
+10 100 
 ```
 
 ---
