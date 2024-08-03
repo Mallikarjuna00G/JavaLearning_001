@@ -153,12 +153,15 @@ Riders per trip on the weekend:
 #### Source Code
 [AssignARef.java](./AssignARef.java)
 
-**Description:** 
+**Description:** Assigning array reference variables.
 
 #### Execution Logs
 
 ```
-
+Here is nums1:0 1 2 3 4 5 6 7 8 9 
+Here is nums2:0 -1 -2 -3 -4 -5 -6 -7 -8 -9 
+Here is nums2 after assignment:0 1 2 3 4 5 6 7 8 9 
+Here is nums1 after change through nums2:0 1 2 99 4 5 6 7 8 9
 ```
 
 ---
