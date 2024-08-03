@@ -44,12 +44,12 @@ min and max: -978 100123
 #### Source Code
 [MinMax2.java](./MinMax2.java)
 
-**Description:** 
+**Description:** Use array initializers
 
 #### Execution Logs
 
 ```
-
+min and max: -978 100123
 ```
 
 ---
