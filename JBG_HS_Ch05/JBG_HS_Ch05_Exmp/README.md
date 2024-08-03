@@ -29,12 +29,12 @@ This is sample[9]: 9
 #### Source Code
 [MinMax.java](./MinMax.java)
 
-**Description:** 
+**Description:** Find the minimum and maximum values in a array.
 
 #### Execution Logs
 
 ```
-
+min and max: -978 100123
 ```
 
 ---
