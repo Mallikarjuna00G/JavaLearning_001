@@ -171,12 +171,19 @@ Here is nums1 after change through nums2:0 1 2 99 4 5 6 7 8 9
 #### Source Code
 [LengthDemo.java](./LengthDemo.java)
 
-**Description:** 
+**Description:** Use the length array member.
 
 #### Execution Logs
 
 ```
+Length of list is: 10
+Length of nums is: 3
+Length of table is: 3
+Length of table[0] is: 3
+Length of table[1] is: 2
+Length of table[2] is: 4
 
+Here is list: 0 1 4 9 16 25 36 49 64 81
 ```
 
 ---
