@@ -59,12 +59,13 @@ min and max: -978 100123
 #### Source Code
 [ArrayErr.java](./ArrayErr.java)
 
-**Description:** 
+**Description:** Demonstrate an array overrun.
 
 #### Execution Logs
 
 ```
-
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 10 out of bounds for length 10
+        at ArrayErr.main(ArrayErr.java:12)
 ```
 
 ---
