@@ -344,12 +344,14 @@ Value found!
 #### Source Code
 [StringDemo.java](./StringDemo.java)
 
-**Description:** 
+**Description:** Introduce String.
 
 #### Execution Logs
 
 ```
-
+Java strings are objects
+They are constructed ways.
+They are constructed ways.
 ```
 
 ---
