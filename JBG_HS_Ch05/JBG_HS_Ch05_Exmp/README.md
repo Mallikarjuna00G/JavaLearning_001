@@ -283,12 +283,13 @@ Summation: 55
 #### Source Code
 [NoChange.java](./NoChange.java)
 
-**Description:** 
+**Description:** The for-each loop essentially is read-only.
 
 #### Execution Logs
 
 ```
-
+1 2 3 4 5 6 7 8 9 10 
+1 2 3 4 5 6 7 8 9 10
 ```
 
 ---
