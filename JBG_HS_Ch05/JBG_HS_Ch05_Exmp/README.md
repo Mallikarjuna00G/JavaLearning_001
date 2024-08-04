@@ -228,6 +228,31 @@ Contents of smallQ: ZYXW - Queue is empty.
 
 ---
 
+### Example: QDemo | Try This 5­-2-1 A Queue Class for `int`s
+
+#### Source Code
+[QDemo2.java](./QDemo2.java)
+
+**Description:** *Try This 5-2-1* A queue class for `int`s.
+
+#### Execution Logs
+
+```
+Using bigQ to store the integer.
+Contents of bigQ: 0 4 8 12 16 20 24 28 32 36 
+Using smallQ to generate errors.
+Attempting to store 0
+Attempting to store 4
+Attempting to store 8
+Attempting to store 12
+Attempting to store 16 - Queue is full.
+
+
+Contents of smallQ: 0 4 8 12  - Queue is empty.
+```
+
+---
+
 ### Example: ForEach
 
 #### Source Code
