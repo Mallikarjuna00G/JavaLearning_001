@@ -329,12 +329,12 @@ Summation: 90
 #### Source Code
 [Search.java](./Search.java)
 
-**Description:** 
+**Description:** Search an array using for-each style for.
 
 #### Execution Logs
 
 ```
-
+Value found!
 ```
 
 ---
