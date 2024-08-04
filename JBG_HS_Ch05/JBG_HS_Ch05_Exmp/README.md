@@ -258,12 +258,22 @@ Contents of smallQ: 0 4 8 12  - Queue is empty.
 #### Source Code
 [ForEach.java](./ForEach.java)
 
-**Description:** 
+**Description:** Use a for-each style for loop.
 
 #### Execution Logs
 
 ```
-
+Value is: 1
+Value is: 2
+Value is: 3
+Value is: 4
+Value is: 5
+Value is: 6
+Value is: 7
+Value is: 8
+Value is: 9
+Value is: 10
+Summation: 55
 ```
 
 ---
