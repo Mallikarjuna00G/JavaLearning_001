@@ -299,12 +299,27 @@ Summation: 55
 #### Source Code
 [ForEach2.java](./ForEach2.java)
 
-**Description:** 
+**Description:** Use for-each style for on a two-dimensional array.
 
 #### Execution Logs
 
 ```
-
+Value is: 1
+Value is: 2
+Value is: 3
+Value is: 4
+Value is: 5
+Value is: 2
+Value is: 4
+Value is: 6
+Value is: 8
+Value is: 10
+Value is: 3
+Value is: 6
+Value is: 9
+Value is: 12
+Value is: 15
+Summation: 90
 ```
 
 ---
