@@ -203,17 +203,27 @@ Here is list: 0 1 4 9 16 25 36 49 64 81
 
 ---
 
-### Example: QDemo
+### Example: QDemo | Try This 5­-2 A Queue Class
 
 #### Source Code
 [QDemo.java](./QDemo.java)
 
-**Description:** 
+**Description:** *Try This 5-2* A queue class for characters.
 
 #### Execution Logs
 
 ```
+Using bigQ to store the alphabet.
+Contents of bigQ: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Using smallQ to generate errors.
+Attempting to store Z
+Attempting to store Y
+Attempting to store X
+Attempting to store W
+Attempting to store V - Queue is full.
 
+
+Contents of smallQ: ZYXW - Queue is empty.
 ```
 
 ---
