@@ -417,12 +417,12 @@ subStr: makes the web
 #### Source Code
 [StringSwitch.java](./StringSwitch.java)
 
-**Description:** 
+**Description:** Use string to control a switch statement.
 
 #### Execution Logs
 
 ```
-
+Cancelling
 ```
 
 ---
