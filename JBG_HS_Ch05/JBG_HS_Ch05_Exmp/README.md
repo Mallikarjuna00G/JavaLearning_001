@@ -452,12 +452,22 @@ arg[2]: three
 #### Source Code
 [Phone.java](./Phone.java)
 
-**Description:** 
+**Description:** A simple automated telephone directory.
 
 #### Execution Logs
 
+##### Log1
+
+```
+$ java Phone 
+Usage: java phone <name>
 ```
 
+##### Log2
+
+```
+$ java Phone Rachel
+Rachel: 555-1400
 ```
 
 ---
