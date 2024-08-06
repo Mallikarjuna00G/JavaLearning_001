@@ -605,12 +605,28 @@ Decoded message: This is a test
 #### Source Code
 [ShiftDemo.java](./ShiftDemo.java)
 
-**Description:** 
+**Description:** Demonstrate the shift `<<` and `>>` operators.
 
 #### Execution Logs
 
 ```
+0 0 0 0 0 0 0 1 
+0 0 0 0 0 0 1 0 
+0 0 0 0 0 1 0 0 
+0 0 0 0 1 0 0 0 
+0 0 0 1 0 0 0 0 
+0 0 1 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+1 0 0 0 0 0 0 0 
 
+1 0 0 0 0 0 0 0 
+0 1 0 0 0 0 0 0 
+0 0 1 0 0 0 0 0 
+0 0 0 1 0 0 0 0 
+0 0 0 0 1 0 0 0 
+0 0 0 0 0 1 0 0 
+0 0 0 0 0 0 1 0 
+0 0 0 0 0 0 0 1 
 ```
 
 ---
