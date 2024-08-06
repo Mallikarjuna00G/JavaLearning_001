@@ -566,6 +566,24 @@ Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj
 
 ---
 
+### Example: Encode
+
+#### Source Code
+[Encode.java](./Encode.java)
+
+**Description:** Use XOR to encode and decode a message.
+
+#### Execution Logs
+
+```
+Original message: This is a test
+Encoded message: 
+                 01+x1+x9x,=+,
+Decoded message: This is a test
+```
+
+---
+
 ### Example: NotDemo
 
 #### Source Code
