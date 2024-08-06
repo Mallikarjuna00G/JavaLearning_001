@@ -541,12 +541,12 @@ aA bB cC dD eE fF gG hH iI jJ
 #### Source Code
 [ShowBits.java](./ShowBits.java)
 
-**Description:** 
+**Description:** Display the bits within a byte.
 
 #### Execution Logs
 
 ```
-
+0 1 1 1 1 0 1 1
 ```
 
 ---
