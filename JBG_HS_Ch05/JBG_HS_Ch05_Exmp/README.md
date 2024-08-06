@@ -631,17 +631,27 @@ Decoded message: This is a test
 
 ---
 
-### Example: ShowBitsDemo
+### Example: ShowBitsDemo | Try This 5­-3 A ShowBits Class
 
 #### Source Code
 [ShowBitsDemo.java](./ShowBitsDemo.java)
 
-**Description:** 
+**Description:** *Try This 5-3* A class that displays the binary representation of a value.
 
 #### Execution Logs
 
 ```
+123 in binary: 
+01111011 
 
+87987 in binary: 
+00000000 00000001 01010111 10110011 
+
+237658768 in binary: 
+00000000 00000000 00000000 00000000 00001110 00101010 01100010 10010000 
+
+Low order 8 bits of 87987 in binary: 
+10110011 
 ```
 
 ---
