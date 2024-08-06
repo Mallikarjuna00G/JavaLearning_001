@@ -382,12 +382,16 @@ Index of last occurence of One: 14
 #### Source Code
 [StringArrays.java](./StringArrays.java)
 
-**Description:** 
+**Description:** Demonstrate String arrays.
 
 #### Execution Logs
 
 ```
+Original array: 
+This is a test. 
 
+Modified array: 
+This was a test, too!
 ```
 
 ---
