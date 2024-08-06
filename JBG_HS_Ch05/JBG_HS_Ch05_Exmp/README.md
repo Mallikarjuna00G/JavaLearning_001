@@ -589,12 +589,13 @@ Decoded message: This is a test
 #### Source Code
 [NotDemo.java](./NotDemo.java)
 
-**Description:** 
+**Description:** Demonstrate the bitwise NOT.
 
 #### Execution Logs
 
 ```
-
+1 1 0 1 1 1 1 0 
+0 0 1 0 0 0 0 1
 ```
 
 ---
