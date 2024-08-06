@@ -361,12 +361,18 @@ They are constructed ways.
 #### Source Code
 [StrOps.java](./StrOps.java)
 
-**Description:** 
+**Description:** Some String Operations.
 
 #### Execution Logs
 
 ```
-
+Length of str1: 45
+When it comes to Web programming, Java is #1.
+str1 equals str2.
+str1 does not equal str3.
+str1 is greater than str3.
+Index of first occurence of One: 0
+Index of last occurence of One: 14
 ```
 
 ---
