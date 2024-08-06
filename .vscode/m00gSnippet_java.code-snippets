@@ -524,4 +524,37 @@
 		],
 		"description": "local snippet:: method definition."
 	},
+
+	"lsnip::for-each loop": {
+		"scope": "java",
+		"prefix": "forEach",
+		"body": [
+			"for(${1|int|} ${2|item|}: ${3|listName|}) {",
+			"    $4",
+			"}  // for-each loop: $5"
+		],
+		"description": "local snippet:: for-each loop."
+	},
+
+	"lsnip::for-each loop nested 2-dimension": {
+		"scope": "java",
+		"prefix": "forEach2",
+		"body": [
+			"for(${1|int|}[] ${2|itemL1|}: ${3|listName|}) {",
+			"    for($1 ${4|itemL2|}: $2) {",
+			"        $5",
+			"    }  // for-each loop: $6",
+			"}  // for-each loop: $7"
+		],
+		"description": "local snippet:: for-each loop nested 2-dimension."
+	},
+
+	"lsnip::ternary operator ?": {
+		"scope": "java",
+		"prefix": ["opTern", "?"],
+		"body": [
+			"(${1|condition|}) ? (${2|expr1|}):(${3|expr2|})$4"
+		],
+		"description": "local snippet:: ? ternary operator."
+	},
 }
