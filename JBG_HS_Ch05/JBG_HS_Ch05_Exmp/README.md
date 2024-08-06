@@ -526,12 +526,12 @@ Values in nums array: 1 2 3 4 5 6
 #### Source Code
 [UpCase.java](./UpCase.java)
 
-**Description:** 
+**Description:** Uppercase letters.
 
 #### Execution Logs
 
 ```
-
+aA bB cC dD eE fF gG hH iI jJ
 ```
 
 ---
