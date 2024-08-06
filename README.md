@@ -24,3 +24,4 @@ Learn/Practice Java from
 3. [JBG_HS_Ch03: Program Control Statements](./JBG_HS_Ch03/)
 4. [JBG_HS_Ch04: Introducing Classes, Objects, and Methods](./JBG_HS_Ch04/)
 5. [JBG_HS_Ch05: More Data Types and Operators](JBG_HS_Ch05)
+6. [JBG_HS_Ch06: A Closer Look at Methods and Classes](JBG_HS_Ch06)
