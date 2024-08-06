@@ -477,12 +477,14 @@ Rachel: 555-1400
 #### Source Code
 [VarDemo.java](./VarDemo.java)
 
-**Description:** 
+**Description:** A simple demonstration of local variable type inference.
 
 #### Execution Logs
 
 ```
-
+Value of avg: 10.0
+Value of var: 1
+Value of k: -1
 ```
 
 ---
