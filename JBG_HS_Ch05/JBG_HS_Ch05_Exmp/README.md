@@ -510,12 +510,13 @@ Value of i in mc is now 19
 #### Source Code
 [VarDemo3.java](./VarDemo3.java)
 
-**Description:** 
+**Description:** Use type inference in a for loop.
 
 #### Execution Logs
 
 ```
-
+Value of x: 2.5 5.0 10.0 20.0 40.0 80.0 
+Values in nums array: 1 2 3 4 5 6
 ```
 
 ---
