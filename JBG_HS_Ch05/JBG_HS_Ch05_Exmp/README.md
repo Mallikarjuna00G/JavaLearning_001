@@ -556,12 +556,12 @@ aA bB cC dD eE fF gG hH iI jJ
 #### Source Code
 [LowCase.java](./LowCase.java)
 
-**Description:** 
+**Description:** Lowercase letters.
 
 #### Execution Logs
 
 ```
-
+Aa Bb Cc Dd Ee Ff Gg Hh Ii Jj
 ```
 
 ---
