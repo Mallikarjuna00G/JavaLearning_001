@@ -494,12 +494,13 @@ Value of k: -1
 #### Source Code
 [VarDemo2.java](./VarDemo2.java)
 
-**Description:** 
+**Description:** Local variable type inference with a user-defined class type.
 
 #### Execution Logs
 
 ```
-
+Value of i in mc is 10
+Value of i in mc is now 19
 ```
 
 ---
