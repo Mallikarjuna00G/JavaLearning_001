@@ -432,12 +432,17 @@ Cancelling
 #### Source Code
 [CLDemo.java](./CLDemo.java)
 
-**Description:** 
+**Description:** Display all command-line information.
 
 #### Execution Logs
 
 ```
-
+$ java CLDemo one two three
+There are 3 command-line arguments.
+They are: 
+arg[0]: one
+arg[1]: two
+arg[2]: three
 ```
 
 ---
