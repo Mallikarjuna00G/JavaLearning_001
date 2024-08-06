@@ -401,12 +401,13 @@ This was a test, too!
 #### Source Code
 [SubStr.java](./SubStr.java)
 
-**Description:** 
+**Description:** Use SubString().
 
 #### Execution Logs
 
 ```
-
+orgStr: Java makes the web move.
+subStr: makes the web
 ```
 
 ---
