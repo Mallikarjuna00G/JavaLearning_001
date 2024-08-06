@@ -8,16 +8,9 @@ Show two ways to declare a one-­dimensional array of 12 doubles.
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+double arr[] = new double[12];
+double[] arr = new double[12];
 ```
 
 ---
@@ -30,16 +23,8 @@ Show how to initialize a one-­dimensional array of integers to the values 1 thr
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+int[] arr = {1, 2, 3, 4, 5};
 ```
 
 ---
@@ -54,14 +39,13 @@ Write a program that uses an array to find the average of 10 `double` values. Us
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch05_SelfTest_03.java](./JBG_HS_Ch05_SelfTest_03.java)
 
 #### Execution Logs
 
 ```
-
+Average of the elements: 10.1 20.2 30.3 40.4 50.5 60.6 70.7 80.8 90.9 100.01 
+Average: 55.451
 ```
 
 ---
@@ -76,13 +60,34 @@ Change the sort in `Try This 5­-1` so that it sorts an array of strings. Demons
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch05_SelfTest_04.java](./JBG_HS_Ch05_SelfTest_04.java)
 
 #### Execution Logs
 
 ```
+Original array is:
+ 1. Rajakumaara
+ 2. Shankaranaag
+ 3. Vishnuvardhana
+ 4. Ravichandra
+ 5. Arjuna
+ 6. Sudeep
+ 7. Kishore
+ 8. Rishab
+ 9. Vajramuni
+ 10. SaadhuKokila
+
+Sorted array is:
+ 1. Arjuna
+ 2. Kishore
+ 3. Rajakumaara
+ 4. Ravichandra
+ 5. Rishab
+ 6. SaadhuKokila
+ 7. Shankaranaag
+ 8. Sudeep
+ 9. Vajramuni
+ 10. Vishnuvardhana
 
 ```
 
@@ -96,17 +101,7 @@ What is the difference between the String methods `indexOf()` and `lastIndexOf()
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+The `indexOf()` method finds the first occurrence of the specified substring. `lastIndexOf()` finds the last occurrence.
 
 ---
 
@@ -118,16 +113,9 @@ Since all strings are objects of type `String`, show how you can call the `lengt
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+System.out.println("I like Java".length());  // Output: 11
+System.out.println("I like Java".charAt(5));  // Output: 5
 ```
 
 ---
@@ -142,14 +130,20 @@ Expanding on the `Encode` cipher class, modify it so that it uses an eight-­cha
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch05_SelfTest_07.java](./JBG_HS_Ch05_SelfTest_07.java)
 
 #### Execution Logs
 
 ```
+Original message: Idu yaaru bareda katheyo.. nanagaagi banda vyatheyo..
+Encoded message: 9S
 
+
+AP
+S       A
+
+]]
+Decoded message: Idu yaaru bareda katheyo.. nanagaagi banda vyatheyo..
 ```
 
 ---
@@ -162,17 +156,7 @@ Can the bitwise operators be applied to the `double` type?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No.
 
 ---
 
@@ -189,16 +173,8 @@ else y = 20;
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+y = (x < 0) ? (10) : (20);
 ```
 
 ---
@@ -217,17 +193,7 @@ if(a & b) ...
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+It is a logical operator because the operands are of type `boolean`.
 
 ---
 
@@ -239,17 +205,7 @@ Is it an error to overrun the end of an array? Is it an error to index an array 
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes and Yes.
 
 ---
 
@@ -261,16 +217,8 @@ What is the unsigned right-­shift operator?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+>>>
 ```
 
 ---
@@ -285,14 +233,12 @@ Rewrite the `MinMax` class shown earlier in this chapter so that it uses a for-�
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch05_SelfTest_13.java](./JBG_HS_Ch05_SelfTest_13.java)
 
 #### Execution Logs
 
 ```
-
+min and max: -978 100123
 ```
 
 ---
@@ -305,17 +251,7 @@ Can the `for` loops that perform sorting in the `Bubble` class shown in `Try Thi
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No, the `for` loops in the `Bubble` class that perform the sort cannot be converted into for­each style loops. In the case of the outer loop, the current value of its loop counter is needed by the inner loop. In the case of the inner loop, out-­of-­order values must be exchanged, which implies assignments. Assignments to the underlying array cannot take place when using a for­each style loop.
 
 ---
 
@@ -327,17 +263,7 @@ Can a `String` control a `switch` statement?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes.
 
 ---
 
@@ -349,17 +275,7 @@ What type name is reserved for use with local variable type inference?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+`var`.
 
 ---
 
@@ -371,16 +287,8 @@ Show how to use local variable type inference to declare a `boolean` variable ca
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+var done = false;
 ```
 
 ---
@@ -393,17 +301,7 @@ Can `var` be the name of a variable? Can `var` be the name of a class?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes, `var` can be the name of a variable. No, `var` cannot be the name of a class.
 
 ---
 
@@ -419,17 +317,7 @@ var[] argTemps = new double[7];
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No, it is not valid because array brackets are not allowed after `var`. Remember, the complete type is inferred from the initializer.
 
 ---
 
@@ -445,17 +333,7 @@ var alpha = 10, beta = 20;
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No, only one variable at a time can be declared when type inference is used.
 
 ---
 
@@ -473,16 +351,8 @@ Change this declaration so that it uses local variable type inference. When doin
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+var mask = 1L;
 ```
 
 ---
