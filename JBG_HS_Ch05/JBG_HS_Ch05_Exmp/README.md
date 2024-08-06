@@ -661,12 +661,21 @@ Low order 8 bits of 87987 in binary:
 #### Source Code
 [NoZeroDiv.java](./NoZeroDiv.java)
 
-**Description:** 
+**Description:** Prevent a division by zero using the ?.
 
 #### Execution Logs
 
 ```
-
+100 / -5 is -20
+100 / -4 is -25
+100 / -3 is -33
+100 / -2 is -50
+100 / -1 is -100
+100 / 1 is 100
+100 / 2 is 50
+100 / 3 is 33
+100 / 4 is 25
+100 / 5 is 20
 ```
 
 ---
