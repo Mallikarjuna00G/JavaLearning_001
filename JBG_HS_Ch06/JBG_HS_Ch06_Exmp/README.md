@@ -20,11 +20,25 @@ ob.alpha is: -99
 #### Source Code
 [FSDemo.java](./FSDemo.java)
 
-**Description:** 
+**Description:** Demonstrate the fail-soft array.
 
 #### Execution Logs
 
 ```
+Fail quietly.
+0 10 20 30 40 
+
+Fail with error reports.
+Index 5 out-of-bounds
+Index 6 out-of-bounds
+Index 7 out-of-bounds
+Index 8 out-of-bounds
+Index 9 out-of-bounds
+0 10 20 30 40 Index 5 out-of-bounds
+Index 6 out-of-bounds
+Index 7 out-of-bounds
+Index 8 out-of-bounds
+Index 9 out-of-bounds
 
 ```
 
