@@ -5,12 +5,12 @@
 #### Source Code
 [AccessDemo.java](./AccessDemo.java)
 
-**Description:** 
+**Description:** Public vs private access.
 
 #### Execution Logs
 
 ```
-
+ob.alpha is: -99
 ```
 
 ---
