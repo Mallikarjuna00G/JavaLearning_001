@@ -74,12 +74,14 @@ Contents of smallQ: ZYXW - Queue is empty.
 #### Source Code
 [PassOb.java](./PassOb.java)
 
-**Description:** 
+**Description:** Objects can be passed to methods.
 
 #### Execution Logs
 
 ```
-
+ob1 same dimensions as ob2: true
+ob1 same dimensions as ob3: false
+ob1 same volume as ob3: true
 ```
 
 ---
