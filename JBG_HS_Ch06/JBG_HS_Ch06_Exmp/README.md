@@ -44,17 +44,27 @@ Index 9 out-of-bounds
 
 ---
 
-### Example: Queue
+### Example: QDemo3 | Try This 6-­1 Improving the Queue Class
 
 #### Source Code
-[Queue.java](./Queue.java)
+[QDemo3.java](./QDemo3.java)
 
 **Description:** 
 
 #### Execution Logs
 
 ```
+Using bigQ to store the alphabet.
+Contents of bigQ: ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Using smallQ to generate errors.
+Attempting to store Z
+Attempting to store Y
+Attempting to store X
+Attempting to store W
+Attempting to store V - Queue is full.
 
+
+Contents of smallQ: ZYXW - Queue is empty.
 ```
 
 ---
