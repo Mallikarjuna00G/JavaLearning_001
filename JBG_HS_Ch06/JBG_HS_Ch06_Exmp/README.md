@@ -91,12 +91,13 @@ ob1 same volume as ob3: true
 #### Source Code
 [CallByValue.java](./CallByValue.java)
 
-**Description:** 
+**Description:** Primitive types are passed by value.
 
 #### Execution Logs
 
 ```
-
+a and b before call: 15 20
+a and b after call: 15 20
 ```
 
 ---
