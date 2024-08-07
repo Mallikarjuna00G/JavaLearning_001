@@ -107,12 +107,13 @@ a and b after call: 15 20
 #### Source Code
 [PassObRef.java](./PassObRef.java)
 
-**Description:** 
+**Description:** Objects are passed through their references.
 
 #### Execution Logs
 
 ```
-
+ob.a and ob.b before call: 15 20
+ob.a and ob.b after call: 35 -20
 ```
 
 ---
