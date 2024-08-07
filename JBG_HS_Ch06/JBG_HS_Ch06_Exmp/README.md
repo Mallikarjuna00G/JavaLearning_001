@@ -123,12 +123,13 @@ ob.a and ob.b after call: 35 -20
 #### Source Code
 [ErrMsg.java](./ErrMsg.java)
 
-**Description:** 
+**Description:** Return a string object.
 
 #### Execution Logs
 
 ```
-
+Disk Full
+Invalid error code
 ```
 
 ---
