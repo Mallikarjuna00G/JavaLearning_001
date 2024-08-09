@@ -139,12 +139,13 @@ Invalid error code
 #### Source Code
 [ErrInfo.java](./ErrInfo.java)
 
-**Description:** 
+**Description:** Return a programmer-defined object.
 
 #### Execution Logs
 
 ```
-
+Disk Full severity: 2
+Invalid Error Code severity: 0
 ```
 
 ---
