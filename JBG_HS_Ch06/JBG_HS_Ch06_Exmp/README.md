@@ -44,10 +44,10 @@ Index 9 out-of-bounds
 
 ---
 
-### Example: QDemo3 | Try This 6-­1 Improving the Queue Class
+### Example: QDemo | Try This 6-­1 Improving the Queue Class
 
 #### Source Code
-[QDemo3.java](./QDemo3.java)
+[QDemo.java](./QDemo.java)
 
 **Description:** 
 
@@ -252,17 +252,25 @@ s2.sum: 15
 
 ---
 
-### Example: QDemo2
+### Example: QDemo2 | Try This 6­-2 Overloading the Queue Constructor
 
 #### Source Code
 [QDemo2.java](./QDemo2.java)
 
-**Description:** 
+**Description:** *Try This 6-2*
+
+Constructor overloading. Construct Queue from a Queue.
+
+Construct a Queue with initial values.
 
 #### Execution Logs
 
 ```
+Show contents of q1: ABCDEFGHIJ
 
+Contents of q2: Premika
+
+Contents of q3: ABCDEFGHIJ
 ```
 
 ---
