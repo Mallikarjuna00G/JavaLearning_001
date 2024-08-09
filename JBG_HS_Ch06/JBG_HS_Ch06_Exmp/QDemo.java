@@ -1,5 +1,5 @@
 /**
- * File: QDemo3.java
+ * File: QDemo.java
  * 
  * Purpose: Try This 6-1
  * 
@@ -38,7 +38,7 @@ class Queue {
 } // class Queue
 
 // Demonstrate the Queue class.
-class QDemo3 {
+class QDemo {
     public static void main(String[] args) {
         Queue bigQ = new Queue(100);
         Queue smallQ = new Queue(4);
@@ -80,4 +80,4 @@ class QDemo3 {
             }  // if statement: 
         }  // for loop: 
     }  // main(String[])
-}  // class QDemo3
+}  // class QDemo
