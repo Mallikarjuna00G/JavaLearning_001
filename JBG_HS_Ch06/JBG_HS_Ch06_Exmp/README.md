@@ -219,12 +219,19 @@ Inside f(double): 11.5
 #### Source Code
 [OverloadConsDemo.java](./OverloadConsDemo.java)
 
-**Description:** 
+**Description:** Demonstrate an overloaded constructor.
 
 #### Execution Logs
 
 ```
-
+Inside MyClass().
+Inside MyClass(int).
+Inside MyClass(double).
+Inside MyClass(int, int).
+t1.x: 0
+t2.x: 88
+t3.x: 17
+t4.x: 8
 ```
 
 ---
