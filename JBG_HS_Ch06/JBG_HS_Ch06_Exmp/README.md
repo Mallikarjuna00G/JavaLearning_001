@@ -193,6 +193,27 @@ Inside f(double): 11.5
 
 ---
 
+### Example: TypeConv2
+
+#### Source Code
+[TypeConv.java](./TypeConv2.java)
+
+**Description:** Automatic type conversions can affect overloaded method resolution.
+
+Function overloading for byte type parameter to avoid type conversion. 
+
+#### Execution Logs
+
+```
+Inside f(int): 10
+Inside f(double): 10.1
+Inside f(byte): 99
+Inside f(int): 10
+Inside f(double): 11.5
+```
+
+---
+
 ### Example: OverloadConsDemo
 
 #### Source Code
