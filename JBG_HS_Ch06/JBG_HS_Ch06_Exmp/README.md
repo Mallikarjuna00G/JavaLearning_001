@@ -179,12 +179,16 @@ Result of ob.ovlDemo(1.1, 2.32): 3.42
 #### Source Code
 [TypeConv.java](./TypeConv.java)
 
-**Description:** 
+**Description:** Automatic type conversions can affect overloaded method resolution.
 
 #### Execution Logs
 
 ```
-
+Inside f(int): 10
+Inside f(double): 10.1
+Inside f(int): 99
+Inside f(int): 10
+Inside f(double): 11.5
 ```
 
 ---
