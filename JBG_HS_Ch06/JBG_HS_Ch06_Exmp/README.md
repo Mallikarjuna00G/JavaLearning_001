@@ -155,11 +155,20 @@ Invalid Error Code severity: 0
 #### Source Code
 [OverloadDemo.java](./OverloadDemo.java)
 
-**Description:** 
+**Description:** Demonstrate method overloading.
 
 #### Execution Logs
 
 ```
+No parameters
+
+One parameter: 2
+
+Two parameters: 4 6
+Result of ob.ovlDemo(4, 6): 10
+
+Two double parameters: 1.1 2.32
+Result of ob.ovlDemo(1.1, 2.32): 3.42
 
 ```
 
