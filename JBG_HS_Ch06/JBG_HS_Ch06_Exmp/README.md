@@ -241,12 +241,13 @@ t4.x: 8
 #### Source Code
 [SumDemo.java](./SumDemo.java)
 
-**Description:** 
+**Description:** Initialize one object with another.
 
 #### Execution Logs
 
 ```
-
+s1.sum: 15
+s2.sum: 15
 ```
 
 ---
