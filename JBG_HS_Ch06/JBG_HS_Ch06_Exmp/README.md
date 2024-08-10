@@ -280,11 +280,20 @@ Contents of q3: ABCDEFGHIJ
 #### Source Code
 [Recursion.java](./Recursion.java)
 
-**Description:** 
+**Description:** A simple example of recursion.
 
 #### Execution Logs
 
 ```
+Factorials using resursive method: 
+Factorial of 3 is 6
+Factorial of 4 is 24
+Factorial of 5 is 120
+
+Factorials using iterative method: 
+Factorial of 3 is 6
+Factorial of 4 is 24
+Factorial of 5 is 120
 
 ```
 
