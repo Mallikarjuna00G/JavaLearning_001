@@ -362,17 +362,18 @@ Square root of 3 is 1.7320508075688772
 
 ---
 
-### Example: QSDemo
+### Example: QSDemo | Try This 6­-3 The Quicksort
 
 #### Source Code
 [QSDemo.java](./QSDemo.java)
 
-**Description:** 
+**Description:** *Try This 6-3*: A simple version of the quicksort.
 
 #### Execution Logs
 
 ```
-
+Original array: dxarpji
+Sorted array: adijprx
 ```
 
 ---
