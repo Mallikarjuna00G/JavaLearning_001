@@ -304,11 +304,23 @@ Factorial of 5 is 120
 #### Source Code
 [SDemo.java](./SDemo.java)
 
-**Description:** 
+**Description:** Use a static variable.
 
 #### Execution Logs
 
 ```
+Of course, ob1.x and ob2.x are independent.
+ob1.x: 10
+ob2.x: 20
+
+The static variable y is shared.
+Set StaticDemo.y to 19.
+ob1.sum(): 29
+ob2.sum(): 39
+
+Change StaticDemo.y to 100.
+ob1.sum(): 110
+ob2.sum(): 120
 
 ```
 
