@@ -383,12 +383,14 @@ Sorted array: adijprx
 #### Source Code
 [NestedClassDemo.java](./NestedClassDemo.java)
 
-**Description:** 
+**Description:** Use an inner class.
 
 #### Execution Logs
 
 ```
-
+Minimum: 1
+Maximum: 9
+Average: 5
 ```
 
 ---
