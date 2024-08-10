@@ -349,12 +349,15 @@ StaticMeth.valDiv2(): 2
 #### Source Code
 [SDemo3.java](./SDemo3.java)
 
-**Description:** 
+**Description:** Use a static block.
 
 #### Execution Logs
 
 ```
-
+Inside static block.
+Inside Constructor
+Square root of 2 is 1.4142135623730951
+Square root of 3 is 1.7320508075688772
 ```
 
 ---
