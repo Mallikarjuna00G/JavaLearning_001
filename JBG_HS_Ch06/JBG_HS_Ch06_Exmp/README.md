@@ -331,12 +331,15 @@ ob2.sum(): 120
 #### Source Code
 [SDemo2.java](./SDemo2.java)
 
-**Description:** 
+**Description:** Use a static method.
 
 #### Execution Logs
 
 ```
-
+val is 1024
+StaticMeth.valDiv2(): 512
+val is 4
+StaticMeth.valDiv2(): 2
 ```
 
 ---
