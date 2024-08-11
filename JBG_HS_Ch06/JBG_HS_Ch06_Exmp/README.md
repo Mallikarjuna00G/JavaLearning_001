@@ -451,11 +451,23 @@ Contents:
 #### Source Code
 [VarArgs2.java](./VarArgs2.java)
 
-**Description:** 
+**Description:** Use varargs with standard arguments.
 
 #### Execution Logs
 
 ```
+One vararg: 1
+Contents: 
+  arg 0: 10
+
+Three varargs: 3
+Contents: 
+  arg 0: 1
+  arg 1: 2
+  arg 2: 3
+
+No varargs: 0
+Contents: 
 
 ```
 
