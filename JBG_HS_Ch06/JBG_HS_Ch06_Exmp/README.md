@@ -478,11 +478,27 @@ Contents:
 #### Source Code
 [VarArgs3.java](./VarArgs3.java)
 
-**Description:** 
+**Description:** Varargs and Overloading.
 
 #### Execution Logs
 
 ```
+vaTest(int ...): Number of args: 3
+Contents: 
+  arg 0: 1
+  arg 1: 2
+  arg 2: 3
+
+vaTest(String, int ...): Testing2
+Contents: 
+  arg 0: 10
+  arg 1: 20
+
+vaTest(boolean ...): Number of args: 3
+Contents: 
+  arg 0: true
+  arg 1: false
+  arg 2: false
 
 ```
 
