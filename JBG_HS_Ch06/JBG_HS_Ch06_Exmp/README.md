@@ -400,12 +400,21 @@ Average: 5
 #### Source Code
 [LocalClassDemo.java](./LocalClassDemo.java)
 
-**Description:** 
+**Description:** Use `ShowBits` as local class.
 
 #### Execution Logs
 
 ```
-
+0 in binary: 00000000 
+1 in binary: 00000001 
+2 in binary: 00000010 
+3 in binary: 00000011 
+4 in binary: 00000100 
+5 in binary: 00000101 
+6 in binary: 00000110 
+7 in binary: 00000111 
+8 in binary: 00001000 
+9 in binary: 00001001
 ```
 
 ---
