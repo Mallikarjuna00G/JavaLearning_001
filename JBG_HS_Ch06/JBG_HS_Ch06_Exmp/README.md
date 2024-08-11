@@ -509,13 +509,34 @@ Contents:
 #### Source Code
 [VarArgs4.java](./VarArgs4.java)
 
-**Description:** 
+**Description:** Varargs, Overloading, and ambiguity.
 
 #### Execution Logs
 
 ```
+VarArgs4.java:40: error: reference to vaTest is ambiguous
+        vaTest();  // Error: ambiguous!
+        ^
+  both method vaTest(int...) in VarArgs4 and method vaTest(boolean...) in VarArgs4 match
+1 error
+```
 
+Another example of ambiguity:
+
+```java
+static void vaTest(int ... v) {
+    // ...
+}
+
+static void vaTest(int n, int ... v) {
+    // ...
+}
+```
+
+Although the parameter lists of `vaTest()` differ, there is no way for the compiler to resolve the following call:
+
+```java
+vaTest(1);
 ```
 
 ---
-
