@@ -424,11 +424,23 @@ Average: 5
 #### Source Code
 [VarArgs.java](./VarArgs.java)
 
-**Description:** 
+**Description:** Demonstrate variable-length arguments.
 
 #### Execution Logs
 
 ```
+Number of args: 1
+Contents: 
+  arg 0: 10
+
+Number of args: 3
+Contents: 
+  arg 0: 1
+  arg 1: 2
+  arg 2: 3
+
+Number of args: 0
+Contents: 
 
 ```
 
