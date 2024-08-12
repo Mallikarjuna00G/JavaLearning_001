@@ -23,17 +23,7 @@ class Y {
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No; a private member cannot be accessed outside of its class.
 
 ---
 
@@ -45,17 +35,7 @@ An access modifier must __________ a member’s declaration.
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+precede.
 
 ---
 
@@ -69,14 +49,16 @@ The complement of a queue is a stack. It uses first­-in, last-­out accessing a
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch06_SelfTest_03.java](./JBG_HS_Ch06_SelfTest_03.java)
 
 #### Execution Logs
 
 ```
+Contents of q1: JIHGFEDCBA
 
+Contents of q2: akimerP
+
+Contents of q3: JIHGFEDCBA
 ```
 
 ---
@@ -98,16 +80,12 @@ write a method called `swap()` that exchanges the contents of the objects referr
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
+```java
+void swap(Test ob1, Test ob2) {
+    var t = ob1.a;
+    ob1.a = ob2.a;
+    ob2.a = t;
+}
 ```
 
 ---
@@ -126,17 +104,7 @@ class X {
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No. Overloaded methods can have different return types, but they do not play a role in overload resolution. Overloaded methods must have different parameter lists.
 
 ---
 
@@ -150,14 +118,15 @@ Write a recursive method that displays the contents of a string backwards.
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch06_SelfTest_06.java](./JBG_HS_Ch06_SelfTest_06.java)
 
 #### Execution Logs
 
 ```
-
+Display the string as is: 
+Lack of knowledge lead to suffering.
+Display the string in backwards: 
+.gnireffus ot dael egdelwonk fo kcaL
 ```
 
 ---
@@ -170,17 +139,7 @@ If all objects of a class need to share the same variable, how must you declare 
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Shared variables are declared as `static`.
 
 ---
 
@@ -192,17 +151,7 @@ Why might you need to use a `static` block?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+A `static` block is used to perform any initializations related to the class, before any objects are created.
 
 ---
 
@@ -214,17 +163,7 @@ What is an inner class?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+An inner class is a nonstatic nested class.
 
 ---
 
@@ -236,17 +175,7 @@ To make a member accessible by only other members of its class, what access modi
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+`private`
 
 ---
 
@@ -258,17 +187,7 @@ The name of a method plus its parameter list constitutes the method’s ________
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+signature.
 
 ---
 
@@ -280,17 +199,7 @@ An `int` argument is passed to a method by using call­-by- ­_______________.
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+value.
 
 ---
 
@@ -304,14 +213,14 @@ Create a varargs method called `sum()` that sums the `int` values passed to it. 
 
 #### Programs:
 
-[]()
-
-AAA
+[JBG_HS_Ch06_SelfTest_13.java](./JBG_HS_Ch06_SelfTest_13.java)
 
 #### Execution Logs
 
 ```
-
+Sum of 1, 2, 3, 4, 5, 6, 7, 8, 9: 45
+Sum of 1, 2, -3, 4, -5, 6, -7, 8, 9: 15
+Sum of -1, -2, -3, -4, 5, 6, 7, 8, 9: 25
 ```
 
 ---
@@ -324,17 +233,7 @@ Can a varargs method be overloaded?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Yes.
 
 ---
 
@@ -346,17 +245,24 @@ Show an example of an overloaded varargs method that is ambiguous.
 
 ### SelfTest Solution
 
-#### Programs:
+An example of ambiguity:
 
-[]()
+```java
+static void vaTest(int ... v) {
+    // ...
+}
 
-AAA
-
-#### Execution Logs
-
+static void vaTest(int n, int ... v) {
+    // ...
+}
 ```
 
+Although the parameter lists of `vaTest()` differ, there is no way for the compiler to resolve the following call:
+
+```java
+vaTest(1);
 ```
+
 
 ---
 
