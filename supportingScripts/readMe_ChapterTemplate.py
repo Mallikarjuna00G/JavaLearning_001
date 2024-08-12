@@ -3,11 +3,11 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 6  # Update needed here
+currentChapterNo = 7  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
 
-chapterTitle = "A Closer Look at Methods and Classes"  # Update needed here
+chapterTitle = "Inheritance"  # Update needed here
 prefix = "JBG_HS_Ch"
 chapterWithPrefix = prefix + chapterNo
 

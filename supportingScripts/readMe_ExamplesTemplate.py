@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 6  # Update needed here
-examples = ["AccessDemo", "FSDemo", "Queue", "PassOb", "CallByValue", "PassObRef", "ErrMsg", "ErrInfo", "OverloadDemo", "TypeConv", "OverloadConsDemo", "SumDemo", "QDemo2", "Recursion", "SDemo", "SDemo2", "SDemo3", "QSDemo", "NestedClassDemo", "LocalClassDemo", "VarArgs", "VarArgs2", "VarArgs3", "VarArgs4"]  # Update needed here
+currentChapterNo = 7  # Update needed here
+examples = ["Shapes", "Shapes2", "Shapes3", "Shapes4", "Shapes5", "UseSuper", "TruckDemo", "Shapes6", "OrderOfConstruction", "IncompatibleRef", "SupSubRef", "Shapes7", "Override", "Overload", "DynDispDemo", "DynShapes", "AbsShape", "FinalD"]  # Update needed here
 numberOfExmp = len(examples)
 
 
@@ -43,6 +43,7 @@ for example in examples:
 
 ```
 
+---
 ---
 
 """
