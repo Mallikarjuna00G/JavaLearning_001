@@ -35,9 +35,12 @@
 		"scope": "java",
 		"prefix": "fileClass",
 		"body": [
+			"/*",
+			" * Purpose: $1",
+			" */",
 			"class ${TM_FILENAME_BASE} {",
-			"    $1",
-			"}  // class ${TM_FILENAME_BASE}"
+			"    $2",
+			"}  // class ${TM_FILENAME_BASE}$3"
 		],
 		"description": "local snippet:: "
 	},
@@ -492,8 +495,7 @@
 		"body": [
 			"do {",
 			"    $2",
-			"} while(${1|condition|});  // while loop: $3"
-			
+			"} while(${1|condition|});  // do-while loop: $3"
 		],
 		"description": "local snippet:: do-while loop."
 	},
@@ -502,9 +504,12 @@
 		"scope": "java",
 		"prefix": "classDef",
 		"body": [
-			"class ${1|className|} {",
-			"    $2",
-			"} // class $1"
+			"/*",
+			" * Purpose: $1",
+			" */",
+			"class ${2|className|} {",
+			"    $3",
+			"} // class $2"
 			
 		],
 		"description": "local snippet:: new class definition."
@@ -514,12 +519,27 @@
 		"scope": "java",
 		"prefix": "methDef",
 		"body": [
-			"// method purpose: $1",
-			"${2|void,boolean,byte,char,int,long,float,double|} ${3|functionName|}($4) {",
+			"/*",
+			" * Purpose: $1",
+			" */",
+			"${2|public,private,protected,default|} ${3|void,boolean,byte,char,int,long,float,double|} ${4|functionName|}($5) {",
+			"    $6",
+			"} // method $4$7"
+			
+		],
+		"description": "local snippet:: method definition."
+	},
+
+	"lsnip::constructor": {
+		"scope": "java",
+		"prefix": "classCons",
+		"body": [
+			"/*",
+			" * Purpose: $1",
+			" */",
+			"${2|public,private,protected,default|} ${3|constructorName|}($4) {",
 			"    $5",
-			"    ",
-			"    return$6;",
-			"} // method $3"
+			"} // Constructor $6"
 			
 		],
 		"description": "local snippet:: method definition."
@@ -556,5 +576,19 @@
 			"(${1|condition|}) ? (${2|expr1|}):(${3|expr2|})$4"
 		],
 		"description": "local snippet:: ? ternary operator."
+	},
+
+	"lsnip::static block": {
+		"scope": "java",
+		"prefix": ["staticBlock"],
+		"body": [
+			"/*",
+			" * Purpose: $1",
+			" */",
+			"static {",
+			"    $2",
+			"}  // Static Block"
+		],
+		"description": "local snippet:: Static block."
 	},
 }
