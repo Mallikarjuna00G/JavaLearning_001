@@ -52,7 +52,7 @@ class TwoDShape {
  * Purpose: A subclass of TwoDShape for triangles
  */
 class Triangle extends TwoDShape {
-    String style;
+    private String style;
 
     /*
      * Purpose: 
