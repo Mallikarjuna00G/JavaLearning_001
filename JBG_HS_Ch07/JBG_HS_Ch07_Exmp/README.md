@@ -256,10 +256,20 @@ x2.a is 6
 
 **Description:** 
 
+An important place where subclass references are assigned to superclass variables is when constructors are called in a class hierarchy. As you know, it is common for a class to define a constructor that takes an object of the class as a parameter. This allows the class to construct a copy of an object.
+
 #### Execution Logs
 
 ```
+Info for t1: 
+Triagnle is outlined
+Width and Height are 8.0 and 12.0
+Area is 48.0
 
+Info for t2: 
+Triagnle is outlined
+Width and Height are 8.0 and 12.0
+Area is 48.0
 ```
 
 ---
