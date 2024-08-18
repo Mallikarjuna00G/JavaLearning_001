@@ -236,10 +236,14 @@ IncompatibleRef.java:48: error: incompatible types: Y cannot be converted to X
 
 **Description:** 
 
+A superclass reference can refer to a subclass object.
+
 #### Execution Logs
 
 ```
+x2.a is 10
 
+x2.a is 6
 ```
 
 ---
