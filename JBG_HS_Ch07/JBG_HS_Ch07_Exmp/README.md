@@ -58,7 +58,15 @@ Area is 48.0
 #### Execution Logs
 
 ```
+Info for t1: 
+Triagnle is filled
+Width and Height are 4.0 and 4.0
+Area is 8.0
 
+Info for t2: 
+Triagnle is outlined
+Width and Height are 8.0 and 12.0
+Area is 48.0
 ```
 
 ---
