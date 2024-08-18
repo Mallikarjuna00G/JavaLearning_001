@@ -335,10 +335,14 @@ i and j: 1 2
 
 **Description:** 
 
+Demonstrate dynamic method dispatch.
+
 #### Execution Logs
 
 ```
-
+who() in Sup
+who() in Sub1
+who() in Sub2
 ```
 
 ---
