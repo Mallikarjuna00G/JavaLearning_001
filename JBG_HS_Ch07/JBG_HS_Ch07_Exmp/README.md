@@ -10,7 +10,15 @@
 #### Execution Logs
 
 ```
+Info for t1: 
+Triangle is filled
+Width and height are 4.0 and 4.0
+Area is 8.0
 
+Info for t2: 
+Triangle is outlined
+Width and height are 8.0 and 12.0
+Area is 48.0
 ```
 
 ---
