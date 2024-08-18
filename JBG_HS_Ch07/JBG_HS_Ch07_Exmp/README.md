@@ -198,7 +198,9 @@ Area is 2.0
 #### Execution Logs
 
 ```
-
+Constructing A.
+Constructing B.
+Constructing C.
 ```
 
 ---
