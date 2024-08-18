@@ -135,7 +135,8 @@ Area is 8.0
 #### Execution Logs
 
 ```
-
+i in superclass: 1
+i in this (subclass): 2
 ```
 
 ---
