@@ -172,7 +172,17 @@ To go 252 miles pickup needs 16.8 gallons of fuel.
 #### Execution Logs
 
 ```
+Info for t1: 
+Triagnle is outlined
+Width and Height are 8.0 and 12.0
+Color is Blue
+Area is 48.0
 
+Info for t2: 
+Triagnle is filled
+Width and Height are 2.0 and 2.0
+Color is Red
+Area is 2.0
 ```
 
 ---
