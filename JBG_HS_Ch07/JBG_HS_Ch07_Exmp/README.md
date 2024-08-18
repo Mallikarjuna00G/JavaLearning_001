@@ -213,10 +213,17 @@ Constructing C.
 
 **Description:** 
 
+A reference variable of one class type cannot normally refer to an object of another class type.
+
+This will not compile.
+
 #### Execution Logs
 
 ```
-
+IncompatibleRef.java:48: error: incompatible types: Y cannot be converted to X
+        x2 = y;  // Error, not of same type
+             ^
+1 error
 ```
 
 ---
