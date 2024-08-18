@@ -142,7 +142,7 @@ i in this (subclass): 2
 ---
 ---
 
-### Example: TruckDemo
+### Example: TruckDemo | Try This 7-­1 Extending the Vehicle Class
 
 #### Source Code
 [TruckDemo.java](./TruckDemo.java)
@@ -152,7 +152,11 @@ i in this (subclass): 2
 #### Execution Logs
 
 ```
+Semi can carry 44000 pounds.
+To go 252 miles semi needs 36.0 gallons of fuel.
 
+Pickup can carry 2000 pounds.
+To go 252 miles pickup needs 16.8 gallons of fuel.
 ```
 
 ---
