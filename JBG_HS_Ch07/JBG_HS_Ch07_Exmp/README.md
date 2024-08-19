@@ -7,6 +7,8 @@
 
 **Description:** 
 
+A simple class hierarchy.
+
 #### Execution Logs
 
 ```
@@ -30,6 +32,8 @@ Area is 48.0
 [Shapes2.java](./Shapes2.java)
 
 **Description:** 
+
+Use accessor methods to set and get private members.
 
 #### Execution Logs
 
@@ -55,6 +59,8 @@ Area is 48.0
 
 **Description:** 
 
+Add a constructor to triangle.
+
 #### Execution Logs
 
 ```
@@ -79,6 +85,8 @@ Area is 48.0
 
 **Description:** 
 
+Add constructor to TwoDShape.
+
 #### Execution Logs
 
 ```
@@ -102,6 +110,8 @@ Area is 48.0
 [Shapes5.java](./Shapes5.java)
 
 **Description:** 
+
+Add constructor to TwoDShape.
 
 #### Execution Logs
 
@@ -132,6 +142,8 @@ Area is 8.0
 
 **Description:** 
 
+Using super to overcome hiding.
+
 #### Execution Logs
 
 ```
@@ -148,6 +160,10 @@ i in this (subclass): 2
 [TruckDemo.java](./TruckDemo.java)
 
 **Description:** 
+
+Try This 7­-1 Extending the Vehicle Class
+
+Build a subclass of Vehicle for trucks.
 
 #### Execution Logs
 
@@ -168,6 +184,8 @@ To go 252 miles pickup needs 16.8 gallons of fuel.
 [Shapes6.java](./Shapes6.java)
 
 **Description:** 
+
+A multi-level hierarchy.
 
 #### Execution Logs
 
@@ -194,6 +212,8 @@ Area is 2.0
 [OrderOfConstruction.java](./OrderOfConstruction.java)
 
 **Description:** 
+
+Demonstrate when constructors are executed.
 
 #### Execution Logs
 
