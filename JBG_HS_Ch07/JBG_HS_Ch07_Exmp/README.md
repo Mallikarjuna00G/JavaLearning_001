@@ -282,22 +282,6 @@ Area is 48.0
 
 **Description:** 
 
-#### Execution Logs
-
-```
-
-```
-
----
----
-
-### Example: Overload
-
-#### Source Code
-[Overload.java](./Overload.java)
-
-**Description:** 
-
 Method overriding.
 
 #### Execution Logs
@@ -309,10 +293,10 @@ k: 3
 ---
 ---
 
-### Example: DynDispDemo
+### Example: Overload
 
 #### Source Code
-[DynDispDemo.java](./DynDispDemo.java)
+[Overload.java](./Overload.java)
 
 **Description:** 
 
@@ -328,10 +312,10 @@ i and j: 1 2
 ---
 ---
 
-### Example: DynShapes
+### Example: DynDispDemo
 
 #### Source Code
-[DynShapes.java](./DynShapes.java)
+[DynDispDemo.java](./DynDispDemo.java)
 
 **Description:** 
 
@@ -343,6 +327,39 @@ Demonstrate dynamic method dispatch.
 who() in Sup
 who() in Sub1
 who() in Sub2
+```
+
+---
+---
+
+### Example: DynShapes
+
+#### Source Code
+[DynShapes.java](./DynShapes.java)
+
+**Description:** 
+
+Use dynamic method dispatch.
+
+#### Execution Logs
+
+```
+Object is triangle
+Area is 48.0
+
+Object is rectangle
+Area is 50.0
+
+Object is rectangle
+Area is 20.0
+
+Object is triangle
+Area is 24.5
+
+Object is generic
+area() must be overridden.
+Area is 0.0
+
 ```
 
 ---
