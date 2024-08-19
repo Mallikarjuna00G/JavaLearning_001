@@ -1,15 +1,36 @@
 # JBG_HS_Ch08_Exmp
 
-### Example: bookpack.BookDemo
+### Example: JBG_HS_Ch08_Exmp_01
 
 #### Source Code
-[bookpack.BookDemo.java](./bookpack.BookDemo.java)
+[bookpack/BookDemo.java](./bookpack/BookDemo.java)
 
 **Description:** 
+
+A short package demonstration.
 
 #### Execution Logs
 
 ```
+Java: A Beginner's Guide
+Schildt
+2019
+
+Java: The Complete Reference
+Schildt
+2019
+
+Introducing JavaFX 8 Programming
+Schildt
+2015
+
+Red Storm Rising
+Clansy
+1986
+
+On the Road
+Kerouac
+1955
 
 ```
 
