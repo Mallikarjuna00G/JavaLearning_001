@@ -8,17 +8,7 @@ Does a superclass have access to the members of a subclass? Does a subclass have
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+No, a superclass has no knowledge of its subclasses. Yes, a subclass has access to all non-private members of its superclass.
 
 ---
 ---
@@ -39,8 +29,48 @@ AAA
 
 #### Execution Logs
 
-```
+```java
+/*
+ * Purpose: A subclass of TwoDShape for circles.
+ */
+class Circle extends TwoDShape {
+    /*==================== START: FIELDS ====================*/
+    private final double PI = 3.1416;
+    /*==================== END: FIELDS ====================*/
+    /*==================== START: CONSTRUCTORS ====================*/
+    /*
+     * Purpose: A default constructor.
+     */
+    public Circle() {
+        super();
+    } // Constructor 
 
+    /*
+     * Purpose: Constructor for Circle.
+     */
+    public Circle(double radius) {
+        super(radius, "circle");
+    } // Constructor 
+
+    /*
+     * Purpose: Construct object from an object
+     */
+    public Circle(Circle ob) {
+        super(ob);  // pass object to TwoDShape constructor
+    } // Constructor 
+    /*==================== END: CONSTRUCTORS ====================*/
+    /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
+    
+    /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
+    /*==================== START: METHODS ====================*/
+    /*
+     * Purpose: Override area() for Circle
+     */
+    public double area() {
+        return PI * getWidth() * getHeight();  // A = PI * r * r
+    } // method area
+    /*==================== END: METHODS ====================*/
+} // class Circle
 ```
 
 ---
@@ -54,17 +84,7 @@ How do you prevent a subclass from having access to a member of a superclass?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+To prevent a subclass from having access to a superclass member, declare that member as `private`.
 
 ---
 ---
@@ -77,18 +97,17 @@ Describe the purpose and use of the two versions of `super` described in this ch
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
+The `super` keyword has two forms. The first is used to call a superclass constructor. The general form of this usage is
 
 ```
-
+super(param­-list);
 ```
 
+The second form of `super` is used to access a superclass member. It has this general form:
+
+```
+super.member
+```
 ---
 ---
 
@@ -108,17 +127,7 @@ In what order do the constructors for these classes complete their execution whe
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Constructors complete their execution in order of derivation. Thus, when a `Gamma` object is created, the order is `Alpha`, `Beta`, `Gamma`.
 
 ---
 ---
@@ -131,17 +140,7 @@ A superclass reference can refer to a subclass object. Explain why this is impor
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+When an overridden method is called through a superclass reference, it is the type of the object being referred to that determines which version of the method is called.
 
 ---
 ---
@@ -154,17 +153,7 @@ What is an abstract class?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+An abstract class contains at least one abstract method.
 
 ---
 ---
@@ -177,17 +166,7 @@ How do you prevent a method from being overridden? How do you prevent a class fr
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+To prevent a method from being overridden, declare it as `final`. To prevent a class from being inherited, declare it as `final`.
 
 ---
 ---
@@ -200,17 +179,7 @@ Explain how *inheritance*, *method overriding*, and *abstract* classes are used 
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+*Inheritance*, *method overriding*, and *abstract classes* support *polymorphism* by enabling you to create a generalized class structure that can be implemented by a variety of classes. Thus, the abstract class defines a consistent interface that is shared by all implementing classes. This embodies the concept of "one interface, multiple methods."
 
 ---
 ---
@@ -223,17 +192,7 @@ What class is a superclass of every other class?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+The `Object` class.
 
 ---
 ---
@@ -246,17 +205,7 @@ A class that contains at least one abstract method must, itself, be declared abs
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+True.
 
 ---
 ---
@@ -269,17 +218,7 @@ What keyword is used to create a named constant?
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+`final`.
 
 ---
 ---
@@ -305,17 +244,7 @@ var myRef = makeObj(1);
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+Even though a `B` object is created, the type of `myRef` will be `A` because that is the declared return type of `makeObj()`. When using local variable type inference, the inferred type of a variable is based on the declared type of its initializer. Therefore, if the initializer is of a superclass type (which is `A` in this case), that will be the type of the variable. It does not matter if the actual object being referred to by the initializer is an instance of a derived class.
 
 ---
 ---
@@ -332,17 +261,7 @@ var myRef = (B) makeObj(1);
 
 ### SelfTest Solution
 
-#### Programs:
-
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
+In this case, the cast to `B` specifies the type of the initializer, and `myRef` is of type `B`.
 
 ---
 ---
