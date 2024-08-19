@@ -22,11 +22,11 @@
 		"body": [
 			"/**",
 			" * File: ${TM_FILENAME}",
-			" * ",
-			" * Purpose: $1",
+			" * @author ${1|Mallikarjuna00G|}",
+			" * Purpose: $2",
 			" * ",
 			" */",
-			"$2"
+			"$3"
 		],
 		"description": "local snippet:: Remark of the file. Actually a multi-line comment containing the purpose of the file, file name."
 	},
@@ -508,7 +508,20 @@
 			" * Purpose: $1",
 			" */",
 			"class ${2|className|} {",
+			"    /*==================== START: FIELDS ====================*/",
 			"    $3",
+			"    /*==================== END: FIELDS ====================*/",
+			"    /*==================== START: CONSTRUCTORS ====================*/",
+			"    public $2() {",
+			"        ",
+			"    }  // Constructor",
+			"    /*==================== END: CONSTRUCTORS ====================*/",
+			"    /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/",
+			"    ",
+			"    /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/",
+			"    /*==================== START: METHODS ====================*/",
+			"    ",
+			"    /*==================== END: METHODS ====================*/",
 			"} // class $2"
 			
 		],
