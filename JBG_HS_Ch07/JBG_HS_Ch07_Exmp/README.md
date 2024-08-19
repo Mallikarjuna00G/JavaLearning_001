@@ -372,9 +372,22 @@ Area is 0.0
 
 **Description:** 
 
+Create an abstract class.
+
 #### Execution Logs
 
 ```
+Object is triangle
+Area is 48.0
+
+Object is rectangle
+Area is 50.0
+
+Object is rectangle
+Area is 20.0
+
+Object is triangle
+Area is 24.5
 
 ```
 
