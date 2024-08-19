@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 7  # Update needed here
-numberOfSelfTest = 14  # Update needed here
+currentChapterNo = 8  # Update needed here
+numberOfSelfTest = 17  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
 

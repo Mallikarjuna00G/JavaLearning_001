@@ -26,3 +26,4 @@ Learn/Practice Java from
 5. [JBG_HS_Ch05: More Data Types and Operators](JBG_HS_Ch05)
 6. [JBG_HS_Ch06: A Closer Look at Methods and Classes](JBG_HS_Ch06)
 7. [JBG_HS_Ch07: Inheritance](JBG_HS_Ch07)
+8. [JBG_HS_Ch08: Packages and Interfaces](JBG_HS_Ch08)
