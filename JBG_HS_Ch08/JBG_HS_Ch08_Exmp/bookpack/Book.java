@@ -11,9 +11,9 @@ package bookpack;
  */
 public class Book {
     /*==================== START: FIELDS ====================*/
-    private String title;
-    private String author;
-    private int pubDate;
+    protected String title;
+    protected String author;
+    protected int pubDate;
     /*==================== END: FIELDS ====================*/
     /*==================== START: CONSTRUCTORS ====================*/
     public Book(String title, String author, int pubDate) {

@@ -77,17 +77,53 @@ Kerouac
 ---
 ---
 
-### Example: bookpackext.ProtectDemo
+### Example: JBG_HS_Ch08_Exmp_03
 
 #### Source Code
-[bookpackext.ProtectDemo.java](./bookpackext.ProtectDemo.java)
+- [bookpackext/ProtectDemo.java](./bookpackext/ProtectDemo.java)
+- [bookpack/Book.java](./bookpack/Book.java)
 
 **Description:** 
+
+Demonstrate `protected` member access from different package using subclass.
 
 #### Execution Logs
 
 ```
+Java: A Beginner's Guide
+Schildt
+2019
 
+Oracle Press
+
+Java: The Complete Reference
+Schildt
+2019
+
+Oracle Press
+
+Introducing JavaFX 8 Programming
+Schildt
+2015
+
+Oracle Press
+
+Red Storm Rising
+Clansy
+1986
+
+Putnam
+
+On the Road
+Kerouac
+1955
+
+Viking
+
+Showing all books by Schildt
+ - Java: A Beginner's Guide
+ - Java: The Complete Reference
+ - Introducing JavaFX 8 Programming
 ```
 
 ---
