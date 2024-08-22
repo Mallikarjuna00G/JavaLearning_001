@@ -63,6 +63,52 @@ class ByTwos implements Series {
 /*
  * Purpose: 
  */
+class ByThrees implements Series {
+    /*==================== START: FIELDS ====================*/
+    int start;
+    int val;
+    /*==================== END: FIELDS ====================*/
+    /*==================== START: CONSTRUCTORS ====================*/
+    ByThrees() {
+        start = 0;
+        val = 0;
+    }  // Constructor
+    /*==================== END: CONSTRUCTORS ====================*/
+    /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
+    /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
+    /*==================== START: METHODS ====================*/
+    /*
+     * Purpose: 
+     */
+    public int getNext() {
+        val += 3;
+        return val;
+    } // method getNext
+
+    /*
+     * Purpose: 
+     */
+    public void reset() {
+        val = start;
+    } // method reset
+
+    /*
+     * Purpose: 
+     */
+    public void setStart(int startValue) {
+        start = startValue;
+        val = startValue;
+    } // method setStart
+
+    /*
+     * Purpose: 
+     */
+    /*==================== END: METHODS ====================*/
+} // class ByThrees
+
+/*
+ * Purpose: 
+ */
 class SeriesDemo {
     public static void main(String[] args) {
         var ob = new ByTwos();
