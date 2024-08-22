@@ -228,17 +228,33 @@ Next ByThree value is 15
 ---
 ---
 
-### Example: ['IQDemo', 'ICharQ']
+### Example: | Try This 8­-1 Creating a Queue Interface
 
 #### Source Code
-[['IQDemo', 'ICharQ'].java](./['IQDemo', 'ICharQ'].java)
+- [IQDemo.java](./IQDemo.java)
+- [ICharQ.java](./ICharQ.java)
 
 **Description:** 
+
+Try This 8­-1 Creating a Queue Interface
+- Fixed queue
+- Circular queue
+- Dynamic queue
 
 #### Execution Logs
 
 ```
+Contents of fixed queue: ABCDEFGHIJ
+--------------------------------------
+Contents of dynamic queue: ZYXWVUTSRQ
+--------------------------------------
+Contents of circular queue: ABCDEFGHIJ
+--------------------------------------
+Contents of circular queue: KLMNOPQRST
+--------------------------------------
 
+Store and consume from circular queue.
+ABCDEFGHIJKLMNOPQRST
 ```
 
 ---
