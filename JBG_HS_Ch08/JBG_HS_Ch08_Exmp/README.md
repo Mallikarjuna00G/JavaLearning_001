@@ -213,7 +213,16 @@ Next value is 110
 #### Execution Logs
 
 ```
-
+Next ByTwos value is 2
+Next ByThree value is 3
+Next ByTwos value is 4
+Next ByThree value is 6
+Next ByTwos value is 6
+Next ByThree value is 9
+Next ByTwos value is 8
+Next ByThree value is 12
+Next ByTwos value is 10
+Next ByThree value is 15
 ```
 
 ---
