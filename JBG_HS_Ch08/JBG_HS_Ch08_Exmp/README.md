@@ -260,6 +260,48 @@ ABCDEFGHIJKLMNOPQRST
 ---
 ---
 
+
+### Example: | Try This 8­-1-1 Creating a Queue Interface: Circular version of DynQueue.
+
+#### Source Code
+- [IQDemo.java](./IQDemo.java)
+- [ICharQ.java](./ICharQ.java)
+
+**Description:** 
+
+Try This 8­-1 Creating a Queue Interface
+- Fixed queue
+- Circular queue
+- Dynamic queue
+- Circular dynamic queue: Please note that initial size was only 5 for the queue.
+
+#### Execution Logs
+
+```
+Contents of fixed queue: ABCDEFGHIJ
+--------------------------------------
+Contents of dynamic queue: ZYXWVUTSRQ
+--------------------------------------
+Contents of circular queue: ABCDEFGHIJ
+--------------------------------------
+Contents of circular queue: KLMNOPQRST
+--------------------------------------
+
+Store and consume from circular queue.
+ABCDEFGHIJKLMNOPQRST
+--------------------------------------
+Contents of circular dynamic queue: ABCDEFGHIJ
+--------------------------------------
+Contents of circular dynamic queue: KLMNOPQRST
+--------------------------------------
+
+Store and consume from circular dynamic queue.
+ABCDEFGHIJKLMNOPQRST
+```
+
+---
+---
+
 ### Example: ['IQDemo', 'ICharQ2']
 
 #### Source Code
