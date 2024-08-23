@@ -49,6 +49,13 @@ class FixedQueue implements ICharQ {
 
         return q[getLoc++];
     } // method get
+
+    /**
+     * Purpose: Reset the queue.
+     */
+    public void reset() {
+        putLoc = getLoc = 0;
+    }  // method reset
     /*==================== END: METHODS ====================*/
 } // class FixedQueue
 
@@ -108,6 +115,13 @@ class CircularQueue implements ICharQ {
         }  // if statement: 
         return ch;
     } // method get
+
+    /**
+     * Purpose: Reset the queue.
+     */
+    public void reset() {
+        putLoc = getLoc = 0;
+    }  // method reset
     /*==================== END: METHODS ====================*/
 } // class CircularQueue
 
@@ -162,6 +176,13 @@ class DynQueue implements ICharQ {
 
         return q[getLoc++];
     } // method get
+
+    /**
+     * Purpose: Reset the queue.
+     */
+    public void reset() {
+        putLoc = getLoc = 0;
+    }  // method reset
     /*==================== END: METHODS ====================*/
 } // class DynQueue
 
@@ -229,6 +250,13 @@ class CircDynQueue implements ICharQ {
         }  // if statement: 
         return ch;
     } // method get
+
+    /**
+     * Purpose: Reset the queue.
+     */
+    public void reset() {
+        putLoc = getLoc = 0;
+    }  // method reset
     /*==================== END: METHODS ====================*/
 } // class CircDynQueue
 
@@ -263,6 +291,25 @@ class IQDemo {
         System.out.println();
         System.out.println(hrLine);
 
+        /* Reset demo */
+        // Put some characters into fixed queue.
+        for(i = 0; i < 10; i++) {
+            if(i == 5) {
+                iQ.reset();
+            }  // if statement: 
+            iQ.put((char) ('A' + i));
+        }  // for loop: 
+
+        // Show the queue.
+        System.out.print("Reset queue: Contents of fixed queue: ");
+        for(i = 0; i < 10; i++) {
+            ch = iQ.get();
+            System.out.print(ch);
+        }  // for loop: 
+        System.out.println();
+        System.out.println(hrLine);
+
+        /* ----------------------------------- */
         iQ = q2;
         // Put some characters into dynamic queue.
         for(i = 0; i < 10; i++) {

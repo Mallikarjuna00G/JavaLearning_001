@@ -14,4 +14,7 @@ public interface ICharQ {
 
     // Get a character from the queue.
     char get();
+
+    // Reset the queue.
+    void reset();
 }  // interface ICharQ
