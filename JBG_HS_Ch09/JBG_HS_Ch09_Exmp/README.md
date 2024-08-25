@@ -139,10 +139,19 @@ No matching element found.
 
 **Description:** 
 
+Subclasses must preed superclasses in catch statements.
+
 #### Execution Logs
 
 ```
-
+4 / 2 is 2
+Some exception occured!
+16 / 4 is 4
+32 / 4 is 8
+Some exception occured!
+128 / 8 is 16
+No matching element found.
+No matching element found.
 ```
 
 ---
