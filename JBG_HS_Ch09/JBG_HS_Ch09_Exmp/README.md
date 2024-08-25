@@ -164,10 +164,21 @@ No matching element found.
 
 **Description:** 
 
+Use a nested try block.
+
+One `try` block can be nested within another. An exception generated within the inner `try` block that is not caught by a `catch` associated with that `try` is propagated to the out `try` block. 
+
 #### Execution Logs
 
 ```
-
+4 / 2 is 2
+Can't divide by zero!
+16 / 4 is 4
+32 / 4 is 8
+Can't divide by zero!
+128 / 8 is 16
+No matching element found.
+Fatal error - program terminated.
 ```
 
 ---
