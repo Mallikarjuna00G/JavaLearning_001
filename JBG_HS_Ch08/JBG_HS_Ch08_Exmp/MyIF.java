@@ -18,4 +18,11 @@ public interface MyIF{
     default int getAdminID() {
         return 1;
     }  // method getAdminID
+
+    /**
+     * Purpose: This is a static interface method.
+     */
+    static int getUniversalID() {
+        return 0;
+    }  // method getUniversalID
 }  // interface MyIF
