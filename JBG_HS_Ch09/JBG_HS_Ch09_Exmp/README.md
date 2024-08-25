@@ -91,10 +91,17 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out
 
 **Description:** 
 
+Handle error gracefully and continue. Catch divide-by-zero exception.
+
 #### Execution Logs
 
 ```
-
+4 / 2 is 2
+Can't divide by zero!
+16 / 4 is 4
+32 / 4 is 8
+Can't divide by zero!
+128 / 8 is 16
 ```
 
 ---
