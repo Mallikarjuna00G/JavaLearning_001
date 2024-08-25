@@ -7,10 +7,14 @@
 
 **Description:** 
 
+Demonstrate exception handling.
+
 #### Execution Logs
 
 ```
-
+Before exception is generated.
+Index out-of-bounds!
+After catch statement.
 ```
 
 ---
