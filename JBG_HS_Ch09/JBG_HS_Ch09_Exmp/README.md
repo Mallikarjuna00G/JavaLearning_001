@@ -191,10 +191,14 @@ Fatal error - program terminated.
 
 **Description:** 
 
+Manually throw an exception.
+
 #### Execution Logs
 
 ```
-
+Before throw.
+Exception caught.
+After try/catch block.
 ```
 
 ---
