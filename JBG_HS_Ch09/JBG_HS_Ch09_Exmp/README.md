@@ -47,10 +47,16 @@ After catch statement
 
 **Description:** 
 
+Let JVM handle the error.
+
 #### Execution Logs
 
-```
+Note: Run-time error.
 
+```
+Before exception is generated.
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 4
+        at NotHandled.main(NotHandled.java:16)
 ```
 
 ---
