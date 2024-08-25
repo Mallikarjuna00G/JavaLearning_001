@@ -264,9 +264,21 @@ After catch statement.
 
 **Description:** 
 
+Use Finally.
+
 #### Execution Logs
 
 ```
+Receiving 0
+Can't divide by zero!
+Leaving try.
+
+Receiving 1
+No matching element found.
+Leaving try.
+
+Receiving 2
+Leaving try.
 
 ```
 
