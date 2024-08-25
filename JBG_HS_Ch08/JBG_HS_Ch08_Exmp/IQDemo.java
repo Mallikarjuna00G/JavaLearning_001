@@ -21,9 +21,33 @@ class FixedQueue implements ICharQ {
 
         putLoc = getLoc = 0;
     }  // Constructor
+
+    /**
+     * Purpose: Copy construct.
+     */
+    FixedQueue(FixedQueue ob) {
+        q = new char[ob.q.length];
+        for(var i = 0; i < ob.putLoc; i++) {
+            q[i] = ob.q[i];
+        }  // for loop: 
+        putLoc = ob.putLoc;
+        getLoc = 0;
+    }  // Constructor 
     /*==================== END: CONSTRUCTORS ====================*/
     /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
-    
+    /**
+     * Purpose: Get putLoc.
+     */
+    int getPutLoc() {
+        return putLoc;
+    }  // method getPutLoc
+
+    /**
+     * Purpose: Get getLoc.
+     */
+    int getGetLoc() {
+        return getLoc;
+    }  // method getGetLoc
     /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
     /*==================== START: METHODS ====================*/
     /*
@@ -56,6 +80,13 @@ class FixedQueue implements ICharQ {
     public void reset() {
         putLoc = getLoc = 0;
     }  // method reset
+
+    /**
+     * Purpose: Return the length of the queue.
+     */
+    int getQueueLength() {
+        return q.length;
+    }  // method getQueueLength
     /*==================== END: METHODS ====================*/
 } // class FixedQueue
 
@@ -75,9 +106,33 @@ class CircularQueue implements ICharQ {
         q = new char[size+1];  // Allocate memory for queue.
         putLoc = getLoc = 0;
     }  // Constructor
+
+    /**
+     * Purpose: Copy construct.
+     */
+    CircularQueue(CircularQueue ob) {
+        q = new char[ob.q.length];
+        for(var i = 0; i < ob.putLoc; i++) {
+            q[i] = ob.q[i];
+        }  // for loop: 
+        putLoc = ob.putLoc;
+        getLoc = 0;
+    }  // Constructor 
     /*==================== END: CONSTRUCTORS ====================*/
     /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
-    
+    /**
+     * Purpose: Get putLoc.
+     */
+    int getPutLoc() {
+        return putLoc;
+    }  // method getPutLoc
+
+    /**
+     * Purpose: Get getLoc.
+     */
+    int getGetLoc() {
+        return getLoc;
+    }  // method getGetLoc
     /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
     /*==================== START: METHODS ====================*/
     /*
@@ -122,6 +177,13 @@ class CircularQueue implements ICharQ {
     public void reset() {
         putLoc = getLoc = 0;
     }  // method reset
+
+    /**
+     * Purpose: Return the length of the queue.
+     */
+    int getQueueLength() {
+        return q.length;
+    }  // method getQueueLength
     /*==================== END: METHODS ====================*/
 } // class CircularQueue
 
@@ -142,9 +204,33 @@ class DynQueue implements ICharQ {
 
         putLoc = getLoc = 0;
     }  // Constructor
+
+    /**
+     * Purpose: Copy construct.
+     */
+    DynQueue(DynQueue ob) {
+        q = new char[ob.q.length];
+        for(var i = 0; i < ob.putLoc; i++) {
+            q[i] = ob.q[i];
+        }  // for loop: 
+        putLoc = ob.putLoc;
+        getLoc = 0;
+    }  // Constructor 
     /*==================== END: CONSTRUCTORS ====================*/
     /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
-    
+    /**
+     * Purpose: Get putLoc.
+     */
+    int getPutLoc() {
+        return putLoc;
+    }  // method getPutLoc
+
+    /**
+     * Purpose: Get getLoc.
+     */
+    int getGetLoc() {
+        return getLoc;
+    }  // method getGetLoc
     /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
     /*==================== START: METHODS ====================*/
     /*
@@ -183,6 +269,13 @@ class DynQueue implements ICharQ {
     public void reset() {
         putLoc = getLoc = 0;
     }  // method reset
+
+    /**
+     * Purpose: Return the length of the queue.
+     */
+    int getQueueLength() {
+        return q.length;
+    }  // method getQueueLength
     /*==================== END: METHODS ====================*/
 } // class DynQueue
 
@@ -202,9 +295,33 @@ class CircDynQueue implements ICharQ {
         q = new char[size+1];  // Allocate memory for queue.
         putLoc = getLoc = 0;
     }  // Constructor
+
+    /**
+     * Purpose: Copy construct.
+     */
+    CircDynQueue(CircDynQueue ob) {
+        q = new char[ob.q.length];
+        for(var i = 0; i < ob.putLoc; i++) {
+            q[i] = ob.q[i];
+        }  // for loop: 
+        putLoc = ob.putLoc;
+        getLoc = 0;
+    }  // Constructor 
     /*==================== END: CONSTRUCTORS ====================*/
     /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/
-    
+    /**
+     * Purpose: Get putLoc.
+     */
+    int getPutLoc() {
+        return putLoc;
+    }  // method getPutLoc
+
+    /**
+     * Purpose: Get getLoc.
+     */
+    int getGetLoc() {
+        return getLoc;
+    }  // method getGetLoc
     /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/
     /*==================== START: METHODS ====================*/
     /*
@@ -257,6 +374,13 @@ class CircDynQueue implements ICharQ {
     public void reset() {
         putLoc = getLoc = 0;
     }  // method reset
+
+    /**
+     * Purpose: Return the length of the queue.
+     */
+    int getQueueLength() {
+        return q.length;
+    }  // method getQueueLength
     /*==================== END: METHODS ====================*/
 } // class CircDynQueue
 
@@ -358,12 +482,26 @@ class IQDemo {
         for(i = 0; i < 20; i++) {
             iQ.put((char)('A' + i));
             ch = iQ.get();
-
             System.out.print(ch);
         }  // for loop:
         System.out.println(); 
         System.out.println(hrLine);
         
+        /* Demonstrate copy of contents from one form of queue to another */
+        System.out.println("Re-initializing source queue before copy: ");
+        iQ = q1;
+        iQ.reset();
+        for(i = 0; i < 10; i++) {
+            iQ.put((char)(i + 'A'));
+        }  // for loop: 
+        System.out.println("Copying queue: ");
+        ICharQ.copyQueue(q1, q3, 2, 6);
+        System.out.print("Contents of circular queue after copy: ");
+        for(i = 0; i < 10; i++) {
+            ch = q3.get();
+            System.out.print(ch);
+        }  // for loop: 
+        System.out.println(hrLine);
         /********************************************** */
         iQ = q4;
         // Put some characters into circular queue.
