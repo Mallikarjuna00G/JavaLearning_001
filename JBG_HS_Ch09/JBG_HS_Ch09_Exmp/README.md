@@ -114,10 +114,19 @@ Can't divide by zero!
 
 **Description:** 
 
+Use multiple catch statements.
+
 #### Execution Logs
 
 ```
-
+4 / 2 is 2
+Can't divide by zero!
+16 / 4 is 4
+32 / 4 is 8
+Can't divide by zero!
+128 / 8 is 16
+No matching element found.
+No matching element found.
 ```
 
 ---
