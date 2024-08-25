@@ -11,7 +11,7 @@ Learn/Practice Java from
 - latest java version at the time of publish of this edition: Java SE 11
 
 ## Links/References:
-1. [Source code for all of the examples and projects in this book](www.oraclepressbooks.com)
+1. [Source code for all of the examples and projects in this book by the book providers](www.oraclepressbooks.com)
 
 ## Tools
 1. Programming Language: Java (JDK 17)
@@ -27,3 +27,4 @@ Learn/Practice Java from
 6. [JBG_HS_Ch06: A Closer Look at Methods and Classes](JBG_HS_Ch06)
 7. [JBG_HS_Ch07: Inheritance](JBG_HS_Ch07)
 8. [JBG_HS_Ch08: Packages and Interfaces](JBG_HS_Ch08)
+9. [JBG_HS_Ch09: Exception Handling](JBG_HS_Ch09) 

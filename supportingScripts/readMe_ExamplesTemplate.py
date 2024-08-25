@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 8  # Update needed here
-examples = ["bookpack.BookDemo", "bookpackext.UseBook", "bookpackext.ProtectDemo", "UseBook", "SeriesDemo", "SeriesDemo2", ["IQDemo", "ICharQ"], ["IQDemo", "ICharQ2"], "IConstD", "IFExtend", "DefaultMethodDemo"]  # Update needed here
+currentChapterNo = 9  # Update needed here
+examples = ["ExcDemo1", "ExcDemo2", "NotHandled", "ExcTypeMismatch", "ExcDemo3", "ExcDemo4", "ExcDemo5", "NestTrys", "ThrowDemo", "RethrowDemo", "UseThrowableMethods", "FinallyDemo", "ThrowsDemo", "MultiCatch", "CustomExceptDemo", "QExcDemo"]  # Update needed here
 numberOfExmp = len(examples)
 
 
