@@ -69,10 +69,16 @@ Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out
 
 **Description:** 
 
+Exception type mismatch.
+
 #### Execution Logs
 
-```
+Note: This is a run-time error. Handled by JVM.
 
+```
+Before exception is generated.
+Exception in thread "main" java.lang.ArrayIndexOutOfBoundsException: Index 7 out of bounds for length 4
+        at ExcTypeMismatch.main(ExcTypeMismatch.java:20)
 ```
 
 ---
