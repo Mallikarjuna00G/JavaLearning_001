@@ -24,9 +24,7 @@
 			" * File: ${TM_FILENAME}",
 			" * @author ${1|Mallikarjuna00G|}",
 			" * Purpose: $2",
-			" * ",
-			" */",
-			"$3"
+			" */$3",
 		],
 		"description": "local snippet:: Remark of the file. Actually a multi-line comment containing the purpose of the file, file name."
 	},
@@ -35,7 +33,7 @@
 		"scope": "java",
 		"prefix": "fileClass",
 		"body": [
-			"/*",
+			"/**",
 			" * Purpose: $1",
 			" */",
 			"class ${TM_FILENAME_BASE} {",
@@ -504,7 +502,7 @@
 		"scope": "java",
 		"prefix": "classDef",
 		"body": [
-			"/*",
+			"/**",
 			" * Purpose: $1",
 			" */",
 			"class ${2|className|} {",
@@ -512,7 +510,7 @@
 			"    $3",
 			"    /*==================== END: FIELDS ====================*/",
 			"    /*==================== START: CONSTRUCTORS ====================*/",
-			"    public $2() {",
+			"    $2() {",
 			"        ",
 			"    }  // Constructor",
 			"    /*==================== END: CONSTRUCTORS ====================*/",
@@ -522,7 +520,7 @@
 			"    /*==================== START: METHODS ====================*/",
 			"    ",
 			"    /*==================== END: METHODS ====================*/",
-			"} // class $2"
+			"}  // class $2"
 			
 		],
 		"description": "local snippet:: new class definition."
@@ -532,12 +530,12 @@
 		"scope": "java",
 		"prefix": "methDef",
 		"body": [
-			"/*",
+			"/**",
 			" * Purpose: $1",
 			" */",
-			"${2|public,private,protected,default|} ${3|void,boolean,byte,char,int,long,float,double|} ${4|functionName|}($5) {",
+			"$2${3|void,boolean,byte,char,int,long,float,double|} ${4|functionName|}($5) {",
 			"    $6",
-			"} // method $4$7"
+			"}  // method $4$7"
 			
 		],
 		"description": "local snippet:: method definition."
@@ -547,12 +545,12 @@
 		"scope": "java",
 		"prefix": "classCons",
 		"body": [
-			"/*",
+			"/**",
 			" * Purpose: $1",
 			" */",
-			"${2|public,private,protected,default|} ${3|constructorName|}($4) {",
+			"$2${3|constructorName|}($4) {",
 			"    $5",
-			"} // Constructor $6"
+			"}  // Constructor $6"
 			
 		],
 		"description": "local snippet:: method definition."
@@ -595,7 +593,7 @@
 		"scope": "java",
 		"prefix": ["staticBlock"],
 		"body": [
-			"/*",
+			"/**",
 			" * Purpose: $1",
 			" */",
 			"static {",
@@ -603,5 +601,19 @@
 			"}  // Static Block"
 		],
 		"description": "local snippet:: Static block."
+	},
+
+	"lsnip::Interface": {
+		"scope": "java",
+		"prefix": ["IFDef"],
+		"body": [
+			"/**",
+			" * Purpose: $1",
+			" */",
+			"interface $2{",
+			"    $3",
+			"}  // interface $2"
+		],
+		"description": "local snippet:: Interface."
 	},
 }
