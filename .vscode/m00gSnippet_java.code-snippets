@@ -616,4 +616,32 @@
 		],
 		"description": "local snippet:: Interface."
 	},
+
+	"lsnip::try": {
+		"scope": "java",
+		"prefix": ["try"],
+		"body": [
+			"try {",
+			"    /*",
+			"     *Purpose: $1",
+			"     */"
+			"    $2",
+			"}  // try statement"
+		],
+		"description": "local snippet:: try statement."
+	},
+
+	"lsnip::catch": {
+		"scope": "java",
+		"prefix": ["catch"],
+		"body": [
+			"catch($1 ${2|exc|}) {",
+			"    /*",
+			"     *Purpose: $3",
+			"     */"
+			"    $4",
+			"}  // catch exception type $1"
+		],
+		"description": "local snippet:: catch statement."
+	},
 }
