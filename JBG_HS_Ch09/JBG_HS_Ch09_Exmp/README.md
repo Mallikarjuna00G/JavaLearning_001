@@ -349,17 +349,48 @@ No mathcing element found.
 ---
 ---
 
-### Example: QExcDemo
+### Example: | *Try This 9-1* Adding Exceptions to the `Queue` class.
 
 #### Source Code
-[QExcDemo.java](./QExcDemo.java)
+- [QExcDemo.java](./QExcDemo.java)
+- [FixedQueue.java](./FixedQueue.java)
+- [ICharQ.java](./ICharQ.java)
+- [QExcDemo.java](./QExcDemo.java)
+- [QueueEmptyException.java](./QueueEmptyException.java)
+- [QueueFullException.java](./QueueFullException.java)
 
 **Description:** 
+
+Demonstrate the queue exceptions.
 
 #### Execution Logs
 
 ```
+Attempting to store : A - OK
+Attempting to store : B - OK
+Attempting to store : C - OK
+Attempting to store : D - OK
+Attempting to store : E - OK
+Attempting to store : F - OK
+Attempting to store : G - OK
+Attempting to store : H - OK
+Attempting to store : I - OK
+Attempting to store : J - OK
+Attempting to store : K
+Queue is full. Maximum size is 10
 
+Getting next char: A
+Getting next char: B
+Getting next char: C
+Getting next char: D
+Getting next char: E
+Getting next char: F
+Getting next char: G
+Getting next char: H
+Getting next char: I
+Getting next char: J
+Getting next char: 
+ Queue is empty.
 ```
 
 ---
