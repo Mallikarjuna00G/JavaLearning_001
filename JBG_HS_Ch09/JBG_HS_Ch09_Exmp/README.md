@@ -292,10 +292,13 @@ Leaving try.
 
 **Description:** 
 
+Use `throws`.
+
 #### Execution Logs
 
 ```
-
+Enter a letter: M
+You pressed M
 ```
 
 ---
