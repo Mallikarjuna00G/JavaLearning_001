@@ -331,10 +331,19 @@ After multi-catch.
 
 **Description:** 
 
+Use custom exception.
+
 #### Execution Logs
 
 ```
-
+4 / 2 is 2
+Can't divide by zero!
+Result of 15 / 4 is non-integer.
+32 / 4 is 8
+Can't divide by zero!
+Result of 127 / 8 is non-integer.
+No mathcing element found.
+No mathcing element found.
 ```
 
 ---
