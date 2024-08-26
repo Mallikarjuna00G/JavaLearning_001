@@ -311,10 +311,14 @@ You pressed M
 
 **Description:** 
 
+Use multi-catch feature.
+
 #### Execution Logs
 
 ```
-
+Exception caught: java.lang.ArithmeticException: / by zero
+Exception caught: java.lang.ArrayIndexOutOfBoundsException: Index 5 out of bounds for length 3
+After multi-catch.
 ```
 
 ---
