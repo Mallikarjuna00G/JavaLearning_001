@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 9  # Update needed here
-examples = ["ExcDemo1", "ExcDemo2", "NotHandled", "ExcTypeMismatch", "ExcDemo3", "ExcDemo4", "ExcDemo5", "NestTrys", "ThrowDemo", "RethrowDemo", "UseThrowableMethods", "FinallyDemo", "ThrowsDemo", "MultiCatch", "CustomExceptDemo", "QExcDemo"]  # Update needed here
+currentChapterNo = 10  # UPDATE NEEDED HERE
+examples = ["ReadBytes", "WriteDemo", "ShowFile", "ShowFile2", "CopyFile", "ShowFile3", "CopyFile2", "RWData", "CompFiles", "RandomAccessDemo", "ReadChars", "ReadLines", "PrintWriterDemo", "KtoD", "DtoS", "AvgNums", "FileHelp"]  # UPDATE NEEDED HERE
 numberOfExmp = len(examples)
 
 
@@ -36,6 +36,8 @@ for example in examples:
 [{example}.java](./{example}.java)
 
 **Description:** 
+
+
 
 #### Execution Logs
 

@@ -3,8 +3,8 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 9  # Update needed here
-numberOfSelfTest = 14  # Update needed here
+currentChapterNo = 10  # Update needed here
+numberOfSelfTest = 15  # Update needed here
 
 chapterNo = f"{currentChapterNo:02d}"
 
@@ -32,21 +32,11 @@ for i in range(1, numberOfSelfTest + 1):
 
 ### SelfTest Problem
 
-AAA
+
 
 ### SelfTest Solution
 
-#### Programs:
 
-[]()
-
-AAA
-
-#### Execution Logs
-
-```
-
-```
 
 ---
 ---
