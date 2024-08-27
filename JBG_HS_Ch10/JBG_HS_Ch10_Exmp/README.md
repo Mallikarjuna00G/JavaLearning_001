@@ -27,12 +27,12 @@ You entered: Read Bytes
 
 **Description:** 
 
-
+Demonstrate `System.out.write()`
 
 #### Execution Logs
 
 ```
-
+X
 ```
 
 ---
