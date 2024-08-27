@@ -7,12 +7,14 @@
 
 **Description:** 
 
-
+Read an array of bytes from the keyboard.
 
 #### Execution Logs
 
 ```
-
+Enter some characters.
+Read Bytes
+You entered: Read Bytes
 ```
 
 ---
