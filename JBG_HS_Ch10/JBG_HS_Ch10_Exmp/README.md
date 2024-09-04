@@ -68,19 +68,25 @@ Happy learning... :)
 ---
 ---
 
-### Example: ShowFile2
+### Example: JBG_JBG_HS_Ch10_Exmp_04
 
 #### Source Code
-[ShowFile2.java](./ShowFile2.java)
+[ShowFile.java](./ShowFile.java)
 
 **Description:** 
 
-
+This variation wraps the code that opens and accesses the file within a single try block. The file is closed by the finally block.
 
 #### Execution Logs
 
 ```
+$ java ShowFile test.txt 
+Hi,
 
+I am here to support the demonstration of
+'FileInputStream`.
+
+Happy learning... :)
 ```
 
 ---
