@@ -38,19 +38,31 @@ X
 ---
 ---
 
-### Example: ShowFile
+### Example: JBG_JBG_HS_Ch10_Exmp_03
 
 #### Source Code
-[ShowFile.java](./ShowFile.java)
+[JBG_JBG_HS_Ch10_Exmp_03](./JBG_JBG_HS_Ch10_Exmp_03)
 
 **Description:** 
 
+Display a text file.
 
+To use this program, specify the name of the file that you want to see. For example, to see a file called TEST.TXT, use the following command line.
+
+`java ShowFile TEST.TXT`
+
+Without usage of `finally`.
 
 #### Execution Logs
 
 ```
+$ java ShowFile test.txt 
+Hi,
 
+I am here to support the demonstration of
+'FileInputStream`.
+
+Happy learning... :)
 ```
 
 ---
