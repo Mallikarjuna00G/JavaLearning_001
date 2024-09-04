@@ -71,7 +71,7 @@ Happy learning... :)
 ### Example: JBG_JBG_HS_Ch10_Exmp_04
 
 #### Source Code
-[ShowFile.java](./ShowFile.java)
+[JBG_JBG_HS_Ch10_Exmp_04](./JBG_JBG_HS_Ch10_Exmp_04)
 
 **Description:** 
 
@@ -92,19 +92,23 @@ Happy learning... :)
 ---
 ---
 
-### Example: CopyFile
+### Example: JBG_JBG_HS_Ch10_Exmp_05
 
 #### Source Code
-[CopyFile.java](./CopyFile.java)
+[JBG_JBG_HS_Ch10_Exmp_05](./JBG_JBG_HS_Ch10_Exmp_05)
 
 **Description:** 
 
+To use this program, specify the name of the source file and destination file. For example, to copy a file called `first.text` to a file called `second.txt`, use the following command line.
 
+`java CopyFile first.txt second.txt`
 
 #### Execution Logs
 
-```
+Nothing gets printed to the console but the contents of `first.txt` is successfully copied to `second.txt`.
 
+```
+$ java CopyFile first.txt second.txt 
 ```
 
 ---
