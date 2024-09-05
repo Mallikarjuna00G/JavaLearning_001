@@ -185,19 +185,30 @@ Reading 90.28
 ---
 ---
 
-### Example: CompFiles
+### Example: JBG_JBG_HS_Ch10_Exmp_09 | Try This 10-1 A file comparison Utility.
 
 #### Source Code
-[CompFiles.java](./CompFiles.java)
+[JBG_JBG_HS_Ch10_Exmp_09](./JBG_JBG_HS_Ch10_Exmp_09)
 
 **Description:** 
 
+Try This 10-1
+A file comparison Utility.
+Compare two files.
 
+To use this program, specify the names of the files to be compared on the command line.
+
+`java CompFiles first.txt second.txt`
 
 #### Execution Logs
 
 ```
-
+$ java CompFiles file1.txt file2.txt 
+Files are the same.
+$ java CompFiles file1.txt file3.txt 
+Files differ
+$ java CompFiles file1.txt file4.txt 
+Files differ
 ```
 
 ---

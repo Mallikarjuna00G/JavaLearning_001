@@ -1,0 +1,13 @@
+A file comparison utility.
+- open both files to be compared.
+- read and compare each corresponding set of bytes.
+
+Files differ
+- if mismatch found.
+
+Files are same
+- if end-of-file is reached at the same time and no mismatch found.
+
+Using try-with-resources
+- to open both the files.
+- automatically close the files.
