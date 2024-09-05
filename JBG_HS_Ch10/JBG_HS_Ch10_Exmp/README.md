@@ -214,19 +214,31 @@ Files differ
 ---
 ---
 
-### Example: RandomAccessDemo
+### Example: JBG_JBG_HS_Ch10_Exmp_09 | Try This 10-1-1 A file comparison Utility case-insensitive.
 
 #### Source Code
-[RandomAccessDemo.java](./RandomAccessDemo.java)
+[JBG_HS_Ch10_Exmp_10](./JBG_HS_Ch10_Exmp_10/)
 
 **Description:** 
 
+Try This 10-1-1
+A file comparison utility.
 
+Compare two files and ignore the case of the letters during comparison.
+
+To use this program, specify the names of files to be compared on the command line.
+
+`java CompFiles file1 file2`
 
 #### Execution Logs
 
 ```
-
+$ java CompFiles file1.txt file2.txt 
+Files are same.
+$ java CompFiles file1.txt file3.txt 
+Files are same.
+$ java CompFiles file1.txt file4.txt 
+File differ
 ```
 
 ---
