@@ -1,0 +1,6 @@
+Hi,
+
+I am here to support the demonstration of
+'FileOutputStream`.
+
+Happy learning... :)

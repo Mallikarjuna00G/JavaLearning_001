@@ -137,19 +137,21 @@ Happy learning... :)
 ---
 ---
 
-### Example: CopyFile2
+### Example: JBG_JBG_HS_Ch10_Exmp_07
 
 #### Source Code
-[CopyFile2.java](./CopyFile2.java)
+[JBG_JBG_HS_Ch10_Exmp_07](./JBG_JBG_HS_Ch10_Exmp_07)
 
 **Description:** 
 
-
+A version of CopyFile that uses try-with-resources. It demonstrates two resources (in this case files) being managed by a single try statement.
 
 #### Execution Logs
 
-```
+No output is seen on the console but text is copied from `first.txt` to `second.txt` file successfully.
 
+```
+$ java CopyFile first.txt second.txt
 ```
 
 ---
