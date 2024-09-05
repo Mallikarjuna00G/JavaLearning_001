@@ -114,19 +114,24 @@ $ java CopyFile first.txt second.txt
 ---
 ---
 
-### Example: ShowFile3
+### Example: JBG_JBG_HS_Ch10_Exmp_06
 
 #### Source Code
-[ShowFile3.java](./ShowFile3.java)
+[JBG_JBG_HS_Ch10_Exmp_06](./JBG_JBG_HS_Ch10_Exmp_06)
 
 **Description:** 
 
-
+This version of the `ShowFile` program uses a *`try`-with-resources* statement to automatically close a file when it is no longer needed.
 
 #### Execution Logs
 
 ```
+Hi,
 
+I am here to support the demonstration of
+'FileInputStream`.
+
+Happy learning... :)
 ```
 
 ---
