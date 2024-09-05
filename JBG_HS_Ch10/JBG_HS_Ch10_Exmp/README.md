@@ -157,19 +157,29 @@ $ java CopyFile first.txt second.txt
 ---
 ---
 
-### Example: RWData
+### Example: JBG_JBG_HS_Ch10_Exmp_08
 
 #### Source Code
-[RWData.java](./RWData.java)
+[JBG_JBG_HS_Ch10_Exmp_08](./JBG_JBG_HS_Ch10_Exmp_08)
 
 **Description:** 
 
-
+Write and then read back binary data.
 
 #### Execution Logs
 
 ```
+$ java RWData | $XCLIP0
+Writing 10
+Writing 1023.56
+Writing true
+Writing 90.28
 
+
+Reading 10
+Reading 1023.56
+Reading true
+Reading 90.28
 ```
 
 ---
