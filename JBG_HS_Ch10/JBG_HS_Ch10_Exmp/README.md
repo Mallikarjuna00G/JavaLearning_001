@@ -278,6 +278,29 @@ Positions with differences in the compared files:
 ---
 ---
 
+### Example: JBG_HS_Ch10_Exmp_12
+
+#### Source Code
+[JBG_HS_Ch10_Exmp_12](./JBG_HS_Ch10_Exmp_12)
+
+**Description:** 
+
+Demonstrate radom access files.
+
+#### Execution Logs
+
+```
+First value is 19.4
+Second value is 10.1
+Fourth value is 33.0
+
+Here is every other value: 
+19.4 10.1 123.54 33.0 87.9 74.25 
+```
+
+---
+---
+
 ### Example: ReadChars
 
 #### Source Code
