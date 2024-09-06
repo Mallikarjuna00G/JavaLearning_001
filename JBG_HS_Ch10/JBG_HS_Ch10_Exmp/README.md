@@ -376,19 +376,30 @@ Using a PrintWriter.
 ---
 ---
 
-### Example: KtoD
+### Example: JBG_HS_Ch10_Exmp_16
 
 #### Source Code
-[KtoD.java](./KtoD.java)
+[JBG_HS_Ch10_Exmp_16](./JBG_HS_Ch10_Exmp_16)
 
 **Description:** 
 
-
+A simple key-to-disk utility that demonstrates a FileWriter.
 
 #### Execution Logs
 
 ```
-
+$ java KtoD 
+Enter text ('stop' to quit).
+I am not going to stop
+You stop
+please stop
+stop
+$ ls
+KtoD.class  KtoD.java  PW.class  test.txt
+$ cat test.txt 
+I am not going to stop
+You stop
+please stop
 ```
 
 ---
