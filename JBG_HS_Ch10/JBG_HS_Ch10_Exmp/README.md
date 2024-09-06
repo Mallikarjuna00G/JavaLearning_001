@@ -355,19 +355,22 @@ stop
 ---
 ---
 
-### Example: PrintWriterDemo
+### Example: JBG_HS_Ch10_Exmp_15
 
 #### Source Code
-[PrintWriterDemo.java](./PrintWriterDemo.java)
+[JBG_HS_Ch10_Exmp_15](./JBG_HS_Ch10_Exmp_15)
 
 **Description:** 
 
-
+Demonstrate PrintWriter.
 
 #### Execution Logs
 
 ```
-
+Using a PrintWriter.
+10
+123.65
+10 + 123.65 is 133.65
 ```
 
 ---
