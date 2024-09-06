@@ -328,19 +328,28 @@ o
 ---
 ---
 
-### Example: ReadLines
+### Example: JBG_HS_Ch10_Exmp_14
 
 #### Source Code
-[ReadLines.java](./ReadLines.java)
+[JBG_HS_Ch10_Exmp_14](./JBG_HS_Ch10_Exmp_14)
 
 **Description:** 
 
+Read a string from console using a BufferedReader.
 
+Use `readLine()` from `BufferedReader` to read a line of text.
 
 #### Execution Logs
 
 ```
-
+Enter lines of text.
+Enter 'stop' to quit.
+I am not gonna stop.
+I am not gonna stop.
+Will you stop?
+Will you stop?
+stop
+stop
 ```
 
 ---
