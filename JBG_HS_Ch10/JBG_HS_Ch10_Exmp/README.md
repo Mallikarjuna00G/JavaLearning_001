@@ -301,19 +301,28 @@ Here is every other value:
 ---
 ---
 
-### Example: ReadChars
+### Example: JBG_HS_Ch10_Exmp_13
 
 #### Source Code
-[ReadChars.java](./ReadChars.java)
+[JBG_HS_Ch10_Exmp_13](./JBG_HS_Ch10_Exmp_13)
 
 **Description:** 
 
-
+Use a BufferedReader to read characters from the console.
 
 #### Execution Logs
 
 ```
-
+Enter characters, period to quit.
+One Two.
+O
+n
+e
+ 
+T
+w
+o
+.
 ```
 
 ---
