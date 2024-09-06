@@ -405,19 +405,22 @@ please stop
 ---
 ---
 
-### Example: DtoS
+### Example: JBG_HS_Ch10_Exmp_17
 
 #### Source Code
-[DtoS.java](./DtoS.java)
+[JBG_HS_Ch10_Exmp_17](./JBG_HS_Ch10_Exmp_17)
 
 **Description:** 
 
-
+A simple disk-to-screen utility that demonstrates a `FileReader`.
 
 #### Execution Logs
 
 ```
-
+$ java DtoS 
+I am not going to stop
+You stop
+please stop
 ```
 
 ---
