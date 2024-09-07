@@ -79,7 +79,7 @@
 
 	"lsnip::throws IO exception": {
 		"scope": "java",
-		"prefix": "mainIOInput",
+		"prefix": "throwsIOException",
 		"body": [
 			"throws java.io.IOException",
 		],
@@ -701,9 +701,9 @@
 		"body": [
 			"catch($1 ${2|exc|}) {",
 			"    /**",
-			"     * Purpose: $3",
+			"     * Purpose: ",
 			"     */",
-			"    $4",
+			"    $3",
 			"}  // catch exception type $1"
 		],
 		"description": "local snippet:: catch statement."
