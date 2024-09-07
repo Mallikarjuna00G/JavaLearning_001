@@ -8,7 +8,7 @@ Why does Java define both byte and character streams?
 
 ### SelfTest Solution
 
-
+The byte streams are the original streams defined by Java. They are especially useful for binary I/O, and they support random-access files. The character streams are optimized for Unicode.
 
 ---
 ---
@@ -21,7 +21,7 @@ Even though console input and output is text-­based, why does Java still use by
 
 ### SelfTest Solution
 
-
+The predefined streams, `System.in`, `System.out`, and `System.err`, were defined before Java added the character streams.
 
 ---
 ---
@@ -34,7 +34,11 @@ Show how to open a file for reading bytes.
 
 ### SelfTest Solution
 
+Here is one way to open a file for `byte` input: 
 
+```java
+FileInputStream fin = new FileInputStream("test")
+```
 
 ---
 ---
@@ -47,7 +51,11 @@ Show how to open a file for reading characters.
 
 ### SelfTest Solution
 
+Here is one way to open a file for reading characters:
 
+```java
+FileReader fr = new FileReader("test");
+```
 
 ---
 ---
@@ -60,7 +68,11 @@ Show how to open a file for random-­access I/O.
 
 ### SelfTest Solution
 
+Here is one way to open a file for random access: 
 
+```java
+randFile = new RandomAccessFile("test", "rw");
+```
 
 ---
 ---
@@ -73,7 +85,7 @@ How can you convert a numeric string such as "123.23" into its binary equivalent
 
 ### SelfTest Solution
 
-
+To convert numeric strings into their binary equivalents, use the parsing methods defined by the type wrappers, such as `Integer` or `Double`.
 
 ---
 ---
@@ -86,7 +98,11 @@ Write a program that copies a text file. In the process, have it convert all spa
 
 ### SelfTest Solution
 
+[JBG_HS_Ch10_SelfTest07](./JBG_HS_Ch10_SelfTest07/)
 
+```
+$ java Hyphen file1.txt file2.txt 
+```
 
 ---
 ---
@@ -99,7 +115,11 @@ Rewrite the program described in question 7 so that it uses the character stream
 
 ### SelfTest Solution
 
+[JBG_HS_Ch10_SelfTest08](./JBG_HS_Ch10_SelfTest08/)
 
+```
+$ java Hyphen file1.txt file2.txt
+```
 
 ---
 ---
@@ -112,7 +132,7 @@ What type of stream is `System.in`?
 
 ### SelfTest Solution
 
-
+`InputStream`
 
 ---
 ---
@@ -125,7 +145,7 @@ What does the `read()` method of `InputStream` return when an attempt is made to
 
 ### SelfTest Solution
 
-
+-1
 
 ---
 ---
@@ -138,7 +158,7 @@ What type of stream is used to read binary data?
 
 ### SelfTest Solution
 
-
+`DataInputStream`
 
 ---
 ---
@@ -151,7 +171,7 @@ What type of stream is used to read binary data?
 
 ### SelfTest Solution
 
-
+Character-based I/O.
 
 ---
 ---
@@ -164,7 +184,7 @@ The `try­`-with-­resources statement is used for _____________________________
 
 ### SelfTest Solution
 
-
+Automatic resource management.
 
 ---
 ---
@@ -177,7 +197,7 @@ If you are using the traditional method of closing a file, then closing a file w
 
 ### SelfTest Solution
 
-
+True.
 
 ---
 ---
@@ -190,7 +210,7 @@ Can local variable type inference be used when declaring the resource in a `try�
 
 ### SelfTest Solution
 
-
+Yes.
 
 ---
 ---

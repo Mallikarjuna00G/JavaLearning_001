@@ -1,0 +1,5 @@
+To use this program, specify the name
+of the source file and the destination file.
+For example,
+
+java Hyphen source target
