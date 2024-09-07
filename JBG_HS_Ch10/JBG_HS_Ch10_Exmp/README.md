@@ -451,18 +451,36 @@ Average is 3.3
 ---
 ---
 
-### Example: FileHelp
+### Example: JBG_HS_Ch10_Exmp_19
 
 #### Source Code
-[FileHelp.java](./FileHelp.java)
+[JBG_HS_Ch10_Exmp_19](./JBG_HS_Ch10_Exmp_19)
 
 **Description:** 
 
+Try This 10-2
 
+Creating a Disk-Based Help System.
 
 #### Execution Logs
 
 ```
+Try this help system. Enter 'stop' to end.
+Enter topic: for
+for(init; condition; iteration) statement;
+
+Enter topic: exit
+Topic not found.
+
+Enter topic: while
+while(condition) statement;
+
+Enter topic: if
+if(condition) statement;
+else statement;
+
+Enter topic: stop
+Topic not found.
 
 ```
 
