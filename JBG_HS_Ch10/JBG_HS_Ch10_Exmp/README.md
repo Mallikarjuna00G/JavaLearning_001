@@ -426,19 +426,26 @@ please stop
 ---
 ---
 
-### Example: AvgNums
+### Example: JBG_HS_Ch10_Exmp_18
 
 #### Source Code
-[AvgNums.java](./AvgNums.java)
+[JBG_HS_Ch10_Exmp_18](./JBG_HS_Ch10_Exmp_18)
 
 **Description:** 
 
-
+This program averages a list of numbers entered by the user.
 
 #### Execution Logs
 
 ```
-
+How many numbers will you enter: 5
+Enter 5 values.
+: 1.1
+: 2.2
+: 3.3
+: 4.4
+: 5.5
+Average is 3.3
 ```
 
 ---
