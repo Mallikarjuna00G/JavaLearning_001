@@ -3,10 +3,10 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 10  # UPDATE NEEDED HERE
-examples = ["ReadBytes", "WriteDemo", "ShowFile", "ShowFile2", "CopyFile", "ShowFile3", "CopyFile2", "RWData", "CompFiles", "RandomAccessDemo", "ReadChars", "ReadLines", "PrintWriterDemo", "KtoD", "DtoS", "AvgNums", "FileHelp"]  # UPDATE NEEDED HERE
-numberOfExmp = len(examples)
-
+currentChapterNo = 11  # UPDATE NEEDED HERE
+# examples = [""]  # UPDATE NEEDED HERE
+# numberOfExmp = len(examples)
+numberOfExmp = 3  # UPDATE NEEDED HERE
 
 chapterNo = f"{currentChapterNo:02d}"
 
@@ -29,11 +29,13 @@ content1 = f"""# {chapterWithPrefix}_Exmp
 
 readMeFile.writelines(content1)
 
-for example in examples:
-    content2 = f"""### Example: {example}
+for i in range(numberOfExmp):
+    exmpNo = dirExmp + f"{i + 1:02d}"
+    os.mkdir(dirExmpPath + "/" + exmpNo)
+    content2 = f"""### Example: {exmpNo}
 
 #### Source Code
-[{example}.java](./{example}.java)
+[{exmpNo}](./{exmpNo})
 
 **Description:** 
 
