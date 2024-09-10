@@ -29,3 +29,4 @@ Learn/Practice Java from
 8. [JBG_HS_Ch08: Packages and Interfaces](JBG_HS_Ch08)
 9. [JBG_HS_Ch09: Exception Handling](JBG_HS_Ch09)
 10. [JBG_HS_Ch10: Using I/O](JBG_HS_Ch10)
+11. [JBG_HS_Ch11: Multithreaded Programming](JBG_HS_Ch11/)

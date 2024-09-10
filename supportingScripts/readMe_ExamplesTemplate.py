@@ -6,7 +6,7 @@ import shutil
 currentChapterNo = 11  # UPDATE NEEDED HERE
 # examples = [""]  # UPDATE NEEDED HERE
 # numberOfExmp = len(examples)
-numberOfExmp = 3  # UPDATE NEEDED HERE
+numberOfExmp = 15  # UPDATE NEEDED HERE
 
 chapterNo = f"{currentChapterNo:02d}"
 

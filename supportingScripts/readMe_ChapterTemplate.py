@@ -3,11 +3,11 @@ import shutil
 
 # NOTE: Stay in JavaLearning_001 while running this script
 
-currentChapterNo = 10  # UPDATE NEEDED HERE
+currentChapterNo = 11  # UPDATE NEEDED HERE
 
 chapterNo = f"{currentChapterNo:02d}"
 
-chapterTitle = "Using I/O"  # UPDATE NEEDED HERE
+chapterTitle = "Multithreaded Programming"  # UPDATE NEEDED HERE
 prefix = "JBG_HS_Ch"
 chapterWithPrefix = prefix + chapterNo
 
