@@ -7,12 +7,25 @@
 
 **Description:** 
 
-
+Create a thread by implementing a runnable.
 
 #### Execution Logs
 
 ```
-
+Main thread starting.
+.Child #1 starting.
+....In thread Child #1, count is 0
+....In thread Child #1, count is 1
+....In thread Child #1, count is 2
+....In thread Child #1, count is 3
+....In thread Child #1, count is 4
+....In thread Child #1, count is 5
+....In thread Child #1, count is 6
+....In thread Child #1, count is 7
+....In thread Child #1, count is 8
+....In thread Child #1, count is 9
+Child #1 terminating.
+.........Main thread ending.
 ```
 
 ---
