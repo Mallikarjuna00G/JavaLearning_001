@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-height: 4%;
+    --header-min-height: 32px;
+    --footer-height: var(--header-height);
+    --footer-min-height: var(--header-min-height);
+    --main-height: calc(100% - var(--header-height) - var(--footer-height));
+}
+
+body {
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    height: var(--header-height);
+    width: 100%;
+    background-color: burlywood;
+
+    display: flex;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+#menuIcon {
+    cursor: pointer;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    height: var(--footer-height);
+    width: 100%;
+    background-color: burlywood;
+
+    display: flex;
+    justify-content: space-around;
+    vertical-align: middle;
+}
+
+main {
+    height: var(--main-height);
+    width: 98%;
+    margin: auto;
+    padding: 4px;
+    overflow: auto;
+    top: var(--header-min-height);
+    position: relative;
+
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+
+.contentList {
+    width: 200px;
+    padding: 4px;
+    box-shadow: 0 0 4px 2px grey;
+}
+
+.contentList > ul > li {
+    list-style: none;
+    text-wrap: wrap;
+    margin: 14px 0;
+}
+
+.theory {
+    padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
