@@ -13,7 +13,10 @@
 }
 
 body {
-
+    height: 100vh;
+    overflow: hidden;
+    font-family: Tahoma, sans-serif;
+    font-size: medium;
 }
 
 header {
@@ -49,25 +52,28 @@ main {
     width: 98%;
     margin: auto;
     padding: 4px;
-    overflow: auto;
     top: var(--header-min-height);
     position: relative;
-
+    
     display: flex;
     flex-direction: row;
     gap: 12px;
+    overflow: auto;
 }
 
 .contentList {
-    width: 200px;
+    min-width: 200px;
     padding: 4px;
     box-shadow: 0 0 4px 2px grey;
+    overflow: auto;
 }
 
 .contentList > ul > li {
     list-style: none;
     text-wrap: wrap;
     margin: 14px 0;
+    cursor: pointer;
+    border-bottom: 1px solid #000000e0;
 }
 
 .theory {
@@ -75,4 +81,41 @@ main {
     display: flex;
     flex-direction: column;
     gap: 12px;
+}
+
+#theoryCoverPage > .left > * {
+    margin: 4px;
+}
+
+.lvl0, .lvl1, .lvl2, .lvl3, .lvl4, .lvl5, .lvl6 {
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+}
+
+.left {
+    box-shadow: 0 0 4px 2px gray;
+    padding: 8px;
+    min-width: 300px;
+    margin: 8px 0;
+}
+
+.right {
+    margin: 8px 0;
+}
+
+.content {
+    box-shadow: 0 0 4px 2px gray;
+    padding: 8px;
+    min-width: 300px;
+    border-radius: 4px;
+    text-align: justify;
+}
+
+.content > * {
+    margin: 8px 0;
+}
+
+ul {
+    list-style-position: inside;
 }

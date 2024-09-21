@@ -1,0 +1,16 @@
+code {
+    border: 1px solid lightskyblue;
+    border-radius: 4px;
+    padding: 0 2px;
+    background-color: #add8e650;
+}
+
+em {
+    background-color: #88c55250;
+}
+
+.highlight {
+    background-color: #ecec90;
+    border: 1px solid yellowgreen;
+    padding: 0 2px;
+}

@@ -14,6 +14,8 @@ menuIcon.addEventListener('click', () => {
 
 // Switch content
 
+const theoryCoverPage = document.getElementById('theoryCoverPage');
+const theoryIntroduction = document.getElementById('theoryIntroduction');
 const theoryCh01 = document.getElementById('theoryCh01');
 const theoryCh02 = document.getElementById('theoryCh02');
 const theoryCh03 = document.getElementById('theoryCh03');
@@ -31,6 +33,8 @@ const theoryCh14 = document.getElementById('theoryCh14');
 const theoryCh15 = document.getElementById('theoryCh15');
 const theoryCh16 = document.getElementById('theoryCh16');
 
+const coverPage = document.getElementById('coverPage');
+const Introduction = document.getElementById('Introduction');
 const ch01 = document.getElementById('Ch01');
 const ch02 = document.getElementById('Ch02');
 const ch03 = document.getElementById('Ch03');
@@ -49,6 +53,8 @@ const ch15 = document.getElementById('Ch15');
 const ch16 = document.getElementById('Ch16');
 
 const theoryChArr = [
+    theoryCoverPage,
+    theoryIntroduction,
     theoryCh01,
     theoryCh02,
     theoryCh03,
@@ -78,9 +84,11 @@ document.addEventListener('DOMContentLoaded', () => {
     contentList.style.display = 'none';
     menuIcon.src = "./images/menuClosed.svg";
     displayNoContent();
-    theoryCh01.style.display = 'flex';
+    theoryIntroduction.style.display = 'flex';
 })
 
+coverPage.addEventListener('click', () => {displayNoContent();theoryCoverPage.style.display = 'flex';})
+Introduction.addEventListener('click', () => {displayNoContent();theoryIntroduction.style.display = 'flex';})
 ch01.addEventListener('click', () => {displayNoContent();theoryCh01.style.display = 'flex';})
 ch02.addEventListener('click', () => {displayNoContent();theoryCh02.style.display = 'flex';})
 ch03.addEventListener('click', () => {displayNoContent();theoryCh03.style.display = 'flex';})
