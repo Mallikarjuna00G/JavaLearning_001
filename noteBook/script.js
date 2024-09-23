@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     contentList.style.display = 'none';
     menuIcon.src = "./images/menuClosed.svg";
     displayNoContent();
-    theoryIntroduction.style.display = 'flex';
+    theoryCh01.style.display = 'flex';
 })
 
 coverPage.addEventListener('click', () => {displayNoContent();theoryCoverPage.style.display = 'flex';})

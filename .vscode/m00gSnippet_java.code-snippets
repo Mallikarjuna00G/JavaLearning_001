@@ -553,24 +553,11 @@
 		"prefix": "classDef",
 		"body": [
 			"/**",
-			" * Purpose: $1",
+			" * Purpose: ",
 			" */",
-			"class ${2|className|} {",
-			"    /*==================== START: FIELDS ====================*/",
-			"    $3",
-			"    /*==================== END: FIELDS ====================*/",
-			"    /*==================== START: CONSTRUCTORS ====================*/",
-			"    $2() {",
-			"        ",
-			"    }  // Constructor",
-			"    /*==================== END: CONSTRUCTORS ====================*/",
-			"    /*==================== START: ACCESSOR (SET and GET) METHODS ====================*/",
-			"    ",
-			"    /*==================== END: ACCESSOR (SET and GET) METHODS ====================*/",
-			"    /*==================== START: METHODS ====================*/",
-			"    ",
-			"    /*==================== END: METHODS ====================*/",
-			"}  // class $2"
+			"class ${1|className|} {",
+			"    $2",
+			"}  // class $1"
 			
 		],
 		"description": "local snippet:: new class definition."

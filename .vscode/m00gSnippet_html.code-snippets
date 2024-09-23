@@ -34,4 +34,153 @@
 		],
 		"description": "local snippet:: lvl-x class div element."
 	},
+
+	"lsnip::lvl-1 class div element": {
+		"scope": "html",
+		"prefix": "lvl1",
+		"body": [
+			"<div class=\"lvl1\">",
+            "    <div class=\"left\">",
+			"        <h2></h2>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl1 -->",
+		],
+		"description": "local snippet:: lvl-1 class div element."
+	},
+
+	"lsnip::lvl-2 class div element": {
+		"scope": "html",
+		"prefix": "lvl2",
+		"body": [
+			"<div class=\"lvl2\">",
+            "    <div class=\"left\">",
+			"        <h3></h3>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl2 -->",
+		],
+		"description": "local snippet:: lvl-2 class div element."
+	},
+
+	"lsnip::lvl-3 class div element": {
+		"scope": "html",
+		"prefix": "lvl3",
+		"body": [
+			"<div class=\"lvl3\">",
+            "    <div class=\"left\">",
+			"        <h4></h4>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl3 -->",
+		],
+		"description": "local snippet:: lvl-3 class div element."
+	},
+
+	"lsnip::lvl-4 class div element": {
+		"scope": "html",
+		"prefix": "lvl4",
+		"body": [
+			"<div class=\"lvl4\">",
+            "    <div class=\"left\">",
+			"        <h5></h5>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl4 -->",
+		],
+		"description": "local snippet:: lvl-4 class div element."
+	},
+
+	"lsnip::lvl-5 class div element": {
+		"scope": "html",
+		"prefix": "lvl5",
+		"body": [
+			"<div class=\"lvl5\">",
+            "    <div class=\"left\">",
+			"        <h5></h5>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl5 -->",
+		],
+		"description": "local snippet:: lvl-5 class div element."
+	},
+
+	"lsnip::askTheExpert div element": {
+		"scope": "html",
+		"prefix": "askTheExpert",
+		"body": [
+			"<div class=\"askTheExpert\">",
+            "    <h3 class=\"top\"></h3>",
+			"    <p class=\"question\"></p>",
+            "    <p class=\"answer\"></p>",
+            "</div>  <!-- askTheExpert -->",
+		],
+		"description": "local snippet:: askTheExpert div element."
+	},
+
+	"lsnip::table element": {
+		"scope": "html",
+		"prefix": "table",
+		"body": [
+			"<table>",
+            "    <thead>",
+			"        <tr>",
+			"            <th><th>",
+            "            <th><th>",
+            "        </tr>",
+			"    </thead>",
+			"    <tbody>",
+			"        <tr>",
+			"            <td><td>",
+            "            <td><td>",
+            "        </tr>",
+			"    </tbody>",
+			"</table>  <!-- table -->",
+		],
+		"description": "local snippet:: table element."
+	},
+
+	"lsnip::figure element": {
+		"scope": "html",
+		"prefix": "figure",
+		"body": [
+			"<figure>",
+            "    <img src=\"\" alt=\"\">",
+			"    <figcaption></figcaption>",
+			"</figure>  <!-- figure -->",
+		],
+		"description": "local snippet:: figure element."
+	},
+
+	"lsnip::note": {
+		"scope": "html",
+		"prefix": "note",
+		"body": [
+			"<div class=\"note\">",
+            "    <h3 class=\"noteHeading\"></h3>",
+			"    <p></p>",
+			"</div>  <!-- note -->",
+		],
+		"description": "local snippet:: note."
+	},
 }
