@@ -6,6 +6,7 @@
     <title>Java: The Beginner's guide 8th edition</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="default.min.css">
 </head>
 <body>
     <header>
@@ -190,7 +191,7 @@
                         </div>  <!-- left -->
                         <div class="right">
                             <div class="content">
-                                <p>Remember, the source code for all of the examples and projects in this book is available free of charge on the Web at <a href="http://www.oraclepressbooks.com">www.oraclepressbooks.com</a>.</p>
+                                <p>Remember, the source code for all of the examples and projects in this book is available free of charge on the Web at <a target="_blank" href="http://www.oraclepressbooks.com">www.oraclepressbooks.com</a>.</p>
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
@@ -295,7 +296,7 @@
                                                 </figure>
                                             </div>
                                             <p>This language was initially called <strong>"Oak"</strong> but was renamed <strong>"Java"</strong> in 1995.</p>
-                                            <p>Read more <a href="https://brainscode.github.io/java-tutorial/intro_java_history.html">here</a>.</p>
+                                            <p>Read more <a target="_blank" href="https://brainscode.github.io/java-tutorial/intro_java_history.html">here</a>.</p>
                                             <figure class="standAloneFigure">
                                                 <img src="./images2/languageRenamed.svg" alt="Language Renamed">
                                                 <figcaption>Language renamed from "Oak" to "Java"</figcaption>
@@ -564,7 +565,7 @@
                             <div class="right">
                                 <div class="content">
                                     <p>Now that the theoretical underpinning of Java has been explained, it is time to start writing Java programs. Before you can compile and run those programs, you must have a Java Development Kit (JDK). At the time of this writing, the current release of the JDK is JDK 11. This is the version for Java SE 11. (SE stands for Standard Edition.) It is also the version described in this book. Because JDK 11 contains features that are not supported by earlier versions of Java, it is recommended that you use JDK 11 (or later) to compile and run the programs in this book. (Remember, because of Java's faster release schedule, JDK feature releases are expected at six-month intervals. Thus, don't be surprised by a JDK with a higher release number.) However, depending on the environment in which you are working, an earlier JDK may already be installed. If this is the case, then newer Java features will not be available.</p>
-                                    <p>If you need to install the JDK on your computer, be aware that for modern versions of Java, both Oracle JDKs and open source OpenJDKs are available for download. In general, you should first find the JDK you want to use. For example, at the time of this writing, the Oracle JDK can be downloaded from <a href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">www.oracle.com/technetwork/java/javase/downloads/index.html</a>. Also at the time of this writing, an open source version is available at <a href="https://jdk.java.net/">jdk.java.net</a>. Next, download the JDK of your choice and follow its instructions to install it on your computer. After you have installed the JDK, you will be able to compile and run programs.</p>
+                                    <p>If you need to install the JDK on your computer, be aware that for modern versions of Java, both Oracle JDKs and open source OpenJDKs are available for download. In general, you should first find the JDK you want to use. For example, at the time of this writing, the Oracle JDK can be downloaded from <a target="_blank" href="https://www.oracle.com/technetwork/java/javase/downloads/index.html">www.oracle.com/technetwork/java/javase/downloads/index.html</a>. Also at the time of this writing, an open source version is available at <a target="_blank" href="https://jdk.java.net/">jdk.java.net</a>. Next, download the JDK of your choice and follow its instructions to install it on your computer. After you have installed the JDK, you will be able to compile and run programs.</p>
                                     <p>The JDK supplies two primary programs.</p>
                                     <ul>
                                         <li>The first is <code>javac</code>, which is the Java compiler.</li>
@@ -576,6 +577,90 @@
                                     <h3 class="noteHeading"></h3>
                                     <p>In addition to the basic command-line tools supplied with the JDK, there are several high-quality IDEs available for Java, such as <i>NetBeans</i> and <i>Eclipse</i>. An IDE can be very helpful when developing and deploying commercial applications. As a general rule, you can also use an IDE to compile and run the programs in this book if you so choose. However, the instructions presented in this book for compiling and running a Java program describe only the JDK command-line tools. The reasons for this are easy to understand. First, the JDK is readily available to all readers. Second, the instructions for using the JDK will be the same for all readers. Furthermore, for the simple programs presented in this book, using the JDK command-line tools is usually the easiest approach. If you are using an IDE, you will need to follow its instructions. Because of differences between IDEs, no general set of instructions can be given.</p>
                                 </div>  <!-- note -->
+                            </div>  <!-- right -->
+                        </div>  <!-- lvl2 -->
+                        <div class="lvl2">
+                            <div class="left">
+                                <h3>Ask the Expert</h3>
+                            </div>  <!-- left -->
+                            <div class="right">
+                                <div class="askTheExpert">
+                                    <h3 class="top"></h3>
+                                    <p class="question">You state that object-oriented programming is an effective way to manage large programs. However, it seems that it might add substantial overhead to relatively small ones. Since you say that all Java programs are, to some extent, object-oriented, does this impose a penalty for smaller programs?</p>
+                                    <p class="answer">No. As you will see, for small programs, Java's object-oriented features are nearly transparent. Although it is true that Java follows a strict object model, you have wide latitude as to the degree to which you employ it. For smaller programs, their "object-orientedness" is barely perceptible. As your programs grow, you will integrate more object-oriented features effortlessly.</p>
+                                </div>  <!-- askTheExpert -->
+                            </div>  <!-- right -->
+                        </div>  <!-- lvl2 -->
+                        <div class="lvl2">
+                            <div class="left">
+                                <h3>A FIRST SIMPLE PROGRAM</h3>
+                            </div>  <!-- left -->
+                            <div class="right">
+                                <div class="content">
+                                    <p>Let's start by compiling and running the short sample program shown here:</p>
+                                    <pre><code class="language-java">/**
+ * This is a simple java program.
+ * 
+ * Call this file Example.java
+ */
+
+class Example {
+    // A Java program begins with a call to main().
+    public static void main(String args[]) {
+        System.out.println("Java drives the web.");
+    }
+}</code></pre>
+                                    <p>You will follow these three steps:</p>
+                                    <ol>
+                                        <li>Enter the program.</li>
+                                        <li>Compile the program.</li>
+                                        <li>Run the program.</li>
+                                    </ol>
+                                </div>  <!-- content -->
+                                <div class="lvl3">
+                                    <div class="left">
+                                        <h4>Entering the Program</h4>
+                                    </div>  <!-- left -->
+                                    <div class="right">
+                                        <div class="content">
+                                            <p>The programs shown in this book are available from <a href="http://www.oraclepressbooks.com" target="_blank">www.oraclepressbooks.com</a>. However, if you want to enter the programs by hand, you are free to do so. In this case, you must enter the program into your computer using a text editor, not a word processor. Word processors typically store format information along with text. This format information will confuse the Java compiler. If you are using a Windows platform, you can use WordPad or any other programming editor that you like.</p>
+                                            <p>For most computer languages, the name of the file that holds the source code to a program is arbitrary. However, this is not the case with Java. The first thing that you must learn about Java is that <em>the name you give to a source file is very important</em>. For this example, the name of the source file should be <code>Example.java</code>. Let's see why.</p>
+                                            <p>In Java, a source file is officially called a <em>compilation unit</em>. It is a text file that contains (among other things) one or more class definitions. (For now, we will be using source files that contain only one class.) The Java compiler requires that a source file use the <code>.java</code> filename extension. As you can see by looking at the program, the name of the class defined by the program is also <code>Example</code>. This is not a coincidence. In Java, all code must reside inside a class. By convention, the name of the main class should match the name of the file that holds the program. You should also make sure that the capitalization of the filename matches the class name. The reason for this is that Java is case sensitive. At this point, the convention that filenames correspond to class names may seem arbitrary. However, this convention makes it easier to maintain and organize your programs. Furthermore, as you will see later in this book, in some cases, it is required.</p>
+                                        </div>  <!-- content -->
+                                    </div>  <!-- right -->
+                                </div>  <!-- lvl3 -->
+                                <div class="lvl3">
+                                    <div class="left">
+                                        <h4>Compiling the Program</h4>
+                                    </div>  <!-- left -->
+                                    <div class="right">
+                                        <div class="content">
+                                            <p>To compile the <code>Example</code> program, execute the compiler, <code>javac</code>, specifying the name of the source file on the command line, as shown here:</p>
+                                            <pre><code class="language-plaintext">javac Example.java</code></pre>  <!-- plaintext block -->
+                                            <p>The <code>javac</code> compiler creates a file called <code>Example.class</code> that contains the bytecode version of the program. Remember, <em>bytecode is not executable code</em>. Bytecode must be executed by a Java Virtual Machine. Thus, the output of <code>javac</code> is not code that can be directly executed.</p>
+                                            <p>To actually run the program, you must use the Java interpreter, <code>java</code>. To do so, pass the class name <code>Example</code> as a command-line argument, as shown here:</p>
+                                            <pre><code class="language-plaintext">java Example</code></pre>  <!-- plaintext block -->
+                                            <p>When the program is run, the following output is displayed:</p>
+                                            <pre><code class="language-plaintext">Java drives the web.</code></pre>  <!-- plaintext block -->
+                                            <p>When Java source code is compiled, each individual class is put into its own output file named after the class and using the <code>.class</code> extension. This is why it is a good idea to give your Java source files the same name as the class they contain—the name of the source file will match the name of the <code>.class</code> file. When you execute the Java interpreter as just shown, you are actually specifying the name of the class that you want the interpreter to execute. It will automatically search for a file by that name that has the <code>.class</code> extension. If it finds the file, it will execute the code contained in the specified class.</p>
+                                            <p>Before moving on, it is important to mention that beginning with JDK 11, Java provides a way to run some types of simple programs directly from a source file, without explicitly invoking <code>javac</code>. This technique, which can be useful in some situations, is described in Appendix C. For the purposes of this book, it is assumed that you are using the normal compilation process just described.</p>
+                                        </div>  <!-- content -->
+                                        <div class="note">
+                                            <h3 class="noteHeading"></h3>
+                                            <p>If, when you try to compile the program, the computer cannot find <code>javac</code> (and assuming that you have installed the JDK correctly), you may need to specify the path to the command-line tools. In Windows, for example, this means that you will need to add the path to the command-line tools to the paths defined for the <code>PATH</code> environmental variable. For example, if JDK 11 was installed under the Program Files directory, then the path to the command-line tools will be similar to <code>C:\Program Files\Java\jdk-11\bin</code>. (Of course, you will need to find the path to Java on your computer, which may differ from the one just shown. Also the specific version of the JDK may differ.) You will need to consult the documentation for your operating system on how to set the path, because this procedure differs between OSes.</p>
+                                        </div>  <!-- note -->
+                                    </div>  <!-- right -->
+                                </div>  <!-- lvl3 -->
+                                <div class="lvl3">
+                                    <div class="left">
+                                        <h4>The First Sample Program Line by Line</h4>
+                                    </div>  <!-- left -->
+                                    <div class="right">
+                                        <div class="content">
+                                            
+                                        </div>  <!-- content -->
+                                    </div>  <!-- right -->
+                                </div>  <!-- lvl3 -->
                             </div>  <!-- right -->
                         </div>  <!-- lvl2 -->
                     </div>  <!-- right -->
@@ -633,6 +718,9 @@
             <p><i>Note:</i> Just for Learning</p>
         </div>
     </footer>
+    <script src="script.js"></script>
+    <script src="highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+    <script>hljs.highlightAll();</script>
 </body>
-<script src="script.js"></script>
 </html>

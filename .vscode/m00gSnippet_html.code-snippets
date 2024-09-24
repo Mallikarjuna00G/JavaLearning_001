@@ -183,4 +183,22 @@
 		],
 		"description": "local snippet:: note."
 	},
+
+	"lsnip::Embed java code": {
+		"scope": "html",
+		"prefix": "javaCode",
+		"body": [
+			"<pre><code class=\"language-java\"></code></pre>  <!-- java code -->",
+		],
+		"description": "local snippet:: Embed Java code."
+	},
+
+	"lsnip::Embed plaintext block": {
+		"scope": "html",
+		"prefix": "plaintextBlock",
+		"body": [
+			"<pre><code class=\"language-plaintext\"></code></pre>  <!-- plaintext block -->",
+		],
+		"description": "local snippet:: plaintext block."
+	},
 }

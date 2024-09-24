@@ -1,4 +1,4 @@
-code {
+code:not(pre code) {
     border: 1px solid lightskyblue;
     border-radius: 4px;
     padding: 0 2px;

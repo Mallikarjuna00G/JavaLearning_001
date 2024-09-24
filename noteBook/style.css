@@ -118,6 +118,6 @@ main {
     margin: 8px 0;
 }
 
-ul {
+ul, ol {
     list-style-position: inside;
 }
