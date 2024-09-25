@@ -35,6 +35,25 @@
 		"description": "local snippet:: lvl-x class div element."
 	},
 
+	"lsnip::lvl-0 class div element": {
+		"scope": "html",
+		"prefix": "lvl0",
+		"body": [
+			"<div class=\"lvl0\" id=\"theoryCh$1\">",
+            "    <div class=\"left\">",
+			"        <h4>Chapter $1</h4>",
+            "        <h1></h1>",
+            "    </div>  <!-- left -->",
+            "    <div class=\"right\">",
+            "        <div class=\"content\">",
+            "            ",
+            "        </div>  <!-- content -->",
+            "    </div>  <!-- right -->",
+            "</div>  <!-- lvl0 -->",
+		],
+		"description": "local snippet:: lvl-0 class div element."
+	},
+
 	"lsnip::lvl-1 class div element": {
 		"scope": "html",
 		"prefix": "lvl1",

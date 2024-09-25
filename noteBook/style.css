@@ -69,15 +69,18 @@ main {
     overflow: auto;
     top: 0;
     max-height: 88vh;
+    border-radius: 10px 40px 10px 40px;
 }
 
 .contentList > ul > li {
     list-style: none;
     text-wrap: wrap;
-    margin: 14px 0;
+    margin: 14px 14px 14px 0;
     cursor: pointer;
-    border-bottom: 1px solid #000000e0;
     overflow: auto;
+    padding: 0 4px;
+    border-radius: 4px 12px 4px 12px;
+    /* color: #28c428; */
 }
 
 .theory {

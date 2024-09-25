@@ -73,6 +73,27 @@ const theoryChArr = [
     theoryCh16,
 ]
 
+const contentListIDs = [
+    coverPage,
+    Introduction,
+    ch01,
+    ch02,
+    ch03,
+    ch04,
+    ch05,
+    ch06,
+    ch07,
+    ch08,
+    ch09,
+    ch10,
+    ch11,
+    ch12,
+    ch13,
+    ch14,
+    ch15,
+    ch16,
+]
+
 function displayNoContent() {
     for (let index = 0; index < theoryChArr.length; index++) {
         const element = theoryChArr[index];
@@ -80,28 +101,42 @@ function displayNoContent() {
     }
 }
 
+function displayNoStyleContentID() {
+    for (let index = 0; index < contentListIDs.length; index++) {
+        const element = contentListIDs[index];
+        element.style.boxShadow = 'none';
+    }
+}
+
+coverPage.addEventListener('click', () => {activateContent(coverPage, theoryCoverPage)})
+Introduction.addEventListener('click', () => {activateContent(Introduction, theoryIntroduction)})
+ch01.addEventListener('click', () => {activateContent(ch01, theoryCh01)})
+ch02.addEventListener('click', () => {activateContent(ch02, theoryCh02)})
+ch03.addEventListener('click', () => {activateContent(ch03, theoryCh03)})
+ch04.addEventListener('click', () => {activateContent(ch04, theoryCh04)})
+ch05.addEventListener('click', () => {activateContent(ch05, theoryCh05)})
+ch06.addEventListener('click', () => {activateContent(ch06, theoryCh06)})
+ch07.addEventListener('click', () => {activateContent(ch07, theoryCh07)})
+ch08.addEventListener('click', () => {activateContent(ch08, theoryCh08)})
+ch09.addEventListener('click', () => {activateContent(ch09, theoryCh09)})
+ch10.addEventListener('click', () => {activateContent(ch10, theoryCh10)})
+ch11.addEventListener('click', () => {activateContent(ch11, theoryCh11)})
+ch12.addEventListener('click', () => {activateContent(ch12, theoryCh12)})
+ch13.addEventListener('click', () => {activateContent(ch13, theoryCh13)})
+ch14.addEventListener('click', () => {activateContent(ch14, theoryCh14)})
+ch15.addEventListener('click', () => {activateContent(ch15, theoryCh15)})
+ch16.addEventListener('click', () => {activateContent(ch16, theoryCh16)})
+
+function activateContent(contentID, content) {
+    displayNoContent();
+    content.style.display = 'flex';
+    displayNoStyleContentID();
+    contentID.style.boxShadow = '0 -5px 4px #28c428, 0 5px 4px #28c428';
+}
+
+// Keep this at the last.
 document.addEventListener('DOMContentLoaded', () => {
     contentList.style.display = 'none';
     menuIcon.src = "./images/menuClosed.svg";
-    displayNoContent();
-    theoryCh01.style.display = 'flex';
+    activateContent(ch01, theoryCh01);
 })
-
-coverPage.addEventListener('click', () => {displayNoContent();theoryCoverPage.style.display = 'flex';})
-Introduction.addEventListener('click', () => {displayNoContent();theoryIntroduction.style.display = 'flex';})
-ch01.addEventListener('click', () => {displayNoContent();theoryCh01.style.display = 'flex';})
-ch02.addEventListener('click', () => {displayNoContent();theoryCh02.style.display = 'flex';})
-ch03.addEventListener('click', () => {displayNoContent();theoryCh03.style.display = 'flex';})
-ch04.addEventListener('click', () => {displayNoContent();theoryCh04.style.display = 'flex';})
-ch05.addEventListener('click', () => {displayNoContent();theoryCh05.style.display = 'flex';})
-ch06.addEventListener('click', () => {displayNoContent();theoryCh06.style.display = 'flex';})
-ch07.addEventListener('click', () => {displayNoContent();theoryCh07.style.display = 'flex';})
-ch08.addEventListener('click', () => {displayNoContent();theoryCh08.style.display = 'flex';})
-ch09.addEventListener('click', () => {displayNoContent();theoryCh09.style.display = 'flex';})
-ch10.addEventListener('click', () => {displayNoContent();theoryCh10.style.display = 'flex';})
-ch11.addEventListener('click', () => {displayNoContent();theoryCh11.style.display = 'flex';})
-ch12.addEventListener('click', () => {displayNoContent();theoryCh12.style.display = 'flex';})
-ch13.addEventListener('click', () => {displayNoContent();theoryCh13.style.display = 'flex';})
-ch14.addEventListener('click', () => {displayNoContent();theoryCh14.style.display = 'flex';})
-ch15.addEventListener('click', () => {displayNoContent();theoryCh15.style.display = 'flex';})
-ch16.addEventListener('click', () => {displayNoContent();theoryCh16.style.display = 'flex';})
