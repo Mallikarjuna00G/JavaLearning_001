@@ -130,3 +130,30 @@ tr:nth-child(even) {
 .note > .noteHeading::before {
     content: "\1F4DD Note \1F4DD";
 }
+
+.tryThis {
+    padding: 4px;
+    background-color: #918f8f;
+}
+
+.tryThis > .hl {
+    margin: 2px;
+    padding: 2px;
+    background-color: chocolate;
+    color: black;
+}
+
+.tryThisSrc {
+    border: 2px dotted gray;
+    border-radius: 2px;
+    list-style: none;
+    width: fit-content;
+}
+
+.tryThis > li {
+    margin: 8px 2px;
+}
+
+.tryThisOl {
+    /*  */
+}

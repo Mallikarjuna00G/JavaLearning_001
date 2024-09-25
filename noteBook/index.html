@@ -682,6 +682,339 @@ class Example {
                                         <p>If all this seems a bit confusing, don't worry. All of these concepts will be discussed in detail in subsequent chapters.</p>
                                         <p>As stated, <code>main()</code> is the method called when a Java application begins. Any information that you need to pass to a method is received by variables specified within the set of parentheses that follow the name of the method. These variables are called <em>parameters</em>. If no parameters are required for a given method, you still need to include the empty parentheses. In <code>main()</code> there is only one parameter, <code>String args[]</code>, which declares a parameter named <code>args</code>. This is an array of objects of type <code>String</code>. (Arrays are collections of similar objects.) Objects of type <code>String</code> store sequences of characters. In this case, <code>args</code> receives any command-line arguments present when the program is executed. This program does not make use of this information, but other programs shown later in this book will.</p>
                                         <p>The last character on the line is the <code>{</code>. This signals the start of <code>main()</code>'s body. All of the code included in a method will occur between the method's opening curly brace and its closing curly brace.</p>
+                                        <p>The next line of code is shown here. Notice that it occurs inside <code>main()</code>.</p>
+                                        <pre><code class="language-java">System.out.println("Java drives the web.");</code></pre>  <!-- java code -->
+                                        <p>This line outputs the string <code>"Java drives the Web."</code> followed by a new line on the screen. Output is actually accomplished by the built-in <code>println()</code> method. In this case, <code>println()</code> displays the string that is passed to it. As you will see, <code>println()</code> can be used to display other types of information, too. The line begins with <code>System.out</code>. While too complicated to explain in detail at this time, briefly, <code>System</code> is a predefined class that provides access to the system, and <code>out</code> is the output stream that is connected to the <em>console</em>. Thus, <code>System.out</code> is an object that encapsulates console output. The fact that Java uses an object to define console output is further evidence of its object-oriented nature.</p>
+                                        <p>As you have probably guessed, <em>console output (and input) is not used frequently in real-world Java applications</em>. Since most modern computing environments are windowed and graphical in nature, <em>console I/O is used mostly for simple utility programs, for demonstration programs, and for server-side code</em>. Later in this book, you will learn other ways to generate output using Java, but for now, we will continue to use the console I/O methods.</p>
+                                        <p>Notice that the <code>println()</code> statement ends with a semicolon. Many statements in Java end with a semicolon. As you will see, the semicolon is an important part of the Java syntax.</p>
+                                        <p>The first <code>}</code> in the program ends <code>main()</code>, and the last <code>}</code> ends the <code>Example</code> class definition.</p>
+                                        <p>One last point: <em>Java is case sensitive</em>. Forgetting this can cause you serious problems. For example, if you accidentally type <code>Main</code> instead of <code>main</code>, or <code>PrintLn</code> instead of <code>println</code>, the preceding program will be incorrect. Furthermore, although the Java compiler will compile classes that do not contain a <code>main()</code> method, it has no way to execute them. So, if you had mistyped <code>main</code>, the compiler would still compile your program. However, the Java interpreter would report an error because it would be unable to find the <code>main()</code> method.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>HANDLING SYNTAX ERRORS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>If you have not yet done so, enter, compile, and run the preceding program. As you may know from your previous programming experience, it is quite easy to accidentally type something incorrectly when entering code into your computer. Fortunately, if you enter something incorrectly into your program, the compiler will report a syntax error message when it tries to compile it. The Java compiler attempts to make sense out of your source code no matter what you have written. For this reason, the error that is reported may not always reflect the actual cause of the problem. In the preceding program, for example, an accidental omission of the opening curly brace after the <code>main()</code> method causes the compiler to report the following two errors:</p>
+                                <pre><code class="language-plaintext">Example.java:8: ';' expected
+  public static void main(String args[])
+                                        ^
+Example.java:11: class, interface, or enum expected
+}
+^</code></pre>  <!-- plaintext block -->
+                                <p>Clearly, the first error message is completely wrong because what is missing is not a semicolon, but a curly brace.</p>
+                                <p>The point of this discussion is that when your program contains a syntax error, you shouldn't necessarily take the compiler's messages at face value. The messages may be misleading. You may need to "second-guess" an error message in order to find the real problem. Also, look at the last few lines of code in your program that precede the line being flagged. Sometimes an error will not be reported until several lines after the point at which the error actually occurred.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>A SECOND SIMPLE PROGRAM</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Perhaps no other construct is as important to a programming language as the assignment of a value to a variable. A <span class="highlight">variable is a named memory location that can be assigned a value</span>. Further, <span class="highlight">the value of a variable can be changed during the execution of a program</span>. That is, the content of a variable is changeable, not fixed. The following program creates two variables called <code>myVar1</code> and <code>myVar2</code>:</p>
+                                <pre><code class="language-java">/**
+ * This demonstrates a variable.
+ * 
+ * Call this file Example2.java.
+ */
+class Example2 {
+    public static void main(String[] args) {
+        int myVar1;  // this declares a variable
+        int myVar2;  // this declares another variable
+
+        myVar1 = 1024; // this assigns 1024 to myVar1
+
+        System.out.println("myVar1 contains: " + myVar1);
+
+        myVar2 = myVar1 / 2;
+
+        System.out.print("myVar2 contains myVar1 / 2: ");
+        System.err.println(myVar2);
+    }
+}</code></pre>  <!-- java code -->
+                                <p>When you run this program, you will see the following output:</p>
+                                <pre><code class="language-plaintext">myVar1 contains: 1024
+myVar2 contains myVar1 / 2: 512</code></pre>  <!-- plaintext block -->
+                                <p>This program introduces several new concepts. First, the statement</p>
+                                <pre><code class="language-java">int myVar1;  // this declares a variable</code></pre>  <!-- java code -->
+                                <p>declares a variable called <code>myVar1</code> of type integer. In Java, all variables must be declared before they are used. Further, the type of values that the variable can hold must also be specified. This is called the <em>type of the variable</em>. In this case, <code>myVar1</code> can hold integer values. These are whole number values. In Java, to declare a variable to be of type integer, precede its name with the keyword <code>int</code>. Thus, the preceding statement declares a variable called <code>myVar1</code> of type <code>int</code>.</p>
+                                <p>The next line declares a second variable called <code>myVar2</code>:</p>
+                                <pre><code class="language-java">int myVar2;  // this declares another variable</code></pre>  <!-- java code -->
+                                <p>Notice that this line uses the same format as the first line except that the name of the variable is different.</p>
+                                <p>In general, to declare a variable you will use a statement like this:</p>
+                                <pre><code class="language-plaintext">type var-name;</code></pre>  <!-- plaintext block -->
+                                <p>Here, <i>type</i> specifies the type of variable being declared, and <i>var-name</i> is the name of the variable. In addition to <code>int</code>, Java supports several other data types.</p>
+                                <p>The following line of code assigns <code>myVar1</code> the value 1024:</p>
+                                <pre><code class="language-java">myVar1 = 1024; // this assigns 1024 to myVar1</code></pre>  <!-- java code -->
+                                <p>In Java, the assignment operator is the single equal sign. It copies the value on its right side into the variable on its left.</p>
+                                <p>The next line of code outputs the value of <code>myVar1</code> preceded by the string <code>"myVar1 contains "</code>:</p>
+                                <pre><code class="language-java">System.out.println("myVar1 contains: " + myVar1);</code></pre>  <!-- java code -->
+                                <p>In this statement, the plus sign causes the value of <code>myVar1</code> to be displayed after the string that precedes it. This approach can be generalized. Using the <code>+</code> operator, you can chain together as many items as you want within a single <code>println()</code> statement.</p>
+                                <p>The next line of code assigns <code>myVar2</code> the value of <code>myVar1</code> divided by 2:</p>
+                                <pre><code class="language-java">myVar2 = myVar1 / 2;</code></pre>  <!-- java code -->
+                                <p>This line divides the value in <code>myVar1</code> by 2 and then stores that result in <code>myVar2</code>. Thus, after the line executes, <code>myVar2</code> will contain the value 512. The value of <code>myVar1</code> will be unchanged. Like most other computer languages, Java supports a full range of arithmetic operators, including those shown here:</p>
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>Arithmetic Operator</th>
+                                            <th>Operation</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>+</code></td>
+                                            <td>Addition</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>-</code></td>
+                                            <td>Subtraction</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>*</code></td>
+                                            <td>Multiplication</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>/</code></td>
+                                            <td>Division</td>
+                                        </tr>
+                                    </tbody>
+                                </table>  <!-- table -->
+                                <p>Here are the next two lines in the program:</p>
+                                <pre><code class="language-java">System.out.print("myVar2 contains myVar1 / 2: ");
+System.err.println(myVar2);</code></pre>  <!-- java code -->
+                                <p>Two new things are occurring here. First, the built-in method <code>print()</code> is used to display the string <code>"myVar2 contains myVar1 / 2: "</code>. This string is not followed by a new line. This means that when the next output is generated, it will start on the same line. The <code>print()</code> method is just like <code>println()</code>, except that it does not output a new line after each call. Second, in the call to <code>println()</code>, notice that <code>myVar2</code> is used by itself. Both <code>print()</code> and <code>println()</code> can be used to output values of any of Java's built-in types.</p>
+                                <p>One more point about declaring variables before we move on: It is possible to declare two or more variables using the same declaration statement. Just separate their names by commas. For example, <code>myVar1</code> and <code>myVar2</code> could have been declared like this:</p>
+                                <pre><code class="language-java">int myVar1, myVar2; // both declared using one statement</code></pre>  <!-- java code -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>ANOTHER DATA TYPE</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>In the preceding program, a variable of type <code>int</code> was used. However, a variable of type <code>int</code> can hold only whole numbers. Thus, it cannot be used when a fractional component is required. For example, an <code>int</code> variable can hold the value 18, but not the value 18.3. Fortunately, <code>int</code> is only one of several data types defined by Java. To allow numbers with fractional components, Java defines two floating-point types: <code>float</code> and <code>double</code>, which represent single- and double-precision values, respectively. Of the two, <code>double</code> is the most commonly used.</p>
+                                <p>To declare a variable of type <code>double</code>, use a statement similar to that shown here:</p>
+                                <pre><code class="language-java">double x;</code></pre>  <!-- java code -->
+                                <p>Here, <code>x</code> is the name of the variable, which is of type <code>double</code>. Because <code>x</code> has a floating-point type, it can hold values such as 122.23, 0.034, or -19.0.</p>
+                                <p>To better understand the difference between int and double, try the following program:</p>
+                                <pre><code class="language-java">/**
+ * This program illustrates the differences 
+ * between int and double.
+ * 
+ * Call this file Example3.java.
+ */
+class Example3 {
+    public static void main(String[] args) {
+        int v;  // This declares an int variable.
+        double x;  // This declares a floating-point variable.
+
+        v = 10;  // Assign v the value 10.
+
+        x = 10.0;  // Assign x the value 10.0.
+
+        System.out.println("Original value of v: " + v);
+        System.out.println("Original value of x: " + x);
+        System.out.println();  // Print a blank line.
+
+        // Now, divide both by 4.
+        v = v / 4;
+        x = x / 4;
+
+        System.out.println("v after division: " + v);
+        System.out.println("x after division: " + x);
+    }
+}</code></pre>  <!-- java code -->
+                                <p>The output from this program is shown here:</p>
+                                <pre><code class="language-plaintext">Original value of v: 10
+Original value of x: 10.0
+
+v after division: 2
+x after division: 2.5</code></pre>  <!-- plaintext block -->
+                                <p>As you can see, when <code>v</code> is divided by 4, a whole-number division is performed, and the outcome is 2—the fractional component is lost. However, when the <code>double</code> variable <code>x</code> is divided by 4, the fractional component is preserved, and the proper answer is displayed.</p>
+                                <p>There is one other new thing to notice in the program. To print a blank line, simply call <code>println()</code> without any arguments.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Ask the Expert</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="askTheExpert">
+                                <h3 class="top"></h3>
+                                <p class="question">Why does Java have different data types for integers and floating-point values? That is, why aren't all numeric values just the same type?</p>
+                                <p class="answer">Java supplies different data types so that you can write efficient programs. For example, integer arithmetic is faster than floating-point calculations. Thus, if you don't need fractional values, then you don't need to incur the overhead associated with types <code>float</code> or <code>double</code>. Second, the amount of memory required for one type of data might be less than that required for another. By supplying different types, Java enables you to make best use of system resources. Finally, some algorithms require (or at least benefit from) the use of a specific type of data. In general, Java supplies a number of built-in types to give you the greatest flexibility.</p>
+                            </div>  <!-- askTheExpert -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>TryThis 1-1</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <h3 class="tryThis"><span class="hl">TryThis 1-1</span> Converting Gallons to Liters</h3>
+                                <ul class="tryThisSrc">
+                                    <li><code>GalToLit.java</code></li>
+                                </ul>
+                                <p>Although the preceding sample programs illustrate several important features of the Java language, they are not very useful. Even though you do not know much about Java at this point, you can still put what you have learned to work to create a practical program. In this project, we will create a program that converts gallons to liters. The program will work by declaring two <code>double</code> variables. One will hold the number of the gallons, and the second will hold the number of liters after the conversion. There are 3.7854 liters in a gallon. Thus, to convert gallons to liters, the gallon value is multiplied by 3.7854. The program displays both the number of gallons and the equivalent number of liters.</p>
+                                <ol class="tryThisOl">
+                                    <li>Create a new file called <code>GalToLit.java</code>.</li>
+                                    <li>
+                                        <div>
+                                            <p>Enter the following program into the file:</p>
+                                            <pre><code class="language-java">/**
+ * Try This 1-1
+ * 
+ * This program converts gallons to liters.
+ * 
+ * Call this program GalToLit.java.
+ */
+class GalToLit {
+    public static void main(String[] args) {
+        double gallons; // holds the number of gallons
+        double liters; // holds conversion to liters
+
+        gallons = 10; // start with 10 gallons
+
+        liters = gallons * 3.7854; // convert to liters
+
+        System.out.println(gallons + " gallons is " + liters + " liters.");
+    }
+}</code></pre>  <!-- java code -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Compile the program using the following command line:</p>
+                                            <pre><code class="language-plaintext">javac GalToLit.java</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Run the program using this command:</p>
+                                            <pre><code class="language-plaintext">java GalToLit</code></pre>  <!-- plaintext block -->
+                                            <p>You will see this output:</p>
+                                            <pre><code class="language-plaintext">10.0 gallons is 37.854 liters.</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                    <li>As it stands, this program converts 10 gallons to liters. However, by changing the value assigned to gallons, you can have the program convert a different number of gallons into its equivalent number of liters.</li>
+                                </ol> <!-- tryThisOl -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>TWO CONTROL STATEMENTS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Inside a method, execution proceeds from one statement to the next, top to bottom. However, it is possible to alter this flow through the use of the various program control statements supported by Java. Although we will look closely at control statements later, two are briefly introduced here because we will be using them to write sample programs.</p>
+                            </div>  <!-- content -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>The <code>if</code> Statement</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>You can selectively execute part of a program through the use of Java's conditional statement: the <code>if</code>. The Java <code>if</code> statement works much like the IF statement in any other language. It determines the flow of program execution based on whether some condition is true or false. Its simplest form is shown here:</p>
+                                        <pre><code class="language-plaintext">if(condition) statement;</code></pre>  <!-- plaintext block -->
+                                        <p>Here, <i>condition</i> is a Boolean expression. (A Boolean expression is one that evaluates to either true or false.) If <i>condition</i> is true, then the statement is executed. If <i>condition</i> is false, then the statement is bypassed. Here is an example:</p>
+                                        <pre><code class="language-java">if(10 < 11) System.out.println("10 is less than 11");</code></pre>  <!-- java code -->
+                                        <p>In this case, since 10 is less than 11, the conditional expression is true, and <code>println()</code> will execute. However, consider the following:</p>
+                                        <pre><code class="language-java">if(10 < 9) System.out.prinln("this won't be displayed");</code></pre>  <!-- java code -->
+                                        <p>In this case, 10 is not less than 9. Thus, the call to <code>println()</code> will not take place.</p>
+                                        <p>Java defines a full complement of <em>relational operators</em> that may be used in a conditional expression. They are shown here:</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Operator</th>
+                                                    <th>Meaning</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>&lt;</code></td>
+                                                    <td>Less than</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>&lt;=</code></td>
+                                                    <td>Less than or equal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>&gt;</code></td>
+                                                    <td>Greater than</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>&gt;=</code></td>
+                                                    <td>Greater than or equal</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>==</code></td>
+                                                    <td>Equal to</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>!=</code></td>
+                                                    <td>Not equal</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>  <!-- table -->
+                                        <p>Notice that the test for equality is the double equal sign.</p>
+                                        <p>Here is a program that illustrates the <code>if</code> statement:</p>
+                                        <pre><code class="language-java">/**
+ * Demonstrate the if.
+ * 
+ * Call this file IfDemo.java.
+ */
+class IfDemo {
+    public static void main(String[] args) {
+        int a, b, c;
+
+        a = 2;
+        b = 3;
+
+        if(a < b) System.out.println("a is less than b");
+
+        // this won't display anything
+        if(a == b) System.out.println("you won't see this");
+
+        System.out.println();
+
+        c = a - b; // c contains -1
+
+        System.out.println("c contains -1");
+        if(c >= 0) System.out.println("c is non-negative");
+        if(c < 0) System.out.println("c is negative");
+
+        System.out.println();
+
+        c = b - a; // c contains -1
+
+        System.out.println("c contains 1");
+        if(c >= 0) System.out.println("c is non-negative");
+        if(c < 0) System.out.println("c is negative");
+    }
+}</code></pre>  <!-- java code -->
+                                        <p>The output generated by this program is shown here:</p>
+                                        <pre><code class="language-plaintext">a is less than b
+
+c contains -1
+c is negative
+
+c contains 1
+c is non-negative</code></pre>  <!-- plaintext block -->
+                                        <p>Notice one other thing in this program. The line</p>
+                                        <pre><code class="language-java">int a, b, c;</code></pre>  <!-- java code -->
+                                        <p>declares three variables, <code>a</code>, <code>b</code>, and <code>c</code>, by use of a comma-separated list. As mentioned earlier, when you need two or more variables of the same type, they can be declared in one statement. Just separate the variable names by commas.</p>
                                     </div>  <!-- content -->
                                 </div>  <!-- right -->
                             </div>  <!-- lvl2 -->
