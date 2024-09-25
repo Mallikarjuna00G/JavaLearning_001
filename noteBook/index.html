@@ -598,10 +598,10 @@
                             <div class="right">
                                 <div class="content">
                                     <p>Let's start by compiling and running the short sample program shown here:</p>
-                                    <pre><code class="language-java">/**
- * This is a simple java program.
- * 
- * Call this file Example.java
+                                    <pre><code class="language-java">/*
+   This is a simple java program.
+   
+   Call this file Example.java
  */
 
 class Example {
@@ -657,12 +657,44 @@ class Example {
                                     </div>  <!-- left -->
                                     <div class="right">
                                         <div class="content">
-                                            
+                                            <p>Although <code>Example.java</code> is quite short, it includes several key features that are common to all Java programs. Let's closely examine each part of the program.</p>
+                                            <p>The program begins with the following lines:</p>
+                                            <pre><code class="language-java">/*
+   This is a simple java program.
+   
+   Call this file Example.java
+ */</code></pre>
+                                            <p>This is a <i>comment</i>. Like most other programming languages, Java lets you enter a remark into a program's source file. The contents of a comment are ignored by the compiler. Instead, a comment describes or explains the operation of the program to anyone who is reading its source code. In this case, the comment describes the program and reminds you that the source file should be called <code>Example.java</code>. Of course, in real applications, comments generally explain how some part of the program works or what a specific feature does.</p>
+                                            <p>Java supports three styles of comments. The one shown at the top of the program is called a <em>multiline comment</em>. This type of comment must begin with <code>/*</code> and end with <code>*/</code>. Anything between these two comment symbols is ignored by the compiler. As the name suggests, a multiline comment may be several lines long.</p>
+                                            <p>The next line of code in the program is shown here:</p>
+                                            <pre><code class="language-java">class Example {</code></pre>  <!-- java code -->
+                                            <p>This line uses the keyword <code>class</code> to declare that a new class is being defined. As mentioned, the class is Java's basic unit of encapsulation. <code>Example</code> is the name of the class. The class definition begins with the opening curly brace (<code>{</code>) and ends with the closing curly brace (<code>}</code>). The elements between the two braces are members of the class. For the moment, don't worry too much about the details of a class except to note that in Java, all program activity occurs within one. This is one reason why all Java programs are (at least a little bit) object-oriented.</p>
+                                            <p>The next line in the program is the <em>single-line comment</em>, shown here:</p>
+                                            <pre><code class="language-java">// A Java program begins with a call to main().</code></pre>  <!-- java code -->
+                                            <p>This is the second type of comment supported by Java. A single-line comment begins with a <code>//</code> and ends at the end of the line. As a general rule, programmers use multiline comments for longer remarks and single-line comments for brief, line-by-line descriptions.</p>
+                                            <p>The next line of code is shown here:</p>
+                                            <pre><code class="language-java">public static void main(String args[]) {</code></pre>  <!-- java code -->
+                                            <p>This line begins the <code>main()</code> method. As mentioned earlier, in Java, a subroutine is called a method. As the comment preceding it suggests, this is the line at which the program will begin executing. In general, Java applications begin execution by calling <code>main()</code>. The exact meaning of each part of this line cannot be given now, since it involves a detailed understanding of several other of Java's features. However, since many of the examples in this book will use this line of code, let's take a brief look at each part now.</p>
+                                            <ul>
+                                                <li>The <code>public</code> keyword is an <em>access modifier</em>. An access modifier determines how other parts of the program can access the members of the class. When a class member is preceded by <code>public</code>, then that member can be accessed by code outside the class in which it is declared. (The opposite of <code>public</code> is <code>private</code>, which prevents a member from being used by code defined outside of its class.) In this case, <code>main()</code> must be declared as <code>public</code>, since it must be called by code outside of its class when the program is started.</li>
+                                                <li><em>The keyword <code>static</code> allows <code>main()</code> to be called before an object of the class has been created. This is necessary because <code>main()</code> is called by the JVM before any objects are made.</em></li>
+                                                <li>The keyword <code>void</code> simply tells the compiler that <code>main()</code> does not return a value. As you will see, methods may also return values.</li>
+                                            </ul>
+                                            <p>If all this seems a bit confusing, don't worry. All of these concepts will be discussed in detail in subsequent chapters.</p>
+                                            <p>As stated, <code>main()</code> is the method called when a Java application begins. Any information that you need to pass to a method is received by variables specified within the set of parentheses that follow the name of the method. These variables are called <em>parameters</em>. If no parameters are required for a given method, you still need to include the empty parentheses. In <code>main()</code> there is only one parameter, <code>String args[]</code>, which declares a parameter named <code>args</code>. This is an array of objects of type <code>String</code>. (Arrays are collections of similar objects.) Objects of type <code>String</code> store sequences of characters. In this case, <code>args</code> receives any command-line arguments present when the program is executed. This program does not make use of this information, but other programs shown later in this book will.</p>
+                                            <p>The last character on the line is the <code>{</code>. This signals the start of <code>main()</code>'s body. All of the code included in a method will occur between the method's opening curly brace and its closing curly brace.</p>
                                         </div>  <!-- content -->
                                     </div>  <!-- right -->
                                 </div>  <!-- lvl3 -->
                             </div>  <!-- right -->
                         </div>  <!-- lvl2 -->
+                        <pre>
+        
+        
+        
+        
+                            
+                        </pre>
                     </div>  <!-- right -->
                 </div>  <!-- lvl1 -->
             </div>
