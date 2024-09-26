@@ -1192,6 +1192,28 @@ j / i is 2.0</code></pre>  <!-- plaintext block -->
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>SEMICOLONS AND POSITIONING</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>In Java, the <em>semicolon</em> is a <i>separator</i>. It is often <em>used to terminate a statement</em>. In essence, the <em>semicolon indicates the end of one logical entity</em>.</p>
+                                <p>As you know, a block is a set of logically connected statements that are surrounded by opening and closing braces. <em>A block is not terminated with a semicolon</em>. Instead, the end of the block is indicated by the closing brace.</p>
+                                <p>Java does not recognize the end of the line as a terminator. For this reason, it does not matter where on a line you put a statement. For example,</p>
+                                <pre><code class="language-java">x = y;
+y = y + 1;
+System.out.println(x + " " + y);</code></pre>  <!-- java code -->
+                                <p>is the same as the following, to Java:</p>
+                                <pre><code class="language-java">x = y; y = y + 1; System.out.println(x + " " + y);</code></pre>  <!-- java code -->
+                                <p>Furthermore, the individual elements of a statement can also be put on separate lines. For example, the following is perfectly acceptable:</p>
+                                <pre><code class="language-java">System.out.println("This is a long line of output" +
+                   x + y + z +
+                   "more output");</code></pre>  <!-- java code -->
+                                <p>Breaking long lines in this fashion is often used to make programs more readable. It can also help prevent excessively long lines from wrapping.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh02">
