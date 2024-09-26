@@ -597,6 +597,7 @@
                         <div class="right">
                             <div class="content">
                                 <p>Let's start by compiling and running the short sample program shown here:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example.java</a></p>
                                 <pre><code class="language-java">/*
    This is a simple java program.
    
@@ -729,6 +730,7 @@ Example.java:11: class, interface, or enum expected
                         <div class="right">
                             <div class="content">
                                 <p>Perhaps no other construct is as important to a programming language as the assignment of a value to a variable. A <span class="highlight">variable is a named memory location that can be assigned a value</span>. Further, <span class="highlight">the value of a variable can be changed during the execution of a program</span>. That is, the content of a variable is changeable, not fixed. The following program creates two variables called <code>myVar1</code> and <code>myVar2</code>:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example2.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example2.java</a></p>
                                 <pre><code class="language-java">/**
  * This demonstrates a variable.
  * 
@@ -826,6 +828,7 @@ System.err.println(myVar2);</code></pre>  <!-- java code -->
                                 <pre><code class="language-java">double x;</code></pre>  <!-- java code -->
                                 <p>Here, <code>x</code> is the name of the variable, which is of type <code>double</code>. Because <code>x</code> has a floating-point type, it can hold values such as 122.23, 0.034, or -19.0.</p>
                                 <p>To better understand the difference between int and double, try the following program:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example3.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/Example3.java</a></p>
                                 <pre><code class="language-java">/**
  * This program illustrates the differences 
  * between int and double.
@@ -902,6 +905,7 @@ x after division: 2.5</code></pre>  <!-- plaintext block -->
                                     <li>
                                         <div>
                                             <p>Enter the following program into the file:</p>
+                                            <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/GalToLit.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/GalToLit.java</a></p>
                                             <pre><code class="language-java">/**
  * Try This 1-1
  * 
@@ -1010,6 +1014,7 @@ class GalToLit {
                                         </table>  <!-- table -->
                                         <p>Notice that the test for equality is the double equal sign.</p>
                                         <p>Here is a program that illustrates the <code>if</code> statement:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/IfDemo.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/IfDemo.java</a></p>
                                         <pre><code class="language-java">/**
  * Demonstrate the if.
  * 
@@ -1065,6 +1070,64 @@ c is non-negative</code></pre>  <!-- plaintext block -->
                                         <p>Notice one other thing in this program. The line</p>
                                         <pre><code class="language-java">int a, b, c;</code></pre>  <!-- java code -->
                                         <p>declares three variables, <code>a</code>, <code>b</code>, and <code>c</code>, by use of a comma-separated list. As mentioned earlier, when you need two or more variables of the same type, they can be declared in one statement. Just separate the variable names by commas.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>The <code>for</code> Loop</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>You can repeatedly execute a sequence of code by creating a loop. Loops are used whenever you need to perform a repetitive task because they are much simpler and easier than trying to write the same statement sequence over and over again. Java supplies a powerful assortment of loop constructs. The one we will look at here is the for loop. The simplest form of the <code>for</code> loop is shown here:</p>
+                                        <pre><code class="language-plaintext">for(initialization; condition; iteration) statement;</code></pre>  <!-- plaintext block -->
+                                        <ul>
+                                            <li>In its most common form, the <i>initialization</i> portion of the loop sets a loop control variable to an initial value.</li>
+                                            <li>The <i>condition</i> is a Boolean expression that tests the loop control variable. If the outcome of that test is true, statement executes and the <code>for</code> loop continues to iterate. If it is false, the loop terminates.</li>
+                                            <li>The <i>iteration</i> expression determines how the loop control variable is changed each time the loop iterates.</li>
+                                        </ul>
+                                        <p>Here is a short program that illustrates the <code>for</code> loop:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/ForDemo.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/ForDemo.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Demonstrate the for loop.
+ * 
+ * Call this file ForDemo.java.
+ */
+class ForDemo {
+    public static void main(String[] args) {
+        int count;
+
+        for(count = 0; count < 5; count++)
+            System.out.println("This is count: " + count);
+
+        System.out.println("Done!");
+    }
+}</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch01puml08_01.svg" alt="Class diagram of ForDemo class">
+                                                <figcaption>Class diagram of ForDemo class<br>src: <a href="./plantUMLs/ch01puml08_01.puml" target="_blank">./plantUMLs/ch01puml08_01.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch01puml08_02.svg" alt="Activity diagram of ForDemo.main() method">
+                                                <figcaption>Activity diagram of ForDemo.main() method<br>src: <a href="./plantUMLs/ch01puml08_02.puml" target="_blank">./plantUMLs/ch01puml08_02.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>
+                                        <p>The output generated by the program is shown here:</p>
+                                        <pre><code class="language-plaintext">This is count: 0
+This is count: 1
+This is count: 2
+This is count: 3
+This is count: 4
+Done!</code></pre>  <!-- plaintext block -->
+                                        <p>In this example, <code>count</code> is the loop control variable. It is set to zero in the initialization portion of the <code>for</code>. At the start of each iteration (including the first one), the conditional test <code>count < 5</code> is performed. If the outcome of this test is true, the <code>println()</code> statement is executed, and then the iteration portion of the loop is executed, which increases <code>count</code> by 1. This process continues until the conditional test is false, at which point execution picks up at the bottom of the loop. As a point of interest, in professionally written Java programs, you will almost never see the iteration portion of the loop written as shown in the preceding program. That is, you will seldom see statements like this:</p>
+                                        <pre><code class="language-java">count = count + 1;</code></pre>  <!-- java code -->
+                                        <p>The reason is that Java includes a special increment operator that performs this operation more efficiently. The increment operator is <code>++</code> (that is, two plus signs back to back). The increment operator increases its operand by one. By use of the increment operator, the preceding statement can be written like this:</p>
+                                        <pre><code class="language-java">count++;</code></pre>  <!-- java code -->
+                                        <p>Thus, the <code>for</code> in the preceding program will usually be written like this:</p>
+                                        <pre><code class="language-java">for(count = 0; count < 5; count++)</code></pre>  <!-- java code -->
+                                        <p>You might want to try this. As you will see, the loop still runs exactly the same as it did before.</p>
+                                        <p>Java also provides a decrement operator, which is specified as <code>--</code>. This operator decreases its operand by one.</p>
                                     </div>  <!-- content -->
                                 </div>  <!-- right -->
                             </div>  <!-- lvl2 -->

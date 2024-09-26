@@ -259,4 +259,13 @@
 		],
 		"description": "local snippet:: TryThis ordered list."
 	},
+
+	"lsnip::Source file link": {
+		"scope": "html",
+		"prefix": "srcFile",
+		"body": [
+			"<p class=\"srcFile\"><a href=\"$1\" target=\"_blank\">$1</a></p>$2",
+		],
+		"description": "local snippet:: Source file link."
+	},
 }

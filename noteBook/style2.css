@@ -170,3 +170,38 @@ tr:nth-child(even) {
     border-radius: 5px;
     object-fit: cover;
 }
+
+.srcFile {
+    box-shadow: 0 0 2px 2px burlywood;
+    background-color: white;
+    margin: inherit;
+    margin-top: 12px;
+    padding: 4px;
+    background-color: lightgreen;
+}
+
+.srcFile::before {
+    content: url(./images/java-svgrepo-com.svg);
+    margin-right: 8px;
+    background-color: black;
+    padding: 2px;
+    margin-bottom: 8px;
+}
+
+.srcFile::after {
+    content: "\1F517";
+    margin-left: 8px;
+    background-color: black;
+    padding: 2px;
+}
+
+.srcFile > a {
+    font-size: medium;
+    font-style: normal;
+    font-family: monospace;
+    color: black;
+}
+
+.tryThisOl .srcFile {
+    margin-bottom: 8px;
+}
