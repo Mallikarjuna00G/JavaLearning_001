@@ -18,20 +18,23 @@
 
 
 	// ======================= START: Activity ======================= 
-	"lsnip::styles": {
+	"lsnip::styles for puml activity": {
 		"scope": ["plantuml", "puml"],
 		"prefix": "style",
 		"body": [
 			"<style>",
 			"    Activity {",
+			"        FontSize 12",
 			"        diamond {",
 			"            LineColor yellow",
 			"            BackgroundColor burlywood",
+			"            FontSize 14",
+            "            FontStyle bold",
 			"        }",
 			"    }",
 			"</style>",
 		],
-		"description": "local snippet:: Styles for plantuml."
+		"description": "local snippet:: Styles for plantuml Activity."
 	},
 	
 	"lsnip::for loop": {
