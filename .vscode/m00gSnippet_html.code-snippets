@@ -191,6 +191,18 @@
 		"description": "local snippet:: figure element."
 	},
 
+	"lsnip::stand alone figure element": {
+		"scope": "html",
+		"prefix": "standAloneFigure",
+		"body": [
+			"<figure class=\"standAloneFigure\">",
+            "    <img src=\"$1\" alt=\"$2\">",
+			"    <figcaption>$2<br>src: <a href=\"$3\" target=\"_blank\">$3</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$4",
+		],
+		"description": "local snippet:: stand alone figure element."
+	},
+
 	"lsnip::note": {
 		"scope": "html",
 		"prefix": "note",

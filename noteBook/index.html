@@ -297,8 +297,8 @@
                                         <p>This language was initially called <strong>"Oak"</strong> but was renamed <strong>"Java"</strong> in 1995.</p>
                                         <p>Read more <a target="_blank" href="https://brainscode.github.io/java-tutorial/intro_java_history.html">here</a>.</p>
                                         <figure class="standAloneFigure">
-                                            <img src="./images2/languageRenamed.svg" alt="Language Renamed">
-                                            <figcaption>Language renamed from "Oak" to "Java"</figcaption>
+                                            <img src="./plantUMLs/ch01puml01.svg" alt="Language Renamed">
+                                            <figcaption>Language renamed from "Oak" to "Java"<br>src: <a href="./plantUMLs/ch01puml01.puml" target="_blank">./plantUMLs/ch01puml01.puml</a></figcaption>
                                         </figure>
                                         <p>Somewhat surprisingly, the original impetus for Java was not the Internet! Instead, the <span class="highlight">primary motivation was the need for a platform-independent language</span> that could be used to create software to be embedded in various consumer electronic devices, such as toasters, microwave ovens, and remote controls. As you can probably guess, many different types of CPUs are used as controllers. The trouble was that (at the time) most computer languages were designed to be compiled into machine code that was targeted for a specific type of CPU. For example, consider the C++ language.</p>
                                         <p>Although it was possible to compile a C++ program for just about any type of CPU, to do so required a full C++ compiler targeted for that CPU. The problem, however, is that compilers are expensive and time consuming to create. In an attempt to find a better solution, Gosling and the others worked on a portable, cross-platform language that could produce code that would run on a variety of CPUs under differing environments. <span class="highlight">This effort ultimately led to the creation of Java</span>.</p>
@@ -511,8 +511,8 @@
                                 <p>Object-oriented programs work the other way around. <span class="highlight">They are organized around data, with the key principle being "data controlling access to code." In an object-oriented language, you define the data and the routines that are permitted to act on that data. Thus, a data type defines precisely what sort of operations can be applied to that data.</span></p>
                                 <p>To support the principles of object-oriented programming, all OOP languages, including Java, have three traits in common: <em>encapsulation</em>, <em>polymorphism</em>, and <em>inheritance</em>. Let's examine each.</p>
                                 <figure class="standAloneFigure">
-                                    <img src="./images2/traits_OOP.svg" alt="Three Traits of OOP">
-                                    <figcaption>Three Traits of OOP</figcaption>
+                                    <img src="./plantUMLs/ch01puml02.svg" alt="Three Traits of OOP">
+                                    <figcaption>Three Traits of OOP<br>src: <a href="./plantUMLs/ch01puml02.puml" target="_blank">./plantUMLs/ch01puml02.puml</a></figcaption>
                                 </figure>  <!-- figure -->
                             </div>  <!-- content -->
                             <div class="lvl2">
@@ -609,6 +609,16 @@ class Example {
         System.out.println("Java drives the web.");
     }
 }</code></pre>
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml03_01.svg" alt="Class digram of Example.java">
+                                        <figcaption>Class digram of Example.java<br>src: <a href="./plantUMLs/ch01puml03_01.puml" target="_blank">./plantUMLs/ch01puml03_01.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml03_02.svg" alt="Activity digram of `Example.main()` method">
+                                        <figcaption>Activity digram of `Example.main()` method<br>src: <a href="./plantUMLs/ch01puml03_02.puml" target="_blank">./plantUMLs/ch01puml03_02.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>
                                 <p>You will follow these three steps:</p>
                                 <ol>
                                     <li>Enter the program.</li>
@@ -739,6 +749,16 @@ class Example2 {
         System.err.println(myVar2);
     }
 }</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml04_01.svg" alt="Class diagram of Example2.java">
+                                        <figcaption>Class diagram of Example2.java<br>src: <a href="./plantUMLs/ch01puml04_01.puml" target="_blank">./plantUMLs/ch01puml04_01.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml04_02.svg" alt="Activity diagram of Example2.main() method">
+                                        <figcaption>Activity diagram of Example2.main() method<br>src: <a href="./plantUMLs/ch01puml04_02.puml" target="_blank">./plantUMLs/ch01puml04_02.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>
                                 <p>When you run this program, you will see the following output:</p>
                                 <pre><code class="language-plaintext">myVar1 contains: 1024
 myVar2 contains myVar1 / 2: 512</code></pre>  <!-- plaintext block -->
@@ -833,6 +853,16 @@ class Example3 {
         System.out.println("x after division: " + x);
     }
 }</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml05_01.svg" alt="Class diagram of Example3">
+                                        <figcaption>Class diagram of Example3<br>src: <a href="./plantUMLs/ch01puml05_01.puml" target="_blank">./plantUMLs/ch01puml05_01.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01puml05_02.svg" alt="Activity diagram of Example3.main() method">
+                                        <figcaption>Activity diagram of Example3.main() method<br>src: <a href="./plantUMLs/ch01puml05_02.puml" target="_blank">./plantUMLs/ch01puml05_02.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>
                                 <p>The output from this program is shown here:</p>
                                 <pre><code class="language-plaintext">Original value of v: 10
 Original value of x: 10.0
@@ -891,6 +921,16 @@ class GalToLit {
         System.out.println(gallons + " gallons is " + liters + " liters.");
     }
 }</code></pre>  <!-- java code -->
+                                            <div class="gallery2">
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch01puml06_01.svg" alt="Class diagram of GalToLit class">
+                                                    <figcaption>Class diagram of GalToLit class<br>src: <a href="./plantUMLs/ch01puml06_01.puml" target="_blank">./plantUMLs/ch01puml06_01.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch01puml06_02.svg" alt="Activity diagram of GalToLit.main() method">
+                                                    <figcaption>Activity diagram of GalToLit.main() method<br>src: <a href="./plantUMLs/ch01puml06_02.puml" target="_blank">./plantUMLs/ch01puml06_02.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                            </div>
                                         </div>
                                     </li>
                                     <li>
@@ -1004,6 +1044,16 @@ class IfDemo {
         if(c < 0) System.out.println("c is negative");
     }
 }</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch01puml07_01.svg" alt="Class diagram of IfDemo class">
+                                                <figcaption>Class diagram of IfDemo class<br>src: <a href="./plantUMLs/ch01puml07_01.puml" target="_blank">./plantUMLs/ch01puml07_01.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch01puml07_02.svg" alt="Activity diagram of IfDemo.main() method">
+                                                <figcaption>Activity diagram of IfDemo.main() method<br>src: <a href="./plantUMLs/ch01puml07_02.puml" target="_blank">./plantUMLs/ch01puml07_02.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>
                                         <p>The output generated by this program is shown here:</p>
                                         <pre><code class="language-plaintext">a is less than b
 
