@@ -113,6 +113,10 @@ main {
     min-width: 600px;
 }
 
+.right > * {
+    margin: 8px 0;
+}
+
 .content {
     box-shadow: 0 0 4px 2px gray;
     padding: 8px;

@@ -162,7 +162,7 @@
 		"prefix": "table",
 		"body": [
 			"<table>",
-			"    <caption><span class=\"capId\"> $1</caption>",
+			"    <caption><span class=\"capId\">Table $1</span> $2</caption>",
             "    <thead>",
 			"        <tr>",
 			"            <th></th>",

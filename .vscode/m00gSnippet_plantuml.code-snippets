@@ -76,6 +76,15 @@
 		"description": "local snippet:: Activity start-stop."
 	},
 
+	"lsnip::Activity title": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "actTitle",
+		"body": [
+			"title Activity diagram of \\n<font name=monospace><color #5132be>$1</color></font> method",
+		],
+		"description": "local snippet:: Activity title."
+	},
+
 	// ======================= END: Activity ======================= 
 	// ======================= START: Class ======================= 
 	"lsnip::Java main method": {
@@ -85,6 +94,15 @@
 			"{method} + {static} main(String[] args): void",
 		],
 		"description": "local snippet:: Java main method."
+	},
+
+	"lsnip::class title": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "classTitle",
+		"body": [
+			"title Class diagram of \\n<font name=monospace><color #5132be>$1</color></font> class",
+		],
+		"description": "local snippet:: class title."
 	},
 	// ======================= END: Class ======================= 
 	// ======================= START: Sequence ======================= 

@@ -25,8 +25,8 @@
             <ul>
                 <li id="coverPage">Cover Page</li>
                 <li id="Introduction">Introduction</li>
-                <li id="Ch01">Ch01: </li>
-                <li id="Ch02">Ch02: </li>
+                <li id="Ch01">Ch01: Java Fundamentals</li>
+                <li id="Ch02">Ch02: Introducing Data Types and Operators</li>
                 <li id="Ch03">Ch03: </li>
                 <li id="Ch04">Ch04: </li>
                 <li id="Ch05">Ch05: </li>
@@ -1968,12 +1968,457 @@ class JBG_HS_Ch01_SelfTest_10 {
             <div class="lvl0" id="theoryCh02">
                 <div class="left">
                     <h4>Chapter 02</h4>
-                    <h1></h1>
+                    <h1>Introducing Data Types and Operators</h1>
                 </div>  <!-- left -->
                 <div class="right">
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Key Skills & Concepts</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <ul>
+                                    <li>Know Java's primitive types</li>
+                                    <li>Use literals</li>
+                                    <li>Initialize variables</li>
+                                    <li>Know the scope rules of variables within a method</li>
+                                    <li>Use the arithmetic operators</li>
+                                    <li>Use the relational and logical operators</li>
+                                    <li>Understand the assignment operators</li>
+                                    <li>Use shorthand assignments</li>
+                                    <li>Understand type conversion in assignments</li>
+                                    <li>Cast incompatible types</li>
+                                    <li>Understand type conversion in expressions</li>
+                                </ul>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                     <div class="content">
-                        
+                        <p>A t the foundation of any programming language are its data types and operators, and Java is no exception. These elements define the limits of a language and determine the kind of tasks to which it can be applied. Fortunately, Java supports a rich assortment of both data types and operators, making it suitable for any type of programming.</p>
+                        <p><em>Data types</em> and <em>operators</em> are a large subject. We will begin here with an examination of Java's foundational data types and its most commonly used operators. We will also take a closer look at variables and examine the expression.</p>
                     </div>  <!-- content -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>WHY DATA TYPES ARE IMPORTANT</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Data types are especially important in Java because it is a strongly typed language. This means that <em>all operations are type-checked by the compiler for type compatibility</em>. Illegal operations will not be compiled. Thus, strong type checking helps prevent errors and enhances reliability. To enable strong type checking, all variables, expressions, and values have a type. There is no concept of a “type-less” variable, for example. Furthermore, the type of a value determines what operations are allowed on it. An operation allowed on one type might not be allowed on another.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>JAVA'S PRIMITIVE TYPES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Java contains two general categories of built-in data types: </p>
+                                <ol>
+                                    <li>object-oriented. Java's object-oriented types are defined by classes, and a discussion of
+                                        classes is deferred until later.</li>
+                                    <li>non-object-oriented.</li>
+                                </ol>
+                                <p>However, at the core of Java are eight primitive (also called <em>elemental</em> or <em>simple</em>) types of data, which are shown in <a href="#Table2-1">Table 2-1</a>. The term <i>primitive</i> is used here to indicate that these types are not objects in an object-oriented sense, but rather, normal binary values. <span class="highlight">These primitive types are not objects because of efficiency concerns</span>. All of Java's other data types are constructed from these primitive types.</p>
+                                <table>
+                                    <caption><span class="capId">Table 2-1</span> Java's Built-in Primitive Data Types</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>Type</th>
+                                            <th>Meaning</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>boolean</code></td>
+                                            <td>Represents true/false value</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>byte</code></td>
+                                            <td>8-bit integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>char</code></td>
+                                            <td>Character</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>double</code></td>
+                                            <td>Double-precision floating point</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>float</code></td>
+                                            <td>Single-precision floating point</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>int</code></td>
+                                            <td>Integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>long</code></td>
+                                            <td>Long integer</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>short</code></td>
+                                            <td>Short ineger</td>
+                                        </tr>
+                                    </tbody>
+                                </table>  <!-- table -->
+                                <p><span class="highlight">Java strictly specifies a range and behavior for each primitive type, which all implementations of the Java Virtual Machine must support. Because of Java's portability requirement, Java is uncompromising on this account. For example, an <code>int</code> is the same in all execution environments. This allows programs to be fully portable. There is no need to rewrite code to fit a specific platform. Although strictly specifying the range of the primitive types may cause a small loss of performance in some environments, it is necessary in order to achieve portability.</span></p>
+                            </div>  <!-- content -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Integers</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>Java defines four integer types: <code>byte</code>, <code>short</code>, <code>int</code>, and <code>long</code>, which are shown here:</p>
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>Width in Bits</th>
+                                                    <th>Range</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>byte</code></td>
+                                                    <td>8</td>
+                                                    <td>-128 to 127</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>short</code></td>
+                                                    <td>16</td>
+                                                    <td>-32,768 to 32,767</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>int</code></td>
+                                                    <td>32</td>
+                                                    <td>-2,147,483,648 to 2,147,483,647</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>long</code></td>
+                                                    <td>64</td>
+                                                    <td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>  <!-- table -->
+                                        <p><span class="highlight">As the table shows, all of the integer types are signed positive and negative values. Java does not support unsigned (positive-only) integers</span>. Many other computer languages support both signed and unsigned integers. However, Java's designers felt that unsigned integers were unnecessary.</p>
+                                    </div>  <!-- content -->
+                                    <div class="lvl3">
+                                        <div class="left">
+                                            <h4>Note</h4>
+                                        </div>  <!-- left -->
+                                        <div class="right">
+                                            <div class="note">
+                                                <h3 class="noteHeading"></h3>
+                                                <p>Technically, the Java run-time system can use any size it wants to store a primitive type. However, in all cases, types must act as specifie</p>
+                                            </div>  <!-- note -->
+                                        </div>  <!-- right -->
+                                    </div>  <!-- lvl3 -->
+                                    <div class="lvl3">
+                                        <div class="left">
+                                            <h4>Ask The Expert</h4>
+                                        </div>  <!-- left -->
+                                        <div class="right">
+                                            <div class="askTheExpert">
+                                                    <h3 class="top"></h3>
+                                                    <p class="question">You say that there are four integer types: <code>int</code>, <code>short</code>, <code>long</code>, and <code>byte</code>. However, I have heard that <code>char</code> can also be categorized as an integer type in Java. Can you explain?</p>
+                                                    <p class="answer">The formal specification for Java defines a type category called integral types, which includes <code>byte</code>, <code>short</code>, <code>int</code>, <code>long</code>, and <code>char</code>. They are called integral types because they all hold whole-number, binary values. However, the purpose of the first four is to represent numeric integer quantities. The purpose of <code>char</code> is to represent characters. Therefore, the principal uses of <code>char</code> and the principal uses of the other integral types are fundamentally different. Because of the differences, the <code>char</code> type is treated separately in this book.</p>
+                                                </div>  <!-- askTheExpert -->
+                                        </div>  <!-- right -->
+                                    </div>  <!-- lvl3 -->
+                                    <div class="content">
+                                        <p>The most commonly used integer type is <code>int</code>. Variables of type <code>int</code> are often employed to control loops, to index arrays, and to perform general-purpose integer math.</p>
+                                        <p>When you need an integer that has a range greater than <code>int</code>, use <code>long</code>. For example, here is a program that computes the number of cubic inches contained in a cube that is one mile by one mile, by one mile:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Inches.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Inches.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Compute the number of inches in 1 cubic mile.
+ * 
+ * Call this file "Inches.java".
+ */
+class Inches {
+    public static void main(String[] args) {
+        long ci;
+        long im;
+
+        im = 5280 * 12;
+        ci = im * im * im;
+
+        System.out.println("There are " + ci + " cubic inches in a cubic mile.");
+    }
+}</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/Inches_class.svg" alt="Class diagram of Inches class">
+                                                <figcaption>Class diagram of Inches class<br>src: <a href="./plantUMLs/ch02/Inches_class.puml" target="_blank">./plantUMLs/ch02/Inches_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/Inches_act.svg" alt="Activity diagram of Inches.main() method">
+                                                <figcaption>Activity diagram of Inches.main() method<br>src: <a href="./plantUMLs/ch02/Inches_act.puml" target="_blank">./plantUMLs/ch02/Inches_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p>Here is the output from the program:</p>
+                                        <pre><code class="language-plaintext">There are 254358061056000 cubic inches in a cubic mile.</code></pre>  <!-- plaintext block -->
+                                        <p>Clearly, the result could not have been held in an <code>int</code> variable.</p>
+                                        <p>The smallest integer type is <code>byte</code>. Variables of type <code>byte</code> are especially useful when working with raw binary data that may not be directly compatible with Java's other built-in types. The <code>short</code> type creates a short integer. Variables of type <code>short</code> are appropriate when you don't need the larger range offered by <code>int</code>.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Floating-Point Types</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>As explained in Chapter 1, the floating-point types can represent numbers that have fractional components.
+                                        <p>There are two kinds of floating-point types: </p>
+                                        <ul>
+                                            <li>
+                                                <div>
+                                                    <p><code>float</code></p>
+                                                    <ul>
+                                                        <li>represent single-precision numbers</li>
+                                                        <li>32 bits wide</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div>
+                                                    <p><code>douple</code></p>
+                                                    <ul>
+                                                        <li>represent double-precision numbers</li>
+                                                        <li>64 bits wide</li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p>Of the two, <code>double</code> is the most commonly used, and many of the math functions in Java's class library use <code>double</code> values. For example, the <code>sqrt()</code> method (which is defined by the standard <code>Math</code> class) returns a <code>double</code> value that is the square root of its <code>double</code> argument. Here, <code>sqrt()</code> is used to compute the length of the hypotenuse, given the lengths of the two opposing sides:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Hypot.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Hypot.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Use the Pythagorean theorem to find the length of 
+ * the hypotenuse given the lengths of the two 
+ * opposing sides.
+ * 
+ * Call this file "Hypot.java".
+ */
+class Hypot {
+    public static void main(String[] args) {
+        double x, y, z;
+
+        x = 3;
+        y = 4;
+
+        z = Math.sqrt(x*x + y*y);
+
+        System.out.println("Hypotenuse is " + z);
+    }
+}</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/Hypot_class.svg" alt="Class diagram of Hypot class">
+                                                <figcaption>Class diagram of Hypot class<br>src: <a href="./plantUMLs/ch02/Hypot_class.puml" target="_blank">./plantUMLs/ch02/Hypot_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/Hypot_act.svg" alt="Activity diagram of Hypot.main() method">
+                                                <figcaption>Activity diagram of Hypot.main() method<br>src: <a href="./plantUMLs/ch02/Hypot_act.puml" target="_blank">./plantUMLs/ch02/Hypot_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p>The output from the program is shown here:</p>
+                                        <pre><code class="language-plaintext">Hypotenuse is 5.0</code></pre>  <!-- plaintext block -->
+                                        <p>One other point about the preceding example: As mentioned, <code>sqrt()</code> is a member of the standard <code>Math</code> class. Notice how <code>sqrt()</code> is called; it is preceded by the name <code>Math</code>. This is similar to the way <code>System.out</code> precedes <code>println()</code>. Although not all standard methods are called by specifying their class name first, several are.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Characters</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p><em>In Java, characters are not 8-bit quantities</em> like they are in many other computer languages. Instead, Java uses Unicode. Unicode defines a character set that can represent all of the characters found in all human languages. In Java, <span class="highlight"><code>char</code> is an unsigned 16-bit type having a range of 0 to 65,535</span>. The standard 8-bit ASCII character set is a subset of Unicode and ranges from 0 to 127. Thus, the ASCII characters are still valid Java characters.</p>
+                                        <p>A character variable can be assigned a value by enclosing the character in single quotes. For example, this assigns the variable <code>ch</code> the letter <code>X</code>:</p>
+                                        <pre><code class="language-java">char ch;
+ch = 'X';</code></pre>  <!-- java code -->
+                                        <p>You can output a <code>char</code> value using a <code>println()</code> statement. For example, this line outputs the value in <code>ch</code>:</p>
+                                        <pre><code class="language-java">System.out.println("This is ch: " + ch);</code></pre>  <!-- java code -->
+                                        <p>Since <code>char</code> is an unsigned 16-bit type, it is possible to perform various arithmetic manipulations on a <code>char</code> variable. For example, consider the following program:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/CharArithDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/CharArithDemo.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Character variables can be handled like integers.
+ * 
+ * Call this file "CharArithDemo.java".
+ */
+class CharArithDemo {
+    public static void main(String[] args) {
+        char ch;
+
+        ch = 'X';
+        System.out.println("ch contains " + ch);
+
+        ch++;  // increment ch
+        System.out.println("ch is now " + ch);
+
+        ch = 90;  // give ch the value 'Z'.
+        System.out.println("ch is now " + ch);
+    }
+}</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/CharArithDemo_class.svg" alt="Class diagram of CharArithDemo class">
+                                                <figcaption>Class diagram of CharArithDemo class<br>src: <a href="./plantUMLs/ch02/CharArithDemo_class.puml" target="_blank">./plantUMLs/ch02/CharArithDemo_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/CharArithDemo_act.svg" alt="Activity diagram of CharArithDemo.main() method">
+                                                <figcaption>Activity diagram of CharArithDemo.main() method<br>src: <a href="./plantUMLs/ch02/CharArithDemo_act.puml" target="_blank">./plantUMLs/ch02/CharArithDemo_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p>The output generated by this program is shown here:</p>
+                                        <pre><code class="language-plaintext">ch contains X
+ch is now Y
+ch is now Z</code></pre>  <!-- plaintext block -->
+                                        <p>In the program, <code>ch</code> is first given the value <code>X</code>. Next, <code>ch</code> is incremented. This results in <code>ch</code> containing <code>Y</code>, the next character in the ASCII (and Unicode) sequence. Next, <code>ch</code> is assigned the value 90, which is the ASCII (and Unicode) value that corresponds to the letter <code>Z</code>. Since the ASCII character set occupies the first 127 values in the Unicode character set, all the "old tricks" that you may have used with characters in other languages will work in Java, too.</p>
+                                    </div>  <!-- content -->
+                                    <div class="askTheExpert">
+                                        <h3 class="top"></h3>
+                                        <p class="question">Why does Java use Unicode?</p>
+                                        <p class="answer">Java was designed for worldwide use. Thus, it needs to use a character set that can represent all the world's languages. Unicode is the standard character set designed expressly for this purpose. Of course, the use of Unicode is inefficient for languages such as English, German, Spanish, or French, whose characters can be contained within 8 bits. But such is the price that must be paid for global portability.</p>
+                                    </div>  <!-- askTheExpert -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>THE BOOLEAN TYPE</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>The boolean type represents true/false values. Java defines the values true and false using the reserved words <code>true</code> and <code>false</code>. Thus, a variable or expression of type <code>boolean</code> will be one of these two values.</p>
+                                        <p>Here is a program that demonstrates the boolean type:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/BoolDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/BoolDemo.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Demonstrate boolean values.
+ * 
+ * Call this file "BoolDemo.java".
+ */
+
+class BoolDemo {
+    public static void main(String[] args) {
+        boolean b;
+
+        b = false;
+        System.out.println("b is " + b);
+        b = true;
+        System.out.println("b is " + b);
+        
+        // a boolean value can control the if statement.
+        if(b) System.out.println("This is executed.");
+
+        b = false;
+        if(b) System.out.println("This is not executed.");
+
+        // Outcome of a relational operator is a boolean value.
+        System.out.println("10 > 9 is " + (10 > 9));
+    }
+}
+</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/BoolDemo_class.svg" alt="Class diagram of BoolDemo class">
+                                                <figcaption>Class diagram of BoolDemo class<br>src: <a href="./plantUMLs/ch02/BoolDemo_class.puml" target="_blank">./plantUMLs/ch02/BoolDemo_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/BoolDemo_act.svg" alt="Activity diagram of BoolDemo.main() method">
+                                                <figcaption>Activity diagram of BoolDemo.main() method<br>src: <a href="./plantUMLs/ch02/BoolDemo_act.puml" target="_blank">./plantUMLs/ch02/BoolDemo_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p>The output generated by this program is shown here:</p>
+                                        <pre><code class="language-plaintext">b is false
+b is true
+This is executed.
+10 > 9 is true</code></pre>  <!-- plaintext block -->
+                                        <p>There are three interesting things to notice about this program. First, as you can see, when a <code>boolean</code> value is output by <code>println()</code>, "true" or "false" is displayed. Second,the value of a <code>boolean</code> variable is sufficient, by itself, to control the <code>if</code> statement. There is no need to write an <code>if</code> statement like this:</p>
+                                        <pre><code class="language-java">if(b == true) ...</code></pre>  <!-- java code -->
+                                        <p>Third, the outcome of a relational operator, such as <code>&lt;</code>, is a <code>boolean</code> value. This is why the expression <code>10 &gt; 9</code> displays the value "true." Further, the extra set of parentheses around <code>10 &gt; 9</code> is necessary because the <code>+</code> operator has a higher precedence than the <code>&gt;</code>.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="content">
+                                <table>
+                                    <caption><span class="capId">Table --</span> Java's built-in Data types</caption>
+                                    <thead>
+                                        <tr>
+                                            <th>General categories of <br>built-in data types</th>
+                                            <th>Classification</th>
+                                            <th>Type</th>
+                                            <th>Width in Bits</th>
+                                            <th>Range</th>
+                                            <th>Notes</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Object-oriented <br>data types</td>
+                                            <td colspan="4" style="text-align: center;">--Pending--</td>
+                                            <td style="text-align: center;">-- Pending --</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="8">Non-Object-oriented <br>data types</td>
+                                            <td rowspan="4">Integers</td>
+                                            <td><code>byte</code></td>
+                                            <td>8</td>
+                                            <td>-128 to 127</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>short</code></td>
+                                            <td>16</td>
+                                            <td>-32,768 to 32,767</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>int</code></td>
+                                            <td>32</td>
+                                            <td>-2,147,483,648 to 2,147,483,647</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>long</code></td>
+                                            <td>64</td>
+                                            <td>-9,223,372,036,854,775,808 to 9,223,372,036,854,775,807</td>
+                                            <td>-</td>
+                                        </tr>
+                                        <tr>
+                                            <td rowspan="2">Floatin-point types</td>
+                                            <td><code>float</code></td>
+                                            <td>32</td>
+                                            <td>-</td>
+                                            <td>- represent single-precision numbers</td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>double</code></td>
+                                            <td>64</td>
+                                            <td>-</td>
+                                            <td>- represent double-precision numbers</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Character types</td>
+                                            <td><code>char</code></td>
+                                            <td>16</td>
+                                            <td>0 to 65,535</td>
+                                            <td>- unsigned 16-bit type<br>- The purpose of <code>char</code> is to represent characters which differs from other integral types <code>byte</code>, <code>short</code>, <code>int</code> and <code>long</code>. For that reason <code>char</code> is categorized separately.</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Boolean type</td>
+                                            <td><code>boolean</code></td>
+                                            <td>-</td>
+                                            <td><code>false</code>, <code>true</code></td>
+                                            <td>-</td>
+                                        </tr>
+                                    </tbody>
+                                </table>  <!-- table -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh03">
