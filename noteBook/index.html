@@ -1214,6 +1214,755 @@ System.out.println(x + " " + y);</code></pre>  <!-- java code -->
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>INDENTATION PRACTICES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>You may have noticed in the previous examples that certain statements were indented. Java is a free-form language, meaning that it does not matter where you place statements relative to each other on a line. However, over the years, a common and accepted indentation style has developed that allows for very readable programs. This book follows that style, and it is recommended that you do so as well. Using this style, you indent one level after each opening brace, and move back out one level after each closing brace. Certain statements encourage some additional indenting; these will be covered later.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>TryThis 1-2</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <h3 class="tryThis"><span class="hl">TryThis 1-2</span> Improving the Gallons-to-Liters Converter</h3>
+                                <ul class="tryThisSrc">
+                                    <li><code>GalToLitTable.java</code></li>
+                                </ul>
+                                <p>You can use the <code>for</code> loop, the <code>if</code> statement, and code blocks to create an improved version of the gallons-to-liters converter that you developed in the first project. This new version will print a table of conversions, beginning with 1 gallon and ending at 100 gallons. After every 10 gallons, a blank line will be output. This is accomplished through the use of a variable called <code>counter</code> that counts the number of lines that have been output. Pay special attention to its use.</p>
+                                <ol class="tryThisOl">
+                                    <li>Create a new file called <code>GalToLitTable.java</code>.</li>
+                                    <li>
+                                        <div>
+                                            <p>Enter the following program into the file:</p>
+                                            <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/GalToLitTable.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/GalToLitTable.java</a></p>
+                                            <pre><code class="language-java">/**
+ * Try This 1-2
+ * 
+ * This program displays a conversion
+ * table of gallons to litres.
+ * 
+ * Call this program "GalToLitTable.java"
+ */
+class GalToLitTable {
+    public static void main(String[] args) {
+        double gallons, liters;
+        int counter;
+
+        counter = 0;
+        for(gallons = 1; gallons <= 100; gallons++) {
+            liters = gallons * 3.7854; // convert to liters
+            System.out.println(gallons + " gallons is " + liters + " liters.");
+
+            counter++;
+            // every 10th line, print a blank line
+            if(counter == 10) {
+                System.out.println();
+                counter = 0;  // reset the line counter
+            }
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                            <div class="gallery2">
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch01/GalToLitTable_class.svg" alt="Class diagram of GalToLitTable class">
+                                                    <figcaption>Class diagram of GalToLitTable class<br>src: <a href="./plantUMLs/ch01/GalToLitTable_class.puml" target="_blank">./plantUMLs/ch01/GalToLitTable_class.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch01/GalToLitTable_act.svg" alt="Activity diagram of GalToLitTable.main() method">
+                                                    <figcaption>Activity diagram of GalToLitTable.main() method<br>src: <a href="./plantUMLs/ch01/GalToLitTable_act.puml" target="_blank">./plantUMLs/ch01/GalToLitTable_act.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                            </div>  <!-- gallery2 -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Compile the program using the following command line:</p>
+                                            <pre><code class="language-plaintext">javac GalToLitTable.java</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Run the program using this command:</p>
+                                            <pre><code class="language-plaintext">java GalToLitTable</code></pre>  <!-- plaintext block -->
+                                            <p>Here is the output that you will see:</p>
+                                            <pre><code class="language-plaintext">1.0 gallons is 3.7854 liters.
+2.0 gallons is 7.5708 liters.
+3.0 gallons is 11.356200000000001 liters.
+4.0 gallons is 15.1416 liters.
+5.0 gallons is 18.927 liters.
+6.0 gallons is 22.712400000000002 liters.
+7.0 gallons is 26.4978 liters.
+8.0 gallons is 30.2832 liters.
+9.0 gallons is 34.0686 liters.
+10.0 gallons is 37.854 liters.
+
+11.0 gallons is 41.6394 liters.
+12.0 gallons is 45.424800000000005 liters.
+13.0 gallons is 49.2102 liters.
+14.0 gallons is 52.9956 liters.
+15.0 gallons is 56.781 liters.
+16.0 gallons is 60.5664 liters.
+17.0 gallons is 64.3518 liters.
+18.0 gallons is 68.1372 liters.
+19.0 gallons is 71.9226 liters.
+20.0 gallons is 75.708 liters.
+
+21.0 gallons is 79.49340000000001 liters.
+22.0 gallons is 83.2788 liters.
+23.0 gallons is 87.0642 liters.
+24.0 gallons is 90.84960000000001 liters.
+25.0 gallons is 94.635 liters.
+26.0 gallons is 98.4204 liters.
+27.0 gallons is 102.2058 liters.
+28.0 gallons is 105.9912 liters.
+29.0 gallons is 109.7766 liters.
+30.0 gallons is 113.562 liters.
+
+31.0 gallons is 117.34740000000001 liters.
+32.0 gallons is 121.1328 liters.
+33.0 gallons is 124.9182 liters.
+34.0 gallons is 128.7036 liters.
+35.0 gallons is 132.489 liters.
+36.0 gallons is 136.2744 liters.
+37.0 gallons is 140.0598 liters.
+38.0 gallons is 143.8452 liters.
+39.0 gallons is 147.63060000000002 liters.
+40.0 gallons is 151.416 liters.
+
+41.0 gallons is 155.2014 liters.
+42.0 gallons is 158.98680000000002 liters.
+43.0 gallons is 162.7722 liters.
+44.0 gallons is 166.5576 liters.
+45.0 gallons is 170.34300000000002 liters.
+46.0 gallons is 174.1284 liters.
+47.0 gallons is 177.9138 liters.
+48.0 gallons is 181.69920000000002 liters.
+49.0 gallons is 185.4846 liters.
+50.0 gallons is 189.27 liters.
+
+51.0 gallons is 193.0554 liters.
+52.0 gallons is 196.8408 liters.
+53.0 gallons is 200.6262 liters.
+54.0 gallons is 204.4116 liters.
+55.0 gallons is 208.197 liters.
+56.0 gallons is 211.9824 liters.
+57.0 gallons is 215.7678 liters.
+58.0 gallons is 219.5532 liters.
+59.0 gallons is 223.3386 liters.
+60.0 gallons is 227.124 liters.
+
+61.0 gallons is 230.9094 liters.
+62.0 gallons is 234.69480000000001 liters.
+63.0 gallons is 238.4802 liters.
+64.0 gallons is 242.2656 liters.
+65.0 gallons is 246.05100000000002 liters.
+66.0 gallons is 249.8364 liters.
+67.0 gallons is 253.6218 liters.
+68.0 gallons is 257.4072 liters.
+69.0 gallons is 261.1926 liters.
+70.0 gallons is 264.978 liters.
+
+71.0 gallons is 268.7634 liters.
+72.0 gallons is 272.5488 liters.
+73.0 gallons is 276.3342 liters.
+74.0 gallons is 280.1196 liters.
+75.0 gallons is 283.90500000000003 liters.
+76.0 gallons is 287.6904 liters.
+77.0 gallons is 291.4758 liters.
+78.0 gallons is 295.26120000000003 liters.
+79.0 gallons is 299.0466 liters.
+80.0 gallons is 302.832 liters.
+
+81.0 gallons is 306.61740000000003 liters.
+82.0 gallons is 310.4028 liters.
+83.0 gallons is 314.1882 liters.
+84.0 gallons is 317.97360000000003 liters.
+85.0 gallons is 321.759 liters.
+86.0 gallons is 325.5444 liters.
+87.0 gallons is 329.32980000000003 liters.
+88.0 gallons is 333.1152 liters.
+89.0 gallons is 336.9006 liters.
+90.0 gallons is 340.68600000000004 liters.
+
+91.0 gallons is 344.4714 liters.
+92.0 gallons is 348.2568 liters.
+93.0 gallons is 352.04220000000004 liters.
+94.0 gallons is 355.8276 liters.
+95.0 gallons is 359.613 liters.
+96.0 gallons is 363.39840000000004 liters.
+97.0 gallons is 367.1838 liters.
+98.0 gallons is 370.9692 liters.
+99.0 gallons is 374.7546 liters.
+100.0 gallons is 378.54 liters.
+</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                </ol>  <!-- tryThisOl -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE JAVA KEYWORDS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Sixty-one keywords are currently defined in the Java language (see Table 1-1). These keywords, combined with the syntax of the operators and separators, form the definition of the Java language. In general, keywords cannot be used as names for a variable, class, or method. The exceptions to this rule are the context-sensitive keywords added by JDK 9 to support modules. (See Chapter 15 for details.) Also, beginning with JDK 9, an underscore by itself is considered a keyword in order to prevent its use as the name of something in your program.</p>
+                                <table id="Table1-1">
+                                    <caption><span class="capId">Table 1-1</span> The Java Keywords</caption>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>abstract</code></td>
+                                            <td><code>assert</code></td>
+                                            <td><code>boolean</code></td>
+                                            <td><code>break</code></td>
+                                            <td><code>byte</code></td>
+                                            <td><code>case</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>catch</code></td>
+                                            <td><code>char</code></td>
+                                            <td><code>class</code></td>
+                                            <td><code>const</code></td>
+                                            <td><code>continue</code></td>
+                                            <td><code>default</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>do</code></td>
+                                            <td><code>double</code></td>
+                                            <td><code>else</code></td>
+                                            <td><code>enum</code></td>
+                                            <td><code>exports</code></td>
+                                            <td><code>extends</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>final</code></td>
+                                            <td><code>finally</code></td>
+                                            <td><code>float</code></td>
+                                            <td><code>for</code></td>
+                                            <td><code>goto</code></td>
+                                            <td><code>if</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>implements</code></td>
+                                            <td><code>import</code></td>
+                                            <td><code>instanceof</code></td>
+                                            <td><code>int</code></td>
+                                            <td><code>interface</code></td>
+                                            <td><code>long</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>module</code></td>
+                                            <td><code>native</code></td>
+                                            <td><code>new</code></td>
+                                            <td><code>open</code></td>
+                                            <td><code>opens</code></td>
+                                            <td><code>package</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>private</code></td>
+                                            <td><code>protected</code></td>
+                                            <td><code>provides</code></td>
+                                            <td><code>public</code></td>
+                                            <td><code>requires</code></td>
+                                            <td><code>return</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>short</code></td>
+                                            <td><code>static</code></td>
+                                            <td><code>strictfp</code></td>
+                                            <td><code>super</code></td>
+                                            <td><code>switch</code></td>
+                                            <td><code>synchronized</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>this</code></td>
+                                            <td><code>throw</code></td>
+                                            <td><code>throws</code></td>
+                                            <td><code>to</code></td>
+                                            <td><code>transient</code></td>
+                                            <td><code>transitive</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>try</code></td>
+                                            <td><code>uses</code></td>
+                                            <td><code>void</code></td>
+                                            <td><code>volatile</code></td>
+                                            <td><code>while</code></td>
+                                            <td><code>with</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>_</code></td>
+                                            <td><code></code></td>
+                                            <td><code></code></td>
+                                            <td><code></code></td>
+                                            <td><code></code></td>
+                                            <td><code></code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>  <!-- table -->
+                                <p>The keywords <code>const</code> and <code>goto</code> are reserved but not used. In the early days of Java, several other keywords were reserved for possible future use. However, the current specification for Java defines only the keywords shown in <a href="#Table1-1">Table 1-1</a>.</p>
+                                <p>In addition to the keywords, Java reserves four other names. Three have been part of Java since the start: <code>true</code>, <code>false</code>, and <code>null</code>. These are values defined by Java. You may not use these words for the names of variables, classes, and so on. Beginning with JDK 10, the word <code>var</code> has been added as a context-sensitive, reserved type name. (See Chapter 5 for details on <code>var</code>.)</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>IDENTIFIERS IN JAVA</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>In Java an identifier is, essentially, a name given to </p>
+                                <ul>
+                                    <li>a method</li>
+                                    <li>a variable</li>
+                                    <li>or any other user-defined item</li>
+                                </ul>
+                                <p>Identifiers can be from one to several characters long. Variable names may start with </p>
+                                <ul>
+                                    <li>any letter of the alphabet</li>
+                                    <li>an underscore</li>
+                                    <li>or a dollar sign</li>
+                                </ul>
+                                <p>Next may be either </p>
+                                <ul>
+                                    <li>a letter</li>
+                                    <li>a digit</li>
+                                    <li>a dollar sign</li>
+                                    <li>or an underscore</li>
+                                </ul>
+                                <p>The underscore can be used to enhance the readability of a variable name, as in <code>line_count</code>. Uppercase and lowercase are different; that is, to Java, <code>myvar</code> and <code>MyVar</code> are separate names. Here are some examples of acceptable identifiers:</p>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td><code>Test</code></td>
+                                            <td><code>x</code></td>
+                                            <td><code>y2</code></td>
+                                            <td><code>MaxLoad</code></td>
+                                        </tr>
+                                        <tr>
+                                            <td><code>$up</code></td>
+                                            <td><code>_top</code></td>
+                                            <td><code>my_var</code></td>
+                                            <td><code>sample23</code></td>
+                                        </tr>
+                                    </tbody>
+                                </table>  <!-- table -->
+                                <p>Remember, <em>you can't start an identifier with a digit</em>. Thus, <code>12x</code> is invalid, for example.In general, you cannot use the Java keywords as identifier names. Also, you should not use the name of any standard method, such as <code>println</code>, as an identifier. Beyond these two restrictions, good programming practice dictates that you use identifier names that reflect the meaning or usage of the items being named.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE JAVA CLASS LIBRARIES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>The sample programs shown in this chapter make use of two of Java's built-in methods: <code>println()</code> and <code>print()</code>. These methods are accessed through <code>System.out</code>. <code>System</code> is a class predefined by Java that is automatically included in your programs. In the larger view, <em>the Java environment relies on several built-in class libraries that contain many built-in methods that provide support for such things as I/O, string handling, networking, and graphics. The standard classes also provide support for a graphical user interface (GUI)</em>. Thus, Java as a totality is a combination of the Java language itself, plus its standard classes. As you will see, the class libraries provide much of the functionality that comes with Java. Indeed, part of becoming a Java programmer is learning to use the standard Java classes. Throughout this book, various elements of the standard library classes and methods are described. However, the Java library is something that you will also want to explore more on your own.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Chapter 01 SelfTest</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">1: </span>What is bytecode and why is it important to Java's use for Internet programming?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">Portability is a major aspect of the Internet because there are many different types of computers and operating systems connected to it. If a Java program were to be run on virtually any computer connected to the Internet, there needed to be some way to enable that program to execute on different types of systems. It is not practical to have different versions of the same application for different computers.</p>
+                                    <p>The key that allowed Java to address both the security and the portability problems just described is that the output of a Java compiler is not executable code. Rather, it is bytecode. <em>Bytecode</em> is a highly optimized set of instructions designed to be executed by what is called the Java Virtual Machine (JVM), which is part of the Java RuntimeEnvironment (JRE).</p>
+                                    <p>Translating a Java program into bytecode makes it much easier to run a program in a wide variety of environments because only the JRE (which includes the JVM) needs to be implemented for each platform.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">2: </span>What are the three main principles of object-oriented programming?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer"></p>
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch01/ch01puml02.svg" alt="Three main principles of OOP">
+                                        <figcaption>Three main principles of OOP<br>src: <a href="./plantUMLs/ch01/ch01puml02.puml" target="_blank">./plantUMLs/ch01/ch01puml02.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <ol>
+                                        <li><b>Encapsulation</b>: Encapsulation is a programming mechanism that binds together code and the data it manipulates, and that keeps both safe from outside interference and misuse.</li>
+                                        <li><b>Polymorphism</b>: Polymorphism (<em>from Greek, meaning "many forms"</em>) is the quality that allows one interface to access a general class of actions. The specific action is determined by the exact nature of the situation.</li>
+                                        <li><b>Inheritance</b>: Inheritance is the process by which one object can acquire the properties of another object.</li>
+                                    </ol>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">3: </span>Where do Java programs begin execution?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">In general, java programs begin execution by calling <code>main()</code>.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">4: </span>What is a variable?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">A <i>variable</i> is a named memory location that can be assigned a value. Further, the value of a variable can be changed during the execution of a program. That is, the content of a variable is changeable, not fixed.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">5: </span>Which of the following variable names is invalid?</p>
+                                    <ol type="A">
+                                        <li><code>count</code></li>
+                                        <li><code>$count</code></li>
+                                        <li><code>count27</code></li>
+                                        <li><code>67count</code></li>
+                                    </ol>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">Option <b>D. <code>67count</code></b> is invalid. We can't start an identifier with a digit.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">6: </span>How do you create a single-line comment? How do you create a multi-line comment?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">A single-line comment begins with <code>//</code> and ends at the end of the line. A multiline comment begins with <code>/*</code> and ends with <code>*/</code>.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">7: </span>Show the general form of the <code>if</code> statement. Show the general form of the <code>for</code> loop.</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer"></p>
+                                    <p><b>General form of <code>if</code>:</b></p>
+                                    <ol>
+                                        <li>
+                                            <div>
+                                                <p>For single statement body:</p>
+                                                <pre><code class="language-plaintext">if(condition) statement;</code></pre>  <!-- plaintext block -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <p>For multi-statement body:</p>
+                                                <pre><code class="language-plaintext">if(condition) {
+    statement1;
+    statement2;
+}</code></pre>  <!-- plaintext block -->
+                                            </div>
+                                        </li>
+                                    </ol>
+                                    <p><b>General form of <code>for</code>:</b></p>
+                                    <ol>
+                                        <li>
+                                            <div>
+                                                <p>For single statement body:</p>
+                                                <pre><code class="language-plaintext">for(initialization; condition; iteration) statement;</code></pre>  <!-- plaintext block -->
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div>
+                                                <p>For multi-statement body:</p>
+                                                <pre><code class="language-plaintext">for(initialization; condition; iteration) {
+    statement1;
+    statement2;
+}</code></pre>  <!-- plaintext block -->
+                                            </div>
+                                        </li>
+                                    </ol>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">8: </span>How do you create a block of code?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">A block of code is started with a <code>{</code> and ended with a <code>}</code>.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">9: </span>The moon's gravity is about 17 percent that of earth's. Write a program that computes your effective weight on the moon.</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer"></p>
+                                    <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_SelfTest/JBG_HS_Ch01_SelfTest_09.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_SelfTest/JBG_HS_Ch01_SelfTest_09.java</a></p>
+                                    <pre><code class="language-java">/**
+ * Compute your effective weight (Kgs) on the moon.
+ * 
+ * Call this file "JBG_HS_Ch01_SelfTest_09"
+ */
+class JBG_HS_Ch01_SelfTest_09 {
+    public static void main(String[] args) {
+        double yourWeightOnEarthKgs;
+        double yourWeightOnMoonKgs;
+
+        yourWeightOnEarthKgs = 63.2;
+
+        yourWeightOnMoonKgs = yourWeightOnEarthKgs * 0.17;
+
+        System.out.println("Your weight on earth which is " + yourWeightOnEarthKgs + "Kgs is equal to " + yourWeightOnMoonKgs + "Kgs on the moon.");
+    }
+}</code></pre>  <!-- java code -->
+                                    <div class="gallery2">
+                                        <figure class="standAloneFigure">
+                                            <img src="./plantUMLs/ch01/ch01_st09_class.svg" alt="Class diagram of SelfTest09 class">
+                                            <figcaption>Class diagram of SelfTest09 class<br>src: <a href="./plantUMLs/ch01/ch01_st09_class.puml" target="_blank">./plantUMLs/ch01/ch01_st09_class.puml</a></figcaption>
+                                        </figure>  <!-- standAloneFigure -->
+                                        <figure class="standAloneFigure">
+                                            <img src="./plantUMLs/ch01/ch01_st09_act.svg" alt="Activity diagram of Ch01SelfTest09's main() method">
+                                            <figcaption>Activity diagram of Ch01SelfTest09's main() method<br>src: <a href="./plantUMLs/ch01/ch01_st09_act.puml" target="_blank">./plantUMLs/ch01/ch01_st09_act.puml</a></figcaption>
+                                        </figure>  <!-- standAloneFigure -->
+                                    </div>  <!-- gallery2 -->
+                                    <p><b>Execution Logs:</b></p>
+                                    <pre><code class="language-plaintext">Your weight on earth which is 63.2Kgs is equal to 10.744000000000002Kgs on the moon.</code></pre>  <!-- plaintext block -->
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">10: </span>Adapt <i>Try This 1-2</i> so that it prints a conversion table of inches to meters. Display 12 feet of conversions, inch by inch. Output a blank line every 12 inches. (One meter equals approximately 39.37 inches.)</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer"></p>
+                                    <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_SelfTest/JBG_HS_Ch01_SelfTest_10.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_SelfTest/JBG_HS_Ch01_SelfTest_10.java</a></p>
+                                    <pre><code class="language-java">/**
+ * Try This 1-2
+ * 
+ * This program displays a conversion
+ * table of inches to meters.
+ * 
+ * Call this program "JBG_HS_Ch01_SelfTest_10.java"
+ */
+class JBG_HS_Ch01_SelfTest_10 {
+    public static void main(String[] args) {
+        double inches, meters;
+        int counter;
+        int inchesPerFeet = 12;
+        int runForNFeets = 12;
+
+        counter = 0;
+        for(inches = 1; inches <= inchesPerFeet*runForNFeets; inches++) {
+            meters = inches / 39.37; // convert to meters
+            System.out.println(inches + " inches is " + meters + " meters.");
+
+            counter++;
+            // every 10th line, print a blank line
+            if(counter == 12) {
+                System.out.println();
+                counter = 0;  // reset the line counter
+            }
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                    <div class="gallery2">
+                                        <figure class="standAloneFigure">
+                                            <img src="./plantUMLs/ch01/ch01_st10_class.svg" alt="Class diagram of JBG_HS_Ch01_SelfTest_10 class">
+                                            <figcaption>Class diagram of JBG_HS_Ch01_SelfTest_10 class<br>src: <a href="./plantUMLs/ch01/ch01_st10_class.puml" target="_blank">./plantUMLs/ch01/ch01_st10_class.puml</a></figcaption>
+                                        </figure>  <!-- standAloneFigure -->
+                                        <figure class="standAloneFigure">
+                                            <img src="./plantUMLs/ch01/ch01_st10_act.svg" alt="Activity diagram of JBG_HS_Ch01_SelfTest_10.main() method">
+                                            <figcaption>Activity diagram of JBG_HS_Ch01_SelfTest_10.main() method<br>src: <a href="./plantUMLs/ch01/ch01_st10_act.puml" target="_blank">./plantUMLs/ch01/ch01_st10_act.puml</a></figcaption>
+                                        </figure>  <!-- standAloneFigure -->
+                                    </div>  <!-- gallery2 -->
+                                    <p><b>Execution Logs:</b></p>
+                                    <pre><code class="language-plaintext">1.0 inches is 0.025400050800101603 meters.
+2.0 inches is 0.05080010160020321 meters.
+3.0 inches is 0.07620015240030481 meters.
+4.0 inches is 0.10160020320040641 meters.
+5.0 inches is 0.12700025400050802 meters.
+6.0 inches is 0.15240030480060962 meters.
+7.0 inches is 0.17780035560071122 meters.
+8.0 inches is 0.20320040640081283 meters.
+9.0 inches is 0.2286004572009144 meters.
+10.0 inches is 0.25400050800101603 meters.
+11.0 inches is 0.27940055880111764 meters.
+12.0 inches is 0.30480060960121924 meters.
+
+13.0 inches is 0.33020066040132084 meters.
+14.0 inches is 0.35560071120142245 meters.
+15.0 inches is 0.38100076200152405 meters.
+16.0 inches is 0.40640081280162565 meters.
+17.0 inches is 0.43180086360172726 meters.
+18.0 inches is 0.4572009144018288 meters.
+19.0 inches is 0.4826009652019304 meters.
+20.0 inches is 0.5080010160020321 meters.
+21.0 inches is 0.5334010668021336 meters.
+22.0 inches is 0.5588011176022353 meters.
+23.0 inches is 0.5842011684023368 meters.
+24.0 inches is 0.6096012192024385 meters.
+
+25.0 inches is 0.63500127000254 meters.
+26.0 inches is 0.6604013208026417 meters.
+27.0 inches is 0.6858013716027432 meters.
+28.0 inches is 0.7112014224028449 meters.
+29.0 inches is 0.7366014732029464 meters.
+30.0 inches is 0.7620015240030481 meters.
+31.0 inches is 0.7874015748031497 meters.
+32.0 inches is 0.8128016256032513 meters.
+33.0 inches is 0.8382016764033529 meters.
+34.0 inches is 0.8636017272034545 meters.
+35.0 inches is 0.8890017780035561 meters.
+36.0 inches is 0.9144018288036576 meters.
+
+37.0 inches is 0.9398018796037593 meters.
+38.0 inches is 0.9652019304038608 meters.
+39.0 inches is 0.9906019812039625 meters.
+40.0 inches is 1.0160020320040641 meters.
+41.0 inches is 1.0414020828041657 meters.
+42.0 inches is 1.0668021336042672 meters.
+43.0 inches is 1.0922021844043688 meters.
+44.0 inches is 1.1176022352044706 meters.
+45.0 inches is 1.143002286004572 meters.
+46.0 inches is 1.1684023368046736 meters.
+47.0 inches is 1.1938023876047752 meters.
+48.0 inches is 1.219202438404877 meters.
+
+49.0 inches is 1.2446024892049785 meters.
+50.0 inches is 1.27000254000508 meters.
+51.0 inches is 1.2954025908051816 meters.
+52.0 inches is 1.3208026416052834 meters.
+53.0 inches is 1.346202692405385 meters.
+54.0 inches is 1.3716027432054865 meters.
+55.0 inches is 1.397002794005588 meters.
+56.0 inches is 1.4224028448056898 meters.
+57.0 inches is 1.4478028956057913 meters.
+58.0 inches is 1.4732029464058929 meters.
+59.0 inches is 1.4986029972059944 meters.
+60.0 inches is 1.5240030480060962 meters.
+
+61.0 inches is 1.5494030988061978 meters.
+62.0 inches is 1.5748031496062993 meters.
+63.0 inches is 1.6002032004064008 meters.
+64.0 inches is 1.6256032512065026 meters.
+65.0 inches is 1.6510033020066042 meters.
+66.0 inches is 1.6764033528067057 meters.
+67.0 inches is 1.7018034036068073 meters.
+68.0 inches is 1.727203454406909 meters.
+69.0 inches is 1.7526035052070106 meters.
+70.0 inches is 1.7780035560071121 meters.
+71.0 inches is 1.8034036068072137 meters.
+72.0 inches is 1.8288036576073152 meters.
+
+73.0 inches is 1.854203708407417 meters.
+74.0 inches is 1.8796037592075185 meters.
+75.0 inches is 1.90500381000762 meters.
+76.0 inches is 1.9304038608077216 meters.
+77.0 inches is 1.9558039116078234 meters.
+78.0 inches is 1.981203962407925 meters.
+79.0 inches is 2.0066040132080265 meters.
+80.0 inches is 2.0320040640081283 meters.
+81.0 inches is 2.0574041148082296 meters.
+82.0 inches is 2.0828041656083314 meters.
+83.0 inches is 2.108204216408433 meters.
+84.0 inches is 2.1336042672085345 meters.
+
+85.0 inches is 2.1590043180086362 meters.
+86.0 inches is 2.1844043688087376 meters.
+87.0 inches is 2.2098044196088393 meters.
+88.0 inches is 2.235204470408941 meters.
+89.0 inches is 2.2606045212090424 meters.
+90.0 inches is 2.286004572009144 meters.
+91.0 inches is 2.311404622809246 meters.
+92.0 inches is 2.3368046736093473 meters.
+93.0 inches is 2.362204724409449 meters.
+94.0 inches is 2.3876047752095504 meters.
+95.0 inches is 2.413004826009652 meters.
+96.0 inches is 2.438404876809754 meters.
+
+97.0 inches is 2.4638049276098553 meters.
+98.0 inches is 2.489204978409957 meters.
+99.0 inches is 2.514605029210059 meters.
+100.0 inches is 2.54000508001016 meters.
+101.0 inches is 2.565405130810262 meters.
+102.0 inches is 2.590805181610363 meters.
+103.0 inches is 2.616205232410465 meters.
+104.0 inches is 2.6416052832105668 meters.
+105.0 inches is 2.667005334010668 meters.
+106.0 inches is 2.69240538481077 meters.
+107.0 inches is 2.717805435610871 meters.
+108.0 inches is 2.743205486410973 meters.
+
+109.0 inches is 2.7686055372110747 meters.
+110.0 inches is 2.794005588011176 meters.
+111.0 inches is 2.819405638811278 meters.
+112.0 inches is 2.8448056896113796 meters.
+113.0 inches is 2.870205740411481 meters.
+114.0 inches is 2.8956057912115827 meters.
+115.0 inches is 2.921005842011684 meters.
+116.0 inches is 2.9464058928117858 meters.
+117.0 inches is 2.9718059436118875 meters.
+118.0 inches is 2.997205994411989 meters.
+119.0 inches is 3.0226060452120906 meters.
+120.0 inches is 3.0480060960121924 meters.
+
+121.0 inches is 3.0734061468122937 meters.
+122.0 inches is 3.0988061976123955 meters.
+123.0 inches is 3.124206248412497 meters.
+124.0 inches is 3.1496062992125986 meters.
+125.0 inches is 3.1750063500127004 meters.
+126.0 inches is 3.2004064008128017 meters.
+127.0 inches is 3.2258064516129035 meters.
+128.0 inches is 3.2512065024130052 meters.
+129.0 inches is 3.2766065532131066 meters.
+130.0 inches is 3.3020066040132083 meters.
+131.0 inches is 3.3274066548133097 meters.
+132.0 inches is 3.3528067056134114 meters.
+
+133.0 inches is 3.378206756413513 meters.
+134.0 inches is 3.4036068072136145 meters.
+135.0 inches is 3.4290068580137163 meters.
+136.0 inches is 3.454406908813818 meters.
+137.0 inches is 3.4798069596139194 meters.
+138.0 inches is 3.505207010414021 meters.
+139.0 inches is 3.5306070612141225 meters.
+140.0 inches is 3.5560071120142243 meters.
+141.0 inches is 3.581407162814326 meters.
+142.0 inches is 3.6068072136144274 meters.
+143.0 inches is 3.632207264414529 meters.
+144.0 inches is 3.6576073152146305 meters.
+</code></pre>  <!-- plaintext block -->
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">11: </span>If you make a typing mistake when entering your program, what sort of error will result?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">Will result in syntax error.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                            <div class="selfTestItem">
+                                <div class="selfTestQuestion">
+                                    <p class="question"><span class="questionNumber">12: </span>Does it matter where on a line you put a statement?</p>
+                                </div>  <!-- selfTestQuestion -->
+                                <div class="selfTestAnswer">
+                                    <p class="answer">No. Java is a free-form language, meaning that it does not matter where you place statements relative to each other on a line.</p>
+                                </div>  <!-- selfTestAnswer -->
+                            </div>  <!-- selfTestItem -->
+                            <hr class="selfTestItemSeparator">
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh02">

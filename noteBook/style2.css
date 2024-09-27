@@ -202,6 +202,60 @@ tr:nth-child(even) {
     color: black;
 }
 
-.tryThisOl .srcFile {
+.tryThisOl .srcFile, .selfTestAnswer .srcFile {
     margin-bottom: 8px;
+}
+
+table caption {
+    caption-side: top;
+    text-align: left;
+    font-family: monospace;
+    background-color: #e7e785;
+    padding: 4px;
+}
+
+table .capId {
+    font-weight: bold;
+}
+
+.selfTestItem > * {
+    margin: 8px 0;
+}
+
+.selfTestQuestion {
+    box-shadow: 0 0 4px 2px #ff1d1d;
+    padding: 4px;
+}
+
+.selfTestQuestion .question::before {
+    content: "Question ";
+    font-weight: bold;
+    color: red;
+}
+
+.selfTestQuestion .questionNumber {
+    font-weight: bold;
+    color: red;
+}
+
+.selfTestAnswer {
+    box-shadow: 0 0 4px 2px #1d1dff;
+    padding: 4px;
+}
+
+.selfTestAnswer .answer::before {
+    content: "Answer: ";
+    font-weight: bold;
+    color: blue;
+}
+
+.selfTestItemSeparator {
+    border: none;
+    height: 10px;
+    background-image: linear-gradient(#f1eded, #d4d4d4, #494747, #d4d4d4, #f1eded);
+    margin: 14px 0;
+}
+
+.selfTestAnswer > * {
+    margin: 4px 0;
 }

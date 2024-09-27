@@ -162,6 +162,7 @@
 		"prefix": "table",
 		"body": [
 			"<table>",
+			"    <caption><span class=\"capId\"> $1</caption>",
             "    <thead>",
 			"        <tr>",
 			"            <th></th>",
@@ -267,5 +268,22 @@
 			"<p class=\"srcFile\"><a href=\"$1\" target=\"_blank\">$1</a></p>$2",
 		],
 		"description": "local snippet:: Source file link."
+	},
+
+	"lsnip::Self Test Item": {
+		"scope": "html",
+		"prefix": "selfTestItem",
+		"body": [
+			"<div class=\"selfTestItem\">",
+			"    <div class=\"selfTestQuestion\">",
+			"        <p class=\"question\"><span class=\"questionNumber\">$1: </span>$2</p>",
+			"    </div>  <!-- selfTestQuestion -->",
+			"    <div class=\"selfTestAnswer\">",
+			"        <p class=\"answer\">$3</p>",
+			"    </div>  <!-- selfTestAnswer -->",
+			"</div>  <!-- selfTestItem -->",
+			"<hr class=\"selfTestItemSeparator\">",
+		],
+		"description": "local snippet:: Self test item."
 	},
 }
