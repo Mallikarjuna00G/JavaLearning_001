@@ -204,6 +204,30 @@
 		"description": "local snippet:: stand alone figure element."
 	},
 
+	"lsnip::stand alone PUML class diagram figure element": {
+		"scope": "html",
+		"prefix": "pumlClassFigure",
+		"body": [
+			"<figure class=\"standAloneFigure\">",
+            "    <img src=\"$1\" alt=\"Class diagram of $2 class\">",
+			"    <figcaption>Class diagram of $2 class<br>src: <a href=\"$3\" target=\"_blank\">$3</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$4",
+		],
+		"description": "local snippet:: stand alone PUML class diagram figure element."
+	},
+
+	"lsnip::stand alone PUML activity diagram figure element": {
+		"scope": "html",
+		"prefix": "pumlActivityFigure",
+		"body": [
+			"<figure class=\"standAloneFigure\">",
+            "    <img src=\"$1\" alt=\"Activity diagram of $2 method\">",
+			"    <figcaption>Class diagram of $2 method<br>src: <a href=\"$3\" target=\"_blank\">$3</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$4",
+		],
+		"description": "local snippet:: stand alone PUML class diagram figure element."
+	},
+
 	"lsnip::note": {
 		"scope": "html",
 		"prefix": "note",

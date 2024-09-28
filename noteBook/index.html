@@ -891,11 +891,11 @@ x after division: 2.5</code></pre>  <!-- plaintext block -->
                     </div>  <!-- lvl1 -->
                     <div class="lvl1">
                         <div class="left">
-                            <h2>TryThis 1-1</h2>
+                            <h2>Try This 1-1</h2>
                         </div>  <!-- left -->
                         <div class="right">
                             <div class="content">
-                                <h3 class="tryThis"><span class="hl">TryThis 1-1</span> Converting Gallons to Liters</h3>
+                                <h3 class="tryThis"><span class="hl">Try This 1-1</span> Converting Gallons to Liters</h3>
                                 <ul class="tryThisSrc">
                                     <li><code>GalToLit.java</code></li>
                                 </ul>
@@ -1226,11 +1226,11 @@ System.out.println(x + " " + y);</code></pre>  <!-- java code -->
                     </div>  <!-- lvl1 -->
                     <div class="lvl1">
                         <div class="left">
-                            <h2>TryThis 1-2</h2>
+                            <h2>Try This 1-2</h2>
                         </div>  <!-- left -->
                         <div class="right">
                             <div class="content">
-                                <h3 class="tryThis"><span class="hl">TryThis 1-2</span> Improving the Gallons-to-Liters Converter</h3>
+                                <h3 class="tryThis"><span class="hl">Try This 1-2</span> Improving the Gallons-to-Liters Converter</h3>
                                 <ul class="tryThisSrc">
                                     <li><code>GalToLitTable.java</code></li>
                                 </ul>
@@ -2416,6 +2416,102 @@ This is executed.
                                         </tr>
                                     </tbody>
                                 </table>  <!-- table -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Try This 2-1</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <h3 class="tryThis"><span class="hl">TryThis 2-1</span> How Far Away Is the Lightning?</h3>
+                                <ul class="tryThisSrc">
+                                    <li><code>Sound.java</code></li>
+                                </ul>
+                                <p>In this project, you will create a program that computes how far away, in feet, a listener is from a lightning strike. Sound travels approximately 1,100 feet per second through air. Thus, knowing the interval between the time you see a lightning bolt and the time the sound reaches you enables you to compute the distance to the lightning. For this project, assume that the time interval is 7.2 seconds.</p>
+                                <ol class="tryThisOl">
+                                    <li>Create a new file called <code>Sound.java</code>.</li>
+                                    <li>To compute the distance, you will need to use floating-point values. Why? Because the time interval, 7.2, has a fractional component. Although it would be permissible to use a value of type <code>float</code>, we will use <code>double</code> in the example.</li>
+                                    <li>To compute the distance, you will multiply 7.2 by <code>1,100</code>. You will then assign this value to a variable.</li>
+                                    <li>
+                                        <div>
+                                            <p>Finally, you will display the result.</p>
+                                            <p>Here is the entire <code>Sound.java</code> program listing:</p>
+                                            <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Sound.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Sound.java</a></p>
+                                            <pre><code class="language-java">/**
+ * Try This 2-1
+ * 
+ * Compute the distance to a lightning strike
+ * whose sound takes 7.2 seconds to reach you.
+ * 
+ * Call this file "Sound.java".
+ */
+class Sound {
+    public static void main(String[] args) {
+        double dist;
+
+        dist = 7.2 * 1100;
+
+        System.out.println("The lightning is " + dist + " feet away.");
+    }
+}</code></pre>  <!-- java code -->
+                                            <div class="gallery2">
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch02/Sound_class.svg" alt="Class diagram of Sound class">
+                                                    <figcaption>Class diagram of Sound class<br>src: <a href="./plantUMLs/ch02/Sound_class.puml" target="_blank">./plantUMLs/ch02/Sound_class.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch02/Sound_act.svg" alt="Activity diagram of Sound method">
+                                                    <figcaption>Class diagram of Sound method<br>src: <a href="./plantUMLs/ch02/Sound_act.puml" target="_blank">./plantUMLs/ch02/Sound_act.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                            </div>  <!-- gallery2 -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Compile and run the program. The following result is displayed:</p>
+                                            <pre><code class="language-plaintext">The lightning is 7920.0 feet away.</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Extra challenge: You can compute the distance to a large object, such as a rock wall, by timing the echo. For example, if you clap your hands and time how long it takes for you to hear the echo, then you know the total round-trip time. Dividing this value by two yields the time it takes the sound to go one way. You can then use this value to compute the distance to the object. Modify the preceding program so that it computes the distance, assuming that the time interval is that of an echo.</p>
+                                            <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Sound2.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/Sound2.java</a></p>
+                                            <pre><code class="language-java">/**
+ * Try This 2-1-1
+ * 
+ * Compute the distance to a large object,
+ * such as a rock wall, by timing the echo.
+ * 
+ * Call this file "Sound2.java".
+ */
+class Sound2 {
+    public static void main(String[] args) {
+        double dist;  // in feet
+        double roundTripTime = 4.8;  // in seconds
+        double timeForOneWay = roundTripTime / 2;  // in seconds
+
+        double speedOfSound = 1100.0;  // Speed of sound in feet per second.
+
+        dist = timeForOneWay * speedOfSound;
+
+        System.out.println("The object is " + dist + " feet away.");
+    }
+}</code></pre>  <!-- java code -->
+                                            <div class="gallery2">
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch02/Sound2_class.svg" alt="Class diagram of Sound2 class">
+                                                    <figcaption>Class diagram of Sound2 class<br>src: <a href="./plantUMLs/ch02/Sound2_class.puml" target="_blank">./plantUMLs/ch02/Sound2_class.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch02/Sound2_act.svg" alt="Activity diagram of Sound2 method">
+                                                    <figcaption>Class diagram of Sound2 method<br>src: <a href="./plantUMLs/ch02/Sound2_act.puml" target="_blank">./plantUMLs/ch02/Sound2_act.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                            </div>  <!-- gallery2 -->
+                                        </div>
+                                    </li>
+                                </ol>  <!-- tryThisOl -->
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
