@@ -94,6 +94,15 @@
 		"description": "local snippet:: Activity title."
 	},
 
+	"lsnip::for loop lvl2 color": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "for2Color",
+		"body": [
+			"#8cd06d",
+		],
+		"description": "local snippet:: for loop lvl2 color."
+	},
+
 	// ======================= END: Activity ======================= 
 	// ======================= START: Class ======================= 
 	"lsnip::Java main method": {
@@ -112,6 +121,22 @@
 			"title Class diagram of \\n<font name=monospace><color #5132be>$1</color></font> class",
 		],
 		"description": "local snippet:: class title."
+	},
+
+	"lsnip::class pack": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "classPack",
+		"body": [
+			"class ${1|className|} {",
+			"    ",
+			"}",
+			"note bottom of $1",
+			"    file: $1.java",
+			"    ",
+			"    ",
+			"end note",
+		],
+		"description": "local snippet:: class pack."
 	},
 	// ======================= END: Class ======================= 
 	// ======================= START: Sequence ======================= 

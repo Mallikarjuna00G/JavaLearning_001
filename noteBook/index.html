@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=yes maximum-scale=4.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
     <title>Java: The Beginner's guide 8th edition</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="style2.css">
@@ -1994,7 +1994,7 @@ class JBG_HS_Ch01_SelfTest_10 {
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
                     <div class="content">
-                        <p>A t the foundation of any programming language are its data types and operators, and Java is no exception. These elements define the limits of a language and determine the kind of tasks to which it can be applied. Fortunately, Java supports a rich assortment of both data types and operators, making it suitable for any type of programming.</p>
+                        <p>At the foundation of any programming language are its data types and operators, and Java is no exception. These elements define the limits of a language and determine the kind of tasks to which it can be applied. Fortunately, Java supports a rich assortment of both data types and operators, making it suitable for any type of programming.</p>
                         <p><em>Data types</em> and <em>operators</em> are a large subject. We will begin here with an examination of Java's foundational data types and its most commonly used operators. We will also take a closer look at variables and examine the expression.</p>
                     </div>  <!-- content -->
                     <div class="lvl1">
@@ -2622,7 +2622,7 @@ oct = 011;  // 9 in decimal</code></pre>  <!-- java code -->
                                         <p>is a string. You have seen examples of strings in many of the <code>println()</code> statements in the preceding sample programs.</p>
                                         <p>In addition to normal characters, a string literal can also contain one or more of the escape sequences just described. For example, consider the following program. It uses the <code>\n</code> and <code>\t</code> escape sequences.</p>
                                         <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/strDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/strDemo.java</a></p>
-                                        <pre><code class="language-java"></code>/**
+                                        <pre><code class="language-java">/**
  * Demonstrate escape sequences in strings.
  * 
  * Call this file "strDemo.java".
@@ -2633,7 +2633,7 @@ class strDemo {
         System.out.println("A\tB\tC");
         System.out.println("D\tE\tF");
     }
-}</pre>  <!-- java code -->
+}</code></pre>  <!-- java code -->
                                         <div class="gallery2">
                                             <figure class="standAloneFigure">
                                                 <img src="./plantUMLs/ch02/strDemo_class.svg" alt="Class diagram of strDemo class">
@@ -2667,6 +2667,208 @@ D       E       F</code></pre>  <!-- plaintext block -->
                             </div>  <!-- lvl2 -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>A CLOSER LOOK AT VARIABLES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Variables were introduced in Chapter 1. Here, we will take a closer look at them. As you learned earlier, variables are declared using this form of statement,</p>
+                                <pre><code class="language-plaintext">type var-name;</code></pre>  <!-- plaintext block -->
+                                <p>where <code>type</code> is the data type of the variable, and <code>var-name</code> is its name. You can declare a variable of any valid type, including the simple types just described, and every variable will have a type. Thus, the capabilities of a variable are determined by its type. For example, a variable of type <code>boolean</code> cannot be used to store floating-point values. Furthermore, the type of a variable cannot change during its lifetime. An <code>int</code> variable cannot turn into a <code>char</code> variable, for example.</p>
+                                <p>All variables in Java must be declared prior to their use. This is necessary because the compiler must know what type of data a variable contains before it can properly compile any statement that uses the variable. It also enables Java to perform strict type checking.</p>
+                            </div>  <!-- content -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Initializing a Variable</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>In general, you must give a variable a value prior to using it. One way to give a variable a value is through an assignment statement, as you have already seen. Another way is by giving it an initial value when it is declared. To do this, follow the variable's name with an equal sign and the value being assigned. The general form of initialization is shown here:</p>
+                                        <pre><code class="language-plaintext">type var = value;</code></pre>  <!-- plaintext block -->
+                                        <p>Here, value is the value that is given to <code>var</code> when <code>var</code> is created. The value must be compatible with the specified type. Here are some examples:</p>
+                                        <pre><code class="language-java">int count = 10;  // give count an initial value of 10
+char ch = 'X';  // initialize ch with letter X
+float f = 1.2F;  // f is initialized with 1.2</code></pre>  <!-- java code -->
+                                        <p>When declaring two or more variables of the same type using a comma-separated list, you can give one or more of those variables an initial value. For example:</p>
+                                        <pre><code class="language-java">int a, b = 8, c = 19, d;  // b and c have initializations</code></pre>  <!-- java code -->
+                                        <p>In this case only <code>b</code> and <code>c</code> are initialized.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Dynamic Initialization</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>Although the preceding examples have used only constants as initializers, Java allows variables to be initialized dynamically, using any expression valid at the time the variable is declared. For example, here is a short program that computes the volume of a cylinder given the radius of its base and its height:</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/DynInit.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/DynInit.java</a></p>
+                                        <pre><code class="language-java">/**
+ * Demonstrate dynamic initialization.
+ * 
+ * Call this file "DynInit.java".
+ */
+class DynInit {
+    public static void main(String[] args) {
+        double radius = 4, height = 5;
+
+        // dynamically initialize volume
+        double volume = 3.1416 * radius * radius * height;
+
+        System.out.println("Volume is " + volume);
+    }
+}</code></pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/DynInit_class.svg" alt="Class diagram of DynInit class">
+                                                <figcaption>Class diagram of DynInit class<br>src: <a href="./plantUMLs/ch02/DynInit_class.puml" target="_blank">./plantUMLs/ch02/DynInit_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/DynInit_act.svg" alt="Activity diagram of DynInit.main() method">
+                                                <figcaption>Class diagram of DynInit.main() method<br>src: <a href="./plantUMLs/ch02/DynInit_act.puml" target="_blank">./plantUMLs/ch02/DynInit_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p><b>Execution Logs: </b></p>
+                                        <pre><code class="language-plaintext">Volume is 251.328</code></pre>  <!-- plaintext block -->
+                                        <p>Here, three local variables—<code>radius</code>, <code>height</code>, and <code>volume</code>—are declared. The first two, <code>radius</code> and <code>height</code>, are initialized by constants. However, <code>volume</code> is initialized dynamically to the volume of the cylinder. The key point here is that the initialization expression can use any element valid at the time of the initialization, including calls to methods, other variables, or literals.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE SCOPE AND LIFETIME OF VARIABLES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>So far, all of the variables that we have been using were declared at the start of the <code>main()</code> method. However, Java allows variables to be declared within any block. As explained in Chapter 1, a block is begun with an opening curly brace and ended by a closing curly brace. A block defines a scope. Thus, each time you start a new block, you are creating a new scope. A scope determines what objects are visible to other parts of your program. It also determines the lifetime of those objects.</p>
+                                <p>In general, every declaration in Java has a scope. As a result, Java defines a powerful, finely grained concept of scope. <span class="highlight">Two of the most common scopes in Java are those defined by a class and those defined by a method</span>. A discussion of class scope (and variables declared within it) is deferred until later in this book, when classes are described. For now, we will examine only the scopes defined by or within a method.</p>
+                                <p>The scope defined by a method begins with its opening curly brace. However, if that method has parameters, they too are included within the method's scope. A method's scope ends with its closing curly brace. This block of code is called the <em>method body</em>. As a general rule, variables declared inside a scope are not visible (that is, accessible) to code that is defined outside that scope. Thus, when you declare a variable within a scope, you are localizing that variable and protecting it from unauthorized access and/or modification. Indeed, the scope rules provide the foundation for encapsulation. A variable declared within a block is called a <em>local variable</em>.</p>
+                                <p>Scopes can be nested. For example, each time you create a block of code, you are creating a new, nested scope. When this occurs, the outer scope encloses the inner scope. This means that objects declared in the outer scope will be visible to code within the inner scope. However, the reverse is not true. Objects declared within the inner scope will not be visible outside it.</p>
+                                <p>To understand the effect of nested scopes, consider the following program:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/ScopeDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/ScopeDemo.java</a></p>
+                                <pre><code class="language-java">/**
+ * Demonstrate block scope.
+ * 
+ * Call this file "ScopeDemo.java".
+ */
+class ScopeDemo {
+    public static void main(String[] args) {
+        int x; // known to all code within main
+
+        x = 10;
+        if(x == 10) { // start new scope
+            int y = 20; // known only to this block
+
+            // x and y both known here.
+            System.out.println("x and y: " + x + " " + y);
+            x = y * 2;
+        }
+        // y = 100; // Error! y not known here
+
+        // x is still known here.
+        System.out.println("x is " + x);
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/ScopeDemo_class.svg" alt="Class diagram of SCopeDemo class">
+                                        <figcaption>Class diagram of SCopeDemo class<br>src: <a href="./plantUMLs/ch02/ScopeDemo_class.puml" target="_blank">./plantUMLs/ch02/ScopeDemo_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/ScopeDemo_act.svg" alt="Activity diagram of ScopeDemo.main() method">
+                                        <figcaption>Class diagram of ScopeDemo.main() method<br>src: <a href="./plantUMLs/ch02/ScopeDemo_act.puml" target="_blank">./plantUMLs/ch02/ScopeDemo_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">x and y: 10 20
+x is 40</code></pre>  <!-- plaintext block -->
+                                <p>As the comments indicate, the variable <code>x</code> is declared at the start of <code>main()</code>'s scope and is accessible to all subsequent code within <code>main()</code>. Within the <code>if</code> block, <code>y</code> is declared. Since a block defines a scope, <code>y</code> is visible only to other code within its block. This is why outside of its block, the line <code>y = 100;</code> is commented out. If you remove the leading comment symbol, a compile-time error will occur, because <code>y</code> is not visible outside of its block. Within the <code>if</code> block, <code>x</code> can be used because code within a block (that is, a nested scope) has access to variables declared by an enclosing scope.</p>
+                                <p>Within a block, variables can be declared at any point, but are valid only after they are declared. Thus, if you define a variable at the start of a method, it is available to all of the code within that method. Conversely, if you declare a variable at the end of a block, it is effectively useless, because no code will have access to it.</p>
+                                <p>Here is another important point to remember: variables are created when their scope is entered, and destroyed when their scope is left. This means that a variable will not hold its value once it has gone out of scope. Therefore, variables declared within a method will not hold their values between calls to that method. Also, a variable declared within a block will lose its value when the block is left. Thus, the lifetime of a variable is confined to its scope.</p>
+                                <p>If a variable declaration includes an initializer, that variable will be reinitialized each time the block in which it is declared is entered. For example, consider this program:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/VarInitDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/VarInitDemo.java</a></p>
+                                <pre><code class="language-java">/**
+ * Demonstrate lifetime of a variable.
+ * 
+ * Call this file "VarInitDemo.java".
+ */
+class VarInitDemo {
+    public static void main(String[] args) {
+        int x;
+
+        for(x = 0; x < 3; x++) {
+            int y = -1; // y is initialized each time block is entered.
+            System.out.println("y is " + y);
+            y = 100;
+            System.out.println("y is now " + y);
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/VarInitDemo_class.svg" alt="Class diagram of VarInitDemoclass">
+                                        <figcaption>Class diagram of VarInitDemoclass<br>src: <a href="./plantUMLs/ch02/VarInitDemo_class.puml" target="_blank">./plantUMLs/ch02/VarInitDemo_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/VarInitDemo_act.svg" alt="Activity diagram of VarInitDemo.main() method">
+                                        <figcaption>Class diagram of VarInitDemo.main() method<br>src: <a href="./plantUMLs/ch02/VarInitDemo_act.puml" target="_blank">./plantUMLs/ch02/VarInitDemo_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>The output generated by this program is shown here:</p>
+                                <pre><code class="language-plaintext">y is -1
+y is now 100
+y is -1
+y is now 100
+y is -1
+y is now 100</code></pre>  <!-- plaintext block -->
+                                <p>As you can see, <code>y</code> is reinitialized to -1 each time the inner for loop is entered. Even though it is subsequently assigned the value 100, this value is lost.</p>
+                                <p>There is one quirk to Java's scope rules that may surprise you: although blocks can be nested, <span class="highlight">no variable declared within an inner scope can have the same name as a variable declared by an enclosing scope</span>. For example, the following program, which tries to declare two separate variables with the same name, will not compile.</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/NestVar.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/NestVar.java</a></p>
+                                <pre><code class="language-java">/**
+ * This program attempts to declare a variable
+ * in an inner scope with the same name as one
+ * defined in an outer scope.
+ * 
+ * *** This program will not compile. ***
+ * 
+ * Call this file "NestVar.java".
+ */
+class NestVar {
+    public static void main(String[] args) {
+        int count;
+
+        for(count = 0; count < 10; count = count + 1) {
+            System.out.println("This is count: " + count);
+
+            int count; // illegal!!!
+            for(count = 0; count < 2; count++) {
+                System.out.println("This program is in error!");
+            }
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/NestVar_class.svg" alt="Class diagram of NestVar class">
+                                        <figcaption>Class diagram of NestVar class<br>src: <a href="./plantUMLs/ch02/NestVar_class.puml" target="_blank">./plantUMLs/ch02/NestVar_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch02/NestVar_act.svg" alt="Activity diagram of NestVar.main() method">
+                                        <figcaption>Class diagram of NestVar.main() method<br>src: <a href="./plantUMLs/ch02/NestVar_act.puml" target="_blank">./plantUMLs/ch02/NestVar_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">NestVar.java:17: error: variable count is already defined in method main(String[])
+            int count; // illegal!!!
+                ^
+1 error</code></pre>  <!-- plaintext block -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh03">
