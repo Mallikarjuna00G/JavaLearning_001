@@ -2509,10 +2509,162 @@ class Sound2 {
                                                     <figcaption>Class diagram of Sound2 method<br>src: <a href="./plantUMLs/ch02/Sound2_act.puml" target="_blank">./plantUMLs/ch02/Sound2_act.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                             </div>  <!-- gallery2 -->
+                                            <p><b>Execution Logs: </b></p>
+                                            <pre><code class="language-plaintext">The object is 2640.0 feet away.</code></pre>  <!-- plaintext block -->
                                         </div>
                                     </li>
                                 </ol>  <!-- tryThisOl -->
                             </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>LITERALS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>In Java, <em>literals</em> refer to fixed values that are represented in their human-readable form. For example, the number 100 is a literal. Literals are also commonly called <em>constants</em>. For the most part, literals, and their usage, are so intuitive that they have been used in one form or another by all the preceding sample programs. Now the time has come to explain them formally.</p>
+                                <p>Java literals can be of any of the primitive data types. The way each literal is represented depends upon its type. As explained earlier, character constants are enclosed in single quotes. For example, <code>'a'</code> and <code>'%'</code> are both character constants. Integer literals are specified as numbers without fractional components. For example, 10 and -100 are integer literals. Floating-point literals require the use of the decimal point followed by the number's fractional component. For example, 11.123 is a floating-point literal. Java also allows you to use scientific notation for floating-point numbers.</p>
+                                <p>By default, integer literals are of type <code>int</code>. If you want to specify a long literal, append an <code>l</code> or an <code>L</code>. For example, 12 is an <code>int</code>, but <code>12L</code> is a <code>long</code>.</p>
+                                <p>By default, floating-point literals are of type <code>double</code>. To specify a <code>float</code> literal, append an <code>F</code> or <code>f</code> to the constant. For example, <code>10.19F</code> is of type <code>float</code>.</p>
+                                <p>Although integer literals create an <code>int</code> value by default, they can still be assigned to variables of type <code>char</code>, <code>byte</code>, or <code>short</code> as long as the value being assigned can be represented by the target type. An integer literal can always be assigned to a <code>long</code> variable.</p>
+                                <p>You can embed one or more underscores into an integer or floating-point literal. Doing so can make it easier to read values consisting of many digits. When the literal is compiled, the underscores are simply discarded. Here is an example:</p>
+                                <pre><code class="language-plaintext">123_45_1234</code></pre>  <!-- plaintext block -->
+                                <p>This specifies the value <code>123,451,234</code>. The use of underscores is particularly useful when encoding things like part numbers, customer IDs, and status codes that are commonly thought of as consisting of subgroups of digits.</p>
+                            </div>  <!-- content -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Hexadecimal, Octal, and Binary Literals</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>As you may know, in programming it is sometimes easier to use a number system based on 8 or 16 instead of 10. The number system based on 8 is called <em>octal</em>, and it uses the digits 0 through 7. In octal the number 10 is the same as 8 in decimal. The base 16 number system is called <em>hexadecimal</em> and uses the digits 0 through 9 plus the letters A through F, which stand for 10, 11, 12, 13, 14, and 15. For example, the hexadecimal number 10 is 16 in decimal. Because of the frequency with which these two number systems are used, Java allows you to specify integer literals in hexadecimal or octal instead of decimal. A hexadecimal literal must begin with <code>0x</code> or <code>0X</code> (a zero followed by an <code>x</code> or <code>X</code>). An octal literal begins with a zero. Here are some examples:</p>
+                                        <pre><code class="language-java">hex = 0xFF;  // 255 in decimal
+oct = 011;  // 9 in decimal</code></pre>  <!-- java code -->
+                                        <p>As a point of interest, Java also allows hexadecimal floating-point literals, but they are seldom used.</p>
+                                        <p>It is possible to specify an integer literal by use of binary. To do so, precede the binary number with a <code>0b</code> or <code>0B</code>. For example, this specifies the value 12 in binary: <code>0b1100</code>.</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>Character Escape Sequences</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>Enclosing character constants in single quotes works for most printing characters, but a few characters, such as the carriage return, pose a special problem when a text editor is used. In addition, certain other characters, such as the single and double quotes, have special meaning in Java, so you cannot use them directly. For these reasons, Java provides special escape sequences, sometimes referred to as backslash character constants, shown in <a href="#Table2-2">Table 2-2</a>. These sequences are used in place of the characters that they represent.</p>
+                                        <table>
+                                            <caption><span class="capId">Table 2-2</span> Character Escape Sequences</caption>
+                                            <thead>
+                                                <tr>
+                                                    <th>Escape Sequence</th>
+                                                    <th>Description</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><code>\'</code></td>
+                                                    <td>Single quote</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\"</code></td>
+                                                    <td>Double quote</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\\</code></td>
+                                                    <td>Backslash</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\r</code></td>
+                                                    <td>Carriage return</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\n</code></td>
+                                                    <td>New line</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\f</code></td>
+                                                    <td>Form feed</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\t</code></td>
+                                                    <td>Horizontal tab</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\b</code></td>
+                                                    <td>Backspace</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\ddd</code></td>
+                                                    <td>Octal constant (where <code>ddd</code> is an octal constant)</td>
+                                                </tr>
+                                                <tr>
+                                                    <td><code>\uxxxx</code></td>
+                                                    <td>Hexadecimal constant (where <code>xxxx</code> is an hexadecimal constant)</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>  <!-- table -->
+                                        <p>For example, this assigns <code>ch</code> the tab character:</p>
+                                        <pre><code class="language-plaintext">ch = '\t';</code></pre>  <!-- plaintext block -->
+                                        <p>The next example assigns a single quote to <code>ch</code>:</p>
+                                        <pre><code class="language-plaintext">ch = '\'';</code></pre>  <!-- plaintext block -->
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>String Literals</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>Java supports one other type of literal: the string. A <i>string</i> is a set of characters enclosed by double quotes. For example,</p>
+                                        <pre><code class="language-plaintext">"this is a test"</code></pre>  <!-- plaintext block -->
+                                        <p>is a string. You have seen examples of strings in many of the <code>println()</code> statements in the preceding sample programs.</p>
+                                        <p>In addition to normal characters, a string literal can also contain one or more of the escape sequences just described. For example, consider the following program. It uses the <code>\n</code> and <code>\t</code> escape sequences.</p>
+                                        <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/strDemo.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/strDemo.java</a></p>
+                                        <pre><code class="language-java"></code>/**
+ * Demonstrate escape sequences in strings.
+ * 
+ * Call this file "strDemo.java".
+ */
+class strDemo {
+    public static void main(String[] args) {
+        System.out.println("First line\nSecond line");
+        System.out.println("A\tB\tC");
+        System.out.println("D\tE\tF");
+    }
+}</pre>  <!-- java code -->
+                                        <div class="gallery2">
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/strDemo_class.svg" alt="Class diagram of strDemo class">
+                                                <figcaption>Class diagram of strDemo class<br>src: <a href="./plantUMLs/ch02/strDemo_class.puml" target="_blank">./plantUMLs/ch02/strDemo_class.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                            <figure class="standAloneFigure">
+                                                <img src="./plantUMLs/ch02/strDemo_act.svg" alt="Activity diagram of strDemo.main() method">
+                                                <figcaption>Class diagram of strDemo.main() method<br>src: <a href="./plantUMLs/ch02/strDemo_act.puml" target="_blank">./plantUMLs/ch02/strDemo_act.puml</a></figcaption>
+                                            </figure>  <!-- standAloneFigure -->
+                                        </div>  <!-- gallery2 -->
+                                        <p><b>Execution Logs: </b></p>
+                                        <pre><code class="language-plaintext">First line
+Second line
+A       B       C
+D       E       F</code></pre>  <!-- plaintext block -->
+                                        <p>Notice how the <code>\n</code> escape sequence is used to generate a new line. You don't need to use multiple <code>println()</code> statements to get multiline output. Just embed <code>\n</code> within a longer string at the points where you want the new lines to occur.</p>
+                                    </div>  <!-- content -->
+                                    <div class="lvl3">
+                                        <div class="left">
+                                            <h4>Ask the Expert</h4>
+                                        </div>  <!-- left -->
+                                        <div class="right">
+                                            <div class="askTheExpert">
+                                                <h3 class="top"></h3>
+                                                <p class="question">Is a string consisting of a single character the same as a character literal? For example, is <code>"k"</code> the same as <code>'k'</code>?</p>
+                                                <p class="answer">No. You must not confuse strings with characters. A character literal represents a single letter of type <code>char</code>. A string containing only one letter is still a string. Although strings consist of characters, they are not the same type.</p>
+                                            </div>  <!-- askTheExpert -->
+                                        </div>  <!-- right -->
+                                    </div>  <!-- lvl3 -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
                 </div>  <!-- right -->

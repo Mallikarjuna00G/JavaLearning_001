@@ -310,4 +310,13 @@
 		],
 		"description": "local snippet:: Self test item."
 	},
+
+	"lsnip::Execution logs": {
+		"scope": "html",
+		"prefix": "executionLogs",
+		"body": [
+			"<p><b>Execution Logs: </b></p>",
+		],
+		"description": "local snippet:: Execution Logs"
+	},
 }

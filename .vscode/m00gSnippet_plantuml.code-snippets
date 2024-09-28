@@ -85,6 +85,15 @@
 		"description": "local snippet:: Activity title."
 	},
 
+	"lsnip::Escape tab character": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "escapeTab",
+		"body": [
+			"\\<U+200B>t",
+		],
+		"description": "local snippet:: Activity title."
+	},
+
 	// ======================= END: Activity ======================= 
 	// ======================= START: Class ======================= 
 	"lsnip::Java main method": {
