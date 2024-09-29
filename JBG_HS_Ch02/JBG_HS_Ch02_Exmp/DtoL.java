@@ -11,7 +11,7 @@ class DtoL {
         double D;
 
         D = 100123285.0;
-        L = D;
+        L = D;  // Illegal!!! No automatic conversion from double to long
 
         System.out.println("L and D: " + L + " " + D);
     }

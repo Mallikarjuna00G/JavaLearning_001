@@ -228,6 +228,22 @@
 		"description": "local snippet:: stand alone PUML class diagram figure element."
 	},
 
+	"lsnip::PUML class and activity figure combo": {
+		"scope": "html",
+		"prefix": "comboFigure1",
+		"body": [
+			"<figure class=\"standAloneFigure\">",
+            "    <img src=\"./plantUMLs/ch02/$1_class.svg\" alt=\"Activity diagram of $1 method\">",
+			"    <figcaption>Class diagram of $1 method<br>src: <a href=\"./plantUMLs/ch02/$1_class.puml\" target=\"_blank\">./plantUMLs/ch02/$1_class.puml</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$2",
+			"<figure class=\"standAloneFigure\">",
+            "    <img src=\"./plantUMLs/ch02/$1_act.svg\" alt=\"Activity diagram of $1.main() method\">",
+			"    <figcaption>Class diagram of $1 method<br>src: <a href=\"./plantUMLs/ch02/$1_act.puml\" target=\"_blank\">./plantUMLs/ch02/$1_act.puml</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$2",
+		],
+		"description": "local snippet:: PUML class and activity figure combo."
+	},
+
 	"lsnip::note": {
 		"scope": "html",
 		"prefix": "note",
@@ -318,5 +334,16 @@
 			"<p><b>Execution Logs: </b></p>",
 		],
 		"description": "local snippet:: Execution Logs"
+	},
+
+	"lsnip::gallery2": {
+		"scope": "html",
+		"prefix": "gallery2",
+		"body": [
+			"<div class=\"gallery2\">",
+			"    ",
+			"</div>  <!-- gallery2 -->",
+		],
+		"description": "local snippet:: gallery2"
 	},
 }

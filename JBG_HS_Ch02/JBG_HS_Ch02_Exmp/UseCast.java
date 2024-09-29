@@ -1,7 +1,7 @@
 /**
  * Using a cast.
  * 
- * Call this file "UseCase.java".
+ * Call this file "UseCast.java".
  */
 class UseCast {
     public static void main(String[] args) {

@@ -12,7 +12,7 @@ class PromDemo {
         i = b * b; // OK, no cast needed. Because result is already elevated to int.
 
         b = 10;
-        b = (byte) (b * b); // cast needed!!
+        b = (byte) (b * b); // cast needed!! Cast is needed here to assign an int to a byte!
         System.out.println("i and b: " + i + " " + b);
     }
 }

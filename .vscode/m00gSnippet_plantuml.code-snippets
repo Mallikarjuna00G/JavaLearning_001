@@ -52,15 +52,25 @@
 		"description": "local snippet:: lvl-x class div element."
 	},
 
-	"lsnip::if condition": {
+	"lsnip::if condition plantuml": {
 		"scope": ["plantuml", "puml"],
-		"prefix": "if",
+		"prefix": "ifCondition",
 		"body": [
 			"if($1) then (<color:green>true)",
 			"    :${2|body|};",
 			"endif",
 		],
-		"description": "local snippet:: if condition."
+		"description": "local snippet:: if condition plantuml."
+	},
+
+	"lsnip::else condition plantuml": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "elseCondition",
+		"body": [
+			"else (<color:red>true)",
+			"    :${2|body|};",
+		],
+		"description": "local snippet:: else condition plantuml."
 	},
 
 	"lsnip::Activity start-stop": {

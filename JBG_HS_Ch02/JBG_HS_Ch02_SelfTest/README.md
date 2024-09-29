@@ -29,6 +29,8 @@ In Java, characters are not 8­-bit quantities like they are in many other compu
 
 A **boolean** value can have any value you like because any non­zero value is true. True or False?
 
+### SelfTest Solution
+
 False. The boolean type represents `true`/`false` values. Java defines the values `true` and `false` using the reserved words `true` and `false`. Thus, a variable or expression of type boolean will be one of these two values.
 
 ---
