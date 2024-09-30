@@ -27,7 +27,7 @@
                 <li id="Introduction">Introduction</li>
                 <li id="Ch01">Ch01: Java Fundamentals</li>
                 <li id="Ch02">Ch02: Introducing Data Types and Operators</li>
-                <li id="Ch03">Ch03: </li>
+                <li id="Ch03">Ch03: Program Control Statements</li>
                 <li id="Ch04">Ch04: </li>
                 <li id="Ch05">Ch05: </li>
                 <li id="Ch06">Ch06: </li>
@@ -2020,7 +2020,7 @@ class JBG_HS_Ch01_SelfTest_10 {
                                     <li>non-object-oriented.</li>
                                 </ol>
                                 <p>However, at the core of Java are eight primitive (also called <em>elemental</em> or <em>simple</em>) types of data, which are shown in <a href="#Table2-1">Table 2-1</a>. The term <i>primitive</i> is used here to indicate that these types are not objects in an object-oriented sense, but rather, normal binary values. <span class="highlight">These primitive types are not objects because of efficiency concerns</span>. All of Java's other data types are constructed from these primitive types.</p>
-                                <table>
+                                <table id="Table2-1">
                                     <caption><span class="capId">Table 2-1</span> Java's Built-in Primitive Data Types</caption>
                                     <thead>
                                         <tr>
@@ -2463,7 +2463,7 @@ class Sound {
                                                 </figure>  <!-- standAloneFigure -->
                                                 <figure class="standAloneFigure">
                                                     <img src="./plantUMLs/ch02/Sound_act.svg" alt="Activity diagram of Sound method">
-                                                    <figcaption>Class diagram of Sound method<br>src: <a href="./plantUMLs/ch02/Sound_act.puml" target="_blank">./plantUMLs/ch02/Sound_act.puml</a></figcaption>
+                                                    <figcaption>Activity diagram of Sound.main() method<br>src: <a href="./plantUMLs/ch02/Sound_act.puml" target="_blank">./plantUMLs/ch02/Sound_act.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                             </div>  <!-- gallery2 -->
                                         </div>
@@ -2506,7 +2506,7 @@ class Sound2 {
                                                 </figure>  <!-- standAloneFigure -->
                                                 <figure class="standAloneFigure">
                                                     <img src="./plantUMLs/ch02/Sound2_act.svg" alt="Activity diagram of Sound2 method">
-                                                    <figcaption>Class diagram of Sound2 method<br>src: <a href="./plantUMLs/ch02/Sound2_act.puml" target="_blank">./plantUMLs/ch02/Sound2_act.puml</a></figcaption>
+                                                    <figcaption>Activity diagram of Sound2.main() method<br>src: <a href="./plantUMLs/ch02/Sound2_act.puml" target="_blank">./plantUMLs/ch02/Sound2_act.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                             </div>  <!-- gallery2 -->
                                             <p><b>Execution Logs: </b></p>
@@ -2553,7 +2553,7 @@ oct = 011;  // 9 in decimal</code></pre>  <!-- java code -->
                                 <div class="right">
                                     <div class="content">
                                         <p>Enclosing character constants in single quotes works for most printing characters, but a few characters, such as the carriage return, pose a special problem when a text editor is used. In addition, certain other characters, such as the single and double quotes, have special meaning in Java, so you cannot use them directly. For these reasons, Java provides special escape sequences, sometimes referred to as backslash character constants, shown in <a href="#Table2-2">Table 2-2</a>. These sequences are used in place of the characters that they represent.</p>
-                                        <table>
+                                        <table id="2-2">
                                             <caption><span class="capId">Table 2-2</span> Character Escape Sequences</caption>
                                             <thead>
                                                 <tr>
@@ -2641,7 +2641,7 @@ class strDemo {
                                             </figure>  <!-- standAloneFigure -->
                                             <figure class="standAloneFigure">
                                                 <img src="./plantUMLs/ch02/strDemo_act.svg" alt="Activity diagram of strDemo.main() method">
-                                                <figcaption>Class diagram of strDemo.main() method<br>src: <a href="./plantUMLs/ch02/strDemo_act.puml" target="_blank">./plantUMLs/ch02/strDemo_act.puml</a></figcaption>
+                                                <figcaption>Activity diagram of strDemo.main() method<br>src: <a href="./plantUMLs/ch02/strDemo_act.puml" target="_blank">./plantUMLs/ch02/strDemo_act.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                         </div>  <!-- gallery2 -->
                                         <p><b>Execution Logs: </b></p>
@@ -2726,7 +2726,7 @@ class DynInit {
                                             </figure>  <!-- standAloneFigure -->
                                             <figure class="standAloneFigure">
                                                 <img src="./plantUMLs/ch02/DynInit_act.svg" alt="Activity diagram of DynInit.main() method">
-                                                <figcaption>Class diagram of DynInit.main() method<br>src: <a href="./plantUMLs/ch02/DynInit_act.puml" target="_blank">./plantUMLs/ch02/DynInit_act.puml</a></figcaption>
+                                                <figcaption>Activity diagram of DynInit.main() method<br>src: <a href="./plantUMLs/ch02/DynInit_act.puml" target="_blank">./plantUMLs/ch02/DynInit_act.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                         </div>  <!-- gallery2 -->
                                         <p><b>Execution Logs: </b></p>
@@ -2779,7 +2779,7 @@ class ScopeDemo {
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/ScopeDemo_act.svg" alt="Activity diagram of ScopeDemo.main() method">
-                                        <figcaption>Class diagram of ScopeDemo.main() method<br>src: <a href="./plantUMLs/ch02/ScopeDemo_act.puml" target="_blank">./plantUMLs/ch02/ScopeDemo_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of ScopeDemo.main() method<br>src: <a href="./plantUMLs/ch02/ScopeDemo_act.puml" target="_blank">./plantUMLs/ch02/ScopeDemo_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p><b>Execution Logs: </b></p>
@@ -2814,7 +2814,7 @@ class VarInitDemo {
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/VarInitDemo_act.svg" alt="Activity diagram of VarInitDemo.main() method">
-                                        <figcaption>Class diagram of VarInitDemo.main() method<br>src: <a href="./plantUMLs/ch02/VarInitDemo_act.puml" target="_blank">./plantUMLs/ch02/VarInitDemo_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of VarInitDemo.main() method<br>src: <a href="./plantUMLs/ch02/VarInitDemo_act.puml" target="_blank">./plantUMLs/ch02/VarInitDemo_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p>The output generated by this program is shown here:</p>
@@ -2857,7 +2857,7 @@ class NestVar {
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/NestVar_act.svg" alt="Activity diagram of NestVar.main() method">
-                                        <figcaption>Class diagram of NestVar.main() method<br>src: <a href="./plantUMLs/ch02/NestVar_act.puml" target="_blank">./plantUMLs/ch02/NestVar_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of NestVar.main() method<br>src: <a href="./plantUMLs/ch02/NestVar_act.puml" target="_blank">./plantUMLs/ch02/NestVar_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p><b>Execution Logs: </b></p>
@@ -2948,12 +2948,12 @@ class ModDemo {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/ModDemo_class.svg" alt="Activity diagram of ModDemo method">
-                                        <figcaption>Class diagram of ModDemo method<br>src: <a href="./plantUMLs/ch02/ModDemo_class.puml" target="_blank">./plantUMLs/ch02/ModDemo_class.puml</a></figcaption>
+                                        <img src="./plantUMLs/ch02/ModDemo_class.svg" alt="Class diagram of ModDemo class">
+                                        <figcaption>Class diagram of ModDemo class<br>src: <a href="./plantUMLs/ch02/ModDemo_class.puml" target="_blank">./plantUMLs/ch02/ModDemo_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/ModDemo_act.svg" alt="Activity diagram of ModDemo.main() method">
-                                        <figcaption>Class diagram of ModDemo method<br>src: <a href="./plantUMLs/ch02/ModDemo_act.puml" target="_blank">./plantUMLs/ch02/ModDemo_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of ModDemo.main() method<br>src: <a href="./plantUMLs/ch02/ModDemo_act.puml" target="_blank">./plantUMLs/ch02/ModDemo_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p>The output from the program is shown here:</p>
@@ -3155,12 +3155,12 @@ class RelLogOps {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/RelLogOps_class.svg" alt="Activity diagram of RelLogOps method">
-                                        <figcaption>Class diagram of RelLogOps method<br>src: <a href="./plantUMLs/ch02/RelLogOps_class.puml" target="_blank">./plantUMLs/ch02/RelLogOps_class.puml</a></figcaption>
+                                        <img src="./plantUMLs/ch02/RelLogOps_class.svg" alt="Class diagram of RelLogOps class">
+                                        <figcaption>Class diagram of RelLogOps class<br>src: <a href="./plantUMLs/ch02/RelLogOps_class.puml" target="_blank">./plantUMLs/ch02/RelLogOps_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/RelLogOps_act.svg" alt="Activity diagram of RelLogOps.main() method">
-                                        <figcaption>Class diagram of RelLogOps method<br>src: <a href="./plantUMLs/ch02/RelLogOps_act.puml" target="_blank">./plantUMLs/ch02/RelLogOps_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of RelLogOps.main() method<br>src: <a href="./plantUMLs/ch02/RelLogOps_act.puml" target="_blank">./plantUMLs/ch02/RelLogOps_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p>The output from the program is shown here:</p>
@@ -3216,12 +3216,12 @@ class SCops {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/SCops_class.svg" alt="Activity diagram of SCops method">
-                                        <figcaption>Class diagram of SCops method<br>src: <a href="./plantUMLs/ch02/SCops_class.puml" target="_blank">./plantUMLs/ch02/SCops_class.puml</a></figcaption>
+                                        <img src="./plantUMLs/ch02/SCops_class.svg" alt="Class diagram of SCops class">
+                                        <figcaption>Class diagram of SCops class<br>src: <a href="./plantUMLs/ch02/SCops_class.puml" target="_blank">./plantUMLs/ch02/SCops_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/SCops_act.svg" alt="Activity diagram of SCops.main() method">
-                                        <figcaption>Class diagram of SCops method<br>src: <a href="./plantUMLs/ch02/SCops_act.puml" target="_blank">./plantUMLs/ch02/SCops_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of SCops.main() method<br>src: <a href="./plantUMLs/ch02/SCops_act.puml" target="_blank">./plantUMLs/ch02/SCops_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p><b>Execution Logs: </b></p>
@@ -3273,12 +3273,12 @@ class SideEffects {
 }</code></pre>  <!-- java code -->
                                     <div class="gallery2">
                                         <figure class="standAloneFigure">
-                                            <img src="./plantUMLs/ch02/SideEffects_class.svg" alt="Activity diagram of SideEffects method">
-                                            <figcaption>Class diagram of SideEffects method<br>src: <a href="./plantUMLs/ch02/SideEffects_class.puml" target="_blank">./plantUMLs/ch02/SideEffects_class.puml</a></figcaption>
+                                            <img src="./plantUMLs/ch02/SideEffects_class.svg" alt="Class diagram of SideEffects class">
+                                            <figcaption>Class diagram of SideEffects class<br>src: <a href="./plantUMLs/ch02/SideEffects_class.puml" target="_blank">./plantUMLs/ch02/SideEffects_class.puml</a></figcaption>
                                         </figure>  <!-- standAloneFigure -->
                                         <figure class="standAloneFigure">
                                             <img src="./plantUMLs/ch02/SideEffects_act.svg" alt="Activity diagram of SideEffects.main() method">
-                                            <figcaption>Class diagram of SideEffects method<br>src: <a href="./plantUMLs/ch02/SideEffects_act.puml" target="_blank">./plantUMLs/ch02/SideEffects_act.puml</a></figcaption>
+                                            <figcaption>Activity diagram of SideEffects.main() method<br>src: <a href="./plantUMLs/ch02/SideEffects_act.puml" target="_blank">./plantUMLs/ch02/SideEffects_act.puml</a></figcaption>
                                         </figure>  <!-- standAloneFigure -->
                                     </div>  <!-- gallery2 -->
                                     <p><b>Execution Logs: </b></p>
@@ -3389,12 +3389,12 @@ class LtoD {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/LtoD_class.svg" alt="Activity diagram of LtoD method">
-                                        <figcaption>Class diagram of LtoD method<br>src: <a href="./plantUMLs/ch02/LtoD_class.puml" target="_blank">./plantUMLs/ch02/LtoD_class.puml</a></figcaption>
+                                        <img src="./plantUMLs/ch02/LtoD_class.svg" alt="Class diagram of LtoD class">
+                                        <figcaption>Class diagram of LtoD class<br>src: <a href="./plantUMLs/ch02/LtoD_class.puml" target="_blank">./plantUMLs/ch02/LtoD_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/LtoD_act.svg" alt="Activity diagram of LtoD.main() method">
-                                        <figcaption>Class diagram of LtoD method<br>src: <a href="./plantUMLs/ch02/LtoD_act.puml" target="_blank">./plantUMLs/ch02/LtoD_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of LtoD.main() method<br>src: <a href="./plantUMLs/ch02/LtoD_act.puml" target="_blank">./plantUMLs/ch02/LtoD_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p><b>Execution Logs: </b></p>
@@ -3421,12 +3421,12 @@ class DtoL {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/DtoL_class.svg" alt="Activity diagram of DtoL method">
+                                        <img src="./plantUMLs/ch02/DtoL_class.svg" alt="Class diagram of DtoL class">
                                         <figcaption>Class diagram of DtoL method<br>src: <a href="./plantUMLs/ch02/DtoL_class.puml" target="_blank">./plantUMLs/ch02/DtoL_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/DtoL_act.svg" alt="Activity diagram of DtoL.main() method">
-                                        <figcaption>Class diagram of DtoL method<br>src: <a href="./plantUMLs/ch02/DtoL_act.puml" target="_blank">./plantUMLs/ch02/DtoL_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of DtoL.main() method<br>src: <a href="./plantUMLs/ch02/DtoL_act.puml" target="_blank">./plantUMLs/ch02/DtoL_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p><b>Execution Logs: </b></p>
@@ -3487,12 +3487,12 @@ class CastDemo {
 }</code></pre>  <!-- java code -->
                                 <div class="gallery2">
                                     <figure class="standAloneFigure">
-                                        <img src="./plantUMLs/ch02/CastDemo_class.svg" alt="Activity diagram of CastDemo method">
+                                        <img src="./plantUMLs/ch02/CastDemo_class.svg" alt="Class diagram of CastDemo class">
                                         <figcaption>Class diagram of CastDemo method<br>src: <a href="./plantUMLs/ch02/CastDemo_class.puml" target="_blank">./plantUMLs/ch02/CastDemo_class.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                     <figure class="standAloneFigure">
                                         <img src="./plantUMLs/ch02/CastDemo_act.svg" alt="Activity diagram of CastDemo.main() method">
-                                        <figcaption>Class diagram of CastDemo method<br>src: <a href="./plantUMLs/ch02/CastDemo_act.puml" target="_blank">./plantUMLs/ch02/CastDemo_act.puml</a></figcaption>
+                                        <figcaption>Activity diagram of CastDemo.main() method<br>src: <a href="./plantUMLs/ch02/CastDemo_act.puml" target="_blank">./plantUMLs/ch02/CastDemo_act.puml</a></figcaption>
                                     </figure>  <!-- standAloneFigure -->
                                 </div>  <!-- gallery2 -->
                                 <p>The output from the program is shown here:</p>
@@ -3511,7 +3511,7 @@ ch: X</code></pre>  <!-- plaintext block -->
                         <div class="right">
                             <div class="content">
                                 <p><a href="#Table2-3">Table 2-3</a> shows the order of precedence for all Java operators, from highest to lowest. This table includes several operators that will be discussed later in this book. Although technically separators, the <code>[]</code>, <code>()</code>, and <code>.</code> can also act like operators. In that capacity, they would have the highest precedence.</p>
-                                <table>
+                                <table id="Table2-3">
                                     <caption><span class="capId">Table 2-3</span> The Precedence of the Java Operators</caption>
                                     <thead>
                                         <tr>
@@ -3737,12 +3737,12 @@ class LogicalOpTable {
 }</code></pre>  <!-- java code -->
                                             <div class="gallery2">
                                                 <figure class="standAloneFigure">
-                                                    <img src="./plantUMLs/ch02/LogicalOpTable_class.svg" alt="Activity diagram of LogicalOpTable method">
-                                                    <figcaption>Class diagram of LogicalOpTable method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable_class.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable_class.puml</a></figcaption>
+                                                    <img src="./plantUMLs/ch02/LogicalOpTable_class.svg" alt="Class diagram of LogicalOpTable class">
+                                                    <figcaption>Class diagram of LogicalOpTable class<br>src: <a href="./plantUMLs/ch02/LogicalOpTable_class.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable_class.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                                 <figure class="standAloneFigure">
                                                     <img src="./plantUMLs/ch02/LogicalOpTable_act.svg" alt="Activity diagram of LogicalOpTable.main() method">
-                                                    <figcaption>Class diagram of LogicalOpTable method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable_act.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable_act.puml</a></figcaption>
+                                                    <figcaption>Activity diagram of LogicalOpTable.main() method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable_act.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable_act.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                             </div>  <!-- gallery2 -->
                                             <p>Notice the parentheses surrounding the logical operations inside the <code>println()</code> statements. They are necessary because of the precedence of Java's operators. The <code>+</code> operator is higher than the logical operators.</p>
@@ -3881,12 +3881,12 @@ class LogicalOpTable2 {
 }</code></pre>  <!-- java code -->
                                             <div class="gallery2">
                                                 <figure class="standAloneFigure">
-                                                    <img src="./plantUMLs/ch02/LogicalOpTable2_class.svg" alt="Activity diagram of LogicalOpTable2 method">
-                                                    <figcaption>Class diagram of LogicalOpTable2 method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable2_class.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable2_class.puml</a></figcaption>
+                                                    <img src="./plantUMLs/ch02/LogicalOpTable2_class.svg" alt="Class diagram of LogicalOpTable2 class">
+                                                    <figcaption>Class diagram of LogicalOpTable2 class<br>src: <a href="./plantUMLs/ch02/LogicalOpTable2_class.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable2_class.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                                 <figure class="standAloneFigure">
                                                     <img src="./plantUMLs/ch02/LogicalOpTable2_act.svg" alt="Activity diagram of LogicalOpTable2.main() method">
-                                                    <figcaption>Class diagram of LogicalOpTable2 method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable2_act.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable2_act.puml</a></figcaption>
+                                                    <figcaption>Activity diagram of LogicalOpTable2.main() method<br>src: <a href="./plantUMLs/ch02/LogicalOpTable2_act.puml" target="_blank">./plantUMLs/ch02/LogicalOpTable2_act.puml</a></figcaption>
                                                 </figure>  <!-- standAloneFigure -->
                                             </div>  <!-- gallery2 -->
                                             <p><b>Execution Logs: </b></p>
@@ -3945,12 +3945,12 @@ class PromDemo {
 }</code></pre>  <!-- java code -->
                                         <div class="gallery2">
                                             <figure class="standAloneFigure">
-                                                <img src="./plantUMLs/ch02/PromDemo_class.svg" alt="Activity diagram of PromDemo method">
-                                                <figcaption>Class diagram of PromDemo method<br>src: <a href="./plantUMLs/ch02/PromDemo_class.puml" target="_blank">./plantUMLs/ch02/PromDemo_class.puml</a></figcaption>
+                                                <img src="./plantUMLs/ch02/PromDemo_class.svg" alt="Class diagram of PromDemo class">
+                                                <figcaption>Class diagram of PromDemo class<br>src: <a href="./plantUMLs/ch02/PromDemo_class.puml" target="_blank">./plantUMLs/ch02/PromDemo_class.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                             <figure class="standAloneFigure">
                                                 <img src="./plantUMLs/ch02/PromDemo_act.svg" alt="Activity diagram of PromDemo.main() method">
-                                                <figcaption>Class diagram of PromDemo method<br>src: <a href="./plantUMLs/ch02/PromDemo_act.puml" target="_blank">./plantUMLs/ch02/PromDemo_act.puml</a></figcaption>
+                                                <figcaption>Activity diagram of PromDemo.main() method<br>src: <a href="./plantUMLs/ch02/PromDemo_act.puml" target="_blank">./plantUMLs/ch02/PromDemo_act.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                         </div>  <!-- gallery2 -->
                                         <p><b>Execution Logs: </b></p>
@@ -3980,12 +3980,12 @@ class UseCast {
 }</code></pre>  <!-- java code -->
                                         <div class="gallery2">
                                             <figure class="standAloneFigure">
-                                                <img src="./plantUMLs/ch02/UseCast_class.svg" alt="Activity diagram of UseCase method">
-                                                <figcaption>Class diagram of UseCase method<br>src: <a href="./plantUMLs/ch02/UseCast_class.puml" target="_blank">./plantUMLs/ch02/UseCast_class.puml</a></figcaption>
+                                                <img src="./plantUMLs/ch02/UseCast_class.svg" alt="Class diagram of UseCase class">
+                                                <figcaption>Class diagram of UseCase class<br>src: <a href="./plantUMLs/ch02/UseCast_class.puml" target="_blank">./plantUMLs/ch02/UseCast_class.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                             <figure class="standAloneFigure">
                                                 <img src="./plantUMLs/ch02/UseCast_act.svg" alt="Activity diagram of UseCase.main() method">
-                                                <figcaption>Class diagram of UseCase method<br>src: <a href="./plantUMLs/ch02/UseCast_act.puml" target="_blank">./plantUMLs/ch02/UseCast_act.puml</a></figcaption>
+                                                <figcaption>Activity diagram of UseCase.main() method<br>src: <a href="./plantUMLs/ch02/UseCast_act.puml" target="_blank">./plantUMLs/ch02/UseCast_act.puml</a></figcaption>
                                             </figure>  <!-- standAloneFigure -->
                                         </div>  <!-- gallery2 -->
                                         <p>The output from the program is shown here:</p>
@@ -4180,12 +4180,12 @@ class JBG_HS_SelfTest_10 {
 }</code></pre>  <!-- java code -->
                                     <div class="gallery2">
                                         <figure class="standAloneFigure">
-                                            <img src="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.svg" alt="Activity diagram of JBG_HS_Ch02_SelfTest_10 method">
-                                            <figcaption>Class diagram of JBG_HS_Ch02_SelfTest_10 method<br>src: <a href="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.puml" target="_blank">./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.puml</a></figcaption>
+                                            <img src="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.svg" alt="Class diagram of JBG_HS_Ch02_SelfTest_10 class">
+                                            <figcaption>Class diagram of JBG_HS_Ch02_SelfTest_10 class<br>src: <a href="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.puml" target="_blank">./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_class.puml</a></figcaption>
                                         </figure>  <!-- standAloneFigure -->
                                         <figure class="standAloneFigure">
                                             <img src="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_act.svg" alt="Activity diagram of JBG_HS_Ch02_SelfTest_10.main() method">
-                                            <figcaption>Class diagram of JBG_HS_Ch02_SelfTest_10 method<br>src: <a href="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_act.puml" target="_blank">./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_act.puml</a></figcaption>
+                                            <figcaption>Activity diagram of JBG_HS_Ch02_SelfTest_10.main() method<br>src: <a href="./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_act.puml" target="_blank">./plantUMLs/ch02/JBG_HS_Ch02_SelfTest_10_act.puml</a></figcaption>
                                         </figure>  <!-- standAloneFigure -->
                                     </div>  <!-- gallery2 -->
                                     <p><b>Execution Logs: </b></p>
@@ -4219,12 +4219,187 @@ class JBG_HS_SelfTest_10 {
             <div class="lvl0" id="theoryCh03">
                 <div class="left">
                     <h4>Chapter 03</h4>
-                    <h1></h1>
+                    <h1>Program Control Statements</h1>
                 </div>  <!-- left -->
                 <div class="right">
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Key Skills & Concepts</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <h3>Key Skills & Concepts</h3>
+                                <ul>
+                                    <li>Input characters from the keyboard</li>
+                                    <li>Know the complete form of the <code>if</code> statement</li>
+                                    <li>Use the <code>switch</code> statement</li>
+                                    <li>Know the complete form of the <code>for</code> loop</li>
+                                    <li>Use the <code>while</code> loop</li>
+                                    <li>Use the <code>do</code>-<code>while</code> loop</li>
+                                    <li>Use <code>break</code> to exit a loop</li>
+                                    <li>Use <code>break</code> as a form of goto</li>
+                                    <li>Apply <code>continue</code></li>
+                                    <li>Nest loops</li>
+                                </ul>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                     <div class="content">
-                        
+                        <p>In this chapter, you will learn about the statements that control a program's flow of execution. There are three categories of program control statements: </p>
+                        <ol>
+                            <li><em>selection statements</em>, which include the <code>if</code> and the <code>switch</code>;</li>
+                            <li><em>iteration statements</em>, which include the <code>for</code>, <code>while</code>, and <code>do</code>-<code>while</code> loops;</li>
+                            <li><em>jump statements</em>, which include <code>break</code>, <code>continue</code>, and <code>return</code></li>
+                        </ol>
+                        <p>Except for return, which is discussed later in this book, the remaining control statements, including the <code>if</code> and <code>for</code> statements to which you have already had a brief introduction, are examined in detail here. The chapter begins by explaining how to perform some simple keyboard input.</p>
                     </div>  <!-- content -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>INPUT CHARACTERS FROM THE KEYBOARD</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Before examining Java's control statements, we will make a short digression that will allow you to begin writing interactive programs. Up to this point, the sample programs in this book have displayed information to the user, but they have not received information from the user. Thus, you have been using console output, but not console (keyboard) input. The main reason for this is that Java's input capabilities rely on or make use of features not discussed until later in this book. Also, <em>most real-world Java applications will be graphical and window based, not console based</em>. For these reasons, not much use of console input is found in this book. However, there is one type of console input that is relatively easy to use: reading a character from the keyboard. Since several of the examples in this chapter will make use of this feature, it is discussed here.</p>
+                                <p>To read a character from the keyboard, we will use <code>System.in.read()</code>. <code>System.in</code> is the complement to <code>System.out</code>. <span class="highlight">It is the input object attached to the keyboard</span>. The <code>read()</code> method waits until the user presses a key and then returns the result. The character is returned as an integer, so it <span class="highlight">must be cast into a char to assign it to a char variable</span>. <span class="highlight">By default, console input is line buffered. Here, the term buffer refers to a small portion of memory that is used to hold the characters before they are read by your program.</span> In this case, the buffer holds a complete line of text. As a result, you must press <i>ENTER</i> before any character that you type will be sent to your program. Here is a program that reads a character from the keyboard:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/KbIn.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/KbIn.java</a></p>
+                                <pre><code class="language-java">/**
+ * Read a character from keyboard.
+ * 
+ * Call this file "KbIn.java".
+ */
+class KbIn {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        char ch;
+
+        System.out.print("Press a key followed by ENTER: ");
+        ch = (char) System.in.read(); // get a char
+
+        System.out.println("Your key is: " + ch);
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/KbIn_class.svg" alt="Class diagram of KbIn class">
+                                        <figcaption>Class diagram of KbIn class<br>src: <a href="./plantUMLs/ch03/KbIn_class.puml" target="_blank">./plantUMLs/ch03/KbIn_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/KbIn_act.svg" alt="Activity diagram of KbIn.main() method">
+                                        <figcaption>Activity diagram of KbIn.main() method<br>src: <a href="./plantUMLs/ch03/KbIn_act.puml" target="_blank">./plantUMLs/ch03/KbIn_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>Here is a sample run:</p>
+                                <pre><code class="language-plaintext">Press a key followed by ENTER: m
+Your key is: m</code></pre>  <!-- plaintext block -->
+                                <p>In the program, notice that <code>main()</code> begins like this:</p>
+                                <pre><code class="language-java">public static void main(String[] args) 
+throws java.io.IOException {</code></pre>  <!-- java code -->
+                                <p>Because <code>System.in.read()</code> is being used, the program must specify the <code>throws java.io.IOException</code> clause. This line is necessary to handle input errors. It is part of Java's exception handling mechanism, which is discussed in Chapter 9. For now, don't worry about its precise meaning.</p>
+                                <p><span class="highlight">The fact that <code>System.in</code> is line buffered is a source of annoyance at times. When you press <code>ENTER</code>, a carriage return, line feed sequence is entered into the input stream. Furthermore, these characters are left pending in the input buffer until you read them. Thus, for some applications, you may need to remove them (by reading them) before the next input operation.</span> You will see an example of this later in this chapter.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE IF STATEMENT</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Chapter 1 introduced the <code>if</code> statement. It is examined in detail here. The complete form of the <code>if</code> statement is</p>
+                                <pre><code class="language-plaintext">if(condition) statement;
+else statement;</code></pre>  <!-- plaintext block -->
+                                <p>where the targets of the <code>if</code> and <code>else</code> are single statements. The <code>else</code> clause is optional. The targets of both the <code>if</code> and <code>else</code> can be blocks of statements. The general form of the <code>if</code>, using blocks of statements, is</p>
+                                <pre><code class="language-plaintext">if(condition)
+{
+    statement sequence
+}
+else
+{
+    statement sequence
+}</code></pre>  <!-- plaintext block -->
+                                <p>If the conditional expression is <code>true</code>, the target of the <code>if</code> will be executed; otherwise, if it exists, the target of the <code>else</code> will be executed. At no time will both of them be executed. The conditional expression controlling the <code>if</code> must produce a <code>boolean</code> result.</p>
+                                <p>To demonstrate the <code>if</code> (and several other control statements), we will create and develop a simple computerized guessing game that would be suitable for young children. In the first version of the game, the program asks the player for a letter between A and Z. If the player presses the correct letter on the keyboard, the program responds by printing the message <code>** Right **</code>. The program is shown here:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess.java</a></p>
+                                <pre><code class="language-java">/**
+ * Guess the letter game.
+ * 
+ * Call this file "Guess.java".
+ */
+class Guess {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        char ch, answer = 'K';
+
+        System.out.println("I am thinking of a letter between A and Z.");
+        System.out.print("Can you guess it?: ");
+
+        ch = (char) System.in.read();  // read a character from the keyboard
+
+        if(ch == answer) System.out.println("** Right **");
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess_class.svg" alt="Class diagram of Guess class">
+                                        <figcaption>Class diagram of Guess class<br>src: <a href="./plantUMLs/ch03/Guess_class.puml" target="_blank">./plantUMLs/ch03/Guess_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess_act.svg" alt="Activity diagram of Guess.main() method">
+                                        <figcaption>Activity diagram of Guess.main() method<br>src: <a href="./plantUMLs/ch03/Guess_act.puml" target="_blank">./plantUMLs/ch03/Guess_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <p><u>Execution 1: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: A</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 2: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: K 
+** Right **</code></pre>  <!-- plaintext block -->
+                                <p>This program prompts the player and then reads a character from the keyboard. Using an <code>if</code> statement, it then checks that character against the answer, which is <code>K</code> in this case. If <code>K</code> was entered, the message is displayed. When you try this program, remember that the <code>K</code> must be entered in uppercase.</p>
+                                <p>Taking the guessing game further, the next version uses the else to print a message when the wrong letter is picked.</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess2.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess2.java</a></p>
+                                <pre><code class="language-java">/**
+ * Guess the letter game. Version 2.
+ * 
+ * Call this file "Guess2.java".
+ */
+class Guess2 {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        char ch, answer = 'K';
+
+        System.out.println("I am thinking of a letter between A and Z.");
+        System.out.print("Can you guess it?: ");
+
+        ch = (char) System.in.read();  // read a character from the keyboard
+
+        if(ch == answer) System.out.println("** Right **");
+        else System.out.println("...Sorry, you're wrong.");
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess2_class.svg" alt="Class diagram of Guess2 class">
+                                        <figcaption>Class diagram of Guess2 class<br>src: <a href="./plantUMLs/ch03/Guess2_class.puml" target="_blank">./plantUMLs/ch03/Guess2_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess2_act.svg" alt="Activity diagram of Guess2.main() method">
+                                        <figcaption>Activity diagram of Guess2.main() method<br>src: <a href="./plantUMLs/ch03/Guess2_act.puml" target="_blank">./plantUMLs/ch03/Guess2_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <p><u>Execution 1: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: k 
+...Sorry, you're wrong.</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 2: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: K
+** Right **</code></pre>  <!-- plaintext block -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh04">

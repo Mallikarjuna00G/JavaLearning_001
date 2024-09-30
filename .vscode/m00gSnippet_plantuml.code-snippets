@@ -67,7 +67,7 @@
 		"scope": ["plantuml", "puml"],
 		"prefix": "elseCondition",
 		"body": [
-			"else (<color:red>true)",
+			"else (<color:red>false)",
 			"    :${2|body|};",
 		],
 		"description": "local snippet:: else condition plantuml."

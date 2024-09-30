@@ -222,10 +222,10 @@
 		"body": [
 			"<figure class=\"standAloneFigure\">",
             "    <img src=\"$1\" alt=\"Activity diagram of $2 method\">",
-			"    <figcaption>Class diagram of $2 method<br>src: <a href=\"$3\" target=\"_blank\">$3</a></figcaption>",
+			"    <figcaption>Activity diagram of $2 method<br>src: <a href=\"$3\" target=\"_blank\">$3</a></figcaption>",
 			"</figure>  <!-- standAloneFigure -->$4",
 		],
-		"description": "local snippet:: stand alone PUML class diagram figure element."
+		"description": "local snippet:: stand alone PUML activity diagram figure element."
 	},
 
 	"lsnip::PUML class and activity figure combo": {
@@ -233,13 +233,14 @@
 		"prefix": "comboFigure1",
 		"body": [
 			"<figure class=\"standAloneFigure\">",
-            "    <img src=\"./plantUMLs/ch02/$1_class.svg\" alt=\"Activity diagram of $1 method\">",
-			"    <figcaption>Class diagram of $1 method<br>src: <a href=\"./plantUMLs/ch02/$1_class.puml\" target=\"_blank\">./plantUMLs/ch02/$1_class.puml</a></figcaption>",
+            "    <img src=\"./plantUMLs/ch03/$1_class.svg\" alt=\"Class diagram of $1 class\">",
+			"    <figcaption>Class diagram of $1 class<br>src: <a href=\"./plantUMLs/ch03/$1_class.puml\" target=\"_blank\">./plantUMLs/ch03/$1_class.puml</a></figcaption>",
 			"</figure>  <!-- standAloneFigure -->$2",
+
 			"<figure class=\"standAloneFigure\">",
-            "    <img src=\"./plantUMLs/ch02/$1_act.svg\" alt=\"Activity diagram of $1.main() method\">",
-			"    <figcaption>Class diagram of $1 method<br>src: <a href=\"./plantUMLs/ch02/$1_act.puml\" target=\"_blank\">./plantUMLs/ch02/$1_act.puml</a></figcaption>",
-			"</figure>  <!-- standAloneFigure -->$2",
+            "    <img src=\"./plantUMLs/ch03/$1_act.svg\" alt=\"Activity diagram of $1.$2() method\">",
+			"    <figcaption>Acivity diagram of $1.$2() method<br>src: <a href=\"./plantUMLs/ch03/$1_act.puml\" target=\"_blank\">./plantUMLs/ch03/$1_act.puml</a></figcaption>",
+			"</figure>  <!-- standAloneFigure -->$3",
 		],
 		"description": "local snippet:: PUML class and activity figure combo."
 	},
@@ -334,6 +335,15 @@
 			"<p><b>Execution Logs: </b></p>",
 		],
 		"description": "local snippet:: Execution Logs"
+	},
+
+	"lsnip::Execution": {
+		"scope": "html",
+		"prefix": "execution",
+		"body": [
+			"<p><u>Execution $1: </u></p>",
+		],
+		"description": "local snippet:: Execution"
 	},
 
 	"lsnip::gallery2": {

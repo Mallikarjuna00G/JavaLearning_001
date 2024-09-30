@@ -138,5 +138,5 @@ function activateContent(contentID, content) {
 document.addEventListener('DOMContentLoaded', () => {
     contentList.style.display = 'none';
     menuIcon.src = "./images/menuClosed.svg";
-    activateContent(ch02, theoryCh02);
+    activateContent(ch03, theoryCh03);
 })
