@@ -4400,6 +4400,478 @@ Can you guess it?: K
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>NESTED IFS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>A nested <code>if</code> is an <code>if</code> statement that is the target of another <code>if</code> or <code>else</code>. Nested <code>if</code>s are very common in programming. The main thing to remember about nested <code>if</code>s in Java is that an <code>else</code> statement always refers to the nearest <code>if</code> statement that is within the same block as the <code>else</code> and not already associated with an <code>else</code>. Here is an example:</p>
+                                <pre><code class="language-java">if(i == 10) {
+    if(i < 20) a = b;
+    if(k > 100) c = d;
+    else a = c;  // this else refers to if(k > 100)
+}
+else a = d;  // this else refers to if(i == 10)</code></pre>  <!-- java code -->
+                                <figure class="standAloneFigure">
+                                    <img src="./plantUMLs/ch03/theory_nestedIf_act.svg" alt="Activity diagram of code snippet of nested if">
+                                    <figcaption>Activity diagram of code snippet of nested if<br>src: <a href="./plantUMLs/ch03/theory_nestedIf_act.puml" target="_blank">./plantUMLs/ch03/theory_nestedIf_act.puml</a></figcaption>
+                                </figure>  <!-- standAloneFigure -->
+                                <p>As the comments indicate, the final <code>else</code> is not associated with <code>if(j < 20)</code>, because it is not in the same block (even though it is the nearest <code>if</code> without an <code>else</code>). Rather, the final <code>else</code> is associated with <code>if(i == 10)</code>. The inner <code>else</code> refers to <code>if(k > 100)</code>, because it is the closest <code>if</code> within the same block.</p>
+                                <p>You can use a nested <code>if</code> to add a further improvement to the guessing game. This addition provides the player with feedback about a wrong guess.</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess3.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Guess3.java</a></p>
+                                <pre><code class="language-java">/**
+ * Guess the letter game. Version 3.
+ * 
+ * Call this file "Guess3.java".
+ */
+class Guess3 {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        char ch, answer = 'K';
+
+        System.out.println("I am thinking of a letter between A and Z.");
+        System.out.print("Can you guess it?: ");
+
+        ch = (char) System.in.read();  // read a character from the keyboard
+
+        if(ch == answer) System.out.println("** Right **");
+        else {
+            System.out.print("...Sorry, you're ");
+            // a nested if
+            if(ch < answer) System.out.println("too low");
+            else System.out.println("too high");
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess3_class.svg" alt="Class diagram of Guess3 class">
+                                        <figcaption>Class diagram of Guess3 class<br>src: <a href="./plantUMLs/ch03/Guess3_class.puml" target="_blank">./plantUMLs/ch03/Guess3_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Guess3_act.svg" alt="Activity diagram of Guess3.main() method">
+                                        <figcaption>Acivity diagram of Guess3.main() method<br>src: <a href="./plantUMLs/ch03/Guess3_act.puml" target="_blank">./plantUMLs/ch03/Guess3_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>A sample run is shown here:</p>
+                                <p><u>Execution 1: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: B
+...Sorry, you're too low</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 2: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: M
+...Sorry, you're too high</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 3: </u></p>
+                                <pre><code class="language-plaintext">I am thinking of a letter between A and Z.
+Can you guess it?: K
+** Right **</code></pre>  <!-- plaintext block -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE IF-ELSE-IF LADDER</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>A common programming construct that is based upon the nested <code>if</code> is the if-else-if ladder. It looks like this:</p>
+                                <pre><code class="language-plaintext">if(condition)
+    statement;
+else if(condition)
+    statement;
+else if(condition)
+    statement;
+.
+.
+.
+else
+    statement;</code></pre>  <!-- plaintext block -->
+                                <p>The conditional expressions are evaluated from the top downward. As soon as a <code>true</code> condition is found, the statement associated with it is executed, and the rest of the ladder is bypassed. If none of the conditions are <code>true</code>, the final <code>else</code> statement will be executed. The final <code>else</code> often acts as a default condition; that is, if all other conditional tests fail, the last <code>else</code> statement is performed. If there is no final <code>else</code> and all other conditions are <code>false</code>, no action will take place.</p>
+                                <p>The following program demonstrates the if-else-if ladder:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Ladder.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Ladder.java</a></p>
+                                <pre><code class="language-java">/**
+ * Demonstrate and if-else-if ladder.
+ * 
+ * Call this file "Ladder.java".
+ */
+class Ladder {
+    public static void main(String[] args) {
+        int x;
+
+        for(x = 0; x < 6; x++) {
+            if(x == 1)
+                System.out.println("x is one");
+            else if(x == 2)
+                System.out.println("x is two");
+            else if(x == 3)
+                System.out.println("x is three");
+            else if(x == 4)
+                System.out.println("x is four");
+            else
+                System.out.println("x is not between 1 and 4");
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Ladder_class.svg" alt="Class diagram of Ladder class">
+                                        <figcaption>Class diagram of Ladder class<br>src: <a href="./plantUMLs/ch03/Ladder_class.puml" target="_blank">./plantUMLs/ch03/Ladder_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Ladder_act.svg" alt="Activity diagram of Ladder.main() method">
+                                        <figcaption>Acivity diagram of Ladder.main() method<br>src: <a href="./plantUMLs/ch03/Ladder_act.puml" target="_blank">./plantUMLs/ch03/Ladder_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>The program produces the following output:</p>
+                                <pre><code class="language-plaintext">x is not between 1 and 4
+x is one
+x is two
+x is three
+x is four
+x is not between 1 and 4</code></pre>  <!-- plaintext block -->
+                                <p>As you can see, the default <code>else</code> is executed only if none of the preceding <code>if</code> statements succeeds.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE SWITCH STATEMENT</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>The second of Java's selection statements is the <code>switch</code>. The <code>switch</code> provides for a multiway branch. Thus, it enables a program to select among several alternatives. Although a series of nested <code>if</code> statements can perform multiway tests, for many situations the <code>switch</code> is a more efficient approach. It works like this: the value of anexpression is successively tested against a list of constants. When a match is found, the statement sequence associated with that match is executed. The general form of the <code>switch</code> statement is</p>
+                                <pre><code class="language-plaintext">switch(condition) {
+    case constant1:
+        statement sequence;
+        break;
+    case constant2:
+        statement sequence;
+        break;
+    case constant3:
+        statement sequence;
+        break;
+    .
+    .
+    .
+    default:
+        statement sequence;
+}</code></pre>  <!-- plaintext block -->
+                                <figure class="standAloneFigure">
+                                    <img src="./plantUMLs/ch03/theory_switch_act.svg" alt="Activity diagram of general form of switch">
+                                    <figcaption>Activity diagram of general form of switch statement<br>src: <a href="./plantUMLs/ch03/theory_switch_act.puml" target="_blank">./plantUMLs/ch03/theory_switch_act.puml</a></figcaption>
+                                </figure>  <!-- standAloneFigure -->
+                                <p><span class="highlight">For versions of Java prior to JDK 7, the expression controlling the switch must resolve to type <code>byte</code>, <code>short</code>, <code>int</code>, <code>char</code>, or an <em>enumeration</em>. (Enumerations are described in Chapter 12.) However, beginning with JDK 7, expression can also be of type <code>String</code>.</span> This means that modern versions of Java can use a string to control a <code>switch</code>. (This technique is demonstrated in Chapter 5, when <code>String</code> is described.) Frequently, the expression controlling a <code>switch</code> is simply a variable rather than a larger expression.</p>
+                                <p><span class="highlight">Each value specified in the case statements must be a unique constant expression (such as a literal value). Duplicate case values are not allowed. The type of each value must be compatible with the type of expression.</span></p>
+                                <p>The <code>default</code> statement sequence is executed if no case constant matches the expression. The <code>default</code> is optional; if it is not present, no action takes place if all matches fail. When a match is found, the statements associated with that case are executed until the <code>break</code> is encountered or, in the case of <code>default</code> or the last case, until the end of the <code>switch</code> is reached.</p>
+                                <p>The following program demonstrates the <code>switch</code>:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/SwitchDemo.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/SwitchDemo.java</a></p>
+                                <pre><code class="language-java">/**
+ * Demonstrate the switch.
+ * 
+ * Call this file "SwitchDemo.java".
+ */
+class SwitchDemo {
+    public static void main(String[] args) {
+        int i;
+
+        for(i = 0; i < 10; i++) {
+            switch(i) {
+                case 0:
+                    System.out.println("i is zero");
+                    break;
+                case 1:
+                    System.out.println("i is one");
+                    break;
+                case 2:
+                    System.out.println("i is two");
+                    break;
+                case 3:
+                    System.out.println("i is three");
+                    break;
+                case 4:
+                    System.out.println("i is four");
+                    break;
+                default:
+                    System.out.println("i is five or more");
+                    break;
+            }
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/SwitchDemo_class.svg" alt="Class diagram of SwitchDemo class">
+                                        <figcaption>Class diagram of SwitchDemo class<br>src: <a href="./plantUMLs/ch03/SwitchDemo_class.puml" target="_blank">./plantUMLs/ch03/SwitchDemo_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/SwitchDemo_act.svg" alt="Activity diagram of SwitchDemo.() method">
+                                        <figcaption>Acivity diagram of SwitchDemo.main() method<br>src: <a href="./plantUMLs/ch03/SwitchDemo_act.puml" target="_blank">./plantUMLs/ch03/SwitchDemo_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>The output produced by this program is shown here:</p>
+                                <pre><code class="language-plaintext">i is zero
+i is one
+i is two
+i is three
+i is four
+i is five or more
+i is five or more
+i is five or more
+i is five or more
+i is five or more</code></pre>  <!-- plaintext block -->
+                                <p>As you can see, each time through the loop, the statements associated with the case constant that matches <code>i</code> are executed. All others are bypassed. When <code>i</code> is five or greater, no case statements match, so the default statement is executed.</p>
+                                <p>Technically, the <code>break</code> statement is optional, although most applications of the <code>switch</code> will use it. When encountered within the statement sequence of a case, the <code>break</code> statement causes program flow to exit from the entire <code>switch</code> statement and resume at the next statement outside the <code>switch</code>. However, if a break statement does not end the statement sequence associated with a case, then all the statements at and following the matching case will be executed until a <code>break</code> (or the end of the switch) is encountered.</p>
+                                <p>For example, study the following program carefully. Before looking at the output, can you figure out what it will display on the screen?</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/NoBreak.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/NoBreak.java</a></p>
+                                <pre><code class="language-java">/**
+ * Demonstrate the switch without break statements.
+ * 
+ * Call this file "NoBreak.java". 
+ */
+class NoBreak {
+    public static void main(String[] args) {
+        int i;
+
+        for(i = 0; i <= 5; i++) {
+            switch(i) {
+                case 0:
+                    System.out.println("i is less than one.");
+                case 1:
+                    System.out.println("i is less than two.");
+                case 2:
+                    System.out.println("i is less than three.");
+                case 3:
+                    System.out.println("i is less than four.");
+                case 4:
+                    System.out.println("i is less than five.");
+            }
+            System.out.println();
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/NoBreak_class.svg" alt="Class diagram of NoBreak class">
+                                        <figcaption>Class diagram of NoBreak class<br>src: <a href="./plantUMLs/ch03/NoBreak_class.puml" target="_blank">./plantUMLs/ch03/NoBreak_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/NoBreak_act.svg" alt="Activity diagram of NoBreak.main() method">
+                                        <figcaption>Acivity diagram of NoBreak.main() method<br>src: <a href="./plantUMLs/ch03/NoBreak_act.puml" target="_blank">./plantUMLs/ch03/NoBreak_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>This program displays the following output:</p>
+                                <pre><code class="language-plaintext">i is less than one.
+i is less than two.
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than two.
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than three.
+i is less than four.
+i is less than five.
+
+i is less than four.
+i is less than five.
+
+i is less than five.
+
+</code></pre>  <!-- plaintext block -->
+                                <p>As this program illustrates, execution will continue into the next <code>case</code> if no <code>break</code>statement is present.</p>
+                                <p>You can have empty <code>case</code>s, as shown in this example:</p>
+                                <pre><code class="language-java">switch(i) {
+    case 1:
+    case 2:
+    case 3: 
+        System.out.println("i is 1, 2 or 3");
+        break;
+    case 4:
+        System.out.println("i is 4");
+        break;
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/theory_switchStackedCases_act.svg" alt="Activity diagram of code snippet of stacked cases of switch statement">
+                                        <figcaption>Activity diagram of code snippet of stacked cases of switch statement<br>src: <a href="./plantUMLs/ch03/theory_switchStackedCases_act.puml" target="_blank">./plantUMLs/ch03/theory_switchStackedCases_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>In this fragment, if <code>i</code> has the value 1, 2, or 3, the first <code>println()</code> statement executes. If it is 4, the second <code>println()</code> statement executes. The "stacking" of <code>case</code>s, as shown in this example, is common when several cases share common code.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>NESTED SWITCH STATEMENTS</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>It is possible to have a <code>switch</code> as part of the statement sequence of an outer <code>switch</code>. This is called a <em>nested <code>switch</code></em>. Even if the <code>case</code> constants of the inner and outer <code>switch</code> contain common values, no conflicts will arise. For example, the following code fragment is perfectly acceptable:</p>
+                                <pre><code class="language-java">switch(ch1) {
+    case 'A': 
+        System.out.println("This A is part of outer switch.");
+        switch(ch2) {
+            case 'A': 
+                System.out.println("This A is part of inner switch.");
+                break;
+            case 'B':
+                // ...
+        }  // end of inner switch
+        break;
+    case 'B':
+        // ...</code></pre>  <!-- java code -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>Try This 3-1</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <h3 class="tryThis"><span class="hl">TryThis 3-1</span> Start Building a Java Help System</h3>
+                                <ul class="tryThisSrc">
+                                    <li><code>Help.java</code></li>
+                                </ul>
+                                <p>This project builds a simple help system that displays the syntax for the Java control statements. The program displays a menu containing the control statements and then waits for you to choose one. After one is chosen, the syntax of the statement is displayed. In this first version of the program, help is available for only the <code>if</code> and <code>switch</code> statements. The other control statements are added in subsequent projects.</p>
+                                <ol class="tryThisOl">
+                                    <li>Create a file called <code>Help.java</code>.</li>
+                                    <li>
+                                        <div>
+                                            <p>The program begins by displaying the following menu:</p>
+                                            <pre><code class="language-plaintext">Help on: 
+  1. if
+  2. switch
+Choose one: </code></pre>  <!-- plaintext block -->
+                                            <p>To accomplish this, you will use the statement sequence shown here:</p>
+                                            <pre><code class="language-java">System.out.println("Help on: ");
+System.out.println("  1. if");
+System.out.println("  2. switch");
+System.out.print("Choose one: ");</code></pre>  <!-- java code -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Next, the program obtains the user's selection by calling <code>System.in.read()</code>, as shown here:</p>
+                                            <pre><code class="language-java">choice = (char) System.in.read();  // Get the user input</code></pre>  <!-- java code -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Once the selection has been obtained, the program uses the <code>switch</code> statement shown here to display the syntax for the selected statement.</p>
+                                            <pre><code class="language-java">switch(choice) {
+    case '1':  // if
+        System.out.println("The if:\n");
+        System.out.println("if(condition) statement;");
+        System.out.println("else statement;");
+        break;
+    case '2':  // switch
+        System.out.println("The switch:\n");
+        System.out.println("switch(expression) {");
+        System.out.println("    case constant:");
+        System.out.println("        statement sequence");
+        System.out.println("        break;");
+        System.out.println("}");
+        break;
+    default:
+        System.out.println("Selection not found.");
+}</code></pre>  <!-- java code -->
+                                            <p>Notice how the <code>default</code> clause catches invalid choices. For example, if the user enters 3, no <code>case</code> constants will match, causing the <code>default</code> sequence to execute.</p>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Here is the entire <code>Help.java</code> program listing:</p>
+                                            <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Help.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Help.java</a></p>
+                                            <pre><code class="language-java">/**
+ * Try This 3-1 A simple java help system.
+ * 
+ * Call this file Help.java
+ */
+class Help {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        char choice;
+
+        System.out.println("Help on: ");
+        System.out.println("  1. if");
+        System.out.println("  2. switch");
+        System.out.print("Choose one: ");
+
+        choice = (char) System.in.read();  // Get the user input
+
+        switch(choice) {
+            case '1':  // if
+                System.out.println("The if:\n");
+                System.out.println("if(condition) statement;");
+                System.out.println("else statement;");
+                break;
+            case '2':  // switch
+                System.out.println("The switch:\n");
+                System.out.println("switch(expression) {");
+                System.out.println("    case constant:");
+                System.out.println("        statement sequence");
+                System.out.println("        break;");
+                System.out.println("}");
+                break;
+            default:
+                System.out.println("Selection not found.");
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                            <div class="gallery2">
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch03/Help_class.svg" alt="Class diagram of Help class">
+                                                    <figcaption>Class diagram of Help class<br>src: <a href="./plantUMLs/ch03/Help_class.puml" target="_blank">./plantUMLs/ch03/Help_class.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                                <figure class="standAloneFigure">
+                                                    <img src="./plantUMLs/ch03/Help_act.svg" alt="Activity diagram of Help.main() method">
+                                                    <figcaption>Acivity diagram of Help.main() method<br>src: <a href="./plantUMLs/ch03/Help_act.puml" target="_blank">./plantUMLs/ch03/Help_act.puml</a></figcaption>
+                                                </figure>  <!-- standAloneFigure -->
+                                            </div>  <!-- gallery2 -->
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <p>Here is are some sample runs.</p>
+                                            <p><u>Execution 1: </u></p>
+                                            <pre><code class="language-plaintext">Help on: 
+  1. if
+  2. switch
+Choose one: 1
+The if:
+
+if(condition) statement;
+else statement;</code></pre>  <!-- plaintext block -->
+                                            <p><u>Execution 2: </u></p>
+                                            <pre><code class="language-plaintext">Help on: 
+  1. if
+  2. switch
+Choose one: 2
+The switch:
+
+switch(expression) {
+    case constant:
+        statement sequence
+        break;
+}</code></pre>  <!-- plaintext block -->
+                                            <p><u>Execution 3: </u></p>
+                                            <pre><code class="language-plaintext">Help on: 
+  1. if
+  2. switch
+Choose one: 3
+Selection not found.</code></pre>  <!-- plaintext block -->
+                                        </div>
+                                    </li>
+                                </ol>  <!-- tryThisOl -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
                 </div>  <!-- right -->
             </div>  <!-- lvl0 -->
             <div class="lvl0" id="theoryCh04">

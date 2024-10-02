@@ -36,6 +36,29 @@
 		],
 		"description": "local snippet:: Styles for plantuml Activity."
 	},
+
+	"lsnip::skinparam for puml activity diagram": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "skinparamActivity",
+		"body": [
+			"skinparam Activity {",
+			"    FontSize 12",
+			"    ",
+			"    Diamond {",
+			"        LineColor yellow",
+			"        BackgroundColor burlywood",
+			"        FontSize 14",
+			"        FontStyle bold",
+			"    }",
+			"}",
+			"",
+			"skinparam Partition {",
+			"    BorderColor<<invisible>> none",
+			"    FontColor<<invisible>> none",
+			"}",
+		],
+		"description": "local snippet:: skinparam for plantuml Activity diagram."
+	},
 	
 	"lsnip::for loop": {
 		"scope": ["plantuml", "puml"],
@@ -71,6 +94,25 @@
 			"    :${2|body|};",
 		],
 		"description": "local snippet:: else condition plantuml."
+	},
+
+	"lsnip::elseif condition plantuml": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "elseifCondition",
+		"body": [
+			"(<color:red>false) elseif($1) then (<color:green>true)",
+			"    :${2|body|};",
+		],
+		"description": "local snippet:: elseif condition plantuml."
+	},
+
+	"lsnip::vertical if plantuml": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "verticalIf",
+		"body": [
+			"!pragma useVerticalIf on",
+		],
+		"description": "local snippet:: vertical if plantuml."
 	},
 
 	"lsnip::Activity start-stop": {
@@ -109,6 +151,35 @@
 		"prefix": "for2Color",
 		"body": [
 			"#8cd06d",
+		],
+		"description": "local snippet:: for loop lvl2 color."
+	},
+
+	"lsnip::Switch statement": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "switchStatement",
+		"body": [
+			"partition #f7f790 switch statement {",
+			"    switch(condition) ",
+			"        case(constant1)",
+			"            :statement sequence;;",
+			"        case(constant2)",
+			"            :statement sequence;;",
+			"        case(constant3)",
+			"            :statement sequence;;",
+			"        case(default)",
+			"            :statement sequence;;",
+			"    endswitch",
+			"}",
+		],
+		"description": "local snippet:: Switch statement."
+	},
+
+	"lsnip::switch statement lvl2 color": {
+		"scope": ["plantuml", "puml"],
+		"prefix": "switch2Color",
+		"body": [
+			"#cfcc93",
 		],
 		"description": "local snippet:: for loop lvl2 color."
 	},
