@@ -28,6 +28,21 @@ braceBalance = 0
 parenthesesBalance = 0
 package = []
 
+forEachClass = []
+diagrams = []
+diagramClass = []
+diagramMethod = []
+
+"""
+The idea is to have the form
+
+diagrams = [
+    forEachClass[diagramClass, diagramMethod, diagramMethod],
+    forEachClass[diagramClass, diagramMethod],
+]
+
+"""
+
 mlCommentStarted = False
 mlCommentEnded = False
 
@@ -48,6 +63,12 @@ javaKeywords = [
     "try", "uses", "void", "volatile", "while", "with",
     "_"
 ]
+
+currentPackage = ""
+currentClass = ""
+currentMethod = ""
+
+
 
 for line in lines:
     # print(line.strip())
@@ -111,10 +132,53 @@ for line in lines:
             print()
         else:
             words = line.split(" ")
-            print(words)
-            for word in words:
+            # print(words)
+            if currentPackage == "":
+                if line.startswith("package "):
+                    currentPackage = line[9:-1]
+                    continue
+            if line.startswith("import "):
+                continue; 
+            if braceBalance == 0 and currentClass == "":
+                if ("public class" in line) or ("class " in line ) or ("extends" in line):
+                    for i in range(len(words)):
+                        if words[i] == "class":
+                            currentClass = words[i + 1]
+                            currentClass = currentClass.strip("{")
+                            currentClass = currentClass.strip()
+                            classes.append(currentClass)
+                            break
+                    diagramClass.append(currentClass)
+                    diagramClass.append(multiLineComments.pop())
+                    diagramClass.append(line)
+                    currentMethod = ""
+            if currentClass != "":
+                # Now we are parsing inside the class
+                if currentMethod == "":
+                    # Either field or method
+                    if currentClass in line:
+                        # Constructor
+                        currentMethod = currentClass
+                        
+            if line.endswith("{"):
+                braceBalance += 1
+            if line.endswith("}"):
+                braceBalance -= 1
+                    
+            if braceBalance == 0:
+                currentClass = ""
+                currentMethod = ""
+                forEachClass.append(diagramClass)
+                diagrams.append(forEachClass)
+                diagramClass = []
+                diagramMethod = []
+                forEachClass = []
                 
+
 
 print(multiLineComments)
 print(singleLineComments)
+print("Classes: ", classes)
+print("Diagram Classes: ", diagramClass)
+print("Diagrams: ", diagrams)
 file.close()
