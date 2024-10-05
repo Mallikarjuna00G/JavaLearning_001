@@ -9,7 +9,7 @@ class ForVar {
         int fact = 1;
 
         // Compute the factorial of the numbers through 5
-        for(int i = 1; i <= 5; i++) {
+        for(int i = 1; i <= 5; i++) {  // i is declared inside the for statement
             sum += i;  // i is known throughout the loop
             fact *= i;
         }

@@ -124,10 +124,15 @@ main {
     border-radius: 4px;
     text-align: justify;
     margin: 4px 0;
+    max-width: 1080px;
 }
 
 .content > * {
     margin: 8px 0;
+}
+
+.content img {
+    max-width: 960px;
 }
 
 ul, ol {

@@ -342,6 +342,7 @@
 		"prefix": "execution",
 		"body": [
 			"<p><u>Execution $1: </u></p>",
+			"<pre><code class=\"language-plaintext\">$2</code></pre>  <!-- plaintext block -->$3",
 		],
 		"description": "local snippet:: Execution"
 	},

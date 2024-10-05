@@ -1079,7 +1079,7 @@ c is non-negative</code></pre>  <!-- plaintext block -->
                                 </div>  <!-- left -->
                                 <div class="right">
                                     <div class="content">
-                                        <p>You can repeatedly execute a sequence of code by creating a loop. Loops are used whenever you need to perform a repetitive task because they are much simpler and easier than trying to write the same statement sequence over and over again. Java supplies a powerful assortment of loop constructs. The one we will look at here is the for loop. The simplest form of the <code>for</code> loop is shown here:</p>
+                                        <p>You can repeatedly execute a sequence of code by creating a loop. Loops are used whenever you need to perform a repetitive task because they are much simpler and easier than trying to write the same statement sequence over and over again. Java supplies a powerful assortment of loop constructs. The one we will look at here is the <code>for</code> loop. The simplest form of the <code>for</code> loop is shown here:</p>
                                         <pre><code class="language-plaintext">for(initialization; condition; iteration) statement;</code></pre>  <!-- plaintext block -->
                                         <ul>
                                             <li>In its most common form, the <i>initialization</i> portion of the loop sets a loop control variable to an initial value.</li>
@@ -1089,7 +1089,7 @@ c is non-negative</code></pre>  <!-- plaintext block -->
                                         <p>Here is a short program that illustrates the <code>for</code> loop:</p>
                                         <p class="srcFile"><a href="../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/ForDemo.java" target="_blank">../JBG_HS_Ch01/JBG_HS_Ch01_Exmp/ForDemo.java</a></p>
                                         <pre><code class="language-java">/**
- * Demonstrate the for loop.
+ * Demonstrate the <code>for</code> loop.
  * 
  * Call this file ForDemo.java.
  */
@@ -2824,7 +2824,7 @@ y is -1
 y is now 100
 y is -1
 y is now 100</code></pre>  <!-- plaintext block -->
-                                <p>As you can see, <code>y</code> is reinitialized to -1 each time the inner for loop is entered. Even though it is subsequently assigned the value 100, this value is lost.</p>
+                                <p>As you can see, <code>y</code> is reinitialized to -1 each time the inner <code>for</code> loop is entered. Even though it is subsequently assigned the value 100, this value is lost.</p>
                                 <p>There is one quirk to Java's scope rules that may surprise you: although blocks can be nested, <span class="highlight">no variable declared within an inner scope can have the same name as a variable declared by an enclosing scope</span>. For example, the following program, which tries to declare two separate variables with the same name, will not compile.</p>
                                 <p class="srcFile"><a href="../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/NestVar.java" target="_blank">../JBG_HS_Ch02/JBG_HS_Ch02_Exmp/NestVar.java</a></p>
                                 <pre><code class="language-java">/**
@@ -4730,6 +4730,20 @@ i is less than five.
                     </div>  <!-- lvl1 -->
                     <div class="lvl1">
                         <div class="left">
+                            <h2>Ask the Expert</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="askTheExpert">
+                                <h3 class="top"></h3>
+                                <p class="question">Under what conditions should I use an <code>if</code>-<code>else</code>-<code>if</code> ladder rather than a <code>switch</code> when coding a multiway branch?</p>
+                                <p class="answer">In general, use an <code>if</code>-<code>else</code>-<code>if</code> ladder when the conditions controlling the selection process do not rely upon a single value. For example, consider the following <code>if</code>-<code>else</code>-<code>if</code> sequence:</p>
+                                <p><b>Note:</b> code snippet not available</p>
+                                <p>This sequence cannot be recoded into a <code>switch</code> because all three conditions involve different variables—and differing types. What variable would control the <code>switch</code>? Also, you will need to use an <code>if</code>-<code>else</code>-<code>if</code> ladder when testing floating-point values or other objects that are not of types valid for use in a <code>switch</code> expression.</p>
+                            </div>  <!-- askTheExpert -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
                             <h2>Try This 3-1</h2>
                         </div>  <!-- left -->
                         <div class="right">
@@ -4869,6 +4883,721 @@ Selection not found.</code></pre>  <!-- plaintext block -->
                                         </div>
                                     </li>
                                 </ol>  <!-- tryThisOl -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE FOR LOOP</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>You have been using a simple form of the <code>for</code> loop since Chapter 1. You might be surprised at just how powerful and flexible the <code>for</code> loop is. Let's begin by reviewing the basics, starting with the most traditional forms of the <code>for</code>.</p>
+                                <p>The general form of the <code>for</code> loop for repeating a single statement is</p>
+                                <pre><code class="language-plaintext">for(initialization; condition; iteration) statement;</code></pre>  <!-- plaintext block -->
+                                <p>For repeating a block, the general form is</p>
+                                <pre><code class="language-plaintext">for(initialization; condition; iteration)
+{
+statement sequence
+}</code></pre>  <!-- plaintext block -->
+                                <ul>
+                                    <li>The <i>initialization</i> is usually an assignment statement that sets the initial value of the <i>loop control variable</i>, which acts as the counter that controls the loop.</li>
+                                    <li>The <i>condition</i> is a Boolean expression that determines whether or not the loop will repeat.</li>
+                                    <li>The <i>iteration</i> expression defines the amount by which the loop control variable will change each time the loop is repeated.</li>
+                                </ul>
+                                <p>Notice that these three major sections of the loop must be separated by semicolons. The <code>for</code> loop will continue to execute as long as the condition tests true. Once the condition becomes false, the loop will exit, and program execution will resume on the statement following the <code>for</code>.</p>
+                                <p>The following program uses a <code>for</code> loop to print the square roots of the numbers between 1 and 99. It also displays the rounding error present for each square root.</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/SqrRoot.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/SqrRoot.java</a></p>
+                                <pre><code class="language-java">/**
+ * Show square roots of 1 to 99 and the rounding error.
+ * 
+ * Call this file "SqrRoot.java".
+ */
+class SqrRoot {
+    public static void main(String[] args) {
+        double num, sroot, rerr;
+
+        for(num = 1.0; num < 100.0; num++) {
+            sroot = Math.sqrt(num);
+            System.out.println("Square root of " + num + " is " + sroot);
+
+            // compute rounding error
+            rerr = num - (sroot * sroot);
+            System.out.println("Rounding error is " + rerr);
+            System.out.println();
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/SqrRoot_class.svg" alt="Class diagram of SqrRoot class">
+                                        <figcaption>Class diagram of SqrRoot class<br>src: <a href="./plantUMLs/ch03/SqrRoot_class.puml" target="_blank">./plantUMLs/ch03/SqrRoot_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/SqrRoot_act.svg" alt="Activity diagram of SqrRoot.main() method">
+                                        <figcaption>Acivity diagram of SqrRoot.main() method<br>src: <a href="./plantUMLs/ch03/SqrRoot_act.puml" target="_blank">./plantUMLs/ch03/SqrRoot_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">Square root of 1.0 is 1.0
+Rounding error is 0.0
+
+Square root of 2.0 is 1.4142135623730951
+Rounding error is -4.440892098500626E-16
+
+Square root of 3.0 is 1.7320508075688772
+Rounding error is 4.440892098500626E-16
+
+Square root of 4.0 is 2.0
+Rounding error is 0.0
+
+Square root of 5.0 is 2.23606797749979
+Rounding error is -8.881784197001252E-16
+
+Square root of 6.0 is 2.449489742783178
+Rounding error is 8.881784197001252E-16
+
+Square root of 7.0 is 2.6457513110645907
+Rounding error is -8.881784197001252E-16
+
+Square root of 8.0 is 2.8284271247461903
+Rounding error is -1.7763568394002505E-15
+
+Square root of 9.0 is 3.0
+Rounding error is 0.0
+
+Square root of 10.0 is 3.1622776601683795
+Rounding error is -1.7763568394002505E-15
+
+Square root of 11.0 is 3.3166247903554
+Rounding error is 0.0
+
+Square root of 12.0 is 3.4641016151377544
+Rounding error is 1.7763568394002505E-15
+
+Square root of 13.0 is 3.605551275463989
+Rounding error is 1.7763568394002505E-15
+
+Square root of 14.0 is 3.7416573867739413
+Rounding error is 0.0
+
+Square root of 15.0 is 3.872983346207417
+Rounding error is -1.7763568394002505E-15
+
+Square root of 16.0 is 4.0
+Rounding error is 0.0
+
+Square root of 17.0 is 4.123105625617661
+Rounding error is 0.0
+
+Square root of 18.0 is 4.242640687119285
+Rounding error is 3.552713678800501E-15
+
+Square root of 19.0 is 4.358898943540674
+Rounding error is -3.552713678800501E-15
+
+Square root of 20.0 is 4.47213595499958
+Rounding error is -3.552713678800501E-15
+
+Square root of 21.0 is 4.58257569495584
+Rounding error is 0.0
+
+Square root of 22.0 is 4.69041575982343
+Rounding error is 0.0
+
+Square root of 23.0 is 4.795831523312719
+Rounding error is 3.552713678800501E-15
+
+Square root of 24.0 is 4.898979485566356
+Rounding error is 3.552713678800501E-15
+
+Square root of 25.0 is 5.0
+Rounding error is 0.0
+
+Square root of 26.0 is 5.0990195135927845
+Rounding error is 3.552713678800501E-15
+
+Square root of 27.0 is 5.196152422706632
+Rounding error is 0.0
+
+Square root of 28.0 is 5.291502622129181
+Rounding error is -3.552713678800501E-15
+
+Square root of 29.0 is 5.385164807134504
+Rounding error is 3.552713678800501E-15
+
+Square root of 30.0 is 5.477225575051661
+Rounding error is 0.0
+
+Square root of 31.0 is 5.5677643628300215
+Rounding error is 3.552713678800501E-15
+
+Square root of 32.0 is 5.656854249492381
+Rounding error is -7.105427357601002E-15
+
+Square root of 33.0 is 5.744562646538029
+Rounding error is 0.0
+
+Square root of 34.0 is 5.830951894845301
+Rounding error is 0.0
+
+Square root of 35.0 is 5.916079783099616
+Rounding error is 0.0
+
+Square root of 36.0 is 6.0
+Rounding error is 0.0
+
+Square root of 37.0 is 6.082762530298219
+Rounding error is 7.105427357601002E-15
+
+Square root of 38.0 is 6.164414002968976
+Rounding error is 7.105427357601002E-15
+
+Square root of 39.0 is 6.244997998398398
+Rounding error is 0.0
+
+Square root of 40.0 is 6.324555320336759
+Rounding error is -7.105427357601002E-15
+
+Square root of 41.0 is 6.4031242374328485
+Rounding error is 0.0
+
+Square root of 42.0 is 6.48074069840786
+Rounding error is 0.0
+
+Square root of 43.0 is 6.557438524302
+Rounding error is 7.105427357601002E-15
+
+Square root of 44.0 is 6.6332495807108
+Rounding error is 0.0
+
+Square root of 45.0 is 6.708203932499369
+Rounding error is -7.105427357601002E-15
+
+Square root of 46.0 is 6.782329983125268
+Rounding error is 0.0
+
+Square root of 47.0 is 6.855654600401044
+Rounding error is 0.0
+
+Square root of 48.0 is 6.928203230275509
+Rounding error is 7.105427357601002E-15
+
+Square root of 49.0 is 7.0
+Rounding error is 0.0
+
+Square root of 50.0 is 7.0710678118654755
+Rounding error is -7.105427357601002E-15
+
+Square root of 51.0 is 7.14142842854285
+Rounding error is -7.105427357601002E-15
+
+Square root of 52.0 is 7.211102550927978
+Rounding error is 7.105427357601002E-15
+
+Square root of 53.0 is 7.280109889280518
+Rounding error is 0.0
+
+Square root of 54.0 is 7.3484692283495345
+Rounding error is 0.0
+
+Square root of 55.0 is 7.416198487095663
+Rounding error is 0.0
+
+Square root of 56.0 is 7.483314773547883
+Rounding error is 0.0
+
+Square root of 57.0 is 7.54983443527075
+Rounding error is 0.0
+
+Square root of 58.0 is 7.615773105863909
+Rounding error is -7.105427357601002E-15
+
+Square root of 59.0 is 7.681145747868608
+Rounding error is 7.105427357601002E-15
+
+Square root of 60.0 is 7.745966692414834
+Rounding error is -7.105427357601002E-15
+
+Square root of 61.0 is 7.810249675906654
+Rounding error is 7.105427357601002E-15
+
+Square root of 62.0 is 7.874007874011811
+Rounding error is 0.0
+
+Square root of 63.0 is 7.937253933193772
+Rounding error is -7.105427357601002E-15
+
+Square root of 64.0 is 8.0
+Rounding error is 0.0
+
+Square root of 65.0 is 8.06225774829855
+Rounding error is 1.4210854715202004E-14
+
+Square root of 66.0 is 8.12403840463596
+Rounding error is -1.4210854715202004E-14
+
+Square root of 67.0 is 8.18535277187245
+Rounding error is 0.0
+
+Square root of 68.0 is 8.246211251235321
+Rounding error is 0.0
+
+Square root of 69.0 is 8.306623862918075
+Rounding error is 0.0
+
+Square root of 70.0 is 8.366600265340756
+Rounding error is 0.0
+
+Square root of 71.0 is 8.426149773176359
+Rounding error is 0.0
+
+Square root of 72.0 is 8.48528137423857
+Rounding error is 1.4210854715202004E-14
+
+Square root of 73.0 is 8.54400374531753
+Rounding error is 1.4210854715202004E-14
+
+Square root of 74.0 is 8.602325267042627
+Rounding error is 0.0
+
+Square root of 75.0 is 8.660254037844387
+Rounding error is -1.4210854715202004E-14
+
+Square root of 76.0 is 8.717797887081348
+Rounding error is -1.4210854715202004E-14
+
+Square root of 77.0 is 8.774964387392123
+Rounding error is -1.4210854715202004E-14
+
+Square root of 78.0 is 8.831760866327848
+Rounding error is -1.4210854715202004E-14
+
+Square root of 79.0 is 8.888194417315589
+Rounding error is 0.0
+
+Square root of 80.0 is 8.94427190999916
+Rounding error is -1.4210854715202004E-14
+
+Square root of 81.0 is 9.0
+Rounding error is 0.0
+
+Square root of 82.0 is 9.055385138137417
+Rounding error is -1.4210854715202004E-14
+
+Square root of 83.0 is 9.1104335791443
+Rounding error is 0.0
+
+Square root of 84.0 is 9.16515138991168
+Rounding error is 0.0
+
+Square root of 85.0 is 9.219544457292887
+Rounding error is 0.0
+
+Square root of 86.0 is 9.273618495495704
+Rounding error is 0.0
+
+Square root of 87.0 is 9.327379053088816
+Rounding error is -1.4210854715202004E-14
+
+Square root of 88.0 is 9.38083151964686
+Rounding error is 0.0
+
+Square root of 89.0 is 9.433981132056603
+Rounding error is 1.4210854715202004E-14
+
+Square root of 90.0 is 9.486832980505138
+Rounding error is 0.0
+
+Square root of 91.0 is 9.539392014169456
+Rounding error is 0.0
+
+Square root of 92.0 is 9.591663046625438
+Rounding error is 1.4210854715202004E-14
+
+Square root of 93.0 is 9.643650760992955
+Rounding error is 0.0
+
+Square root of 94.0 is 9.695359714832659
+Rounding error is -1.4210854715202004E-14
+
+Square root of 95.0 is 9.746794344808963
+Rounding error is 1.4210854715202004E-14
+
+Square root of 96.0 is 9.797958971132712
+Rounding error is 1.4210854715202004E-14
+
+Square root of 97.0 is 9.848857801796104
+Rounding error is 1.4210854715202004E-14
+
+Square root of 98.0 is 9.899494936611665
+Rounding error is 0.0
+
+Square root of 99.0 is 9.9498743710662
+Rounding error is 0.0
+</code></pre>  <!-- plaintext block -->
+                                <p>Notice that the rounding error is computed by squaring the square root of each number. This result is then subtracted from the original number, thus yielding the rounding error.</p>
+                                <p>The <code>for</code> loop can proceed in a positive or negative fashion, and it can change the loop control variable by any amount. For example, the following program prints the numbers 100 to -95, in decrements of 5:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/DecrFor.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/DecrFor.java</a></p>
+                                <pre><code class="language-java">/**
+ * A negatively running for loop.
+ * 
+ * Call this file "DecrFor.java".
+ */
+class DecrFor {
+    public static void main(String[] args) {
+        int x;
+
+        for(x = 100; x > -100; x -= 5) {
+            System.out.println(x);
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/DecrFor_class.svg" alt="Class diagram of DecrFor class">
+                                        <figcaption>Class diagram of DecrFor class<br>src: <a href="./plantUMLs/ch03/DecrFor_class.puml" target="_blank">./plantUMLs/ch03/DecrFor_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/DecrFor_act.svg" alt="Activity diagram of DecrFor.main() method">
+                                        <figcaption>Acivity diagram of DecrFor.main() method<br>src: <a href="./plantUMLs/ch03/DecrFor_act.puml" target="_blank">./plantUMLs/ch03/DecrFor_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">100
+95
+90
+85
+80
+75
+70
+65
+60
+55
+50
+45
+40
+35
+30
+25
+20
+15
+10
+5
+0
+-5
+-10
+-15
+-20
+-25
+-30
+-35
+-40
+-45
+-50
+-55
+-60
+-65
+-70
+-75
+-80
+-85
+-90
+-95</code></pre>  <!-- plaintext block -->
+                                <p>An important point about <code>for</code> loops is that the conditional expression is always tested at the top of the loop. This means that the code inside the loop may not be executed at all if the condition is false to begin with. Here is an example:</p>
+                                <pre><code class="language-java">for(count = 10; count < 5; count++)
+    x += count;  // This statement will not execute</code></pre>  <!-- java code -->
+                                    <p>This loop will never execute because its control variable, <code>count</code>, is greater than 5 when the loop is first entered. This makes the conditional expression, <code>count < 5</code>, false from the outset; thus, not even one iteration of the loop will occur.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>SOME VARIATIONS ON THE FOR LOOP</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>The <code>for</code> is one of the most versatile statements in the Java language because it allows a wide range of variations. For example, multiple loop control variables can be used. Consider the following program:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Comma.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Comma.java</a></p>
+                                <pre><code class="language-java">/**
+ * Use commas in a for statement.
+ * 
+ * Call this file "Comma.java".
+ */
+class Comma {
+    public static void main(String[] args) {
+        int i, j;
+
+        for(i = 0, j = 10; i < j; i++, j--) {
+            System.out.println("i and j: " + i + " " + j);
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Comma_class.svg" alt="Class diagram of Comma class">
+                                        <figcaption>Class diagram of Comma class<br>src: <a href="./plantUMLs/ch03/Comma_class.puml" target="_blank">./plantUMLs/ch03/Comma_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Comma_act.svg" alt="Activity diagram of Comma.main() method">
+                                        <figcaption>Acivity diagram of Comma.main() method<br>src: <a href="./plantUMLs/ch03/Comma_act.puml" target="_blank">./plantUMLs/ch03/Comma_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>The output from the program is shown here:</p>
+                                <pre><code class="language-plaintext">i and j: 0 10
+i and j: 1 9
+i and j: 2 8
+i and j: 3 7
+i and j: 4 6</code></pre>  <!-- plaintext block -->
+                                <p>Here, commas separate the two initialization statements and the two iteration expressions. When the loop begins, both <code>i</code> and <code>j</code> are initialized. Each time the loop repeats, <code>i</code> is incremented and <code>j</code> is decremented. Multiple loop control variables are often convenient and can simplify certain algorithms. You can have any number of initialization and iteration statements, but in practice, more than two or three make the <code>for</code> loop unwieldy.</p>
+                                <p>The condition controlling the loop can be any valid Boolean expression. It does not need to involve the loop control variable. In the next example, the loop continues to execute until the user types the letter <code>S</code> at the keyboard:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/ForTest.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/ForTest.java</a></p>
+                                <pre><code class="language-java">/**
+ * Loop until an S is typed.
+ * 
+ * Call this file "ForTest.java".
+ */
+class ForTest {
+    public static void main(String[] args) 
+        throws java.io.IOException {
+        int i;
+
+        System.out.println("Press S to stop.");
+
+        for(i = 0; (char) System.in.read() != 'S'; i++) {
+            System.out.println("Pass #" + i);
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/ForTest_class.svg" alt="Class diagram of ForTest class">
+                                        <figcaption>Class diagram of ForTest class<br>src: <a href="./plantUMLs/ch03/ForTest_class.puml" target="_blank">./plantUMLs/ch03/ForTest_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/ForTest_act.svg" alt="Activity diagram of ForTest.main() method">
+                                        <figcaption>Acivity diagram of ForTest.main() method<br>src: <a href="./plantUMLs/ch03/ForTest_act.puml" target="_blank">./plantUMLs/ch03/ForTest_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <p><u>Execution 1: </u></p>
+                                <pre><code class="language-plaintext">Press S to stop.
+sqweS
+Pass #0
+Pass #1
+Pass #2
+Pass #3</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 2: </u></p>
+                                <pre><code class="language-plaintext">Press S to stop.
+sqweSabc
+Pass #0
+Pass #1
+Pass #2
+Pass #3</code></pre>  <!-- plaintext block -->
+                                <p><u>Execution 3: </u></p>
+                                <pre><code class="language-plaintext">Press S to stop.
+S</code></pre>  <!-- plaintext block -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>MISSING PIECES</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Some interesting <code>for</code> loop variations are created by leaving pieces of the loop definition empty. In Java, it is possible for any or all of the initialization, condition, or iteration portions of the for loop to be blank. For example, consider the following program:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty.java</a></p>
+                                <pre><code class="language-java">/**
+ * Parts of the for can be empty.
+ * 
+ * Call this file "Empty.java".
+ */
+class Empty {
+    public static void main(String[] args) {
+        int i;
+
+        for(i = 0; i < 10; ) {
+            System.out.println("Pass #" + i);
+            i++;  // increment loop control var
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty_class.svg" alt="Class diagram of Empty class">
+                                        <figcaption>Class diagram of Empty class<br>src: <a href="./plantUMLs/ch03/Empty_class.puml" target="_blank">./plantUMLs/ch03/Empty_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty_act.svg" alt="Activity diagram of Empty.main() method">
+                                        <figcaption>Acivity diagram of Empty.main() method<br>src: <a href="./plantUMLs/ch03/Empty_act.puml" target="_blank">./plantUMLs/ch03/Empty_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>Here, the iteration expression of the <code>for</code> is empty. Instead, the loop control variable <code>i</code> is incremented inside the body of the loop. This means that each time the loop repeats, <code>i</code> is tested to see whether it equals 10, but no further action takes place. Of course, since <code>i</code> is still incremented within the body of the loop, the loop runs normally, displaying the following output:</p>
+                                <pre><code class="language-plaintext">Pass #0
+Pass #1
+Pass #2
+Pass #3
+Pass #4
+Pass #5
+Pass #6
+Pass #7
+Pass #8
+Pass #9</code></pre>  <!-- plaintext block -->
+                                <p>In the next example, the initialization portion is also moved out of the <code>for</code>:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty2.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty2.java</a></p>
+                                <pre><code class="language-java">/**
+ * Parts of the for can be empty (initialization).
+ * 
+ * Call this file "Empty2.java".
+ */
+class Empty2 {
+    public static void main(String[] args) {
+        int i;
+
+        i = 0;  // Move initialization out of the loop
+        for(; i < 10; ) {
+            System.out.println("Pass #" + i);
+            i++;  // increment loop control var
+        }
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty2_class.svg" alt="Class diagram of Empty2 class">
+                                        <figcaption>Class diagram of Empty2 class<br>src: <a href="./plantUMLs/ch03/Empty2_class.puml" target="_blank">./plantUMLs/ch03/Empty2_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty2_act.svg" alt="Activity diagram of Empty2.main() method">
+                                        <figcaption>Acivity diagram of Empty2.main() method<br>src: <a href="./plantUMLs/ch03/Empty2_act.puml" target="_blank">./plantUMLs/ch03/Empty2_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">Pass #0
+Pass #1
+Pass #2
+Pass #3
+Pass #4
+Pass #5
+Pass #6
+Pass #7
+Pass #8
+Pass #9</code></pre>  <!-- plaintext block -->
+                                <p>In this version, <code>i</code> is initialized before the loop begins, rather than as part of the <code>for</code>. Normally, you will want to initialize the loop control variable inside the <code>for</code>. Placing the initialization outside of the loop is generally done only when the initial value is derived through a complex process that does not lend itself to containment inside the <code>for</code> statement.</p>
+                            </div>  <!-- content -->
+                            <div class="lvl2">
+                                <div class="left">
+                                    <h3>The Infinite Loop</h3>
+                                </div>  <!-- left -->
+                                <div class="right">
+                                    <div class="content">
+                                        <p>You can create an infinite loop (a loop that never terminates) using the <code>for</code> by leaving the conditional expression empty. For example, the following fragment shows the way many Java programmers create an infinite loop:</p>
+                                        <pre><code class="language-java">for(;;)  //intentionally infinite loop
+{
+    // ...
+}</code></pre>  <!-- java code -->
+                                        <p>This loop will run forever. Although there are some programming tasks, such as operating system command processors, that require an infinite loop, most "infinite loops" are really just loops with special termination requirements. Near the end of this chapter, you will see how to halt a loop of this type. (Hint: It's done using the <code>break</code> statement.)</p>
+                                    </div>  <!-- content -->
+                                </div>  <!-- right -->
+                            </div>  <!-- lvl2 -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>LOOPS WITH NO BODY</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>In Java, the body associated with a <code>for</code> loop (or any other loop) can be empty. This is because a <em>null</em> statement is syntactically valid. Body-less loops are often useful. For example, the following program uses one to sum the numbers 1 through 5:</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty3.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/Empty3.java</a></p>
+                                <pre><code class="language-java">/**
+ * Body of a loop can be empty.
+ * 
+ * Call this file "Empty3.java".
+ */
+class Empty3 {
+    public static void main(String[] args) {
+        int i, sum = 0;
+
+        for(i = 1; i <= 5; sum += i++);  // No body in this loop
+        System.out.println("Sum is " + sum);
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty3_class.svg" alt="Class diagram of Empty3 class">
+                                        <figcaption>Class diagram of Empty3 class<br>src: <a href="./plantUMLs/ch03/Empty3_class.puml" target="_blank">./plantUMLs/ch03/Empty3_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/Empty3_act.svg" alt="Activity diagram of Empty3.main() method">
+                                        <figcaption>Acivity diagram of Empty3.main() method<br>src: <a href="./plantUMLs/ch03/Empty3_act.puml" target="_blank">./plantUMLs/ch03/Empty3_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p>The output from the program is shown here:</p>
+                                <pre><code class="language-plaintext">Sum is 15</code></pre>  <!-- plaintext block -->
+                                <p>Notice that the summation process is handled entirely within the <code>for</code> statement, and no body is needed. Pay special attention to the iteration expression:</p>
+                                <pre><code class="language-java">sum += i++</code></pre>  <!-- java code -->
+                                <p>Don't be intimidated by statements like this. They are common in professionally written Java programs and are easy to understand if you break them down into their parts. In other words, this statement says, "Add to <code>sum</code> the value of <code>sum</code> plus <code>i</code>, then increment <code>i</code>." Thus, it is the same as this sequence of statements:</p>
+                                <pre><code class="language-java">sum = sum + i;
+i++;</code></pre>  <!-- java code -->
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>DECLARING LOOP CONTROL VARIABLES INSIDE THE FOR LOOP</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>Often the variable that controls a <code>for</code> loop is needed only for the purposes of the loop and is not used elsewhere. When this is the case, it is possible to declare the variable inside the initialization portion of the <code>for</code>. For example, the following program computes both the summation and the factorial of the numbers 1 through 5. It declares its loop control variable <code>i</code> inside the <code>for</code>.</p>
+                                <p class="srcFile"><a href="../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/ForVar.java" target="_blank">../JBG_HS_Ch03/JBG_HS_Ch03_Exmp/ForVar.java</a></p>
+                                <pre><code class="language-java">/**
+ * Declare loop control variable inside the for.
+ * 
+ * Call this file "ForVar.java".
+ */
+class ForVar {
+    public static void main(String[] args) {
+        int sum = 0;
+        int fact = 1;
+
+        // Compute the factorial of the numbers through 5
+        for(int i = 1; i <= 5; i++) {  // i is declared inside the for statement
+            sum += i;  // i is known throughout the loop
+            fact *= i;
+        }
+
+        // but i is not known here.
+
+        System.out.println("Sum is " + sum);
+        System.out.println("Factorial is " + fact);
+    }
+}</code></pre>  <!-- java code -->
+                                <div class="gallery2">
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/ForVar_class.svg" alt="Class diagram of ForVar class">
+                                        <figcaption>Class diagram of ForVar class<br>src: <a href="./plantUMLs/ch03/ForVar_class.puml" target="_blank">./plantUMLs/ch03/ForVar_class.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                    <figure class="standAloneFigure">
+                                        <img src="./plantUMLs/ch03/ForVar_act.svg" alt="Activity diagram of ForVar.main() method">
+                                        <figcaption>Acivity diagram of ForVar.main() method<br>src: <a href="./plantUMLs/ch03/ForVar_act.puml" target="_blank">./plantUMLs/ch03/ForVar_act.puml</a></figcaption>
+                                    </figure>  <!-- standAloneFigure -->
+                                </div>  <!-- gallery2 -->
+                                <p><b>Execution Logs: </b></p>
+                                <pre><code class="language-plaintext">Sum is 15
+Factorial is 120</code></pre>  <!-- plaintext block -->
+                                <p>When you declare a variable inside a <code>for</code> loop, there is one important point to remember: the scope of that variable ends when the <code>for</code> statement does. (That is, the scope of the variable is limited to the <code>for</code> loop.) Outside the <code>for</code> loop, the variable will cease to exist. Thus, in the preceding example, <code>i</code> is not accessible outside the <code>for</code> loop. If you need to use the loop control variable elsewhere in your program, you will not be able to declare it inside the <code>for</code> loop.</p>
+                                <p>Before moving on, you might want to experiment with your own variations on the <code>for</code> loop. As you will find, it is a fascinating loop.</p>
+                            </div>  <!-- content -->
+                        </div>  <!-- right -->
+                    </div>  <!-- lvl1 -->
+                    <div class="lvl1">
+                        <div class="left">
+                            <h2>THE ENHANCED FOR LOOP</h2>
+                        </div>  <!-- left -->
+                        <div class="right">
+                            <div class="content">
+                                <p>There is another form of the <code>for</code> loop, called the <em>enhanced <code>for</code></em>. The enhanced <code>for</code> provides a streamlined way to cycle through the contents of a collection of objects, such as an array. The enhanced <code>for</code> loop is discussed in Chapter 5, after arrays have been introduced.</p>
                             </div>  <!-- content -->
                         </div>  <!-- right -->
                     </div>  <!-- lvl1 -->
