@@ -1,9 +1,0 @@
-@startuml
-
-title Class digram of\n `Example2.java`
-
-class Example2 {
-    {method} + {static} main(String[] args): void
-}
-
-@enduml

@@ -1,8 +1,0 @@
-@startuml
-title Class diagram of \nBlockDemo class
-
-class BlockDemo {
-    {method} + {static} main(String[] args): void
-}
-note right of BlockDemo : Demonstrate Block of code
-@enduml
