@@ -12,6 +12,7 @@ Learn/Practice Java from
 
 ## Links/References:
 1. [Source code for all of the examples and projects in this book by the book providers](www.oraclepressbooks.com)
+2. Documentation is maintained under the reposiry [JavaLearning_001_Doc](https://github.com/Mallikarjuna00G/JavaLearning_001_Doc.git). **Note:** Please do clone `JavaLearning_001_Doc` as a submodule of `JavaLearning_001` repository.
 
 ## Tools
 1. Programming Language: Java (JDK 17)
