@@ -18,7 +18,7 @@ class Break4 {
 
                         System.out.println("won't print");
                     }  // label three: control reaches here when `break three` is detected.
-                    System.out.println("After block one.");
+                    System.out.println("After block three.");
                 }  // label two: control reaches here when `break two` is detected.
                 System.out.println("After block two.");
             }  // label one: control reaches here when `break one` is detected.
